@@ -1,0 +1,757 @@
+{
+    "people": [
+        {
+            "id": "8ce95be2-60ff-4c02-801d-17e3b7886aa6",
+            "createdAt": "2025-12-02T08:30:05.971Z",
+            "user": {
+                "id": "08219a4e-e2d0-4904-b18d-f0320cd8d48b",
+                "avatar": "1747421843433.jpg",
+                "displayName": "Adam M\u0142ynarczyk",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "sos": 0
+            }
+        },
+        {
+            "id": "70b0ec99-e67f-48bb-8428-14a0002250e1",
+            "createdAt": "2025-12-02T08:31:09.168Z",
+            "user": {
+                "id": "08219a4e-e2d0-4904-b18d-f0320cd8d48b",
+                "avatar": "1747421843433.jpg",
+                "displayName": "Adam M\u0142ynarczyk",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "sos": 0
+            }
+        },
+        {
+            "id": "ef6748bb-b948-4ca0-a213-b699d5468ffa",
+            "createdAt": "2025-12-03T19:08:12.439Z",
+            "user": {
+                "id": "76870d30-055b-4a89-a141-78ef032269f2",
+                "avatar": "1744314118349.png",
+                "displayName": "Czaki",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 360,
+                "name": "Army of Gundabad",
+                "subfraction": null,
+                "code": "MESBG2_AoGu",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 42,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "place": 2,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 13,
+                "secondaryPoints": 0,
+                "tertiaryPoints": 0,
+                "sos": 42,
+                "path": ""
+            }
+        },
+        {
+            "id": "a3f0d177-bf12-4492-bcf7-df7574aa6633",
+            "createdAt": "2025-12-03T19:35:15.184Z",
+            "user": {
+                "id": "08219a4e-e2d0-4904-b18d-f0320cd8d48b",
+                "avatar": "1747421843433.jpg",
+                "displayName": "Adam M\u0142ynarczyk",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 444,
+                "name": "The Beornings",
+                "subfraction": null,
+                "code": "MESBG2_TB",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 67,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 3,
+                "secondaryPoints": 0,
+                "tertiaryPoints": 0,
+                "sos": 67,
+                "path": ""
+            }
+        },
+        {
+            "id": "231fb562-c974-49cd-a324-54782622cebe",
+            "createdAt": "2025-12-03T19:41:12.583Z",
+            "user": {
+                "id": "9d5bc521-d1ac-416e-952c-926b6aef9e60",
+                "avatar": null,
+                "displayName": "Kostek",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 3147,
+                    "name": "Sosnowiec",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 381,
+                "name": "Rise of the Necromancer",
+                "subfraction": null,
+                "code": "MESBG2_RotN",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 17,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5827,
+                "name": "Sosnowiec"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 7,
+                "secondaryPoints": 0,
+                "tertiaryPoints": 0,
+                "sos": 17,
+                "path": ""
+            }
+        },
+        {
+            "id": "f2b56f77-4f81-464d-b41e-b48d68a5d409",
+            "createdAt": "2025-12-03T20:01:27.545Z",
+            "user": {
+                "id": "b6f0e023-257d-472b-af43-78e56d559cae",
+                "avatar": "1776192898114.jpeg",
+                "displayName": "BigChungus",
+                "firstName": "\u0141ukasz ",
+                "lastName": "Wo\u017any ",
+                "city": {
+                    "id": 3137,
+                    "name": "Tarn\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5828,
+                "name": "Tarn\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "sos": 0
+            }
+        },
+        {
+            "id": "3d079291-2600-490b-99d6-32c19bc60760",
+            "createdAt": "2025-12-03T20:01:51.481Z",
+            "user": {
+                "id": "cd36b01c-87a1-47c9-b877-a65940b24b12",
+                "avatar": "1727984168047.jpg",
+                "displayName": "Marcin Werewolf Noszczy\u0144ski",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 225,
+                    "name": "Cz\u0119stochowa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 375,
+                "name": "Host of the Witch-King",
+                "subfraction": null,
+                "code": "MESBG2_HotWK",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 50,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5829,
+                "name": "Cz\u0119stochowa"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 16,
+                "secondaryPoints": 0,
+                "tertiaryPoints": 0,
+                "sos": 50,
+                "path": ""
+            }
+        },
+        {
+            "id": "c43a752e-00cb-408b-b4ea-d5585f654e10",
+            "createdAt": "2025-12-03T21:35:18.180Z",
+            "user": {
+                "id": "5dd629bc-7618-4bd4-9b02-0c13fc7b7a34",
+                "avatar": "1760898146072.png",
+                "displayName": "Maslo",
+                "firstName": "Bartosz",
+                "lastName": "\u0141aski",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "masloo"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 364,
+                "name": "Barad-Dur",
+                "subfraction": null,
+                "code": "MESBG2_BD",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 50,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 12,
+                "secondaryPoints": 0,
+                "tertiaryPoints": 0,
+                "sos": 50,
+                "path": ""
+            }
+        },
+        {
+            "id": "d03be3e3-3acb-4bd4-bf4e-09966da4f545",
+            "createdAt": "2025-12-04T09:40:34.786Z",
+            "user": {
+                "id": "d7deccf7-cc03-46b4-a9a0-6e6e66317298",
+                "avatar": null,
+                "displayName": "kosmakk",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "sos": 0
+            }
+        },
+        {
+            "id": "4c1362b6-3b09-4bf4-9f9e-e3208563939b",
+            "createdAt": "2025-12-07T09:49:33.027Z",
+            "user": {
+                "id": "a5f615bb-a42a-4084-98e7-426a4b15d6ac",
+                "avatar": null,
+                "displayName": "Grodziu",
+                "firstName": "Miko\u0142aj",
+                "lastName": "Grodecki",
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 383,
+                "name": "The Three Trolls",
+                "subfraction": null,
+                "code": "MESBG2_TTT",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 42,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 7,
+                "secondaryPoints": 0,
+                "tertiaryPoints": 0,
+                "sos": 42,
+                "path": ""
+            }
+        },
+        {
+            "id": "bde57b4e-13f6-419a-abf4-cf241c3bd5a3",
+            "createdAt": "2025-12-17T14:51:06.435Z",
+            "user": {
+                "id": "3fb17aad-078c-4ea5-ae7e-2ae332f265d4",
+                "avatar": null,
+                "displayName": "Mateusz Zamora",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 348,
+                "name": "Ride Out",
+                "subfraction": null,
+                "code": "MESBG2_RO",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 25,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 12,
+                "secondaryPoints": 0,
+                "tertiaryPoints": 0,
+                "sos": 25,
+                "path": ""
+            }
+        },
+        {
+            "id": "5ee75889-37bf-4ec2-ba69-a8766d583e6a",
+            "createdAt": "2025-12-18T18:41:20.085Z",
+            "user": {
+                "id": "5de541e0-dfa6-4c41-b224-90684a3b5e1c",
+                "avatar": null,
+                "displayName": "Zichu",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "sos": 0
+            }
+        },
+        {
+            "id": "cc3bccb0-015c-4c73-a470-20134e584384",
+            "createdAt": "2025-12-20T18:26:31.601Z",
+            "user": {
+                "id": "e3be0c1a-33fa-4825-993f-8d84b55c47c0",
+                "avatar": null,
+                "displayName": "Piotr.M",
+                "firstName": "Piotr",
+                "lastName": "Maszewski ",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 6090,
+                "name": "Bielsko-bia\u0142a"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "sos": 0
+            }
+        },
+        {
+            "id": "341d5613-b758-4a38-b7f2-2f149e16432a",
+            "createdAt": "2025-12-23T10:20:49.531Z",
+            "user": {
+                "id": "6841eef6-931a-4375-ae1b-79843a97a82e",
+                "avatar": "1726047024218.jpeg",
+                "displayName": "Przemys\u0142aw Draga",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5804,
+                "name": "Katowice"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3213,
+                "sos": 0
+            }
+        }
+    ],
+    "teams": [],
+    "points": "650",
+    "patch": "BALROG",
+    "tournament_type": null
+}

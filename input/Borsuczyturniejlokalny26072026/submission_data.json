@@ -1,0 +1,550 @@
+{
+    "people": [
+        {
+            "id": "84b8e288-a550-4042-b042-2065a7d8cffc",
+            "createdAt": "2026-07-15T07:52:06.479Z",
+            "user": {
+                "id": "fe2829dd-d3d5-4397-9c63-f65a285aba6e",
+                "avatar": "1740771618803.jpg",
+                "displayName": "Jacenty41",
+                "firstName": "Jacek",
+                "lastName": "Pl",
+                "city": {
+                    "id": 3152,
+                    "name": "Lublin",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 48,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 9383,
+                "name": "Lublin"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "place": 6,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 17,
+                "tertiaryPoints": 0,
+                "sos": 48,
+                "path": "LLW"
+            }
+        },
+        {
+            "id": "cf771098-f4f4-4df4-90db-90e7ec9dd03f",
+            "createdAt": "2026-07-15T07:53:21.293Z",
+            "user": {
+                "id": "9641c0c9-16e9-4bb7-a7f4-e73245f48db2",
+                "avatar": "1748522739684.jpg",
+                "displayName": "Szyber_LB",
+                "firstName": "Jakub ",
+                "lastName": "Tomczyk ",
+                "city": {
+                    "id": 3152,
+                    "name": "Lublin",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 379,
+                "name": "Muster of Isengard",
+                "subfraction": null,
+                "code": "MESBG2_MoI",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 59,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 9383,
+                "name": "Lublin"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 22,
+                "tertiaryPoints": 0,
+                "sos": 59,
+                "path": "WLL"
+            }
+        },
+        {
+            "id": "6e7cad25-e67d-4d8d-b21e-59c38b7ab124",
+            "createdAt": "2026-07-15T07:55:25.576Z",
+            "user": {
+                "id": "f48752fd-e96a-49e3-bb78-8c12475d82ae",
+                "avatar": "1778836741385.png",
+                "displayName": "Piotras",
+                "firstName": "Piotr",
+                "lastName": "B\u0105k",
+                "city": {
+                    "id": 3152,
+                    "name": "Lublin",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 450,
+                "name": "Host of the Dragon Emperor",
+                "subfraction": null,
+                "code": "MESBG2_HotDE",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 450,
+                "name": "Host of the Dragon Emperor",
+                "subfraction": null,
+                "code": "MESBG2_HotDE",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 37,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 9383,
+                "name": "Lublin"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "place": 2,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 12,
+                "secondaryPoints": 29,
+                "tertiaryPoints": 0,
+                "sos": 37,
+                "path": "WLW"
+            }
+        },
+        {
+            "id": "1b08589e-ecea-46ce-8729-68b709d4d628",
+            "createdAt": "2026-07-15T10:25:18.128Z",
+            "user": {
+                "id": "6732875f-9e3b-44e5-b4a1-5ce209a9b359",
+                "avatar": "1763833029166.jpg",
+                "displayName": "Mikruk",
+                "firstName": "Karol",
+                "lastName": "Czerwonka",
+                "city": {
+                    "id": 3152,
+                    "name": "Lublin",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 437,
+                "name": "Army of Erebor",
+                "subfraction": null,
+                "code": "MESBG2_AoEr",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 69,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 9383,
+                "name": "Lublin"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 3,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 18,
+                "secondaryPoints": 46,
+                "tertiaryPoints": 0,
+                "sos": 69,
+                "path": "WWW"
+            }
+        },
+        {
+            "id": "5e9d10d0-007f-40d6-bfa2-b342321e87d3",
+            "createdAt": "2026-07-15T10:46:02.649Z",
+            "user": {
+                "id": "ce697f2a-88d0-47e2-bdb1-d7ee33e3013b",
+                "avatar": "1764797714741.jpg",
+                "displayName": "Schab",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 3152,
+                    "name": "Lublin",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 444,
+                "name": "The Beornings",
+                "subfraction": null,
+                "code": "MESBG2_TB",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 24,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 9383,
+                "name": "Lublin"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 5,
+                "secondaryPoints": 16,
+                "tertiaryPoints": 0,
+                "sos": 24,
+                "path": "LWL"
+            }
+        },
+        {
+            "id": "d38ab689-4cc6-47cf-a58f-5111e894ba26",
+            "createdAt": "2026-07-15T11:04:57.866Z",
+            "user": {
+                "id": "2ad82dea-7cae-44b7-8c06-3065d274514b",
+                "avatar": null,
+                "displayName": "Mordor1",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 3152,
+                    "name": "Lublin",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 340,
+                "name": "Men of the West",
+                "subfraction": null,
+                "code": "MESBG2_MotW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 22,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 9383,
+                "name": "Lublin"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 1,
+                "secondaryPoints": 7,
+                "tertiaryPoints": 0,
+                "sos": 22,
+                "path": "LLL"
+            }
+        },
+        {
+            "id": "50440931-1d8d-40c8-b287-06f6c073a68b",
+            "createdAt": "2026-07-15T11:31:41.124Z",
+            "user": {
+                "id": "cb9f4647-caaa-43d9-aa27-3cf3bae9c749",
+                "avatar": null,
+                "displayName": "JelonekJelon",
+                "firstName": null,
+                "lastName": null,
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "sos": 0
+            }
+        },
+        {
+            "id": "4538ea5c-db15-409e-ada3-adb61ac5c679",
+            "createdAt": "2026-07-15T11:32:22.272Z",
+            "user": {
+                "id": "08415651-02b1-4f99-92db-758e55efce47",
+                "avatar": "1765108493384.jpeg",
+                "displayName": "Jelon",
+                "firstName": "Micha\u0142",
+                "lastName": "Jaworski",
+                "city": {
+                    "id": 3152,
+                    "name": "Lublin",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 444,
+                "name": "The Beornings",
+                "subfraction": null,
+                "code": "MESBG2_TB",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 83,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 9383,
+                "name": "Lublin"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 12,
+                "secondaryPoints": 23,
+                "tertiaryPoints": 0,
+                "sos": 83,
+                "path": "WWL"
+            }
+        },
+        {
+            "id": "66d3cf37-81ac-4987-a4e9-7a60b91a1075",
+            "createdAt": "2026-07-15T17:19:32.012Z",
+            "user": {
+                "id": "6bec13b2-87d9-4e6d-b7ca-06b9e90bf3ba",
+                "avatar": null,
+                "displayName": "Jawor",
+                "firstName": "Piotr",
+                "lastName": "Jaworski",
+                "city": {
+                    "id": 3152,
+                    "name": "Lublin",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 321,
+                "name": "The Battle of Five Armies",
+                "subfraction": null,
+                "code": "MESBG2_TBoFA",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 57,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 9383,
+                "name": "Lublin"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6269,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 12,
+                "secondaryPoints": 23,
+                "tertiaryPoints": 0,
+                "sos": 57,
+                "path": "LWW"
+            }
+        }
+    ],
+    "teams": [],
+    "points": "777",
+    "patch": "NIGHTLINGS",
+    "tournament_type": "LOKAL"
+}

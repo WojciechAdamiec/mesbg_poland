@@ -1,0 +1,1261 @@
+{
+    "people": [
+        {
+            "id": "c994c67e-0e82-4667-9c5d-c5881c110cd6",
+            "createdAt": "2025-11-23T08:54:49.581Z",
+            "user": {
+                "id": "2e43426e-f985-4550-b47b-6d881ac500f5",
+                "avatar": "1752844413965.jpg",
+                "displayName": "Quik",
+                "firstName": "Pawe\u0142 ",
+                "lastName": "Gromadzi\u0144ski",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "quikjumper"
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "DECLINED",
+            "army": {
+                "id": 364,
+                "name": "Barad-Dur",
+                "subfraction": null,
+                "code": "MESBG2_BD",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "sos": 0
+            }
+        },
+        {
+            "id": "fb90f1f8-10d6-40f1-9156-a137192cacd8",
+            "createdAt": "2025-11-23T10:48:28.349Z",
+            "user": {
+                "id": "beec30f8-4a47-431b-b7ed-e7f37e95bbbc",
+                "avatar": "1737744023170.png",
+                "displayName": "Macu Bo\u017cy",
+                "firstName": "Maciej",
+                "lastName": "Wardejn",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 326,
+                "name": "Defenders of the Pelennor",
+                "subfraction": null,
+                "code": "MESBG2_DotP",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 46,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 13,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 8,
+                "secondaryPoints": 14,
+                "tertiaryPoints": 0,
+                "sos": 46,
+                "path": ""
+            }
+        },
+        {
+            "id": "4fd4b5f3-fe0f-47f1-82a0-8538741790ea",
+            "createdAt": "2025-11-23T11:34:20.103Z",
+            "user": {
+                "id": "6fbfdbec-7d0c-4900-a4a5-7bdf560ca7a2",
+                "avatar": null,
+                "displayName": "Marceli Chaos Fokt",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "chaosmarceli"
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 378,
+                "name": "Minas Morgul",
+                "subfraction": null,
+                "code": "MESBG2_MM",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 61,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 1,
+                "loss": 0,
+                "primaryPoints": 18,
+                "secondaryPoints": 21,
+                "tertiaryPoints": 0,
+                "sos": 61,
+                "path": ""
+            }
+        },
+        {
+            "id": "534152cb-46c3-4e37-8bfd-070bf89d46af",
+            "createdAt": "2025-11-23T17:49:39.431Z",
+            "user": {
+                "id": "e0392558-e263-4874-b380-e33152fcecbe",
+                "avatar": "1747065796992.PNG",
+                "displayName": "B\u0105czas Bo\u017cy",
+                "firstName": "Piotr",
+                "lastName": "B\u0105czyk",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 72,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 16,
+                "secondaryPoints": 38,
+                "tertiaryPoints": 0,
+                "sos": 72,
+                "path": ""
+            }
+        },
+        {
+            "id": "6eba7377-9ba4-4967-b508-80d1e65171be",
+            "createdAt": "2025-11-24T17:26:49.776Z",
+            "user": {
+                "id": "4a511f44-0b5e-4f86-b9ea-6db298859c11",
+                "avatar": null,
+                "displayName": "ADAM MAZI",
+                "firstName": "Adam",
+                "lastName": "M",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 438,
+                "name": "Kingdom of Khazad-d\u00fbm",
+                "subfraction": null,
+                "code": "MESBG2_KoKd",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 378,
+                "name": "Minas Morgul",
+                "subfraction": null,
+                "code": "MESBG2_MM",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 52,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 16,
+                "secondaryPoints": 35,
+                "tertiaryPoints": 0,
+                "sos": 52,
+                "path": ""
+            }
+        },
+        {
+            "id": "bb4ab954-a7e6-4c0c-ac7a-342221762969",
+            "createdAt": "2025-11-24T22:31:45.579Z",
+            "user": {
+                "id": "9e5a191c-e93a-436d-b7b0-95d223dd6e2e",
+                "avatar": "1747067294384.jpg",
+                "displayName": "Ezekiel ",
+                "firstName": "\u0141ukasz ",
+                "lastName": "Szewczyk ",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 346,
+                "name": "Reclamation of Osgiliath",
+                "subfraction": null,
+                "code": "MESBG2_RoO",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 54,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 3,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 22,
+                "secondaryPoints": 29,
+                "tertiaryPoints": 0,
+                "sos": 54,
+                "path": ""
+            }
+        },
+        {
+            "id": "b6363ec4-dbde-42a0-8a46-a91ea9873dfb",
+            "createdAt": "2025-11-25T18:40:39.533Z",
+            "user": {
+                "id": "88eff5e1-e5fa-40df-ac60-dd5cb0c71bad",
+                "avatar": null,
+                "displayName": "Artis",
+                "firstName": "Adrian",
+                "lastName": "Anio\u0142a",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 346,
+                "name": "Reclamation of Osgiliath",
+                "subfraction": null,
+                "code": "MESBG2_RoO",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 33,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 16,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 2,
+                "secondaryPoints": 17,
+                "tertiaryPoints": 0,
+                "sos": 33,
+                "path": ""
+            }
+        },
+        {
+            "id": "6349b9f7-4902-4289-a61a-5c7a9261b0c6",
+            "createdAt": "2025-11-29T14:33:15.855Z",
+            "user": {
+                "id": "ee9220cc-08cd-4cbe-be6d-1f510d91dfa6",
+                "avatar": "1740600570337.jpg",
+                "displayName": "KirdanS",
+                "firstName": "Sebastian",
+                "lastName": "Przyby\u0142",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 13,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 10,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 11,
+                "secondaryPoints": 20,
+                "tertiaryPoints": 0,
+                "sos": 13,
+                "path": ""
+            }
+        },
+        {
+            "id": "cc3d9969-cfcf-4bdf-b55a-1e5f990a5cf5",
+            "createdAt": "2025-12-02T11:05:54.841Z",
+            "user": {
+                "id": "224b8d3d-7e1f-4095-853a-088883879195",
+                "avatar": "1756972952200.jpeg",
+                "displayName": "\u017baba Bo\u017cy",
+                "firstName": "Jacek ",
+                "lastName": "Disterheft ",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 374,
+                "name": "Harad",
+                "subfraction": null,
+                "code": "MESBG2_Ha",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 57,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 12,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 10,
+                "secondaryPoints": 21,
+                "tertiaryPoints": 0,
+                "sos": 57,
+                "path": ""
+            }
+        },
+        {
+            "id": "2a835fde-86f2-4e2b-aa20-9e728b125b79",
+            "createdAt": "2025-12-02T11:15:39.049Z",
+            "user": {
+                "id": "bd51334f-700f-46ea-9801-7fa43e9c53d0",
+                "avatar": "1742386211433.jpg",
+                "displayName": "AjasFalcon",
+                "firstName": "Adam",
+                "lastName": "Sok\u00f3\u0142",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 332,
+                "name": "Garrison of Dale",
+                "subfraction": null,
+                "code": "MESBG2_GoD",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 378,
+                "name": "Minas Morgul",
+                "subfraction": null,
+                "code": "MESBG2_MM",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 54,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 6,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 16,
+                "secondaryPoints": 27,
+                "tertiaryPoints": 0,
+                "sos": 54,
+                "path": ""
+            }
+        },
+        {
+            "id": "8746ff70-2d97-4d03-8015-236dcd25cd36",
+            "createdAt": "2025-12-02T12:13:38.276Z",
+            "user": {
+                "id": "4e25c78d-dec8-4398-9d7b-0a362ecd7a96",
+                "avatar": "1762451134743.jpg",
+                "displayName": "Froggy",
+                "firstName": "Mateusz",
+                "lastName": "Pamin",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 377,
+                "name": "Lurtz's Scouts",
+                "subfraction": null,
+                "code": "MESBG2_LS",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 20,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 15,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 3,
+                "secondaryPoints": 11,
+                "tertiaryPoints": 0,
+                "sos": 20,
+                "path": ""
+            }
+        },
+        {
+            "id": "3a4302e9-804d-4510-8779-efb5f7cc3096",
+            "createdAt": "2025-12-02T21:25:15.151Z",
+            "user": {
+                "id": "5d7fc271-b24c-4d21-a3c2-88794f879f3f",
+                "avatar": "1747903045923.jpg",
+                "displayName": "Skrzyp",
+                "firstName": "Jakub",
+                "lastName": "Skrzypek",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 371,
+                "name": "Depths of Moria",
+                "subfraction": null,
+                "code": "MESBG2_DoM",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 323,
+                "name": "Breaking of the Fellowship",
+                "subfraction": null,
+                "code": "MESBG2_BtF",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 39,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 14,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 8,
+                "secondaryPoints": 10,
+                "tertiaryPoints": 0,
+                "sos": 39,
+                "path": ""
+            }
+        },
+        {
+            "id": "b3c22507-c41d-45bb-88a7-6783ad8be633",
+            "createdAt": "2025-12-03T10:06:12.402Z",
+            "user": {
+                "id": "e6502515-9c26-4676-9470-1e0ed9cf34e8",
+                "avatar": "1764015961701.jpg",
+                "displayName": "Kozakov",
+                "firstName": "Antoni ",
+                "lastName": "Kozanecki",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "DECLINED",
+            "army": {
+                "id": 318,
+                "name": "Arnor",
+                "subfraction": null,
+                "code": "MESBG2_A",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "sos": 0
+            }
+        },
+        {
+            "id": "83ea3688-7e11-4e58-8bd1-23c12f9af9f3",
+            "createdAt": "2025-12-03T10:07:46.726Z",
+            "user": {
+                "id": "7fad5775-4390-4bca-bc5b-80a73e76ee1c",
+                "avatar": "1762451230155.jpeg",
+                "displayName": "Iron666",
+                "firstName": "Miko\u0142aj",
+                "lastName": "Adamiak",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 438,
+                "name": "Kingdom of Khazad-d\u00fbm",
+                "subfraction": null,
+                "code": "MESBG2_KoKd",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 464,
+                "name": "Ravagers of the Shire",
+                "subfraction": null,
+                "code": "MESBG2_RotS",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 28,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 9,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 11,
+                "secondaryPoints": 22,
+                "tertiaryPoints": 0,
+                "sos": 28,
+                "path": ""
+            }
+        },
+        {
+            "id": "99e8fb23-ff9e-43f1-81aa-00d9cb63ec9f",
+            "createdAt": "2025-12-04T07:14:55.415Z",
+            "user": {
+                "id": "97c5e5bc-7502-4f16-9c1b-53ead4fab5b2",
+                "avatar": "1737917063672.png",
+                "displayName": "\u017badney Bo\u017cy",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 446,
+                "name": "Army of the Great Eye",
+                "subfraction": null,
+                "code": "MESBG2_AotGE",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 46,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 11,
+                "secondaryPoints": 24,
+                "tertiaryPoints": 0,
+                "sos": 46,
+                "path": ""
+            }
+        },
+        {
+            "id": "96f461d1-a1f9-47f1-8d02-04dd4b157b5d",
+            "createdAt": "2025-12-04T08:40:07.260Z",
+            "user": {
+                "id": "21c12fb0-4289-4df3-8bad-f18c2a49fd0d",
+                "avatar": "1758214908867.jpeg",
+                "displayName": "W\u0142odas Bo\u017cy",
+                "firstName": "Krzysztof",
+                "lastName": "Napiera\u0142a",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 349,
+                "name": "Riders of Eomer",
+                "subfraction": null,
+                "code": "MESBG2_RoE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 379,
+                "name": "Muster of Isengard",
+                "subfraction": null,
+                "code": "MESBG2_MoI",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 59,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 2,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 1,
+                "loss": 0,
+                "primaryPoints": 18,
+                "secondaryPoints": 26,
+                "tertiaryPoints": 0,
+                "sos": 59,
+                "path": ""
+            }
+        },
+        {
+            "id": "e64ec7c5-c162-44a4-8055-95274df304fc",
+            "createdAt": "2025-12-05T12:03:36.480Z",
+            "user": {
+                "id": "039b4907-3a83-4623-80a4-079d4c01b51d",
+                "avatar": "1736432861824.png",
+                "displayName": "Bjouy",
+                "firstName": "Bart\u0142omiej",
+                "lastName": "Urba\u0144ski",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5853,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "sos": 0
+            }
+        },
+        {
+            "id": "6ba64e51-f871-4e5b-b22f-4d076ac9d276",
+            "createdAt": "2025-12-06T20:15:56.112Z",
+            "user": {
+                "id": "9c7ddcbf-c6ea-49a5-929a-58dfc77250b8",
+                "avatar": "1747076856394.jpg",
+                "displayName": "Dziobak ",
+                "firstName": "Wojtek",
+                "lastName": "Dominiak",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 450,
+                "name": "Host of the Dragon Emperor",
+                "subfraction": null,
+                "code": "MESBG2_HotDE",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 41,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 11,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 11,
+                "secondaryPoints": 17,
+                "tertiaryPoints": 0,
+                "sos": 41,
+                "path": ""
+            }
+        },
+        {
+            "id": "92184393-382f-4707-bb6e-6bc1e6d128a0",
+            "createdAt": "2025-12-06T22:57:23.491Z",
+            "user": {
+                "id": "a6699bc3-336d-446f-a7f9-0d0ca34433c6",
+                "avatar": "1742456892505.jpg",
+                "displayName": "Patison",
+                "firstName": "Patryk",
+                "lastName": "Wegner",
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": {
+                "id": 382,
+                "name": "Shadows of Angmar",
+                "subfraction": null,
+                "code": "MESBG2_SoA",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "sos": 0
+            }
+        },
+        {
+            "id": "8e67680b-3826-42b6-b4e3-3beeb79083f8",
+            "createdAt": "2025-12-10T10:58:44.494Z",
+            "user": {
+                "id": "93cda88b-c976-4e61-8f65-9a5a5f1ecf7b",
+                "avatar": null,
+                "displayName": "GoblinGoblin",
+                "firstName": "Filip",
+                "lastName": "\u0141ukomski",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 332,
+                "name": "Garrison of Dale",
+                "subfraction": null,
+                "code": "MESBG2_GoD",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 468,
+                "name": "Assault on Lothl\u00f3rien",
+                "subfraction": null,
+                "code": "MESBG2_AoL",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 24,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 5631,
+                "name": "Pozna\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3049,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 12,
+                "secondaryPoints": 15,
+                "tertiaryPoints": 0,
+                "sos": 24,
+                "path": ""
+            }
+        }
+    ],
+    "teams": [],
+    "points": "702",
+    "patch": "BALROG",
+    "tournament_type": "LOKAL"
+}

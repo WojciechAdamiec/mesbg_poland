@@ -1,0 +1,675 @@
+{
+    "people": [
+        {
+            "id": "ca9e1288-a3e5-46e8-acc5-37f7bf81786b",
+            "createdAt": "2026-05-13T13:42:57.518Z",
+            "user": {
+                "id": "5d95a4a7-53a9-45c1-90d2-aac718fd7af8",
+                "avatar": null,
+                "displayName": "Marcelin Majdak",
+                "firstName": "Marcelin",
+                "lastName": "Majdak",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 374,
+                "name": "Harad",
+                "subfraction": null,
+                "code": "MESBG2_Ha",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 41,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8476,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 18,
+                "secondaryPoints": 12,
+                "tertiaryPoints": 0,
+                "sos": 41,
+                "path": ""
+            }
+        },
+        {
+            "id": "0277ca5e-75c0-4bee-b513-5d8806a873de",
+            "createdAt": "2026-05-13T13:42:57.518Z",
+            "user": {
+                "id": "b8d464f2-3ddd-4184-ac14-454738f16581",
+                "avatar": "1748158459358.jpg",
+                "displayName": "Fizbru",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 373,
+                "name": "Goblin-Town",
+                "subfraction": null,
+                "code": "MESBG2_GT",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 22,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 12,
+                "secondaryPoints": 25,
+                "tertiaryPoints": 0,
+                "sos": 22,
+                "path": ""
+            }
+        },
+        {
+            "id": "cf2475f0-9c5b-405b-a5f2-3f70130c32b9",
+            "createdAt": "2026-05-14T16:18:54.369Z",
+            "user": {
+                "id": "8b782b05-7af1-400a-8626-d66a860bb129",
+                "avatar": null,
+                "displayName": "Igor Jurzak",
+                "firstName": "Igor",
+                "lastName": "Jurzak",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 361,
+                "name": "Army of the White Hand",
+                "subfraction": null,
+                "code": "MESBG2_AotWH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 50,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 20,
+                "secondaryPoints": 22,
+                "tertiaryPoints": 0,
+                "sos": 50,
+                "path": ""
+            }
+        },
+        {
+            "id": "fe40ae10-8a97-4a92-8bcc-7a46ba867cb6",
+            "createdAt": "2026-05-20T11:15:27.803Z",
+            "user": {
+                "id": "7a07027c-53ef-4509-9432-5b4fbec42293",
+                "avatar": null,
+                "displayName": "Jacob_W",
+                "firstName": "Jakub",
+                "lastName": "W\u00f3jcik",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 320,
+                "name": "Atop the Wall",
+                "subfraction": null,
+                "code": "MESBG2_AtW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 65,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 3,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 30,
+                "secondaryPoints": 36,
+                "tertiaryPoints": 0,
+                "sos": 65,
+                "path": ""
+            }
+        },
+        {
+            "id": "59c51d32-081c-4282-bff9-0e0daaa6268f",
+            "createdAt": "2026-05-20T11:25:40.220Z",
+            "user": {
+                "id": "71afa3a1-cde2-4907-aa59-e3ad82e99cfd",
+                "avatar": null,
+                "displayName": "HubertO",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 315,
+                "name": "Army of Edoras",
+                "subfraction": null,
+                "code": "MESBG2_AoE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 63,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 15,
+                "secondaryPoints": 21,
+                "tertiaryPoints": 0,
+                "sos": 63,
+                "path": ""
+            }
+        },
+        {
+            "id": "ff782ccb-1780-4bd9-b144-f89c43c2174f",
+            "createdAt": "2026-05-20T11:32:57.788Z",
+            "user": {
+                "id": "dd660790-67a9-4a7a-a733-5f58a6cf4543",
+                "avatar": "1736963733933.jpg",
+                "displayName": "Tadek13",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 346,
+                "name": "Reclamation of Osgiliath",
+                "subfraction": null,
+                "code": "MESBG2_RoO",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 44,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 9,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 10,
+                "secondaryPoints": 13,
+                "tertiaryPoints": 0,
+                "sos": 44,
+                "path": ""
+            }
+        },
+        {
+            "id": "1391762b-3073-491d-9b7e-15a973422427",
+            "createdAt": "2026-05-20T11:36:52.300Z",
+            "user": {
+                "id": "719b9474-6211-4881-ac74-8aacf212e690",
+                "avatar": null,
+                "displayName": "Maciek M",
+                "firstName": "Maciej",
+                "lastName": "Moskal",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 351,
+                "name": "Rivendell",
+                "subfraction": null,
+                "code": "MESBG2_R",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 13,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 10,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 0,
+                "secondaryPoints": 2,
+                "tertiaryPoints": 0,
+                "sos": 13,
+                "path": ""
+            }
+        },
+        {
+            "id": "28e2c37d-5311-41f9-8815-d42965e3c11e",
+            "createdAt": "2026-05-24T15:36:54.660Z",
+            "user": {
+                "id": "36fdf4fc-bc11-48ba-895e-fbee306a7dbe",
+                "avatar": "1734450523122.jpg",
+                "displayName": "Kacper Z",
+                "firstName": "Kacper",
+                "lastName": "Zembala",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 315,
+                "name": "Army of Edoras",
+                "subfraction": null,
+                "code": "MESBG2_AoE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 76,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 2,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 20,
+                "secondaryPoints": 36,
+                "tertiaryPoints": 0,
+                "sos": 76,
+                "path": ""
+            }
+        },
+        {
+            "id": "1ad58202-6461-4a18-80d2-8d65ce511c26",
+            "createdAt": "2026-05-27T10:35:42.477Z",
+            "user": {
+                "id": "40835de3-1ada-4448-99b7-d224d2234693",
+                "avatar": null,
+                "displayName": "Amelka ",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 338,
+                "name": "Lindon",
+                "subfraction": null,
+                "code": "MESBG2_L",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 46,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 10,
+                "secondaryPoints": 17,
+                "tertiaryPoints": 0,
+                "sos": 46,
+                "path": ""
+            }
+        },
+        {
+            "id": "ec25eec0-b1db-4ef8-8404-e28125a8b38a",
+            "createdAt": "2026-06-17T05:36:26.226Z",
+            "user": {
+                "id": "039b4907-3a83-4623-80a4-079d4c01b51d",
+                "avatar": "1736432861824.png",
+                "displayName": "Bjouy",
+                "firstName": "Bart\u0142omiej",
+                "lastName": "Urba\u0144ski",
+                "city": {
+                    "id": 3134,
+                    "name": "Kozy",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8475,
+                "name": "Kozy"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "sos": 0
+            }
+        },
+        {
+            "id": "64857e5c-90be-466a-8b1d-0d954e2396f7",
+            "createdAt": "2026-06-17T05:37:25.865Z",
+            "user": {
+                "id": "706a6951-d017-41e9-b940-826c60dd782c",
+                "avatar": null,
+                "displayName": "Jakubmaci\u0105g",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 46,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8915,
+                "name": "Bielsko-bia\u0142a"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4460,
+                "place": 6,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 15,
+                "secondaryPoints": 17,
+                "tertiaryPoints": 0,
+                "sos": 46,
+                "path": ""
+            }
+        }
+    ],
+    "teams": [],
+    "points": "500",
+    "patch": "GWAIHIR",
+    "tournament_type": null
+}

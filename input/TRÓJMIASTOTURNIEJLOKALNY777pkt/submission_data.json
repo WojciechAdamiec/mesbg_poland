@@ -1,0 +1,366 @@
+{
+    "people": [
+        {
+            "id": "eb48a681-6cde-4b20-a7fd-a6611b92578c",
+            "createdAt": "2026-06-21T08:37:16.955Z",
+            "user": {
+                "id": "33c02a77-8b2d-4cfc-a72f-bd991ce0c950",
+                "avatar": "1743194647280.jpg",
+                "displayName": "Sheldi",
+                "firstName": "Damian",
+                "lastName": "Szreder",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 374,
+                "name": "Harad",
+                "subfraction": null,
+                "code": "MESBG2_Ha",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 50,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8989,
+                "name": "Tr\u00f3jmiasto"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5376,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 11,
+                "tertiaryPoints": 0,
+                "sos": 50,
+                "path": "WLL"
+            }
+        },
+        {
+            "id": "ba0e262e-2444-4cc9-81ab-6ad99abd2cbe",
+            "createdAt": "2026-06-21T10:51:32.147Z",
+            "user": {
+                "id": "708078fa-6770-4b38-a508-7bee7d0b95a2",
+                "avatar": "1750928821318.jpg",
+                "displayName": "Gadii",
+                "firstName": "Maciej",
+                "lastName": "Gadomski",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": {
+                "id": 446,
+                "name": "Army of the Great Eye",
+                "subfraction": null,
+                "code": "MESBG2_AotGE",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8989,
+                "name": "Tr\u00f3jmiasto"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5376,
+                "sos": 0
+            }
+        },
+        {
+            "id": "0a88a345-508d-4c3f-adea-004162d78680",
+            "createdAt": "2026-06-23T09:57:59.354Z",
+            "user": {
+                "id": "63a607ad-0eeb-4438-a6f7-2a0e12bec850",
+                "avatar": "1742745996507.png",
+                "displayName": "Zuka ",
+                "firstName": "Piotr",
+                "lastName": "Ko\u0142tun",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": {
+                "id": 379,
+                "name": "Muster of Isengard",
+                "subfraction": null,
+                "code": "MESBG2_MoI",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8989,
+                "name": "Tr\u00f3jmiasto"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5376,
+                "sos": 0
+            }
+        },
+        {
+            "id": "a9a076a8-3a60-44ba-8cfa-50016472205f",
+            "createdAt": "2026-07-12T16:38:50.553Z",
+            "user": {
+                "id": "20cda92d-c8f4-48b5-bfc5-b0fb09a52c38",
+                "avatar": null,
+                "displayName": "W00kie",
+                "firstName": "\u0141ukasz",
+                "lastName": "Tomaszewski",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 329,
+                "name": "Erebor Reclaimed",
+                "subfraction": null,
+                "code": "MESBG2_ER",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 50,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8989,
+                "name": "Tr\u00f3jmiasto"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5376,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 3,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 18,
+                "secondaryPoints": 46,
+                "tertiaryPoints": 0,
+                "sos": 50,
+                "path": "WWW"
+            }
+        },
+        {
+            "id": "b0c5f67c-1632-4988-ae82-5d14fec1a799",
+            "createdAt": "2026-07-14T18:28:08.533Z",
+            "user": {
+                "id": "7e2ec8ee-a77d-46c4-952a-aa8f006ba9ec",
+                "avatar": null,
+                "displayName": "Ghost ",
+                "firstName": "Maciej",
+                "lastName": "Bojke",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 386,
+                "name": "Wolf Pack of Angmar",
+                "subfraction": null,
+                "code": "MESBG2_WPoA",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 50,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8989,
+                "name": "Tr\u00f3jmiasto"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5376,
+                "place": 2,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 17,
+                "tertiaryPoints": 0,
+                "sos": 50,
+                "path": "LLW"
+            }
+        },
+        {
+            "id": "117a8b13-42c4-4416-a162-9e06ac806a18",
+            "createdAt": "2026-07-15T10:02:53.853Z",
+            "user": {
+                "id": "23d2920b-2f16-4f75-b8e4-952544b9dfe5",
+                "avatar": null,
+                "displayName": "Adiii",
+                "firstName": "Adrian",
+                "lastName": "Leicht",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 346,
+                "name": "Reclamation of Osgiliath",
+                "subfraction": null,
+                "code": "MESBG2_RoO",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 50,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8989,
+                "name": "Tr\u00f3jmiasto"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5376,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 13,
+                "tertiaryPoints": 0,
+                "sos": 50,
+                "path": "LWL"
+            }
+        }
+    ],
+    "teams": [],
+    "points": "777",
+    "patch": "NIGHTLINGS",
+    "tournament_type": "LOKAL"
+}

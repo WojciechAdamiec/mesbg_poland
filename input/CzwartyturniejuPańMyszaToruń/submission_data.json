@@ -1,0 +1,603 @@
+{
+    "people": [
+        {
+            "id": "bc2c333e-0295-4111-8e8a-926db46e9f74",
+            "createdAt": "2026-02-26T17:20:06.143Z",
+            "user": {
+                "id": "1081ab22-cae7-4cc1-8b47-c69bffcfa8d2",
+                "avatar": null,
+                "displayName": "DrJurek",
+                "firstName": "Jerzy",
+                "lastName": "Sikorski",
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 315,
+                "name": "Army of Edoras",
+                "subfraction": null,
+                "code": "MESBG2_AoE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 76,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7253,
+                "name": "Bydgoszcz"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 3,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 17,
+                "secondaryPoints": 32,
+                "tertiaryPoints": 0,
+                "sos": 76,
+                "path": ""
+            }
+        },
+        {
+            "id": "c8dfa2e1-d61a-4071-8787-0077399c2647",
+            "createdAt": "2026-02-26T17:22:12.864Z",
+            "user": {
+                "id": "5887dd57-2908-496a-a41c-5a99ff709676",
+                "avatar": null,
+                "displayName": "AdTaf",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 351,
+                "name": "Rivendell",
+                "subfraction": null,
+                "code": "MESBG2_R",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 39,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7254,
+                "name": "Toru\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 21,
+                "tertiaryPoints": 0,
+                "sos": 39,
+                "path": ""
+            }
+        },
+        {
+            "id": "d7dbd122-5319-4604-8c2d-c29bf1825d88",
+            "createdAt": "2026-02-27T12:54:16.869Z",
+            "user": {
+                "id": "dedfc2b9-4e69-452e-a9ae-35e131680cd5",
+                "avatar": "1763658643014.jpg",
+                "displayName": "Darkstalker",
+                "firstName": "Benjamin ",
+                "lastName": "Stefanski ",
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "herald_of_the_____"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 326,
+                "name": "Defenders of the Pelennor",
+                "subfraction": null,
+                "code": "MESBG2_DotP",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 74,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7254,
+                "name": "Toru\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 11,
+                "secondaryPoints": 23,
+                "tertiaryPoints": 0,
+                "sos": 74,
+                "path": ""
+            }
+        },
+        {
+            "id": "fbcd113b-809a-4510-bc57-262a33a78173",
+            "createdAt": "2026-03-02T11:00:45.779Z",
+            "user": {
+                "id": "c41897f3-773e-463a-b718-819207dfd7e5",
+                "avatar": null,
+                "displayName": "rosiczek",
+                "firstName": "Szymon ",
+                "lastName": "Rosi\u0144ski",
+                "city": {
+                    "id": 224,
+                    "name": "Bydgoszcz",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 349,
+                "name": "Riders of Eomer",
+                "subfraction": null,
+                "code": "MESBG2_RoE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 22,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7253,
+                "name": "Bydgoszcz"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 0,
+                "secondaryPoints": 5,
+                "tertiaryPoints": 0,
+                "sos": 22,
+                "path": ""
+            }
+        },
+        {
+            "id": "4c3c9812-ed8d-42e8-bccf-249f9ad10013",
+            "createdAt": "2026-03-07T18:00:00.024Z",
+            "user": {
+                "id": "06e08db4-eeb0-41a3-9e0c-7a8d0203bc0e",
+                "avatar": "1761240449704.png",
+                "displayName": "Krell",
+                "firstName": "Franciszek ",
+                "lastName": "Doligalski",
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7254,
+                "name": "Toru\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "sos": 0
+            }
+        },
+        {
+            "id": "229a37e1-f772-437b-a5e5-98d06c94e32d",
+            "createdAt": "2026-03-07T18:00:16.072Z",
+            "user": {
+                "id": "06e08db4-eeb0-41a3-9e0c-7a8d0203bc0e",
+                "avatar": "1761240449704.png",
+                "displayName": "Krell",
+                "firstName": "Franciszek ",
+                "lastName": "Doligalski",
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 364,
+                "name": "Barad-Dur",
+                "subfraction": null,
+                "code": "MESBG2_BD",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 63,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7254,
+                "name": "Toru\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 11,
+                "secondaryPoints": 15,
+                "tertiaryPoints": 0,
+                "sos": 63,
+                "path": ""
+            }
+        },
+        {
+            "id": "1b5f22d2-9f47-415b-85c7-9324318958f3",
+            "createdAt": "2026-03-07T18:00:38.072Z",
+            "user": {
+                "id": "845884f6-55a1-45c5-99a4-83842b39aa8d",
+                "avatar": null,
+                "displayName": "Spider",
+                "firstName": "Jan",
+                "lastName": "Doligalski",
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "_spider_99"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 340,
+                "name": "Men of the West",
+                "subfraction": null,
+                "code": "MESBG2_MotW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 37,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7254,
+                "name": "Toru\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "place": 2,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 13,
+                "secondaryPoints": 42,
+                "tertiaryPoints": 0,
+                "sos": 37,
+                "path": ""
+            }
+        },
+        {
+            "id": "e1c3c186-ef37-4189-9b97-03907161979d",
+            "createdAt": "2026-03-07T18:01:21.402Z",
+            "user": {
+                "id": "0652fd22-7c47-4455-b080-7964135b2686",
+                "avatar": "1772134025225.jpg",
+                "displayName": "Mundek",
+                "firstName": "Piotr",
+                "lastName": "Ewertowski",
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 321,
+                "name": "The Battle of Five Armies",
+                "subfraction": null,
+                "code": "MESBG2_TBoFA",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 35,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7254,
+                "name": "Toru\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 7,
+                "secondaryPoints": 20,
+                "tertiaryPoints": 0,
+                "sos": 35,
+                "path": ""
+            }
+        },
+        {
+            "id": "db159324-cadd-4dc5-9234-d1a01e0b4d6a",
+            "createdAt": "2026-03-08T21:23:55.619Z",
+            "user": {
+                "id": "29ce8b19-a17a-4ba7-8e17-ddffe260e052",
+                "avatar": "1738167763950.png",
+                "displayName": "Magneto",
+                "firstName": "Rafa\u0142",
+                "lastName": "Karolczuk",
+                "city": {
+                    "id": 3158,
+                    "name": "Grudzi\u0105dz",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "magneto5485"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 366,
+                "name": "The Black Gate",
+                "subfraction": null,
+                "code": "MESBG2_TBGO",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 54,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7431,
+                "name": "Grudzi\u0105dz"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "place": 6,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 7,
+                "secondaryPoints": 12,
+                "tertiaryPoints": 0,
+                "sos": 54,
+                "path": ""
+            }
+        },
+        {
+            "id": "aebc4bdf-ae65-4535-8ce6-08d33242db23",
+            "createdAt": "2026-03-14T11:51:41.061Z",
+            "user": {
+                "id": "1bc5966f-1d05-4e3d-b665-d2a082abb95f",
+                "avatar": null,
+                "displayName": "piernikowy krzy\u017cak",
+                "firstName": null,
+                "lastName": null,
+                "city": null,
+                "country": "PL",
+                "discordUsername": "the_gingerbread_of_doom"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3877,
+                "sos": 0
+            }
+        }
+    ],
+    "teams": [],
+    "points": "600",
+    "patch": "GWAIHIR",
+    "tournament_type": "LOKAL"
+}
