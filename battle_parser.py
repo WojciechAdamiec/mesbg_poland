@@ -103,8 +103,11 @@ def parse_result(row: dict) -> tuple[int, int] | None:
     p1_vp = row["P1 Secondary Points (VP)"]
     p2_vp = row["P2 Secondary Points (VP)"]
 
-    if p1_vp == "" or p2_vp == "":
-        return None
+    if p1_vp or p2_vp:
+        if p1_vp == "":
+            p1_vp = "0"
+        if p2_vp == "":
+            p2_vp = "0"
 
     try:
         return int(float(p1_vp)), int(float(p2_vp))
@@ -196,7 +199,6 @@ def parse_battles(csv_path: str, json_path: str, tournament_dir: str) -> list[Ba
             battle = Battle(
                 points=parse_points(submissions["points"]),
                 
-
                 army_1_id=p1_army_id,
                 army_2_id=p2_army_id,
                 army_1_name=p1_army_name,
