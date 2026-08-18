@@ -1,0 +1,209 @@
+/* Montreal Metro Underground - Cyberpunk Metro Theme */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap");
+
+/* Global Dark Theme */
+body {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  color: #ffffff;
+  font-family: "Rajdhani", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Metro line colors inspired by actual Montreal Metro */
+:root {
+  --orange-line: #ff8c00;
+  --blue-line: #009ee0;
+  --green-line: #00b04f;
+  --yellow-line: #ffd700;
+  --neon-cyan: #00ffff;
+  --neon-pink: #ff1493;
+  --metro-dark: #0d1421;
+  --metro-card: rgba(13, 20, 33, 0.85);
+  --glow-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  --table-highlight-on-hover-color: #2da7d742;
+}
+
+/* ===== HEADER STYLING ===== */
+.metro-header {
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 100%);
+  padding: 15px 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  position: relative;
+  z-index: 1000;
+}
+
+.mantine-AppShell-header {
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 100%) !important;
+  border-bottom: 2px solid var(--blue-line) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8) !important;
+  padding: 0 !important;
+  z-index: 1001 !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+}
+
+
+/* Metro Line Dividers */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--orange-line) 0%,
+    var(--blue-line) 25%,
+    var(--green-line) 50%,
+    var(--yellow-line) 75%,
+    var(--neon-cyan) 100%
+  );
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--metro-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--blue-line), var(--green-line));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(var(--orange-line), var(--yellow-line));
+}
+
+/* Typography Enhancements */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Orbitron", monospace;
+}
+
+p {
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* ===== NAVBAR STYLING ===== */
+/* Match navbar to dark cyberpunk theme */
+.mantine-AppShell-navbar {
+  background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 100%) !important;
+  border-right: 2px solid var(--blue-line);
+  box-shadow: inset -2px 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 999 !important;
+  padding-top: 10px !important;
+}
+
+/* NavLink styling */
+.mantine-NavLink-root {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-family: "Rajdhani", sans-serif !important;
+  font-size: 18px !important;
+  border-radius: 6px !important;
+  margin: 6px 8px !important;
+  transition: all 0.3s ease !important;
+  padding: 10px 12px !important;
+}
+
+.mantine-NavLink-root:hover {
+  background-color: rgba(0, 158, 224, 0.15) !important;
+  color: var(--neon-cyan) !important;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2) !important;
+  border-left: 3px solid var(--blue-line) !important;
+  padding-left: 9px !important;
+}
+
+.mantine-NavLink-root[aria-current="page"] {
+  background: rgba(0, 255, 255, 0.1) !important;
+  color: var(--neon-cyan) !important;
+  border-left: 3px solid var(--neon-cyan) !important;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3) !important;
+  padding-left: 9px !important;
+}
+
+.mantine-NavLink-label {
+  color: inherit !important;
+  font-family: "Rajdhani", sans-serif !important;
+}
+
+/* NavLink children (nested items) */
+.mantine-NavLink-children {
+  background-color: rgba(13, 20, 33, 0.5) !important;
+  border-left: 2px solid rgba(0, 158, 224, 0.4) !important;
+  margin: 4px 0 !important;
+}
+
+.mantine-NavLink-children .mantine-NavLink-root {
+  font-size: 16px !important;
+  padding-left: 20px !important;
+}
+
+.mantine-NavLink-children .mantine-NavLink-root:hover {
+  color: var(--orange-line) !important;
+  background-color: rgba(255, 140, 0, 0.1) !important;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.2) !important;
+  border-left-color: var(--orange-line) !important;
+  padding-left: 17px !important;
+}
+
+/* ===== TABLE STYLING ===== */
+
+.mantine-Table-root {
+  background-color: rgba(13, 20, 33, 0.9) !important;
+  border: 2px solid var(--blue-line) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  table-layout: auto !important;
+  width: fit-content !important;
+  margin: 20px 0 !important;
+  font-size: 12px !important;
+}
+
+.mantine-Table-root thead {
+  background: linear-gradient(135deg, rgba(0, 158, 224, 0.3) 0%, rgba(0, 100, 150, 0.2) 100%) !important;
+  border-bottom: 2px solid var(--blue-line) !important;
+}
+
+.mantine-Table-root th {
+  color: var(--neon-cyan) !important;
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  padding: 6px 10px !important;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3) !important;
+  white-space: nowrap !important;
+}
+
+.mantine-Table-root td {
+  color: #ffffff !important;
+  font-family: "Rajdhani", sans-serif !important;
+  font-size: 12px !important;
+  padding: 6px 10px !important;
+  border-bottom: 1px solid rgba(0, 158, 224, 0.15) !important;
+  white-space: nowrap !important;
+}
+
+.mantine-Table-root tbody tr {
+  transition: all 0.3s ease !important;
+}
+
+.mantine-Table-root tbody tr:nth-child(odd) {
+  background-color: rgba(20, 35, 55, 0.9) !important;
+}
+
+.mantine-Table-root tbody tr:nth-child(even) {
+  background-color: rgba(15, 28, 45, 0.8) !important;
+}
+
