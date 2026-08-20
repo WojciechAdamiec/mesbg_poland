@@ -1,0 +1,14 @@
+
+
+import json
+import os
+
+from download_data import DATA_DIRECTORY, MAIN_RANKING_FILE
+
+
+def load_main_ranking():
+    main_ranking_path = os.path.join(DATA_DIRECTORY, MAIN_RANKING_FILE)
+    if not os.path.exists(main_ranking_path):
+        return []
+    with open(main_ranking_path, "r") as f:
+        return json.load(f)

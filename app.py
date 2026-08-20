@@ -1,6 +1,7 @@
 import dash
 import dash_mantine_components as dmc
 from dash import Dash
+import download_data
 
 
 app = Dash(__name__, use_pages=True)
@@ -73,4 +74,5 @@ app.layout = dmc.MantineProvider(
 )
 
 if __name__ == "__main__":
+    download_data.download_data()
     app.run(debug=True)
