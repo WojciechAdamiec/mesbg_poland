@@ -77,7 +77,7 @@ head = dmc.TableThead(
 body = dmc.TableTbody(rows)
 
 layout = dmc.Box([
-    dmc.Text("This is the Main Ranking page", style={"fontSize": "40px", "marginBottom": "20px"}),
+    dmc.Text("Polish MESBG League Main Ranking", style={"fontSize": "40px", "marginBottom": "20px"}),
     dcc.Link("Go to Champions Hub Ranking", href="https://championshub.app/mesbg/ranking/mesbg-pl", target="_blank", style={"color": "#00ffff", "text-decoration": "none", "font-size": "16px"}),
     dmc.Table([head, body], highlightOnHover=True, withTableBorder=True, withColumnBorders=True, style={"marginTop": "20px", "width": "60%"}),
 ], style={"paddingLeft": "40px"})

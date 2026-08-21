@@ -4,7 +4,7 @@ from dash import Dash
 import download_data
 
 
-app = Dash(__name__, use_pages=True)
+app = Dash(__name__, use_pages=True, suppress_callback_exceptions=True)
 
 
 nav = dmc.Box([
@@ -32,6 +32,7 @@ nav = dmc.Box([
         ],
     ),
     dmc.NavLink(label="Stats", href="/stats", active="exact"),
+    dmc.NavLink(label="Masters", href="/masters", active="exact"),
 ])
 
 top_bar = dmc.Box(
