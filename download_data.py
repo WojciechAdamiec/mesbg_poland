@@ -8,6 +8,7 @@ import os
 DATA_DIRECTORY = "data"
 METADATA_FILE = "metadata.json"
 MAIN_RANKING_FILE = "main_ranking.json"
+ONLINE_RANKING_FILE = "online_ranking.json"
 ACCESS_TOKEN = "PASTER_TOKEN_HERE"
 INPUT_DIRECTORY = "input"
 
@@ -39,8 +40,33 @@ def transform_ranking_data(raw_data):
     return transformed
 
 
+def transform_online_ranking_data(raw_data):
+    transformed = []
+    
+    for user in raw_data:
+        user_data = get_user_online_tournaments(user.get("id"))
+        user_tournament_data = parse_user_online_tournament_data(user_data)
+
+        simplified_entry = {
+            "place": user.get("place"),
+            "score": user.get("score"),
+            "displayName": (user.get("user") or {}).get("displayName"),
+            "city_name": ((user.get("user") or {}).get("city") or {}).get("name"),
+        }
+        data_to_display = copy.copy(simplified_entry)
+        data_to_display.update(user_tournament_data)
+        transformed.append(data_to_display)
+    
+    return transformed
+
+
 def get_user_tournaments(user_id):
     url_user_tournaments = f"https://api.championshub.app/api/ranking/user/mesbg-pl/{user_id}?season=28"
+    res_user_tournaments = requests.get(url_user_tournaments, headers=headers, cookies=cookies, timeout=15)
+    return res_user_tournaments.json()
+
+def get_user_online_tournaments(user_id):
+    url_user_tournaments = f"https://api.championshub.app/api/ranking/user/mesbg-pl-online/{user_id}?season=30"
     res_user_tournaments = requests.get(url_user_tournaments, headers=headers, cookies=cookies, timeout=15)
     return res_user_tournaments.json()
 
@@ -51,6 +77,15 @@ def get_main_ranking_data():
     res_details = requests.get(url_details, headers=headers, cookies=cookies, timeout=15)
     res_json = res_details.json()
     res_json = transform_ranking_data(res_json)  # Transform the data to only include Place, displayName, city_name, and score
+    return res_json
+
+
+def get_online_ranking_data():
+    print("Downloading online ranking data from Champions Hub API...")
+    url_details = f"https://api.championshub.app/api/ranking/results/mesbg-pl-online?season=30&cityId=PL/"
+    res_details = requests.get(url_details, headers=headers, cookies=cookies, timeout=15)
+    res_json = res_details.json()
+    res_json = transform_online_ranking_data(res_json)  # Transform the data to only include Place, displayName, city_name, and score
     return res_json
 
 
@@ -107,6 +142,34 @@ def parse_user_tournament_data(user_tournaments):
     }
 
 
+def parse_user_online_tournament_data(user_tournaments):
+    online_values = []
+
+    for tournament in user_tournaments:
+        tournament_type = tournament.get("rankingEventType", {}).get("name", "")
+        if tournament_type == "ONLINE":
+            score = tournament.get("rankingResult")
+            online_values.append(score)
+
+    online_values.sort(reverse=True)
+
+    online_tournaments = [0, 0, 0, 0, 0]
+    for i in range(5):
+        if i < len(online_values):
+            online_tournaments[i] = online_values[i]
+        else:
+            break
+
+    return {
+        "online_total": sum(online_tournaments),
+        "online_1": online_tournaments[0],
+        "online_2": online_tournaments[1],
+        "online_3": online_tournaments[2],
+        "online_4": online_tournaments[3],
+        "online_5": online_tournaments[4],
+    }
+
+
 def load_metadata():
     metadata_path = os.path.join(DATA_DIRECTORY, METADATA_FILE)
     if not os.path.exists(metadata_path):
@@ -133,12 +196,18 @@ def download_data():
 
     if is_stale:
         print(f"Data is missing or older than 1 hour, refreshing data...")
-        res_json = get_main_ranking_data()
+        main_ranking_json = get_main_ranking_data()
 
         ranking_path = os.path.join(DATA_DIRECTORY, MAIN_RANKING_FILE)
         os.makedirs(DATA_DIRECTORY, exist_ok=True)
         with open(ranking_path, "w") as f:
-            json.dump(res_json, f, indent=4)
+            json.dump(main_ranking_json, f, indent=4)
+
+        online_ranking_json = get_online_ranking_data()
+        
+        online_ranking_path = os.path.join(DATA_DIRECTORY, ONLINE_RANKING_FILE)
+        with open(online_ranking_path, "w") as f:
+            json.dump(online_ranking_json, f, indent=4)
 
         metadata["time"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
         save_metadata(metadata)
