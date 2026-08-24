@@ -45,14 +45,17 @@ HIGHLIGHT_THRESHOLDS = {
     "local_4": 20,
     "local_5": 20,
 }
-HIGHLIGHT_STYLE = {"backgroundColor": "#4adfce3d", "fontWeight": 700}
+HIGHLIGHT_FULL = {"backgroundColor": "#4adfce3d", "fontWeight": 700}
+HIGHLIGHT_ZERO = {"backgroundColor": "#ea616c3c", "fontWeight": 700}
 
 
 def cell_style(key, value, align):
     style = {"textAlign": align}
     threshold = HIGHLIGHT_THRESHOLDS.get(key)
     if threshold is not None and isinstance(value, (int, float)) and value >= threshold:
-        style.update(HIGHLIGHT_STYLE)
+        style.update(HIGHLIGHT_FULL)
+    elif value == 0:
+        style.update(HIGHLIGHT_ZERO)
     return style
 
 

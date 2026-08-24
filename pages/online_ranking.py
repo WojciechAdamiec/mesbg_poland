@@ -9,7 +9,6 @@ dash.register_page(__name__, path='/ranking_online')
 
 data = load_online_ranking()
 
-# key, header label, text-align for both the header and its column cells
 COLUMNS = [
     ("place", "Place", "center"),
     ("score", "Score", "center"),
@@ -23,10 +22,21 @@ COLUMNS = [
 ]
 
 
+HIGHLIGHT_ZERO = {"backgroundColor": "#ea616c3c", "fontWeight": 700}
+
+
+def cell_style(key, value, align):
+    style = {"textAlign": align}
+    if value == 0:
+        style.update(HIGHLIGHT_ZERO)
+    return style
+
+
+
 rows = [
     dmc.TableTr(
         [
-            dmc.TableTd(row[key], style={"textAlign": align})
+            dmc.TableTd(row[key], style=cell_style(key, row[key], align))
             for key, _, align in COLUMNS
         ]
     )
