@@ -33,6 +33,7 @@ nav = dmc.Box([
     ),
     dmc.NavLink(label="Stats", href="/stats", active="exact"),
     dmc.NavLink(label="Masters", href="/masters", active="exact"),
+    dmc.NavLink(label="Centers", href="/centers", active="exact"),
 ])
 
 top_bar = dmc.Box(

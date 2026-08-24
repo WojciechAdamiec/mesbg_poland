@@ -1,5 +1,6 @@
 import dash
 import json
+import math
 import dash_mantine_components as dmc
 import plotly.express as px
 import pandas as pd
@@ -48,8 +49,7 @@ DMP_COLOR = "#8b5f1e"
 
 
 def get_size(players):
-    return players // 1.5
-
+    return int(math.sqrt(players) * 8)
 
 
 master_tournaments = pd.DataFrame(
@@ -61,7 +61,7 @@ master_tournaments = pd.DataFrame(
             "lat": 51.7592,
             "lon": 19.4560,
             "color": PAIR_COLOR,
-            "size": get_size(100),
+            "size": 100,
         },
         {
             "name": "IMW: Khazad Wrocław 2026",
@@ -70,7 +70,7 @@ master_tournaments = pd.DataFrame(
             "lat": 51.1079,
             "lon": 17.0385,
             "color": INDIVIDUAL_COLOR,
-            "size": get_size(88),
+            "size": 88,
         },
         {
             "name": "Indywidualne Mistrzostwa Polski 2026",
@@ -79,7 +79,7 @@ master_tournaments = pd.DataFrame(
             "lat": 50.3249,
             "lon": 18.7857,
             "color": INDIVIDUAL_COLOR,
-            "size": get_size(131),
+            "size": 131,
         },
         {
             "name": "Bitwa o Białe Miasto 2026",
@@ -88,7 +88,7 @@ master_tournaments = pd.DataFrame(
             "lat": 53.1325,
             "lon": 23.1688,
             "color": INDIVIDUAL_COLOR,
-            "size": get_size(48),
+            "size": 48,
         },
         {
             "name": "Magmaster 2026",
@@ -97,7 +97,7 @@ master_tournaments = pd.DataFrame(
             "lat": 53.1235,
             "lon": 18.0084,
             "color": PAIR_COLOR,
-            "size": get_size(70),
+            "size": 70,
         },
         {
             "name": "Bój o Czerwoną Strzałę 2026",
@@ -106,7 +106,7 @@ master_tournaments = pd.DataFrame(
             "lat": 52.4064,
             "lon": 16.9252,
             "color": INDIVIDUAL_COLOR,
-            "size": get_size(65),
+            "size": 65,
         },
         {
             "name": "Krakowskie Manewry 2026",
@@ -115,7 +115,7 @@ master_tournaments = pd.DataFrame(
             "lat": 50.0647,
             "lon": 19.9450,
             "color": INDIVIDUAL_COLOR,
-            "size": get_size(101),
+            "size": 101,
         },
         {
             "name": "Parowe Mistrzostwa Polski 2026",
@@ -124,7 +124,7 @@ master_tournaments = pd.DataFrame(
             "lat": 54.3520,
             "lon": 18.6466,
             "color": PAIR_COLOR,
-            "size": get_size(66),
+            "size": 66,
         },
         {
             "name": "Zadyma na Południu 2026",
@@ -133,7 +133,7 @@ master_tournaments = pd.DataFrame(
             "lat": 49.8224,
             "lon": 19.0584,
             "color": DOUBLES_COLOR,
-            "size": get_size(80),
+            "size": 80,
         },
         {
             "name": "Cień Wschodu - Fajkowy Szlem 2026",
@@ -142,7 +142,7 @@ master_tournaments = pd.DataFrame(
             "lat": 51.2465,
             "lon": 22.5684,
             "color": INDIVIDUAL_COLOR,
-            "size": get_size(50),
+            "size": 50,
         },
         {
             "name": "Drużynowe Mistrzostwa Polski 2026",
@@ -151,10 +151,11 @@ master_tournaments = pd.DataFrame(
             "lat": 52.2297,
             "lon": 21.0122,
             "color": DMP_COLOR,
-            "size": get_size(240),
+            "size": 240,
         },
     ]
 )
+master_tournaments["size"] = master_tournaments["size"].apply(get_size)
 
 fig.add_scattergeo(
     lat=master_tournaments["lat"],
