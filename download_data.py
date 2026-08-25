@@ -346,3 +346,5 @@ def download_data():
 
         metadata["time"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
         save_metadata(metadata)
+
+        print(f"Data refreshed and saved to {DATA_DIRECTORY} directory.")

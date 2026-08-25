@@ -4,6 +4,7 @@ import dash_mantine_components as dmc
 import plotly.express as px
 import pandas as pd
 import math
+from dash_iconify import DashIconify
 from dash import Input, Output, dcc, no_update
 
 
@@ -122,9 +123,276 @@ fig.update_layout(
 )
 
 
+accordion = dmc.Accordion(
+    disableChevronRotation=False,
+    multiple=True,
+    children=[
+        dmc.AccordionItem(
+            [
+                dmc.AccordionControl(
+                    dmc.Text(
+                        "Social Groups",
+                        fz="xl",
+                        lh="md",
+                    ),
+                    icon=DashIconify(
+                        icon="tabler:user",
+                        color="var(--mantine-color-blue-6)",
+                        width=20,
+                    ),
+                    className="accordion-control",
+                ),
+                dmc.AccordionPanel(
+                    dmc.Box([
+                        dmc.Text(
+                            [
+                                "Facebook: ",
+                                dmc.Anchor(
+                                    "Middle Earth SBG Górny Śląsk i okolice",
+                                    href="https://www.facebook.com/groups/115716008622897",
+                                    target="_blank",
+                                    c="var(--neon-cyan)",
+                                ),
+                            ],
+                            fz="md",
+                            lh="md",
+                            c="var(--mantine-color-white)",
+                        ),
+                        dmc.Text(
+                            [
+                                "Discord: ",
+                                dmc.Anchor(
+                                    "Śluńskie Hobbity",
+                                    href="https://discord.gg/P8h3pnSHTS",
+                                    target="_blank",
+                                    c="var(--neon-cyan)",
+                                ),
+                            ],
+                            fz="md",
+                            lh="md",
+                            c="var(--mantine-color-white)",
+                        ),
+                    ])
+                ),
+            ],
+            value="socials",
+        ),
+        dmc.AccordionItem(
+            [
+                dmc.AccordionControl(
+                    dmc.Text(
+                        "Clubs",
+                        fz="xl",
+                        lh="md",
+                    ),
+                    icon=DashIconify(
+                        icon="tabler:beer",
+                        color= "var(--mantine-color-red-6)",
+                        width=20,
+                    ),
+                    className="accordion-control",
+                ),
+                dmc.AccordionPanel([ # https://www.facebook.com/LegionSlaska
+                    dmc.Group(
+                        [
+                            dmc.Text("Legion Śląska", fw=800, fz="40px", c="var(--mantine-color-white)"),
+                            dmc.Badge("Z Members", size="xl", color="violet", c="var(--mantine-color-white)"),
+                        ],
+                        justify="space-between",
+                        mt="md",
+                        mb="xs",
+                    ),
+                    dmc.Grid(
+                        [
+                            dmc.GridCol(
+                                dmc.Box(
+                                    dmc.Image(
+                                        radius="md",
+                                        h=200,
+                                        w="auto",
+                                        fit="contain",
+                                        src="assets/legion_śląska.jpg",
+                                    ),
+                                    style={
+                                        "overflow": "hidden",
+                                        "borderRadius": "var(--mantine-radius-md)",
+                                        "display": "flex",
+                                        "alignItems": "center",
+                                        "justifyContent": "center",
+                                    },
+                                ),
+                                span="content",
+                            ),
+                            dmc.GridCol(
+                                dmc.Box([
+                                    dmc.Text("Śląskie Stowarzyszenie Graczy Gier Bitewnych Legion Śląska", fz="md", lh="md", c="var(--mantine-color-white)", mb="sm"),
+                                    dmc.Text(
+                                        [
+                                            "Facebook: ",
+                                            dmc.Anchor(
+                                                "Middle-Earth SBG Legion Śląska",
+                                                href="https://www.facebook.com/LegionSlaska",
+                                                target="_blank",
+                                                c="var(--neon-cyan)",
+                                            ),
+                                        ],
+                                        fz="sm",
+                                        lh="md",
+                                        c="var(--mantine-color-white)",
+                                    ),
+                                    dmc.Text(
+                                        [
+                                            "Website: ",
+                                            dmc.Anchor(
+                                                "Legion Śląska",
+                                                href="https://legion-slaska.pl/",
+                                                target="_blank",
+                                                c="var(--neon-cyan)",
+                                            ),
+                                        ],
+                                        fz="sm",
+                                        lh="md",
+                                        c="var(--mantine-color-white)",
+                                    ),
+                                    dmc.Text(
+                                        [
+                                            "Contact Person: ",
+                                            dmc.Anchor(
+                                                "Piotr \"Zichu\" Zich",
+                                                href="https://www.facebook.com/piotr.zich",
+                                                target="_blank",
+                                                c="var(--neon-cyan)",
+                                            ),
+                                        ],
+                                        fz="sm",
+                                        lh="md",
+                                        c="var(--mantine-color-white)",
+                                    ),
+                                ]),
+                                span="auto",
+                            ),
+                        ],
+                        gutter="sm",
+                    ),
+                ]),
+            ],
+            value="clubs",
+        ),
+        dmc.AccordionItem(
+            [
+                dmc.AccordionControl(
+                    dmc.Text(
+                        "Gaming Places",
+                        fz="xl",
+                        lh="md",
+                    ),
+                    icon=DashIconify(
+                        icon="tabler:current-location",
+                        color= "var(--mantine-color-green-6)",
+                        width=20,
+                    ),
+                    className="accordion-control",
+                ),
+                dmc.AccordionPanel(
+                    dmc.Text(
+                        [
+                            "Place: ",
+                            dmc.Anchor(
+                                "Miejski Dom Kultury Os. Paderewskiego w Katowicach",
+                                href="https://www.google.com/maps/search/?api=1&query=Miejski+Dom+Kultury+Os.+Paderewskiego+w+Katowicach",
+                                target="_blank",
+                                c="var(--neon-cyan)",
+                            ),
+                        ],
+                        fz="md",
+                        lh="md",
+                        c="var(--mantine-color-white)",
+                    ),
+                ),
+            ],
+            value="places",
+        ),
+        dmc.AccordionItem(
+            [
+                dmc.AccordionControl(
+                    dmc.Text(
+                        "Tutors",
+                        fz="xl",
+                        lh="md",
+                    ),
+                    icon=DashIconify(
+                        icon="tabler:chalkboard-teacher",
+                        color= "var(--mantine-color-violet-5)",
+                        width=20,
+                    ),
+                    className="accordion-control",
+                ),
+                dmc.AccordionPanel(
+                    dmc.Text(
+                        [
+                            "Facebook: ",
+                            dmc.Anchor(
+                                'Łukasz Stoch',
+                                href="https://www.facebook.com/profile.php?id=100001723950937",
+                                target="_blank",
+                                c="var(--neon-cyan)",
+                            ),
+                        ],
+                        fz="md",
+                        lh="md",
+                        c="var(--mantine-color-white)",
+                    ),
+                ),
+            ],
+            value="tutors",
+        ),
+    ],
+)
+
+
+card = dmc.Card(
+    children=[
+        dmc.CardSection(
+            dmc.Image(
+                src="assets/katowice.jpg",
+                h=160,
+            )
+        ),
+        dmc.Group(
+            [
+                dmc.Text("Katowice", fw=800, fz="40px", c="var(--mantine-color-white)"),
+                dmc.Badge("X players", size="xl", color="blue", c="var(--mantine-color-white)"),
+                dmc.Badge("Y events", size="xl", color="green", c="var(--mantine-color-white)"),
+                dmc.Badge("Large Center", size="xl", color="red", c="var(--mantine-color-white)"),
+            ],
+            justify="space-between",
+            mt="md",
+            mb="xs",
+        ),
+        accordion,
+    ],
+    withBorder=True,
+    shadow="sm",
+    radius="md",
+    w=350,
+    style={
+        "background": "transparent",
+        "borderColor": "var(--mantine-color-gray-6)",
+    },
+)
+
+
 layout = dmc.Box([
     dcc.Location(id="centers-redirect", refresh=True),
     dmc.Text("MESBG Centers Map", style={"fontSize": "40px", "marginBottom": "20px"}),
-    dcc.Graph(id="centers-map", figure=fig, style={"height": "80vh", "width": "100%"}, responsive=True),
+    dmc.Group(
+        children = [
+            dcc.Graph(id="centers-map", figure=fig, style={"height": "80vh", "width": "100%"}, responsive=True),
+            card,
+        ],
+        justify="center",
+        gap="xl",
+        grow=True,
+    )
 ])
 

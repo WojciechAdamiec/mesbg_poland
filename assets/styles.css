@@ -207,3 +207,19 @@ p {
   background-color: rgba(15, 28, 45, 0.8) !important;
 }
 
+.accordion-control {
+  color: var(--mantine-color-white) !important;
+  background: transparent !important;
+}
+
+.accordion-panel {
+  color: var(--mantine-color-white) !important;
+  background: transparent !important;
+}
+
+.accordion-control:hover,
+.accordion-control:hover * {
+  /* color: var(--neon-cyan) !important; */
+  background: rgb(0, 157, 224) !important;
+}
+
