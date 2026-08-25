@@ -192,7 +192,7 @@ accordion = dmc.Accordion(
                     ),
                     className="accordion-control",
                 ),
-                dmc.AccordionPanel([ # https://www.facebook.com/LegionSlaska
+                dmc.AccordionPanel([
                     dmc.Group(
                         [
                             dmc.Text("Legion Śląska", fw=800, fz="40px", c="var(--mantine-color-white)"),
@@ -211,7 +211,7 @@ accordion = dmc.Accordion(
                                         h=200,
                                         w="auto",
                                         fit="contain",
-                                        src="assets/legion_śląska.jpg",
+                                        src="assets/legion_slaska.jpg",
                                     ),
                                     style={
                                         "overflow": "hidden",
