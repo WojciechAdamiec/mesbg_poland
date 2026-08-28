@@ -1,0 +1,382 @@
+{
+  "Katowice": {
+    "image": "assets/katowice.jpg",
+    "players": "X*",
+    "events": "13",
+    "size": "Large",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "name": "Middle Earth SBG Górny Śląsk i okolice",
+        "url": "https://www.facebook.com/groups/115716008622897"
+      },
+      {
+        "platform": "Discord",
+        "name": "Śluńskie Hobbity",
+        "url": "https://discord.gg/P8h3pnSHTS"
+      }
+    ],
+    "clubs": [
+      {
+        "name": "Legion Śląska",
+        "members": "42",
+        "image": "assets/legion_slaska.jpg",
+        "description": "Śląskie Stowarzyszenie Graczy Gier Bitewnych Legion Śląska",
+        "links": [
+            {
+                "label": "Website",
+                "name": "Legion Śląska",
+                "url": "https://legion-slaska.pl/"
+            },
+            {
+                "label": "Facebook",
+                "name": "Middle-Earth SBG Legion Śląska",
+                "url": "https://www.facebook.com/LegionSlaska"
+            },
+            {
+                "label": "Instagram",
+                "name": "Legion Śląska Middle-Earth SBG",
+                "url": "https://www.instagram.com/legion_slaska/"
+            },
+            {
+                "label": "Contact Person",
+                "name": "Piotr \"Zichu\" Zich",
+                "url": "https://www.facebook.com/piotr.zich"
+            }
+        ]
+      }
+    ],
+    "places": [
+      {
+        "name": "Miejski Dom Kultury Os. Paderewskiego w Katowicach",
+        "url": "https://www.google.com/maps/search/?api=1&query=Miejski+Dom+Kultury+Os.+Paderewskiego+w+Katowicach"
+      }
+    ],
+    "tutors": [
+      {
+        "name": "Łukasz Stoch",
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100001723950937"
+      }
+    ]
+  },
+  "Kraków": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Large",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "name": "MESBG Kraków",
+        "url": "https://www.facebook.com/groups/mesbgkrakow"
+      }
+    ],
+    "clubs": [],
+    "places": [
+      {
+        "name": "Kraków Gaming Venue",
+        "url": "https://www.google.com/maps/search/?api=1&query=Krakow"
+      }
+    ],
+    "tutors": []
+  },
+  "Warszawa": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Large",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "name": "MESBG Warszawa",
+        "url": "https://www.facebook.com/groups/mesbgwarszawa"
+      }
+    ],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Wrocław": {
+    "image": "assets/wroclaw.jpg",
+    "players": "X",
+    "events": "15",
+    "size": "Large",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "name": "Middle-Earth SBG Wrocław",
+        "url": "https://www.facebook.com/groups/middleearthsbgwroclaw"
+      }
+    ],
+    "clubs": [
+      {
+        "name": "Gdzie był Wrocław",
+        "members": "28",
+        "image": "assets/gbw.jpg",
+        "description": "Klub Middle-Earth SBG \"Gdzie Był Wrocław\"",
+        "links": [
+          {
+            "label": "Facebook",
+            "name": "Gdzie Był Wrocław Middle-Earth SBG",
+            "url": "https://www.facebook.com/MESBGGdzieBylWroclaw/"
+          },
+          {
+            "label": "Contact Person",
+            "name": "Jakub \"Kronos\" Morawiński",
+            "url": "https://www.facebook.com/jakub.morawinski"
+          }
+        ]
+      }
+    ],
+    "places": [
+        {
+            "name": "Sklep Bolter",
+            "url": "https://bolter.pl/"
+        },
+        {
+            "name": "Centrum Aktywności Lokalnej Zalesie",
+            "url": "https://drugarunda.pl/cal-zalesie/"
+        }
+    ],
+    "tutors": [
+        {
+            "name": "Łukasz Zdziebło",
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/profile.php?id=100003155336414#"
+        },
+        {   
+            "name": "Mateusz \"Franek\" Frankowski",
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/mateusz.frankowski.96"
+        }
+    ]
+  },
+  "Poznań": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Large",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "name": "MESBG Poznań",
+        "url": "https://www.facebook.com/groups/mesbgpoznan"
+      }
+    ],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Bydgoszcz": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Large",
+    "socials": [
+      {
+        "platform": "Facebook",
+        "name": "MESBG Bydgoszcz",
+        "url": "https://www.facebook.com/groups/mesbgbydgoszcz"
+      }
+    ],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Bielsko-Biała": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Large",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Trójmiasto": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Large",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Łódź": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Large",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Rzeszów": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Medium",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Kielce": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Medium",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Białystok": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Medium",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "ONLINE": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Medium",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Rybnik": {
+    "image": "assets/rybnik.jpg",
+    "players": "X",
+    "events": "5",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [
+              {
+        "name": "Jaskinia Trolla Rybnik",
+        "url": "https://jaskiniatrolla.pl/"
+      },
+            {
+        "name": "Jaskinia Trolla Gliwice",
+        "url": "https://jaskiniatrolla.pl/"
+      }
+    ],
+    "tutors": [
+        {
+            "name": "Edgar \"Bondar\" Bondarewicz",
+            "contacts": [
+                {
+                    "platform": "Facebook",
+                    "value": "Edgar Bondarewicz",
+                    "url": "https://www.facebook.com/edgar.bondarewicz#"
+                },
+                {
+                    "platform": "Discord",
+                    "value": "edi0404",
+                    "url": null
+                }
+            ]
+        },
+        {
+            "name": "Filip \"Fifi1\" Pichnar",
+            "contacts": [
+                {
+                    "platform": "Facebook",
+                    "value": "Filip Pichnar",
+                    "url": "https://www.facebook.com/profile.php?id=100006316549200"
+                }
+            ]
+        }
+    ]
+  },
+  "Toruń": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Kozy": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Szczecin": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Lublin": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Złotów": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Chorzów": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Dębica": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  },
+  "Nowy Sącz": {
+    "image": null,
+    "players": "X",
+    "events": "Y",
+    "size": "Small",
+    "socials": [],
+    "clubs": [],
+    "places": [],
+    "tutors": []
+  }
+}
