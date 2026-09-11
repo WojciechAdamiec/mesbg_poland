@@ -181,66 +181,6 @@
             }
         },
         {
-            "id": "63ae95c4-e814-461e-9a65-6c3b6d6f3c3c",
-            "createdAt": "2026-04-02T18:26:25.623Z",
-            "user": {
-                "id": "e3be0c1a-33fa-4825-993f-8d84b55c47c0",
-                "avatar": null,
-                "displayName": "Piotr.M",
-                "firstName": "Piotr",
-                "lastName": "Maszewski ",
-                "city": {
-                    "id": 223,
-                    "name": "Bielsko-bia\u0142a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 340,
-                "name": "Men of the West",
-                "subfraction": null,
-                "code": "MESBG2_MotW",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "3ee94172-ee85-47c1-bb92-902d374fd2b0",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4012,
-                "place": 4,
-                "poolPlace": null,
-                "singlePlace": 8,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 20,
-                "secondaryPoints": 37,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "db46378c-5803-4624-9973-52dee65f9bbf",
             "createdAt": "2026-04-02T18:26:25.623Z",
             "user": {
@@ -294,6 +234,66 @@
                 "draws": 0,
                 "loss": 1,
                 "primaryPoints": 23,
+                "secondaryPoints": 37,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "63ae95c4-e814-461e-9a65-6c3b6d6f3c3c",
+            "createdAt": "2026-04-02T18:26:25.623Z",
+            "user": {
+                "id": "e3be0c1a-33fa-4825-993f-8d84b55c47c0",
+                "avatar": null,
+                "displayName": "Piotr.M",
+                "firstName": "Piotr",
+                "lastName": "Maszewski ",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 340,
+                "name": "Men of the West",
+                "subfraction": null,
+                "code": "MESBG2_MotW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "3ee94172-ee85-47c1-bb92-902d374fd2b0",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4012,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": 8,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 20,
                 "secondaryPoints": 37,
                 "tertiaryPoints": 0,
                 "sos": 0,
@@ -893,66 +893,6 @@
             }
         },
         {
-            "id": "4e15280e-197e-492a-97f3-358bd532b425",
-            "createdAt": "2026-04-10T05:59:48.863Z",
-            "user": {
-                "id": "b443bdaf-6c91-40ca-a80f-57f61aefd0ac",
-                "avatar": "1776354341894.jpeg",
-                "displayName": "D\u0105bek",
-                "firstName": "Stanis\u0142aw ",
-                "lastName": "Go\u0142ek",
-                "city": {
-                    "id": 223,
-                    "name": "Bielsko-bia\u0142a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 366,
-                "name": "The Black Gate",
-                "subfraction": null,
-                "code": "MESBG2_TBGO",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "64a7d559-a0b6-407c-997e-6b68be547cc2",
-            "pointsModification": 2,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4012,
-                "place": 9,
-                "poolPlace": null,
-                "singlePlace": 15,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 12,
-                "secondaryPoints": 14,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "fbae8b1a-1db3-447e-a99b-887c7b85c7f2",
             "createdAt": "2026-04-10T05:59:48.863Z",
             "user": {
@@ -1013,14 +953,14 @@
             }
         },
         {
-            "id": "2e313d25-c38d-446e-a26d-5414fdda471b",
-            "createdAt": "2026-04-10T13:56:51.852Z",
+            "id": "4e15280e-197e-492a-97f3-358bd532b425",
+            "createdAt": "2026-04-10T05:59:48.863Z",
             "user": {
-                "id": "f389357a-f3f0-4aca-b121-e0e809448b29",
-                "avatar": null,
-                "displayName": "Big Jacob",
-                "firstName": "Jakub",
-                "lastName": "Koba",
+                "id": "b443bdaf-6c91-40ca-a80f-57f61aefd0ac",
+                "avatar": "1776354341894.jpeg",
+                "displayName": "D\u0105bek",
+                "firstName": "Stanis\u0142aw ",
+                "lastName": "Go\u0142ek",
                 "city": {
                     "id": 223,
                     "name": "Bielsko-bia\u0142a",
@@ -1029,27 +969,27 @@
                 "country": "PL",
                 "discordUsername": null
             },
-            "listApproved": false,
+            "listApproved": true,
             "listAdded": true,
             "listHidden": false,
             "lunchApproved": false,
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 438,
-                "name": "Kingdom of Khazad-d\u00fbm",
+                "id": 366,
+                "name": "The Black Gate",
                 "subfraction": null,
-                "code": "MESBG2_KoKd",
+                "code": "MESBG2_TBGO",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "90beb71d-5603-45cb-a07e-ca1dc4fc2008",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
+            "teamId": "64a7d559-a0b6-407c-997e-6b68be547cc2",
+            "pointsModification": 2,
+            "pointsModificationDescription": "",
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
@@ -1059,14 +999,14 @@
             "poolResult": null,
             "finalResult": {
                 "stageId": 4012,
-                "place": 7,
+                "place": 9,
                 "poolPlace": null,
-                "singlePlace": 16,
+                "singlePlace": 15,
                 "wins": 1,
                 "draws": 0,
                 "loss": 2,
-                "primaryPoints": 10,
-                "secondaryPoints": 19,
+                "primaryPoints": 12,
+                "secondaryPoints": 14,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -1126,6 +1066,66 @@
                 "draws": 0,
                 "loss": 2,
                 "primaryPoints": 13,
+                "secondaryPoints": 19,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "2e313d25-c38d-446e-a26d-5414fdda471b",
+            "createdAt": "2026-04-10T13:56:51.852Z",
+            "user": {
+                "id": "f389357a-f3f0-4aca-b121-e0e809448b29",
+                "avatar": null,
+                "displayName": "Big Jacob",
+                "firstName": "Jakub",
+                "lastName": "Koba",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 438,
+                "name": "Kingdom of Khazad-d\u00fbm",
+                "subfraction": null,
+                "code": "MESBG2_KoKd",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "90beb71d-5603-45cb-a07e-ca1dc4fc2008",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4012,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 16,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 10,
                 "secondaryPoints": 19,
                 "tertiaryPoints": 0,
                 "sos": 0,

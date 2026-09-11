@@ -55,11 +55,11 @@ class Scenario(Enum):
 @dataclass
 class Battle:
     result: tuple[int, int]
-    patch: Patch
-    player_1_id: int
-    player_2_id: int
+    player_1_id: str | int
+    player_2_id: str | int
     player_1_name: str
     player_2_name: str
+    patch: Patch | None = None
     army_1_id: int | None = None
     army_2_id: int | None = None
     army_1_name: str | None = None
@@ -69,7 +69,6 @@ class Battle:
     tournament_id: str | None = None
     tournament_name: str | None = None
     tournament_type: TournamentType | None = None
-
 
     def to_dict(self) -> dict:
         return {
@@ -83,7 +82,7 @@ class Battle:
             "army_2_name": self.army_2_name if self.army_2_name is not None else None,
             "scenario": self.scenario.name if self.scenario else None,
             "result": self.result,
-            "patch": self.patch.name,
+            "patch": self.patch.name if self.patch else None,
             "tournament_id": self.tournament_id,
             "tournament_name": self.tournament_name,
             "tournament_type": self.tournament_type.name if self.tournament_type else None,
@@ -100,16 +99,16 @@ class Battle:
                 value=data["points"]["value"],
                 doubled=data["points"].get("doubled", False),
             ) if data.get("points") else None,
-            army_1_id=data["army_1_id"] if data.get("army_1_id") is not None else None,
-            army_2_id=data["army_2_id"] if data.get("army_2_id") is not None else None,
-            army_1_name=data["army_1_name"] if data.get("army_1_name") is not None else None,
-            army_2_name=data["army_2_name"] if data.get("army_2_name") is not None else None,
-            scenario=Scenario[data["scenario"]] if data["scenario"] else None,
-            result=data["result"],
-            patch=Patch[data["patch"]],
-            tournament_id=data["tournament_id"],
-            tournament_name=data["tournament_name"],
-            tournament_type=TournamentType[data["tournament_type"]] if data["tournament_type"] else None,
+            army_1_id=data.get("army_1_id"),
+            army_2_id=data.get("army_2_id"),
+            army_1_name=data.get("army_1_name"),
+            army_2_name=data.get("army_2_name"),
+            scenario=Scenario[data["scenario"]] if data.get("scenario") else None,
+            result=tuple(data["result"]) if data.get("result") is not None else None,
+            patch=Patch[data["patch"]] if data.get("patch") else None,
+            tournament_id=data.get("tournament_id"),
+            tournament_name=data.get("tournament_name"),
+            tournament_type=TournamentType[data["tournament_type"]] if data.get("tournament_type") else None,
             player_1_id=data["player_1_id"],
             player_2_id=data["player_2_id"],
             player_1_name=data["player_1_name"],

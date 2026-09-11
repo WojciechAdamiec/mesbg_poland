@@ -85,66 +85,6 @@
             }
         },
         {
-            "id": "d30f1b09-6524-4ed1-a9ec-b9a789ccfeb9",
-            "createdAt": "2026-05-07T16:02:18.284Z",
-            "user": {
-                "id": "1162e493-2a1e-4b15-aa4d-70fd185e8f8d",
-                "avatar": null,
-                "displayName": "Micha\u0142 Polak",
-                "firstName": "Micha\u0142",
-                "lastName": "Polak",
-                "city": {
-                    "id": 226,
-                    "name": "\u0141\u00f3d\u017a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 453,
-                "name": "Moria",
-                "subfraction": null,
-                "code": "MESBG2_M",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "8571b6c7-101e-4ba3-b435-256e53d81710",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4465,
-                "place": 10,
-                "poolPlace": null,
-                "singlePlace": 19,
-                "wins": 2,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 22,
-                "secondaryPoints": 47,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "4c755852-c3b6-485b-ae52-37782c0b3666",
             "createdAt": "2026-05-07T16:02:18.284Z",
             "user": {
@@ -205,14 +145,14 @@
             }
         },
         {
-            "id": "b0bf50ca-7644-4586-8029-99c409391cd3",
-            "createdAt": "2026-05-07T16:08:29.344Z",
+            "id": "d30f1b09-6524-4ed1-a9ec-b9a789ccfeb9",
+            "createdAt": "2026-05-07T16:02:18.284Z",
             "user": {
-                "id": "73de21a8-323e-470e-8e98-8aba0d14d244",
+                "id": "1162e493-2a1e-4b15-aa4d-70fd185e8f8d",
                 "avatar": null,
-                "displayName": "Abraham ",
-                "firstName": null,
-                "lastName": null,
+                "displayName": "Micha\u0142 Polak",
+                "firstName": "Micha\u0142",
+                "lastName": "Polak",
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -228,10 +168,10 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 450,
-                "name": "Host of the Dragon Emperor",
+                "id": 453,
+                "name": "Moria",
                 "subfraction": null,
-                "code": "MESBG2_HotDE",
+                "code": "MESBG2_M",
                 "metadata": {
                     "mesbgType": "EVIL"
                 }
@@ -239,7 +179,7 @@
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "7ca16b57-e431-4fd9-9132-e26a2eebb50b",
+            "teamId": "8571b6c7-101e-4ba3-b435-256e53d81710",
             "pointsModification": null,
             "pointsModificationDescription": null,
             "metadata": null,
@@ -251,14 +191,14 @@
             "poolResult": null,
             "finalResult": {
                 "stageId": 4465,
-                "place": 16,
+                "place": 10,
                 "poolPlace": null,
-                "singlePlace": 31,
-                "wins": 0,
+                "singlePlace": 19,
+                "wins": 2,
                 "draws": 0,
-                "loss": 4,
-                "primaryPoints": 4,
-                "secondaryPoints": 25,
+                "loss": 2,
+                "primaryPoints": 22,
+                "secondaryPoints": 47,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -325,11 +265,71 @@
             }
         },
         {
+            "id": "b0bf50ca-7644-4586-8029-99c409391cd3",
+            "createdAt": "2026-05-07T16:08:29.344Z",
+            "user": {
+                "id": "73de21a8-323e-470e-8e98-8aba0d14d244",
+                "avatar": null,
+                "displayName": "Abraham ",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 226,
+                    "name": "\u0141\u00f3d\u017a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 450,
+                "name": "Host of the Dragon Emperor",
+                "subfraction": null,
+                "code": "MESBG2_HotDE",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "7ca16b57-e431-4fd9-9132-e26a2eebb50b",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4465,
+                "place": 16,
+                "poolPlace": null,
+                "singlePlace": 31,
+                "wins": 0,
+                "draws": 0,
+                "loss": 4,
+                "primaryPoints": 4,
+                "secondaryPoints": 25,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
             "id": "1d58ee95-ea0b-426f-bf8b-0927669e6fea",
             "createdAt": "2026-05-07T16:18:53.057Z",
             "user": {
                 "id": "1403a8fb-39a4-4e2f-b6cd-5d7e334df789",
-                "avatar": "1771010798490.jpeg",
+                "avatar": "1786726985610.png",
                 "displayName": "K.i.s.u",
                 "firstName": "Micha\u0142",
                 "lastName": "Pogorzelski",
@@ -533,7 +533,7 @@
             "createdAt": "2026-05-08T10:22:28.538Z",
             "user": {
                 "id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
-                "avatar": "1774269356214.jpg",
+                "avatar": "1788788763604.png",
                 "displayName": "Leni",
                 "firstName": "\u0141ukasz",
                 "lastName": "Zembrowski D\u015a62",
@@ -617,7 +617,7 @@
             "createdAt": "2026-05-08T10:23:35.154Z",
             "user": {
                 "id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
-                "avatar": "1774269356214.jpg",
+                "avatar": "1788788763604.png",
                 "displayName": "Leni",
                 "firstName": "\u0141ukasz",
                 "lastName": "Zembrowski D\u015a62",
@@ -737,7 +737,7 @@
             "createdAt": "2026-05-08T12:31:56.255Z",
             "user": {
                 "id": "1e4b9bdf-6062-4736-aef3-52bc568f8803",
-                "avatar": "1781596500237.jpg",
+                "avatar": "1788157964464.png",
                 "displayName": "Fleetmaster",
                 "firstName": "Arkadiusz ",
                 "lastName": "Kilian",
@@ -973,14 +973,14 @@
             }
         },
         {
-            "id": "6e49a11c-2ad5-4045-b1b2-2593fb3ef73c",
+            "id": "fc67ec3a-0eef-482c-808f-e93e7eeee3fe",
             "createdAt": "2026-05-09T16:47:38.903Z",
             "user": {
-                "id": "7c58612c-6b48-4ed3-b175-7f04a5269ff0",
-                "avatar": "1732651932214.jpg",
-                "displayName": "Szeryf",
-                "firstName": "Aleksander",
-                "lastName": "Ozga",
+                "id": "758ae748-3888-4bdf-b4f9-7972a8ac9948",
+                "avatar": null,
+                "displayName": "Garry",
+                "firstName": null,
+                "lastName": null,
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -996,12 +996,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 318,
-                "name": "Arnor",
+                "id": 379,
+                "name": "Muster of Isengard",
                 "subfraction": null,
-                "code": "MESBG2_A",
+                "code": "MESBG2_MoI",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
@@ -1033,14 +1033,14 @@
             }
         },
         {
-            "id": "fc67ec3a-0eef-482c-808f-e93e7eeee3fe",
+            "id": "6e49a11c-2ad5-4045-b1b2-2593fb3ef73c",
             "createdAt": "2026-05-09T16:47:38.903Z",
             "user": {
-                "id": "758ae748-3888-4bdf-b4f9-7972a8ac9948",
-                "avatar": null,
-                "displayName": "Garry",
-                "firstName": null,
-                "lastName": null,
+                "id": "7c58612c-6b48-4ed3-b175-7f04a5269ff0",
+                "avatar": "1732651932214.jpg",
+                "displayName": "Szeryf",
+                "firstName": "Aleksander",
+                "lastName": "Ozga",
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -1056,12 +1056,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 379,
-                "name": "Muster of Isengard",
+                "id": 318,
+                "name": "Arnor",
                 "subfraction": null,
-                "code": "MESBG2_MoI",
+                "code": "MESBG2_A",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,

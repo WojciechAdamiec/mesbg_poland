@@ -1,13 +1,15 @@
 import json
+import os
 from os import PathLike
 from battle import Battle
 
 
-DB_FILE = "battles.json"
+DATA_DIRECTORY = "data"
+DB_FILE = os.path.join(DATA_DIRECTORY, "battles.json")
 
 
 class BattleDB:
-    def __init__(self, path: str | PathLike):
+    def __init__(self, path: str | PathLike = DB_FILE):
         self.path = path
         self.battles: list[Battle] = []
         self.load()
@@ -31,10 +33,13 @@ class BattleDB:
             with open(self.path, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 self.battles = [Battle.from_dict(b) for b in data]
-        except FileNotFoundError:
+        except (FileNotFoundError, json.JSONDecodeError):
             self.battles = []
 
     def save(self):
         self.remove_duplicates()
+        dir_name = os.path.dirname(self.path)
+        if dir_name:
+            os.makedirs(dir_name, exist_ok=True)
         with open(self.path, "w", encoding="utf-8") as f:
             json.dump([b.to_dict() for b in self.battles], f, indent=4)

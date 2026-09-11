@@ -62,83 +62,12 @@
             }
         },
         {
-            "id": "2cf3e331-3cfc-4e94-a989-2135474df482",
-            "createdAt": "2026-03-15T10:41:50.201Z",
-            "user": {
-                "id": "63c2331e-0577-4bdc-a5fa-98ec6d23cbc5",
-                "avatar": "1743104790616.jpg",
-                "displayName": "Manyy",
-                "firstName": "Aleksander",
-                "lastName": "W\u00f3jcicki",
-                "city": {
-                    "id": 3111,
-                    "name": "Kielce",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": "arystomeneles"
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 468,
-                "name": "Assault on Lothl\u00f3rien",
-                "subfraction": null,
-                "code": "MESBG2_AoL",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 461,
-                "name": "Fields of Celebrant",
-                "subfraction": null,
-                "code": "MESBG2_FoC",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 50,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 7532,
-                "name": "Kielce"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3863,
-                "place": 4,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1222,
-                "secondaryPoints": 12,
-                "tertiaryPoints": 33,
-                "sos": 50,
-                "path": ""
-            }
-        },
-        {
             "id": "20502a74-5163-4f3c-94c4-f8dc95d0795d",
             "createdAt": "2026-03-15T10:41:50.201Z",
             "user": {
                 "id": "a32b1ece-37a7-4a61-a7b1-bdc43dde0456",
                 "avatar": "1784221124051.png",
-                "displayName": "Hisaishi KI105",
+                "displayName": "Hisaishi",
                 "firstName": "Wojciech ",
                 "lastName": "Ma\u0144kowski ",
                 "city": {
@@ -267,30 +196,46 @@
             }
         },
         {
-            "id": "ff83e06e-1264-41a3-8495-91b7dceedb53",
-            "createdAt": "2026-03-15T10:42:21.629Z",
+            "id": "2cf3e331-3cfc-4e94-a989-2135474df482",
+            "createdAt": "2026-03-15T10:41:50.201Z",
             "user": {
-                "id": "895bc3ea-9c6a-4be4-a324-15380d10023f",
-                "avatar": "1741012787194.jpeg",
-                "displayName": "Hashut",
-                "firstName": "Maciej",
-                "lastName": "Rek",
+                "id": "63c2331e-0577-4bdc-a5fa-98ec6d23cbc5",
+                "avatar": "1743104790616.jpg",
+                "displayName": "Manyy",
+                "firstName": "Aleksander",
+                "lastName": "W\u00f3jcicki",
                 "city": {
-                    "id": 235,
-                    "name": "Warszawa",
+                    "id": 3111,
+                    "name": "Kielce",
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": null
+                "discordUsername": "arystomeneles"
             },
-            "listApproved": false,
-            "listAdded": false,
+            "listApproved": true,
+            "listAdded": true,
             "listHidden": false,
             "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 468,
+                "name": "Assault on Lothl\u00f3rien",
+                "subfraction": null,
+                "code": "MESBG2_AoL",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 461,
+                "name": "Fields of Celebrant",
+                "subfraction": null,
+                "code": "MESBG2_FoC",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
             "listTitle": null,
             "secondaryListTitle": null,
             "teamId": null,
@@ -299,16 +244,26 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 0,
+            "primaryPointsSos": 50,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 7533,
-                "name": "Warszawa"
+                "id": 7532,
+                "name": "Kielce"
             },
             "poolResult": null,
             "finalResult": {
                 "stageId": 3863,
-                "sos": 0
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 1222,
+                "secondaryPoints": 12,
+                "tertiaryPoints": 33,
+                "sos": 50,
+                "path": ""
             }
         },
         {
@@ -483,6 +438,51 @@
             }
         },
         {
+            "id": "ff83e06e-1264-41a3-8495-91b7dceedb53",
+            "createdAt": "2026-03-15T10:42:21.629Z",
+            "user": {
+                "id": "895bc3ea-9c6a-4be4-a324-15380d10023f",
+                "avatar": "1741012787194.jpeg",
+                "displayName": "Hashut",
+                "firstName": "Maciej",
+                "lastName": "Rek",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7533,
+                "name": "Warszawa"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3863,
+                "sos": 0
+            }
+        },
+        {
             "id": "19f54440-74c3-4f9c-ab33-62e4f4b89c74",
             "createdAt": "2026-03-15T10:42:30.353Z",
             "user": {
@@ -550,7 +550,7 @@
             "createdAt": "2026-03-16T20:17:27.729Z",
             "user": {
                 "id": "cbfbcd40-cbf7-4546-885f-4d061496fe8c",
-                "avatar": null,
+                "avatar": "1788440111242.jpg",
                 "displayName": "K\u0142os",
                 "firstName": "Jakub",
                 "lastName": "K\u0142osi\u0144ski",

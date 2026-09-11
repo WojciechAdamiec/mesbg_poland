@@ -1,3 +1,7 @@
+import json
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
 import dash
 import dash_mantine_components as dmc
 from dash import Dash
@@ -5,6 +9,16 @@ import download_data
 
 
 app = Dash(__name__, use_pages=True, suppress_callback_exceptions=True)
+
+
+def get_last_update_text():
+    try:
+        with open("data/metadata.json", "r", encoding="utf-8") as f:
+            metadata = json.load(f)
+        dt = datetime.fromisoformat(metadata["time"]).astimezone(ZoneInfo("Europe/Warsaw"))
+        return f"Last update: {dt.strftime('%Y-%m-%d %H:%M')}"
+    except (FileNotFoundError, KeyError, ValueError):
+        return "Last update: unknown"
 
 
 nav = dmc.Box([
@@ -31,7 +45,18 @@ nav = dmc.Box([
             ),
         ],
     ),
-    dmc.NavLink(label="Stats", href="/stats", active="exact"),
+    dmc.NavLink(
+        label="Stats",
+        active="children",
+        childrenOffset=28,
+        children=[
+            dmc.NavLink(
+                label="Pickrate vs Winratio",
+                href="/stats/pickrate_vs_winratio",
+                active="exact-with-search",
+            ),
+        ],
+    ),
     dmc.NavLink(label="Masters", href="/masters", active="exact"),
     dmc.NavLink(label="Centers", href="/centers", active="exact"),
 ])
@@ -52,6 +77,15 @@ top_bar = dmc.Box(
                     "textShadow": "0 0 2px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff",
                     "margin": "2px",
                 }
+            ),
+            dmc.Text(
+                get_last_update_text(),
+                size="lg",
+                style={
+                    "color": "#00ffff",
+                    "fontFamily": "Orbitron, monospace",
+                    "opacity": 0.8,
+                },
             ),
         ],
         justify="space-between",

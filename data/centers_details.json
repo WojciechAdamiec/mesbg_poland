@@ -23,26 +23,26 @@
         "image": "assets/legion_slaska.jpg",
         "description": "Śląskie Stowarzyszenie Graczy Gier Bitewnych Legion Śląska",
         "links": [
-            {
-                "label": "Website",
-                "name": "Legion Śląska",
-                "url": "https://legion-slaska.pl/"
-            },
-            {
-                "label": "Facebook",
-                "name": "Middle-Earth SBG Legion Śląska",
-                "url": "https://www.facebook.com/LegionSlaska"
-            },
-            {
-                "label": "Instagram",
-                "name": "Legion Śląska Middle-Earth SBG",
-                "url": "https://www.instagram.com/legion_slaska/"
-            },
-            {
-                "label": "Contact Person",
-                "name": "Piotr \"Zichu\" Zich",
-                "url": "https://www.facebook.com/piotr.zich"
-            }
+          {
+            "label": "Website",
+            "name": "Legion Śląska",
+            "url": "https://legion-slaska.pl/"
+          },
+          {
+            "label": "Facebook",
+            "name": "Middle-Earth SBG Legion Śląska",
+            "url": "https://www.facebook.com/LegionSlaska"
+          },
+          {
+            "label": "Instagram",
+            "name": "Legion Śląska Middle-Earth SBG",
+            "url": "https://www.instagram.com/legion_slaska/"
+          },
+          {
+            "label": "Contact Person",
+            "name": "Piotr \"Zichu\" Zich",
+            "url": "https://www.facebook.com/piotr.zich"
+          }
         ]
       }
     ],
@@ -61,7 +61,7 @@
     ]
   },
   "Kraków": {
-    "image": null,
+    "image": "assets/krakow.jpg",
     "players": "X",
     "events": "Y",
     "size": "Large",
@@ -82,7 +82,7 @@
     "tutors": []
   },
   "Warszawa": {
-    "image": null,
+    "image": "assets/warszawa.jpg",
     "players": "X",
     "events": "Y",
     "size": "Large",
@@ -117,9 +117,13 @@
         "description": "Klub Middle-Earth SBG \"Gdzie Był Wrocław\"",
         "links": [
           {
-            "label": "Facebook",
             "name": "Gdzie Był Wrocław Middle-Earth SBG",
             "url": "https://www.facebook.com/MESBGGdzieBylWroclaw/"
+          },
+          { 
+            "label": "Instagram",
+            "name": "Wrocław MESBG",
+            "url": "https://www.instagram.com/wroclaw.mesbg?fbclid=IwY2xjawUBBqFwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMW5vSGRWYnBxTk80UjlIcnFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEehG920hqiUqFJ9IYVhre_TfZcuwxcILdedLwCkugzRMPxT_fnL_jq5Du6TV4_aem_D51J51KSAFfdv7xmGVxG-A"
           },
           {
             "label": "Contact Person",
@@ -130,46 +134,86 @@
       }
     ],
     "places": [
-        {
-            "name": "Sklep Bolter",
-            "url": "https://bolter.pl/"
-        },
-        {
-            "name": "Centrum Aktywności Lokalnej Zalesie",
-            "url": "https://drugarunda.pl/cal-zalesie/"
-        }
+      {
+        "name": "Sklep Bolter",
+        "url": "https://bolter.pl/"
+      },
+      {
+        "name": "Centrum Aktywności Lokalnej Zalesie",
+        "url": "https://drugarunda.pl/cal-zalesie/"
+      }
     ],
     "tutors": [
-        {
-            "name": "Łukasz Zdziebło",
-            "platform": "Facebook",
-            "url": "https://www.facebook.com/profile.php?id=100003155336414#"
-        },
-        {   
-            "name": "Mateusz \"Franek\" Frankowski",
-            "platform": "Facebook",
-            "url": "https://www.facebook.com/mateusz.frankowski.96"
-        }
+      {
+        "name": "Łukasz Zdziebło",
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100003155336414#"
+      },
+      {
+        "name": "Mateusz \"Franek\" Frankowski",
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/mateusz.frankowski.96"
+      }
     ]
   },
   "Poznań": {
-    "image": null,
+    "image": "assets/poznan.jpg",
     "players": "X",
     "events": "Y",
     "size": "Large",
     "socials": [
       {
         "platform": "Facebook",
-        "name": "MESBG Poznań",
-        "url": "https://www.facebook.com/groups/mesbgpoznan"
+        "name": "Middle-earth SBG Poznań",
+        "url": "https://www.facebook.com/groups/601605880031598/?ref=share&rdid=WpYTto10NJ3whfaa&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg%2F1LQU9Td42V%2F#"
       }
     ],
-    "clubs": [],
-    "places": [],
-    "tutors": []
+    "clubs": [
+      {
+        "name": "POTATOES Poznań",
+        "members": "X",
+        "image": "assets/potatoes.jpg",
+        "description": "TODO",
+        "links": [
+          {
+            "label": "Strona/Facebook",
+            "name": "POTATOES Poznań TODO",
+            "url": ""
+          },
+          {
+            "label": "Contact Person",
+            "name": "Jacek \"Żaba\" Disterheft",
+            "url": "https://www.facebook.com/jacek.disterheft.7"
+          },
+          {
+            "label": "Contact Person",
+            "name": "Krzysztof \"Włodas\" Napierała",
+            "url": "https://www.facebook.com/profile.php?id=100009265543033"
+          }
+        ]
+      }
+    ],
+    "places": [
+      {
+        "name": "Klub Osiedlowy Kopernik",
+        "url": "https://www.klubkopernik.pl/kontakt"
+      }
+    ],
+    "tutors": [
+      {
+        "name": "Mikołaj \"Iron\" Adamiak",
+        "contacts": [
+          {
+            "platform": "Facebook",
+            "value": "Mikołaj Adamiak",
+            "url": "https://www.facebook.com/mikiiron"
+          }
+        ]
+      }
+    ]
   },
   "Bydgoszcz": {
-    "image": null,
+    "image": "assets/bydgoszcz.png",
     "players": "X",
     "events": "Y",
     "size": "Large",
@@ -185,7 +229,7 @@
     "tutors": []
   },
   "Bielsko-Biała": {
-    "image": null,
+    "image": "assets/bb.jpg",
     "players": "X",
     "events": "Y",
     "size": "Large",
@@ -195,7 +239,7 @@
     "tutors": []
   },
   "Trójmiasto": {
-    "image": null,
+    "image": "assets/gdansk.jpg",
     "players": "X",
     "events": "Y",
     "size": "Large",
@@ -205,7 +249,7 @@
     "tutors": []
   },
   "Łódź": {
-    "image": null,
+    "image": "assets/baluty.jpg",
     "players": "X",
     "events": "Y",
     "size": "Large",
@@ -215,7 +259,7 @@
     "tutors": []
   },
   "Rzeszów": {
-    "image": null,
+    "image": "assets/rzeszow.jpg",
     "players": "X",
     "events": "Y",
     "size": "Medium",
@@ -225,7 +269,7 @@
     "tutors": []
   },
   "Kielce": {
-    "image": null,
+    "image": "assets/kielce.png",
     "players": "X",
     "events": "Y",
     "size": "Medium",
@@ -235,7 +279,7 @@
     "tutors": []
   },
   "Białystok": {
-    "image": null,
+    "image": "assets/bialystok.jpg",
     "players": "X",
     "events": "Y",
     "size": "Medium",
@@ -245,14 +289,56 @@
     "tutors": []
   },
   "ONLINE": {
-    "image": null,
+    "image": "assets/palantir.jpeg",
     "players": "X",
     "events": "Y",
     "size": "Medium",
-    "socials": [],
+    "socials": [
+      {
+        "platform": "Discord",
+        "name": "MESBG Online",
+        "url": "https://discord.gg/MF2mt3YQ54"
+      }
+    ],
     "clubs": [],
-    "places": [],
-    "tutors": []
+    "places": [
+      {
+        "name": "Discord: MESBG Online",
+        "url": "https://discord.gg/MF2mt3YQ54"
+      }
+    ],
+    "tutors": [
+      {
+        "name": "Łukasz \"Leni\" Zembrowski",
+        "contacts": [
+          {
+            "platform": "Facebook",
+            "value": "Łukasz \"Leni\" Zembrowski",
+            "url": "https://www.facebook.com/profile.php?id=1829665638"
+          },
+          {
+            "platform": "Discord",
+            "value": "leni1924",
+            "url": null
+          }
+        ]
+      },
+      {
+        "name": "Marceli \"Chaos\" Fokt",
+        "contacts": [
+          {
+            "platform": "Facebook",
+            "value": "Marceli Fokt",
+            "url": "https://www.facebook.com/marceli.fokt"
+          },
+          {
+            "platform": "Discord",
+            "value": "chaosmarceli",
+            "url": null
+          }
+        ]
+      }
+    ]
   },
   "Rybnik": {
     "image": "assets/rybnik.jpg",
@@ -262,45 +348,45 @@
     "socials": [],
     "clubs": [],
     "places": [
-              {
+      {
         "name": "Jaskinia Trolla Rybnik",
         "url": "https://jaskiniatrolla.pl/"
       },
-            {
+      {
         "name": "Jaskinia Trolla Gliwice",
         "url": "https://jaskiniatrolla.pl/"
       }
     ],
     "tutors": [
-        {
-            "name": "Edgar \"Bondar\" Bondarewicz",
-            "contacts": [
-                {
-                    "platform": "Facebook",
-                    "value": "Edgar Bondarewicz",
-                    "url": "https://www.facebook.com/edgar.bondarewicz#"
-                },
-                {
-                    "platform": "Discord",
-                    "value": "edi0404",
-                    "url": null
-                }
-            ]
-        },
-        {
-            "name": "Filip \"Fifi1\" Pichnar",
-            "contacts": [
-                {
-                    "platform": "Facebook",
-                    "value": "Filip Pichnar",
-                    "url": "https://www.facebook.com/profile.php?id=100006316549200"
-                }
-            ]
-        }
+      {
+        "name": "Edgar \"Bondar\" Bondarewicz",
+        "contacts": [
+          {
+            "platform": "Facebook",
+            "value": "Edgar Bondarewicz",
+            "url": "https://www.facebook.com/edgar.bondarewicz#"
+          },
+          {
+            "platform": "Discord",
+            "value": "edi0404",
+            "url": null
+          }
+        ]
+      },
+      {
+        "name": "Filip \"Fifi1\" Pichnar",
+        "contacts": [
+          {
+            "platform": "Facebook",
+            "value": "Filip Pichnar",
+            "url": "https://www.facebook.com/profile.php?id=100006316549200"
+          }
+        ]
+      }
     ]
   },
   "Toruń": {
-    "image": null,
+    "image": "assets/torun.jpg",
     "players": "X",
     "events": "Y",
     "size": "Small",
@@ -310,7 +396,7 @@
     "tutors": []
   },
   "Kozy": {
-    "image": null,
+    "image": "assets/kozy.jpg",
     "players": "X",
     "events": "Y",
     "size": "Small",
@@ -320,7 +406,7 @@
     "tutors": []
   },
   "Szczecin": {
-    "image": null,
+    "image": "assets/szczecin.png",
     "players": "X",
     "events": "Y",
     "size": "Small",
@@ -330,7 +416,7 @@
     "tutors": []
   },
   "Lublin": {
-    "image": null,
+    "image": "assets/lublin.jpg",
     "players": "X",
     "events": "Y",
     "size": "Small",
@@ -340,7 +426,7 @@
     "tutors": []
   },
   "Złotów": {
-    "image": null,
+    "image": "assets/zlotow.png",
     "players": "X",
     "events": "Y",
     "size": "Small",
@@ -350,7 +436,7 @@
     "tutors": []
   },
   "Chorzów": {
-    "image": null,
+    "image": "assets/chorzow.jpg",
     "players": "X",
     "events": "Y",
     "size": "Small",
@@ -360,7 +446,7 @@
     "tutors": []
   },
   "Dębica": {
-    "image": null,
+    "image": "assets/debica.jpg",
     "players": "X",
     "events": "Y",
     "size": "Small",
@@ -370,13 +456,58 @@
     "tutors": []
   },
   "Nowy Sącz": {
-    "image": null,
+    "image": "assets/nowy_sacz.jpg",
     "players": "X",
     "events": "Y",
     "size": "Small",
     "socials": [],
-    "clubs": [],
-    "places": [],
-    "tutors": []
+    "clubs": [
+      {
+        "name": "Umbar",
+        "members": "12",
+        "image": "assets/umbar.jpg",
+        "description": "Umbar - ośrodek gier bitewnych na Sądecczyźnie",
+        "links": [
+          {
+            "label": "Facebook",
+            "name": "Umbar - ośrodek gier bitewnych na Sądecczyźnie",
+            "url": "https://www.facebook.com/share/g/1HKWPDiKWY/"
+          },
+          {
+            "label": "Discord",
+            "name": "Umbar",
+            "url": "https://discord.gg/EQu8sDWwry"
+          },
+          {
+            "label": "Contact Person",
+            "name": "Radosław \"Falandar\" Król",
+            "url": "https://www.facebook.com/groups/498819158451508/user/100000589934670"
+          }
+        ]
+      }
+    ],
+    "places": [
+      {
+        "name": "Atma",
+        "url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x473de54ee12c7ee5:0x9f23fa2d1a3a986?sa=X&ved=1t:8290&ictx=111"
+      }
+    ],
+    "tutors": [
+      {
+        "name": "Radosław \"Falandar\" Król",
+        "contacts": [
+          {
+            "platform": "Discord",
+            "value": "falandar1",
+            "url": null
+          },
+          {
+            "platform": "Facebook",
+            "value": "Radosław \"Falandar\" Król",
+            "url": "https://www.facebook.com/groups/498819158451508/user/100000589934670"
+          }
+        ]
+      }
+    ]
   }
 }

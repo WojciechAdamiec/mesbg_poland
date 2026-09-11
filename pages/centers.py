@@ -5,7 +5,7 @@ import plotly.express as px
 import pandas as pd
 import math
 from dash_iconify import DashIconify
-from dash import Input, Output, State, dcc, no_update
+from dash import Input, Output, State, dcc, no_update, Patch
 
 
 dash.register_page(__name__, path='/centers')
@@ -89,6 +89,23 @@ with open('data/centers.json', 'r', encoding='utf-8') as f:
 with open('data/centers_details.json', 'r', encoding='utf-8') as f:
     centers_details = json.load(f)
 
+
+def _collect_all_image_paths(details_dict):
+    """Gathers every center/club image path so they can be preloaded on page start."""
+    paths = set()
+    for details in details_dict.values():
+        image_src = details.get("image")
+        if image_src:
+            paths.add(image_src)
+        for club in details.get("clubs", []):
+            club_img = club.get("image")
+            if club_img:
+                paths.add(club_img)
+    return sorted(paths)
+
+
+ALL_IMAGE_PATHS = _collect_all_image_paths(centers_details)
+
 centers = pd.DataFrame(
     [
         {
@@ -123,31 +140,16 @@ def create_map_figure(selected_center=None):
         selector={"type": "choropleth"},
     )
 
-    marker_colors = [
-        SELECTED_CENTER_COLOR if name == selected_center else SIZE_COLORS.get(get_center_size_category(name), "#1971c2")
-        for name in centers["name"]
-    ]
-    line_colors = [
-        SELECTED_LINE_COLOR if name == selected_center else "#f7efe2"
-        for name in centers["name"]
-    ]
-    line_widths = [
-        3.0 if name == selected_center else 1.5
-        for name in centers["name"]
-    ]
-    marker_sizes = [
-        size + 5 if name == selected_center else size
-        for name, size in zip(centers["name"], centers["size"])
-    ]
+    style = get_marker_style(selected_center)
 
     fig.add_scattergeo(
         lat=centers["lat"],
         lon=centers["lon"],
         mode="markers",
         marker={
-            "size": marker_sizes,
-            "color": marker_colors,
-            "line": {"color": line_colors, "width": line_widths},
+            "size": style["sizes"],
+            "color": style["colors"],
+            "line": {"color": style["line_colors"], "width": style["line_widths"]},
             "symbol": "circle",
         },
         customdata=centers["name"],
@@ -170,6 +172,28 @@ def create_map_figure(selected_center=None):
         uirevision="constant",
     )
     return fig
+
+
+def get_marker_style(selected_center=None):
+    """Marker-only style for a selection, used to patch the map without resending the geojson."""
+    return {
+        "colors": [
+            SELECTED_CENTER_COLOR if name == selected_center else SIZE_COLORS.get(get_center_size_category(name), "#1971c2")
+            for name in centers["name"]
+        ],
+        "line_colors": [
+            SELECTED_LINE_COLOR if name == selected_center else "#f7efe2"
+            for name in centers["name"]
+        ],
+        "line_widths": [
+            3.0 if name == selected_center else 1.5
+            for name in centers["name"]
+        ],
+        "sizes": [
+            size + 5 if name == selected_center else size
+            for name, size in zip(centers["name"], centers["size"])
+        ],
+    }
 
 
 def create_welcome_card():
@@ -591,21 +615,42 @@ def create_center_card(town_name):
     )
 
 
+# Precompute every city's card and marker style once at startup, so clicks are pure dict lookups.
+ALL_CENTER_NAMES = set(centers_data) | set(centers_details) | set(centers["name"])
+ALL_CENTER_CARDS = {name: create_center_card(name) for name in ALL_CENTER_NAMES}
+ALL_MARKER_STYLES = {name: get_marker_style(name) for name in ALL_CENTER_NAMES}
+ALL_MARKER_STYLES[None] = get_marker_style(None)
+INITIAL_MAP_FIGURE = create_map_figure(None)
+WELCOME_CARD = create_welcome_card()
+
+
 layout = dmc.Box([
     dcc.Location(id="centers-redirect", refresh=True),
     dcc.Store(id="selected-center-store", data=None),
+    # Preload all center/club images off-screen so clicking a marker never waits on an image fetch.
+    dmc.Box(
+        children=[dmc.Image(src=path, w=1, h=1) for path in ALL_IMAGE_PATHS],
+        style={
+            "position": "absolute",
+            "width": "1px",
+            "height": "1px",
+            "overflow": "hidden",
+            "opacity": 0,
+            "pointerEvents": "none",
+        },
+    ),
     dmc.Text("MESBG Centers Map", style={"fontSize": "40px", "marginBottom": "20px"}),
     dmc.Group(
         children=[
             dcc.Graph(
                 id="centers-map",
-                figure=create_map_figure(None),
+                figure=INITIAL_MAP_FIGURE,
                 style={"height": "80vh", "width": "100%"},
                 responsive=True,
             ),
             dmc.Box(
                 id="center-card-container",
-                children=create_welcome_card(),
+                children=WELCOME_CARD,
             ),
         ],
         justify="center",
@@ -639,6 +684,14 @@ def update_center(click_data, current_selection):
         if candidate and (candidate in centers_data or candidate in CITY_COORDS or candidate in centers_details):
             selected = candidate
 
-    return create_map_figure(selected), create_center_card(selected), selected
+    style = ALL_MARKER_STYLES.get(selected, ALL_MARKER_STYLES[None])
+    figure_patch = Patch()
+    figure_patch["data"][1]["marker"]["color"] = style["colors"]
+    figure_patch["data"][1]["marker"]["size"] = style["sizes"]
+    figure_patch["data"][1]["marker"]["line"]["color"] = style["line_colors"]
+    figure_patch["data"][1]["marker"]["line"]["width"] = style["line_widths"]
+
+    card = ALL_CENTER_CARDS.get(selected, WELCOME_CARD)
+    return figure_patch, card, selected
 
 
