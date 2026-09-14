@@ -51,8 +51,13 @@ nav = dmc.Box([
         childrenOffset=28,
         children=[
             dmc.NavLink(
-                label="Pickrate vs Winratio",
-                href="/stats/pickrate_vs_winratio",
+                label="Pickrate vs Winrate",
+                href="/stats/pickrate_vs_winrate",
+                active="exact-with-search",
+            ),
+            dmc.NavLink(
+                label="Army List Winrates",
+                href="/stats/army_list_winrates",
                 active="exact-with-search",
             ),
         ],

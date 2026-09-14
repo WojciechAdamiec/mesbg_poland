@@ -281,66 +281,6 @@
             }
         },
         {
-            "id": "b7833bac-474b-42f0-b184-8c3869d6d872",
-            "createdAt": "2025-12-05T21:09:08.765Z",
-            "user": {
-                "id": "a7f6afd7-7e8e-4a00-a3ba-fc637ca964fd",
-                "avatar": "1710175869548.png",
-                "displayName": "Piotr G\u0105sowski",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 224,
-                    "name": "Bydgoszcz",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "APPROVED",
-            "army": {
-                "id": 320,
-                "name": "Atop the Wall",
-                "subfraction": null,
-                "code": "MESBG2_AtW",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "d6d02d39-9b95-4400-953a-c1b8cd84449d",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3096,
-                "place": 1,
-                "poolPlace": null,
-                "singlePlace": 1,
-                "wins": 2,
-                "draws": 0,
-                "loss": 0,
-                "primaryPoints": 18,
-                "secondaryPoints": 38,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "a3b53582-ae57-4431-b057-0f85c8aa98d6",
             "createdAt": "2025-12-05T21:09:08.765Z",
             "user": {
@@ -395,6 +335,66 @@
                 "loss": 0,
                 "primaryPoints": 17,
                 "secondaryPoints": 32,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "b7833bac-474b-42f0-b184-8c3869d6d872",
+            "createdAt": "2025-12-05T21:09:08.765Z",
+            "user": {
+                "id": "a7f6afd7-7e8e-4a00-a3ba-fc637ca964fd",
+                "avatar": "1710175869548.png",
+                "displayName": "Piotr G\u0105sowski",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 224,
+                    "name": "Bydgoszcz",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 320,
+                "name": "Atop the Wall",
+                "subfraction": null,
+                "code": "MESBG2_AtW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "d6d02d39-9b95-4400-953a-c1b8cd84449d",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3096,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": 1,
+                "wins": 2,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 18,
+                "secondaryPoints": 38,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

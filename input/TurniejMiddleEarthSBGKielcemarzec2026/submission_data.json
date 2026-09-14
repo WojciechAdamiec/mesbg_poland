@@ -62,6 +62,77 @@
             }
         },
         {
+            "id": "2cf3e331-3cfc-4e94-a989-2135474df482",
+            "createdAt": "2026-03-15T10:41:50.201Z",
+            "user": {
+                "id": "63c2331e-0577-4bdc-a5fa-98ec6d23cbc5",
+                "avatar": "1743104790616.jpg",
+                "displayName": "Manyy",
+                "firstName": "Aleksander",
+                "lastName": "W\u00f3jcicki",
+                "city": {
+                    "id": 3111,
+                    "name": "Kielce",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "arystomeneles"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 468,
+                "name": "Assault on Lothl\u00f3rien",
+                "subfraction": null,
+                "code": "MESBG2_AoL",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 461,
+                "name": "Fields of Celebrant",
+                "subfraction": null,
+                "code": "MESBG2_FoC",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 50,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7532,
+                "name": "Kielce"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3863,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 1222,
+                "secondaryPoints": 12,
+                "tertiaryPoints": 33,
+                "sos": 50,
+                "path": ""
+            }
+        },
+        {
             "id": "20502a74-5163-4f3c-94c4-f8dc95d0795d",
             "createdAt": "2026-03-15T10:41:50.201Z",
             "user": {
@@ -196,46 +267,30 @@
             }
         },
         {
-            "id": "2cf3e331-3cfc-4e94-a989-2135474df482",
-            "createdAt": "2026-03-15T10:41:50.201Z",
+            "id": "ff83e06e-1264-41a3-8495-91b7dceedb53",
+            "createdAt": "2026-03-15T10:42:21.629Z",
             "user": {
-                "id": "63c2331e-0577-4bdc-a5fa-98ec6d23cbc5",
-                "avatar": "1743104790616.jpg",
-                "displayName": "Manyy",
-                "firstName": "Aleksander",
-                "lastName": "W\u00f3jcicki",
+                "id": "895bc3ea-9c6a-4be4-a324-15380d10023f",
+                "avatar": "1741012787194.jpeg",
+                "displayName": "Hashut",
+                "firstName": "Maciej",
+                "lastName": "Rek",
                 "city": {
-                    "id": 3111,
-                    "name": "Kielce",
+                    "id": 235,
+                    "name": "Warszawa",
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": "arystomeneles"
+                "discordUsername": null
             },
-            "listApproved": true,
-            "listAdded": true,
+            "listApproved": false,
+            "listAdded": false,
             "listHidden": false,
             "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 468,
-                "name": "Assault on Lothl\u00f3rien",
-                "subfraction": null,
-                "code": "MESBG2_AoL",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 461,
-                "name": "Fields of Celebrant",
-                "subfraction": null,
-                "code": "MESBG2_FoC",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
             "teamId": null,
@@ -244,26 +299,16 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 50,
+            "primaryPointsSos": 0,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 7532,
-                "name": "Kielce"
+                "id": 7533,
+                "name": "Warszawa"
             },
             "poolResult": null,
             "finalResult": {
                 "stageId": 3863,
-                "place": 4,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1222,
-                "secondaryPoints": 12,
-                "tertiaryPoints": 33,
-                "sos": 50,
-                "path": ""
+                "sos": 0
             }
         },
         {
@@ -430,51 +475,6 @@
             "travelGroup": {
                 "id": 7532,
                 "name": "Kielce"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3863,
-                "sos": 0
-            }
-        },
-        {
-            "id": "ff83e06e-1264-41a3-8495-91b7dceedb53",
-            "createdAt": "2026-03-15T10:42:21.629Z",
-            "user": {
-                "id": "895bc3ea-9c6a-4be4-a324-15380d10023f",
-                "avatar": "1741012787194.jpeg",
-                "displayName": "Hashut",
-                "firstName": "Maciej",
-                "lastName": "Rek",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 7533,
-                "name": "Warszawa"
             },
             "poolResult": null,
             "finalResult": {

@@ -709,74 +709,6 @@
             }
         },
         {
-            "id": "e405f9c9-d3e5-4f3a-bb3e-b8cc243cca85",
-            "createdAt": "2026-04-09T14:44:36.548Z",
-            "user": {
-                "id": "5d01b02f-444d-4547-958a-e2dcac24e017",
-                "avatar": "1788434768698.jpg",
-                "displayName": "KaMiKaZee",
-                "firstName": "Rados\u0142aw ",
-                "lastName": "G\u00f3ra ",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 375,
-                "name": "Host of the Witch-King",
-                "subfraction": null,
-                "code": "MESBG2_HotWK",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 375,
-                "name": "Host of the Witch-King",
-                "subfraction": null,
-                "code": "MESBG2_HotWK",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "5460660b-6045-4395-a152-4b2f8a155be4",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4067,
-                "place": 11,
-                "poolPlace": null,
-                "singlePlace": 23,
-                "wins": 1,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 4,
-                "secondaryPoints": 22,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "6e19948c-9313-4727-8bb0-2bf1681a8e2c",
             "createdAt": "2026-04-09T14:44:36.548Z",
             "user": {
@@ -839,6 +771,74 @@
                 "loss": 1,
                 "primaryPoints": 3,
                 "secondaryPoints": 10,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "e405f9c9-d3e5-4f3a-bb3e-b8cc243cca85",
+            "createdAt": "2026-04-09T14:44:36.548Z",
+            "user": {
+                "id": "5d01b02f-444d-4547-958a-e2dcac24e017",
+                "avatar": "1788434768698.jpg",
+                "displayName": "KaMiKaZee",
+                "firstName": "Rados\u0142aw ",
+                "lastName": "G\u00f3ra ",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 375,
+                "name": "Host of the Witch-King",
+                "subfraction": null,
+                "code": "MESBG2_HotWK",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 375,
+                "name": "Host of the Witch-King",
+                "subfraction": null,
+                "code": "MESBG2_HotWK",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "5460660b-6045-4395-a152-4b2f8a155be4",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4067,
+                "place": 11,
+                "poolPlace": null,
+                "singlePlace": 23,
+                "wins": 1,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 4,
+                "secondaryPoints": 22,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

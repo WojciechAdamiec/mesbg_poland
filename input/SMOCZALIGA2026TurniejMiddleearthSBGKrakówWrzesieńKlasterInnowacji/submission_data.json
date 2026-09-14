@@ -1,8 +1,8 @@
 {
     "people": [
         {
-            "id": "28106ca2-7136-4466-851a-a18ba5b15ead",
-            "createdAt": "2026-07-14T20:03:42.285Z",
+            "id": "439fab53-3cef-42d5-8bc1-a3b155609cba",
+            "createdAt": "2026-08-27T09:41:37.714Z",
             "user": {
                 "id": "88a0792c-284c-4c37-927d-76b33a4b87e3",
                 "avatar": "1744130601766.jpeg",
@@ -17,92 +17,13 @@
                 "country": "PL",
                 "discordUsername": "mbabull"
             },
-            "listApproved": true,
-            "listAdded": true,
+            "listApproved": false,
+            "listAdded": false,
             "listHidden": false,
             "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 382,
-                "name": "Shadows of Angmar",
-                "subfraction": null,
-                "code": "MESBG2_SoA",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 337,
-                "name": "The Last Alliance",
-                "subfraction": null,
-                "code": "MESBG2_TLA",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 35,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 15,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 802,
-                "secondaryPoints": 8,
-                "tertiaryPoints": 25,
-                "sos": 35,
-                "path": "LLW"
-            }
-        },
-        {
-            "id": "6fec9d89-682f-4fec-8e5b-51d71227d7db",
-            "createdAt": "2026-07-14T20:06:07.770Z",
-            "user": {
-                "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                "avatar": "1744129501318.jpg",
-                "displayName": "Medved",
-                "firstName": "Medard",
-                "lastName": "Grabowski",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 453,
-                "name": "Moria",
-                "subfraction": null,
-                "code": "MESBG2_M",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
@@ -112,31 +33,21 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 59,
+            "primaryPointsSos": 0,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
+                "id": 10082,
                 "name": "Krak\u00f3w"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
-                "place": 6,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1322,
-                "secondaryPoints": 13,
-                "tertiaryPoints": 27,
-                "sos": 59,
-                "path": "WWL"
+                "stageId": 6516,
+                "sos": 0
             }
         },
         {
-            "id": "766eb1d9-d5c6-47cd-9647-4456157ac102",
-            "createdAt": "2026-07-14T20:38:56.034Z",
+            "id": "2870b33a-f79b-410e-84e9-43aae04e4534",
+            "createdAt": "2026-08-27T09:45:19.683Z",
             "user": {
                 "id": "63c2331e-0577-4bdc-a5fa-98ec6d23cbc5",
                 "avatar": "1743104790616.jpg",
@@ -170,24 +81,24 @@
             "primaryPointsSos": 0,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9376,
+                "id": 10084,
                 "name": "Kielce"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
+                "stageId": 6516,
                 "sos": 0
             }
         },
         {
-            "id": "4fe8efb9-3552-4e7f-b508-da04f4ac01e2",
-            "createdAt": "2026-07-14T21:07:24.822Z",
+            "id": "3fcd64ff-7223-46d4-bf49-9161dfaf705d",
+            "createdAt": "2026-08-27T10:21:07.602Z",
             "user": {
-                "id": "24a267fb-e04e-436d-9858-d39a88afbabf",
-                "avatar": "1738882944063.jpg",
-                "displayName": "BGrodny",
-                "firstName": "Bartosz",
-                "lastName": "Grodny",
+                "id": "3f55c328-9c62-4808-8c08-3aa6275710cd",
+                "avatar": "1777224964220.jpg",
+                "displayName": "Hunter daro",
+                "firstName": "Darek ",
+                "lastName": "Horabik ",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -203,6 +114,15 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
+                "id": 382,
+                "name": "Shadows of Angmar",
+                "subfraction": null,
+                "code": "MESBG2_SoA",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
                 "id": 315,
                 "name": "Army of Edoras",
                 "subfraction": null,
@@ -211,7 +131,6 @@
                     "mesbgType": "GOOD"
                 }
             },
-            "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
             "teamId": null,
@@ -220,226 +139,37 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 89,
+            "primaryPointsSos": 69,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
+                "id": 10082,
                 "name": "Krak\u00f3w"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
-                "place": 27,
+                "stageId": 6516,
+                "place": 5,
                 "poolPlace": null,
                 "singlePlace": null,
-                "wins": 0,
+                "wins": 3,
                 "draws": 0,
                 "loss": 1,
-                "primaryPoints": -1015,
-                "secondaryPoints": 0,
-                "tertiaryPoints": 0,
-                "sos": 89,
-                "path": "L_"
+                "primaryPoints": 1815,
+                "secondaryPoints": 18,
+                "tertiaryPoints": 36,
+                "sos": 69,
+                "path": "WWWL"
             }
         },
         {
-            "id": "48ec9c14-b2eb-417e-a42e-c4699c46a3f3",
-            "createdAt": "2026-07-15T05:10:20.725Z",
+            "id": "37d8757a-a782-4932-b482-c77a174e0d8d",
+            "createdAt": "2026-08-27T10:24:18.576Z",
             "user": {
-                "id": "9da2af4f-72f3-41ac-94ab-f4d0f86de13d",
-                "avatar": "1744128471171.jpg",
-                "displayName": "Hugluk",
-                "firstName": "Hubert ",
-                "lastName": "Malik ",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 346,
-                "name": "Reclamation of Osgiliath",
-                "subfraction": null,
-                "code": "MESBG2_RoO",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 57,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 9,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1205,
-                "secondaryPoints": 12,
-                "tertiaryPoints": 26,
-                "sos": 57,
-                "path": "WLW"
-            }
-        },
-        {
-            "id": "415dc0ad-afac-4d77-8cf1-0b05680bb3ae",
-            "createdAt": "2026-07-15T08:10:09.744Z",
-            "user": {
-                "id": "feae9d4e-3e5c-465a-ad1e-b165f644f16f",
-                "avatar": "1744148507641.jpg",
-                "displayName": "Saren",
-                "firstName": "Mariusz",
-                "lastName": "Sowa",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 347,
-                "name": "Return of the King",
-                "subfraction": null,
-                "code": "MESBG2_RotK",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 52,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 13,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 987,
-                "secondaryPoints": 10,
-                "tertiaryPoints": 26,
-                "sos": 52,
-                "path": "LWW"
-            }
-        },
-        {
-            "id": "c3e86f0b-8008-44ca-a6c1-8091f61a5f08",
-            "createdAt": "2026-07-15T08:34:32.439Z",
-            "user": {
-                "id": "83f6f224-a83f-4b8a-8284-e19085482720",
-                "avatar": "1747074486281.jpg",
-                "displayName": "Petyr",
-                "firstName": "Piotr ",
-                "lastName": "Mr\u00f3z ",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 320,
-                "name": "Atop the Wall",
-                "subfraction": null,
-                "code": "MESBG2_AtW",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 46,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 18,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 691,
-                "secondaryPoints": 7,
-                "tertiaryPoints": 19,
-                "sos": 46,
-                "path": "LLW"
-            }
-        },
-        {
-            "id": "5c55a5a9-555c-4895-bbb8-6865a56b6d5b",
-            "createdAt": "2026-07-15T08:44:14.455Z",
-            "user": {
-                "id": "3f55c328-9c62-4808-8c08-3aa6275710cd",
-                "avatar": "1777224964220.jpg",
-                "displayName": "Hunter daro",
-                "firstName": "Darek ",
-                "lastName": "Horabik ",
+                "id": "4575b808-77d6-4bec-a901-b90786c37509",
+                "avatar": "1744148420447.jpeg",
+                "displayName": "Cz\u0142owiek Balista",
+                "firstName": "Maciej ",
+                "lastName": "Rogowski",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -467,18 +197,464 @@
             "primaryPointsSos": 0,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
+                "id": 10082,
                 "name": "Krak\u00f3w"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
+                "stageId": 6516,
                 "sos": 0
             }
         },
         {
-            "id": "511429bb-9323-44aa-9cc5-fd67771aab17",
-            "createdAt": "2026-07-15T09:02:38.835Z",
+            "id": "a21f8359-c86a-4d6d-9514-d9b596fc0cf4",
+            "createdAt": "2026-08-27T10:34:31.380Z",
+            "user": {
+                "id": "de531847-5760-46e8-b02d-193569efdd23",
+                "avatar": "1744139636734.jpg",
+                "displayName": "Makay",
+                "firstName": "Maksym",
+                "lastName": "Lipski",
+                "city": {
+                    "id": 3111,
+                    "name": "Kielce",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "DECLINED",
+            "army": {
+                "id": 386,
+                "name": "Wolf Pack of Angmar",
+                "subfraction": null,
+                "code": "MESBG2_WPoA",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10084,
+                "name": "Kielce"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "sos": 0
+            }
+        },
+        {
+            "id": "02566cd2-b43e-4b2f-8997-3718649ff43e",
+            "createdAt": "2026-08-27T10:44:03.997Z",
+            "user": {
+                "id": "cb518781-9079-4152-8521-cccd862ff1d3",
+                "avatar": null,
+                "displayName": "Rosko",
+                "firstName": "Maksymilian",
+                "lastName": "Nowak",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "sos": 0
+            }
+        },
+        {
+            "id": "61774090-a6ee-44fb-83c6-e03800d1d875",
+            "createdAt": "2026-08-27T11:30:55.603Z",
+            "user": {
+                "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
+                "avatar": "1744129501318.jpg",
+                "displayName": "Medved",
+                "firstName": "Medard",
+                "lastName": "Grabowski",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 333,
+                "name": "Garrison of Ithilien",
+                "subfraction": null,
+                "code": "MESBG2_GoI",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 371,
+                "name": "Depths of Moria",
+                "subfraction": null,
+                "code": "MESBG2_DoM",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 33,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 16,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 1093,
+                "secondaryPoints": 11,
+                "tertiaryPoints": 28,
+                "sos": 33,
+                "path": "LWLW"
+            }
+        },
+        {
+            "id": "d602c665-3cfe-4fc4-8b84-a4130197463a",
+            "createdAt": "2026-08-27T12:38:36.082Z",
+            "user": {
+                "id": "2a392470-f47d-4fff-a8b9-37d9cbbe2361",
+                "avatar": "1744128645896.jpg",
+                "displayName": "Malik",
+                "firstName": "\u0141ukasz",
+                "lastName": "Malik",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "sos": 0
+            }
+        },
+        {
+            "id": "164867a7-17f7-41cd-ae5f-36b6e2a38956",
+            "createdAt": "2026-08-27T12:52:43.625Z",
+            "user": {
+                "id": "077132db-3801-408a-88be-71f4203d83b3",
+                "avatar": null,
+                "displayName": "MelonKrK",
+                "firstName": "Igor",
+                "lastName": "Melnik",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": {
+                "id": 334,
+                "name": "Halls of Thranduil",
+                "subfraction": null,
+                "code": "MESBG2_HoT",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "sos": 0
+            }
+        },
+        {
+            "id": "00e12bd5-0440-44c2-9504-ee4eb3519dc2",
+            "createdAt": "2026-08-27T13:23:44.237Z",
+            "user": {
+                "id": "24a267fb-e04e-436d-9858-d39a88afbabf",
+                "avatar": "1738882944063.jpg",
+                "displayName": "BGrodny",
+                "firstName": "Bartosz",
+                "lastName": "Grodny",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": {
+                "id": 315,
+                "name": "Army of Edoras",
+                "subfraction": null,
+                "code": "MESBG2_AoE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "sos": 0
+            }
+        },
+        {
+            "id": "014be2c6-cc50-4ec2-888b-37d5c0f7204e",
+            "createdAt": "2026-08-27T14:14:51.562Z",
+            "user": {
+                "id": "6e8fd6ad-52e1-4877-84dc-2fce2d7ab7da",
+                "avatar": "1756152479087.jpg",
+                "displayName": "makelele",
+                "firstName": "Mi\u0142osz",
+                "lastName": "Szybist",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 444,
+                "name": "The Beornings",
+                "subfraction": null,
+                "code": "MESBG2_TB",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 38,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 22,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 687,
+                "secondaryPoints": 7,
+                "tertiaryPoints": 14,
+                "sos": 38,
+                "path": "LWL"
+            }
+        },
+        {
+            "id": "2ae28856-f73d-46b8-a47a-cb79726922b1",
+            "createdAt": "2026-08-27T14:59:01.816Z",
+            "user": {
+                "id": "081b732c-68ef-4404-bf2c-b56519b96acd",
+                "avatar": "1744148146039.jpg",
+                "displayName": "Andrzej Brodzicki",
+                "firstName": "Andrzej",
+                "lastName": "Brodzicki",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 339,
+                "name": "Lothlorien",
+                "subfraction": null,
+                "code": "MESBG2_Lo",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 47,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 15,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 1100,
+                "secondaryPoints": 11,
+                "tertiaryPoints": 27,
+                "sos": 47,
+                "path": "LLWW"
+            }
+        },
+        {
+            "id": "6dcd2d09-f117-4e34-8214-0ec63eb3aada",
+            "createdAt": "2026-08-27T19:33:30.473Z",
             "user": {
                 "id": "8076af08-a8fe-455c-8c1a-2e5d7f2ad3eb",
                 "avatar": "1744128803296.jpeg",
@@ -517,37 +693,37 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 44,
+            "primaryPointsSos": 55,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
+                "id": 10082,
                 "name": "Krak\u00f3w"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
-                "place": 12,
+                "stageId": 6516,
+                "place": 7,
                 "poolPlace": null,
                 "singlePlace": null,
-                "wins": 2,
+                "wins": 3,
                 "draws": 0,
                 "loss": 1,
-                "primaryPoints": 1102,
-                "secondaryPoints": 11,
-                "tertiaryPoints": 28,
-                "sos": 44,
-                "path": "LWW"
+                "primaryPoints": 1717,
+                "secondaryPoints": 17,
+                "tertiaryPoints": 31,
+                "sos": 55,
+                "path": "LWWW"
             }
         },
         {
-            "id": "fb64c34b-d325-4899-86a7-4aeb533af799",
-            "createdAt": "2026-07-15T11:53:26.734Z",
+            "id": "6a0f4d3e-5dae-407f-b802-a747aa47a591",
+            "createdAt": "2026-08-28T01:56:46.132Z",
             "user": {
-                "id": "59614550-aefe-45cd-b768-5f8310065c35",
-                "avatar": null,
-                "displayName": "Mikolaji207",
-                "firstName": "MIKO\u0141AJ",
-                "lastName": "IDZIASZCZYK",
+                "id": "83f6f224-a83f-4b8a-8284-e19085482720",
+                "avatar": "1747074486281.jpg",
+                "displayName": "Petyr",
+                "firstName": "Piotr ",
+                "lastName": "Mr\u00f3z ",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -563,73 +739,10 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 322,
-                "name": "Battle of Fornost",
+                "id": 377,
+                "name": "Lurtz's Scouts",
                 "subfraction": null,
-                "code": "MESBG2_BoF",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 35,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 21,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 586,
-                "secondaryPoints": 6,
-                "tertiaryPoints": 19,
-                "sos": 35,
-                "path": "WLL"
-            }
-        },
-        {
-            "id": "498d066c-4f99-4fb7-bc72-51d60f0bc9a2",
-            "createdAt": "2026-07-15T20:11:08.273Z",
-            "user": {
-                "id": "cb518781-9079-4152-8521-cccd862ff1d3",
-                "avatar": null,
-                "displayName": "Rosko",
-                "firstName": "Maksymilian",
-                "lastName": "Nowak",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 379,
-                "name": "Muster of Isengard",
-                "subfraction": null,
-                "code": "MESBG2_MoI",
+                "code": "MESBG2_LS",
                 "metadata": {
                     "mesbgType": "EVIL"
                 }
@@ -643,31 +756,1013 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 37,
+            "primaryPointsSos": 61,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
+                "id": 10082,
                 "name": "Krak\u00f3w"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
+                "stageId": 6516,
+                "place": 9,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 1317,
+                "secondaryPoints": 13,
+                "tertiaryPoints": 41,
+                "sos": 61,
+                "path": "WWLL"
+            }
+        },
+        {
+            "id": "7c0780c4-a38c-4f36-a76c-8ceb4e1d1439",
+            "createdAt": "2026-08-28T12:14:56.657Z",
+            "user": {
+                "id": "6d76eb6c-3cb2-419b-87ac-ac387640fbad",
+                "avatar": "1745522343956.png",
+                "displayName": "wiktorek",
+                "firstName": "Wiktor",
+                "lastName": "W\u00f3jcik",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 366,
+                "name": "The Black Gate",
+                "subfraction": null,
+                "code": "MESBG2_TBGO",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 44,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 3,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 1503,
+                "secondaryPoints": 15,
+                "tertiaryPoints": 38,
+                "sos": 44,
+                "path": "WWWL"
+            }
+        },
+        {
+            "id": "9151b73a-38ef-4b54-9ed6-d8b1aee24898",
+            "createdAt": "2026-08-28T18:10:54.569Z",
+            "user": {
+                "id": "31da25d3-993d-42a7-b9b0-1df2b46ff794",
+                "avatar": "1788951366400.jpeg",
+                "displayName": "Geekwork",
+                "firstName": "Kamil",
+                "lastName": "Ziemianek",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 378,
+                "name": "Minas Morgul",
+                "subfraction": null,
+                "code": "MESBG2_MM",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 63,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 27,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": -17,
+                "secondaryPoints": 0,
+                "tertiaryPoints": 5,
+                "sos": 63,
+                "path": "LL_"
+            }
+        },
+        {
+            "id": "470fec00-69eb-4532-96f4-c6546ac1ec45",
+            "createdAt": "2026-08-29T19:26:30.669Z",
+            "user": {
+                "id": "f9ef5a6b-7fb2-4b2f-aacb-7b10bdf4e06c",
+                "avatar": "1768603886487.jpg",
+                "displayName": "\u0141ukasz Wiewi\u00f3r ",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 344,
+                "name": "Rangers of Mirkwood",
+                "subfraction": null,
+                "code": "MESBG2_RoM",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 62,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 3,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 1835,
+                "secondaryPoints": 18,
+                "tertiaryPoints": 48,
+                "sos": 62,
+                "path": "WLWW"
+            }
+        },
+        {
+            "id": "ca8d9f34-c5d4-4823-861c-6f57dc5309bf",
+            "createdAt": "2026-08-31T06:34:34.403Z",
+            "user": {
+                "id": "0b9e69bb-46e8-4b18-949b-c788fd37fe1e",
+                "avatar": "1786343626055.jpeg",
+                "displayName": "Knoxville",
+                "firstName": "Konrad",
+                "lastName": "Pinscher",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "knox9077"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 363,
+                "name": "Azog's Hunters",
+                "subfraction": null,
+                "code": "MESBG2_AH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 349,
+                "name": "Riders of Eomer",
+                "subfraction": null,
+                "code": "MESBG2_RoE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 37,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
                 "place": 19,
                 "poolPlace": null,
                 "singlePlace": null,
                 "wins": 1,
-                "draws": 0,
+                "draws": 1,
                 "loss": 2,
-                "primaryPoints": 594,
-                "secondaryPoints": 6,
-                "tertiaryPoints": 13,
+                "primaryPoints": 898,
+                "secondaryPoints": 9,
+                "tertiaryPoints": 34,
                 "sos": 37,
-                "path": "LWL"
+                "path": "LLWD"
             }
         },
         {
-            "id": "06f67925-306f-450b-94f2-173f7ae725f6",
-            "createdAt": "2026-07-15T20:53:21.926Z",
+            "id": "fc27c206-1664-42c2-b3f6-a8fb48225710",
+            "createdAt": "2026-09-01T13:01:04.436Z",
+            "user": {
+                "id": "874b0d14-6fd6-4e03-b7d0-d9302c599b77",
+                "avatar": null,
+                "displayName": "Dzwoni Papuga",
+                "firstName": "Konrad ",
+                "lastName": "Jagocha",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": {
+                "id": 318,
+                "name": "Arnor",
+                "subfraction": null,
+                "code": "MESBG2_A",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "sos": 0
+            }
+        },
+        {
+            "id": "0cc38070-0d68-461f-881e-132b0b306632",
+            "createdAt": "2026-09-01T17:03:44.040Z",
+            "user": {
+                "id": "639fe636-9845-4b28-8d36-0a0ea855edeb",
+                "avatar": null,
+                "displayName": "Przemekmarczyk",
+                "firstName": "Przemys\u0142aw ",
+                "lastName": "Marczyk",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 388,
+                "name": "Wraiths on Wings",
+                "subfraction": null,
+                "code": "MESBG2_WoW",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 45,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 13,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 1182,
+                "secondaryPoints": 12,
+                "tertiaryPoints": 30,
+                "sos": 45,
+                "path": "WLLW"
+            }
+        },
+        {
+            "id": "b3b1fdad-25f7-428e-8bfc-e7be40d021be",
+            "createdAt": "2026-09-01T21:29:44.358Z",
+            "user": {
+                "id": "18bc28b3-714d-4a11-972d-514a54145413",
+                "avatar": "1744128528586.png",
+                "displayName": "Zakarin",
+                "firstName": "Mikolaj",
+                "lastName": "Gil",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 30,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 10,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 1304,
+                "secondaryPoints": 13,
+                "tertiaryPoints": 28,
+                "sos": 30,
+                "path": "LLWW"
+            }
+        },
+        {
+            "id": "649efff9-2b9d-432d-8684-ec8591e1456e",
+            "createdAt": "2026-09-02T15:15:52.085Z",
+            "user": {
+                "id": "60bafdc5-b190-426c-b9e7-f5e0a369a294",
+                "avatar": "1778745133238.jpg",
+                "displayName": "Owczy",
+                "firstName": "Szymon",
+                "lastName": "Biegun",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 330,
+                "name": "Fangorn",
+                "subfraction": null,
+                "code": "MESBG2_F",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 58,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 18,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 1,
+                "loss": 2,
+                "primaryPoints": 1002,
+                "secondaryPoints": 10,
+                "tertiaryPoints": 29,
+                "sos": 58,
+                "path": "_LLD"
+            }
+        },
+        {
+            "id": "c93963ad-245c-4775-98a5-885b5499c9de",
+            "createdAt": "2026-09-03T13:59:39.015Z",
+            "user": {
+                "id": "da3d47d4-d5f6-4713-9289-615d2f90b44c",
+                "avatar": null,
+                "displayName": "Filip Grolewski",
+                "firstName": "Filip ",
+                "lastName": "Grolewski",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 347,
+                "name": "Return of the King",
+                "subfraction": null,
+                "code": "MESBG2_RotK",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 32,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 25,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 471,
+                "secondaryPoints": 5,
+                "tertiaryPoints": 18,
+                "sos": 32,
+                "path": "WLLL"
+            }
+        },
+        {
+            "id": "2f7bdc77-e7a1-497e-8064-5c67d07371f8",
+            "createdAt": "2026-09-04T18:32:21.477Z",
+            "user": {
+                "id": "8cae570b-5e2b-4729-bea2-c07fe31fb4ab",
+                "avatar": "1789319843183.jpg",
+                "displayName": "Lord_jedynek",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 377,
+                "name": "Lurtz's Scouts",
+                "subfraction": null,
+                "code": "MESBG2_LS",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 51,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 12,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 1195,
+                "secondaryPoints": 12,
+                "tertiaryPoints": 32,
+                "sos": 51,
+                "path": "LWWL"
+            }
+        },
+        {
+            "id": "def2d16c-456e-413c-87c7-ab7125c16230",
+            "createdAt": "2026-09-07T09:50:18.243Z",
+            "user": {
+                "id": "bbbe191e-78cb-42d6-acc6-fd53718b1fd2",
+                "avatar": null,
+                "displayName": "Dominik Kazek",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "_kaz3k"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 332,
+                "name": "Garrison of Dale",
+                "subfraction": null,
+                "code": "MESBG2_GoD",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 366,
+                "name": "The Black Gate",
+                "subfraction": null,
+                "code": "MESBG2_TBGO",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 38,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 20,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 704,
+                "secondaryPoints": 7,
+                "tertiaryPoints": 26,
+                "sos": 38,
+                "path": "LWLL"
+            }
+        },
+        {
+            "id": "05c71687-9e73-4512-9530-c7a4a79feb17",
+            "createdAt": "2026-09-07T11:07:17.940Z",
+            "user": {
+                "id": "9da2af4f-72f3-41ac-94ab-f4d0f86de13d",
+                "avatar": "1744128471171.jpg",
+                "displayName": "Hugluk",
+                "firstName": "Hubert ",
+                "lastName": "Malik ",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 344,
+                "name": "Rangers of Mirkwood",
+                "subfraction": null,
+                "code": "MESBG2_RoM",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 76,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 17,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 1081,
+                "secondaryPoints": 11,
+                "tertiaryPoints": 19,
+                "sos": 76,
+                "path": "WWLL"
+            }
+        },
+        {
+            "id": "0252709d-a69d-402b-b34a-4eb53dc9f1f9",
+            "createdAt": "2026-09-08T04:51:49.197Z",
+            "user": {
+                "id": "1e4b9bdf-6062-4736-aef3-52bc568f8803",
+                "avatar": "1788157964464.png",
+                "displayName": "Fleetmaster",
+                "firstName": "Arkadiusz ",
+                "lastName": "Kilian",
+                "city": {
+                    "id": 3137,
+                    "name": "Tarn\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 448,
+                "name": "Umbar",
+                "subfraction": null,
+                "code": "MESBG2_U",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 55,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10273,
+                "name": "Tarn\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 2,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 4,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 2335,
+                "secondaryPoints": 23,
+                "tertiaryPoints": 52,
+                "sos": 55,
+                "path": "WWWW"
+            }
+        },
+        {
+            "id": "3411d144-33f5-437c-86d5-0d2e76cf5656",
+            "createdAt": "2026-09-08T13:49:36.891Z",
+            "user": {
+                "id": "6f995656-e4a6-462d-b2dc-358687645153",
+                "avatar": null,
+                "displayName": "Jerzy P",
+                "firstName": "Jerzy ",
+                "lastName": "Parzych",
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "sos": 0
+            }
+        },
+        {
+            "id": "98caca5b-c91c-4900-a727-e2cb32f42c12",
+            "createdAt": "2026-09-08T16:14:46.317Z",
+            "user": {
+                "id": "4c85220b-667f-4d0b-b719-9c9ae145792d",
+                "avatar": "1750948339768.jpg",
+                "displayName": "Kuba Sotwin",
+                "firstName": "Jakub",
+                "lastName": "Sotwin",
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 449,
+                "name": "The Serpent Horde",
+                "subfraction": null,
+                "code": "MESBG2_TSH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 57,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 6,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 1727,
+                "secondaryPoints": 17,
+                "tertiaryPoints": 43,
+                "sos": 57,
+                "path": "L_WW"
+            }
+        },
+        {
+            "id": "f3bfa992-8ac5-421e-95f5-3f0a7c54ebfe",
+            "createdAt": "2026-09-09T07:45:37.143Z",
+            "user": {
+                "id": "78439913-0476-4d64-a941-4e940566c425",
+                "avatar": null,
+                "displayName": "Maciej Krupa",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 346,
+                "name": "Reclamation of Osgiliath",
+                "subfraction": null,
+                "code": "MESBG2_RoO",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 15,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 26,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 4,
+                "primaryPoints": 171,
+                "secondaryPoints": 2,
+                "tertiaryPoints": 15,
+                "sos": 15,
+                "path": "LLLL"
+            }
+        },
+        {
+            "id": "68c9f27a-fae7-469e-af70-cba4dd1b3fec",
+            "createdAt": "2026-09-09T15:26:05.065Z",
             "user": {
                 "id": "1648e62c-e62a-443c-83be-6fc7ad5a86ff",
                 "avatar": null,
@@ -706,253 +1801,100 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 22,
+            "primaryPointsSos": 33,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
+                "id": 10082,
                 "name": "Krak\u00f3w"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
-                "place": 25,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 0,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 83,
-                "secondaryPoints": 1,
-                "tertiaryPoints": 5,
-                "sos": 22,
-                "path": "LLL"
-            }
-        },
-        {
-            "id": "10eb5282-7657-4634-9f65-83d95643847f",
-            "createdAt": "2026-07-17T20:18:13.863Z",
-            "user": {
-                "id": "9dbc8e72-3671-4d6d-b5a9-e1f2af80c9ea",
-                "avatar": null,
-                "displayName": "Piotr M",
-                "firstName": "Piotr",
-                "lastName": "Madej",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 337,
-                "name": "The Last Alliance",
-                "subfraction": null,
-                "code": "MESBG2_TLA",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 13,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 26,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 0,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 78,
-                "secondaryPoints": 1,
-                "tertiaryPoints": 1,
-                "sos": 13,
-                "path": "LLL"
-            }
-        },
-        {
-            "id": "e733a615-9cc2-4c70-8543-12b737a5361e",
-            "createdAt": "2026-07-17T22:16:26.200Z",
-            "user": {
-                "id": "68431330-4907-4fe2-91af-e912792c5c68",
-                "avatar": null,
-                "displayName": "Uburgos",
-                "firstName": "Hubert",
-                "lastName": "Orlicki",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
-            }
-        },
-        {
-            "id": "ac08ee86-410a-452e-be00-37dff9406c1b",
-            "createdAt": "2026-07-18T19:05:29.739Z",
-            "user": {
-                "id": "31da25d3-993d-42a7-b9b0-1df2b46ff794",
-                "avatar": "1788951366400.jpeg",
-                "displayName": "Geekwork",
-                "firstName": "Kamil",
-                "lastName": "Ziemianek",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
-            }
-        },
-        {
-            "id": "5add4ef9-b14f-46ef-8284-e28fe350197c",
-            "createdAt": "2026-07-19T08:53:11.214Z",
-            "user": {
-                "id": "077132db-3801-408a-88be-71f4203d83b3",
-                "avatar": null,
-                "displayName": "MelonKrK",
-                "firstName": "Igor",
-                "lastName": "Melnik",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 350,
-                "name": "Riders of Theoden",
-                "subfraction": null,
-                "code": "MESBG2_RoTh",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 26,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 23,
+                "stageId": 6516,
+                "place": 24,
                 "poolPlace": null,
                 "singlePlace": null,
                 "wins": 1,
                 "draws": 0,
-                "loss": 2,
-                "primaryPoints": 475,
+                "loss": 3,
+                "primaryPoints": 481,
                 "secondaryPoints": 5,
-                "tertiaryPoints": 11,
-                "sos": 26,
-                "path": "LLW"
+                "tertiaryPoints": 14,
+                "sos": 33,
+                "path": "LLLW"
             }
         },
         {
-            "id": "b1de2767-a2c2-4c1b-b217-64fd23d9ca1f",
-            "createdAt": "2026-07-19T17:43:06.593Z",
+            "id": "023127c4-91ec-4a7a-b048-f9a4a1a83e7b",
+            "createdAt": "2026-09-10T05:59:54.869Z",
             "user": {
                 "id": "475ff286-fcbc-4c49-bac5-e3002c4bdf14",
                 "avatar": "1768423062612.jpg",
                 "displayName": "Cichy",
                 "firstName": "Bart\u0142omiej ",
                 "lastName": "Cichy",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 56,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 3,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 1821,
+                "secondaryPoints": 18,
+                "tertiaryPoints": 40,
+                "sos": 56,
+                "path": "WLWW"
+            }
+        },
+        {
+            "id": "c657cd29-5ffb-4c59-8333-f24f4b385328",
+            "createdAt": "2026-09-10T07:27:57.158Z",
+            "user": {
+                "id": "077132db-3801-408a-88be-71f4203d83b3",
+                "avatar": null,
+                "displayName": "MelonKrK",
+                "firstName": "Igor",
+                "lastName": "Melnik",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -985,369 +1927,37 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 76,
+            "primaryPointsSos": 63,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
+                "id": 10082,
                 "name": "Krak\u00f3w"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
-                "place": 1,
+                "stageId": 6516,
+                "place": 14,
                 "poolPlace": null,
                 "singlePlace": null,
-                "wins": 3,
-                "draws": 0,
-                "loss": 0,
-                "primaryPoints": 1732,
-                "secondaryPoints": 17,
-                "tertiaryPoints": 32,
-                "sos": 76,
-                "path": "WWW"
-            }
-        },
-        {
-            "id": "4583eb11-f1a8-4f2c-8626-9b839e25768e",
-            "createdAt": "2026-07-19T18:09:41.748Z",
-            "user": {
-                "id": "f9ef5a6b-7fb2-4b2f-aacb-7b10bdf4e06c",
-                "avatar": "1768603886487.jpg",
-                "displayName": "\u0141ukasz Wiewi\u00f3r ",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 348,
-                "name": "Ride Out",
-                "subfraction": null,
-                "code": "MESBG2_RO",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 61,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 16,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 705,
-                "secondaryPoints": 7,
-                "tertiaryPoints": 16,
-                "sos": 61,
-                "path": "LWL"
-            }
-        },
-        {
-            "id": "c37d2b05-679e-439c-a79d-f03cb5c16b1a",
-            "createdAt": "2026-07-19T18:15:18.760Z",
-            "user": {
-                "id": "6a2a00f2-2511-49bb-abf4-034ba4382126",
-                "avatar": "1744203093313.jpg",
-                "displayName": "J. Spytek",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": {
-                "id": 325,
-                "name": "Defenders of the Hornburg",
-                "subfraction": null,
-                "code": "MESBG2_DotH",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
-            }
-        },
-        {
-            "id": "77fbf751-1570-4209-9155-3acb0bdea6e7",
-            "createdAt": "2026-07-22T14:20:54.798Z",
-            "user": {
-                "id": "448193ff-e2b4-4650-898a-1dd8dc3fd5e1",
-                "avatar": "1744203228680.jpg",
-                "displayName": "Mateusz Mi\u0142kowski ",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 349,
-                "name": "Riders of Eomer",
-                "subfraction": null,
-                "code": "MESBG2_RoE",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": 2,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 61,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 3,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 3,
-                "draws": 0,
-                "loss": 0,
-                "primaryPoints": 1614,
-                "secondaryPoints": 16,
-                "tertiaryPoints": 27,
-                "sos": 61,
-                "path": "WWW"
-            }
-        },
-        {
-            "id": "d5d111d0-e3a7-418c-9e1b-b5e83cccc38c",
-            "createdAt": "2026-07-22T14:53:06.765Z",
-            "user": {
-                "id": "d0007593-ceb7-41c6-a43e-c5541e5eb1c6",
-                "avatar": "1745397137256.jpg",
-                "displayName": "mateusz_rydz",
-                "firstName": "Mateusz",
-                "lastName": "Rydz",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 382,
-                "name": "Shadows of Angmar",
-                "subfraction": null,
-                "code": "MESBG2_SoA",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 86,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 5,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
+                "wins": 2,
                 "draws": 0,
                 "loss": 1,
-                "primaryPoints": 1324,
-                "secondaryPoints": 13,
+                "primaryPoints": 1109,
+                "secondaryPoints": 11,
                 "tertiaryPoints": 25,
-                "sos": 86,
-                "path": "_WL"
+                "sos": 63,
+                "path": "WLW"
             }
         },
         {
-            "id": "c35254d9-d79e-4802-bf8a-c1c844bafea9",
-            "createdAt": "2026-07-25T19:17:47.183Z",
+            "id": "ba514df4-01ed-4713-8696-ff80c141ce82",
+            "createdAt": "2026-09-10T08:52:02.194Z",
             "user": {
-                "id": "639fe636-9845-4b28-8d36-0a0ea855edeb",
+                "id": "813e33d8-2b98-45ed-8c3c-00af33dd4697",
                 "avatar": null,
-                "displayName": "Przemekmarczyk",
-                "firstName": "Przemys\u0142aw ",
-                "lastName": "Marczyk",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
-            }
-        },
-        {
-            "id": "786a70ff-99f3-4e01-8910-a803f8a85c92",
-            "createdAt": "2026-07-26T13:44:40.964Z",
-            "user": {
-                "id": "6428ec89-3465-476c-afec-805e603b095f",
-                "avatar": "",
-                "displayName": "Amdur",
-                "firstName": "Kamil",
-                "lastName": "Matysiak",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
-            }
-        },
-        {
-            "id": "95ef0a17-cd5d-4ffd-99aa-039af8067575",
-            "createdAt": "2026-07-30T18:12:14.580Z",
-            "user": {
-                "id": "7562fb11-cb65-4132-ada1-93cd2fc58f9f",
-                "avatar": null,
-                "displayName": "Jac0bs",
-                "firstName": "Micha\u0142",
-                "lastName": "Jak\u00f3bski",
+                "displayName": "Onder",
+                "firstName": null,
+                "lastName": null,
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -1380,44 +1990,89 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 41,
+            "primaryPointsSos": 67,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
+                "id": 10082,
                 "name": "Krak\u00f3w"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
-                "place": 7,
+                "stageId": 6516,
+                "place": 1,
                 "poolPlace": null,
                 "singlePlace": null,
-                "wins": 2,
+                "wins": 4,
                 "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1211,
-                "secondaryPoints": 12,
-                "tertiaryPoints": 28,
-                "sos": 41,
-                "path": "WLW"
+                "loss": 0,
+                "primaryPoints": 2435,
+                "secondaryPoints": 24,
+                "tertiaryPoints": 43,
+                "sos": 67,
+                "path": "WWWW"
             }
         },
         {
-            "id": "3020a381-b6c5-4566-8961-727c8ce58545",
-            "createdAt": "2026-07-30T18:18:29.880Z",
+            "id": "e65b538e-a5be-4993-ba54-c589820147a3",
+            "createdAt": "2026-09-10T13:24:11.820Z",
             "user": {
-                "id": "bbbe191e-78cb-42d6-acc6-fd53718b1fd2",
-                "avatar": null,
-                "displayName": "Dominik Kazek",
-                "firstName": "",
-                "lastName": "",
+                "id": "24a267fb-e04e-436d-9858-d39a88afbabf",
+                "avatar": "1738882944063.jpg",
+                "displayName": "BGrodny",
+                "firstName": "Bartosz",
+                "lastName": "Grodny",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": "_kaz3k"
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "sos": 0
+            }
+        },
+        {
+            "id": "54f98103-0c5e-4eb9-9735-a54fe6a67b3b",
+            "createdAt": "2026-09-10T15:09:59.564Z",
+            "user": {
+                "id": "59614550-aefe-45cd-b768-5f8310065c35",
+                "avatar": null,
+                "displayName": "Mikolaji207",
+                "firstName": "MIKO\u0141AJ",
+                "lastName": "IDZIASZCZYK",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
             },
             "listApproved": true,
             "listAdded": true,
@@ -1434,7 +2089,124 @@
                     "mesbgType": "GOOD"
                 }
             },
-            "secondaryArmy": {
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 47,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10082,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 21,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 690,
+                "secondaryPoints": 7,
+                "tertiaryPoints": 18,
+                "sos": 47,
+                "path": "WLLL"
+            }
+        },
+        {
+            "id": "881158ad-18e3-4920-8bec-2edb9f17036c",
+            "createdAt": "2026-09-10T19:40:59.237Z",
+            "user": {
+                "id": "795b46a8-5f87-4929-9f90-8af5cf04da90",
+                "avatar": null,
+                "displayName": "SzymeK",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 3143,
+                    "name": "Wieliczka",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 53,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 10338,
+                "name": "Wieliczka"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6516,
+                "place": 23,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 575,
+                "secondaryPoints": 6,
+                "tertiaryPoints": 22,
+                "sos": 53,
+                "path": "LWLL"
+            }
+        },
+        {
+            "id": "a1d55cfd-b2b7-49b8-b337-ad6a7019093b",
+            "createdAt": "2026-09-10T19:47:17.529Z",
+            "user": {
+                "id": "809fc623-68b5-4bf3-933b-81f3ab3b689f",
+                "avatar": "1774545107211.jpeg",
+                "displayName": "Laren",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 3143,
+                    "name": "Wieliczka",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
                 "id": 366,
                 "name": "The Black Gate",
                 "subfraction": null,
@@ -1443,68 +2215,6 @@
                     "mesbgType": "EVIL"
                 }
             },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 70,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 10,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1205,
-                "secondaryPoints": 12,
-                "tertiaryPoints": 24,
-                "sos": 70,
-                "path": "WWL"
-            }
-        },
-        {
-            "id": "99fb17df-2e34-4c75-a2ac-0f19d864dc5a",
-            "createdAt": "2026-08-03T05:38:50.889Z",
-            "user": {
-                "id": "d6fa65f5-0af3-4f67-ab45-015c121507f0",
-                "avatar": "1742569168080.jpg",
-                "displayName": "Fox.",
-                "firstName": "Daniel",
-                "lastName": "Bujalski",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 364,
-                "name": "Barad-Dur",
-                "subfraction": null,
-                "code": "MESBG2_BD",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
@@ -1514,725 +2224,31 @@
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 26,
+            "primaryPointsSos": 54,
             "primaryPointsPoolSos": 0,
             "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
+                "id": 10338,
+                "name": "Wieliczka"
             },
             "poolResult": null,
             "finalResult": {
-                "stageId": 6267,
-                "place": 24,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 0,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 179,
-                "secondaryPoints": 2,
-                "tertiaryPoints": 13,
-                "sos": 26,
-                "path": "LLL"
-            }
-        },
-        {
-            "id": "13a73cd9-329c-4a13-a581-72123cca1c5b",
-            "createdAt": "2026-08-03T06:49:24.249Z",
-            "user": {
-                "id": "ea7e3e0d-3a78-4a90-8ca4-a55e6505cf5a",
-                "avatar": null,
-                "displayName": "Shaman",
-                "firstName": null,
-                "lastName": null,
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
-            }
-        },
-        {
-            "id": "8b08154f-7b5b-4d5c-9e20-f7e932e7aaf2",
-            "createdAt": "2026-08-06T07:22:09.177Z",
-            "user": {
-                "id": "0b9e69bb-46e8-4b18-949b-c788fd37fe1e",
-                "avatar": "1786343626055.jpeg",
-                "displayName": "Knoxville",
-                "firstName": "Konrad",
-                "lastName": "Pinscher",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": "knox9077"
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 346,
-                "name": "Reclamation of Osgiliath",
-                "subfraction": null,
-                "code": "MESBG2_RoO",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": {
-                "id": 385,
-                "name": "Usurpers of Edoras",
-                "subfraction": null,
-                "code": "MESBG2_UoE",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 57,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 14,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 810,
-                "secondaryPoints": 8,
-                "tertiaryPoints": 29,
-                "sos": 57,
-                "path": "WLL"
-            }
-        },
-        {
-            "id": "5fe84b48-47f7-477c-b7a2-d7cf366d43a0",
-            "createdAt": "2026-08-07T20:59:13.610Z",
-            "user": {
-                "id": "f48752fd-e96a-49e3-bb78-8c12475d82ae",
-                "avatar": "1778836741385.png",
-                "displayName": "Piotras",
-                "firstName": "Piotr",
-                "lastName": "B\u0105k",
-                "city": {
-                    "id": 3152,
-                    "name": "Lublin",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9722,
-                "name": "Lublin"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
-            }
-        },
-        {
-            "id": "823327cd-cab6-4b2a-9a4b-394912bc6d40",
-            "createdAt": "2026-08-08T08:39:41.712Z",
-            "user": {
-                "id": "d1928738-701d-4759-abe9-ff1123a28015",
-                "avatar": "1744129265061.jpeg",
-                "displayName": "Micha\u0142 Magry\u015b",
-                "firstName": "Micha\u0142",
-                "lastName": "Magry\u015b",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
-            }
-        },
-        {
-            "id": "a5c8604a-aad9-4224-b1d5-8624ed294e5b",
-            "createdAt": "2026-08-15T18:53:48.610Z",
-            "user": {
-                "id": "2a392470-f47d-4fff-a8b9-37d9cbbe2361",
-                "avatar": "1744128645896.jpg",
-                "displayName": "Malik",
-                "firstName": "\u0141ukasz",
-                "lastName": "Malik",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 337,
-                "name": "The Last Alliance",
-                "subfraction": null,
-                "code": "MESBG2_TLA",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 37,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 17,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 702,
-                "secondaryPoints": 7,
-                "tertiaryPoints": 15,
-                "sos": 37,
-                "path": "LWL"
-            }
-        },
-        {
-            "id": "48857060-4561-4f6f-b7d3-465070ecc58c",
-            "createdAt": "2026-08-18T11:27:25.755Z",
-            "user": {
-                "id": "fd60fbcb-36b7-4638-9d8f-4bce3e341ccf",
-                "avatar": "1771161326689.jpeg",
-                "displayName": "Mathewmisior",
-                "firstName": "Mathew",
-                "lastName": "Misior",
-                "city": null,
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 446,
-                "name": "Army of the Great Eye",
-                "subfraction": null,
-                "code": "MESBG2_AotGE",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 65,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 2,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 3,
-                "draws": 0,
-                "loss": 0,
-                "primaryPoints": 1617,
-                "secondaryPoints": 16,
-                "tertiaryPoints": 27,
-                "sos": 65,
-                "path": "WWW"
-            }
-        },
-        {
-            "id": "995730f1-78a2-4a53-8c29-84ca143e260e",
-            "createdAt": "2026-08-19T06:42:31.359Z",
-            "user": {
-                "id": "2f1215b6-dd3c-44cc-9604-ee8e4b42553c",
-                "avatar": "1765871982791.jpg",
-                "displayName": "Bartekz",
-                "firstName": "Bartosz",
-                "lastName": "Zugaj",
-                "city": {
-                    "id": 227,
-                    "name": "Katowice",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 449,
-                "name": "The Serpent Horde",
-                "subfraction": null,
-                "code": "MESBG2_TSH",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 46,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9908,
-                "name": "Katowice"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
+                "stageId": 6516,
                 "place": 11,
                 "poolPlace": null,
                 "singlePlace": null,
                 "wins": 2,
                 "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1105,
-                "secondaryPoints": 11,
-                "tertiaryPoints": 20,
-                "sos": 46,
-                "path": "WLW"
-            }
-        },
-        {
-            "id": "f11e611a-039b-4a93-8862-48723f9f3dbe",
-            "createdAt": "2026-08-19T21:27:23.301Z",
-            "user": {
-                "id": "b1da1ba2-7866-4e07-905e-53c474b5cd72",
-                "avatar": null,
-                "displayName": "franekc",
-                "firstName": null,
-                "lastName": null,
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 362,
-                "name": "Assault Upon Helm's Deep",
-                "subfraction": null,
-                "code": "MESBG2_AUHD",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 43,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 20,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 0,
                 "loss": 2,
-                "primaryPoints": 591,
-                "secondaryPoints": 6,
-                "tertiaryPoints": 14,
-                "sos": 43,
-                "path": "LWL"
-            }
-        },
-        {
-            "id": "d685f59d-3ce9-47f9-a993-71c78fc72f4e",
-            "createdAt": "2026-08-20T06:35:04.965Z",
-            "user": {
-                "id": "6f995656-e4a6-462d-b2dc-358687645153",
-                "avatar": null,
-                "displayName": "Jerzy P",
-                "firstName": "Jerzy ",
-                "lastName": "Parzych",
-                "city": null,
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 341,
-                "name": "Minas Tirith",
-                "subfraction": null,
-                "code": "MESBG2_MT",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": {
-                "id": 341,
-                "name": "Minas Tirith",
-                "subfraction": null,
-                "code": "MESBG2_MT",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 61,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 22,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 482,
-                "secondaryPoints": 5,
-                "tertiaryPoints": 11,
-                "sos": 61,
-                "path": "WLL"
-            }
-        },
-        {
-            "id": "64cf8bc6-75af-4cb2-9e6d-3eb19f784c43",
-            "createdAt": "2026-08-20T09:38:20.281Z",
-            "user": {
-                "id": "874b0d14-6fd6-4e03-b7d0-d9302c599b77",
-                "avatar": null,
-                "displayName": "Dzwoni Papuga",
-                "firstName": "Konrad ",
-                "lastName": "Jagocha",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 318,
-                "name": "Arnor",
-                "subfraction": null,
-                "code": "MESBG2_A",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 72,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 8,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1211,
-                "secondaryPoints": 12,
-                "tertiaryPoints": 27,
-                "sos": 72,
-                "path": "WLW"
-            }
-        },
-        {
-            "id": "e8b9c97e-fbf4-4d45-a9fe-82d7de5b9520",
-            "createdAt": "2026-08-21T19:22:31.323Z",
-            "user": {
-                "id": "7fa5ba4b-28df-44e8-a4f2-d87072e98a2b",
-                "avatar": "1744139126244.jpeg",
-                "displayName": "Bakson",
-                "firstName": "Jakub",
-                "lastName": "Czy\u017c",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 366,
-                "name": "The Black Gate",
-                "subfraction": null,
-                "code": "MESBG2_TBGO",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": -2,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 69,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "place": 4,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 3,
-                "draws": 0,
-                "loss": 0,
-                "primaryPoints": 1614,
-                "secondaryPoints": 16,
-                "tertiaryPoints": 23,
-                "sos": 69,
-                "path": "WWW"
-            }
-        },
-        {
-            "id": "df93fc78-4abb-4a6e-b12f-cc87c90a397f",
-            "createdAt": "2026-08-21T21:17:08.985Z",
-            "user": {
-                "id": "8cae570b-5e2b-4729-bea2-c07fe31fb4ab",
-                "avatar": "1789319843183.jpg",
-                "displayName": "Lord_jedynek",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": {
-                "id": 362,
-                "name": "Assault Upon Helm's Deep",
-                "subfraction": null,
-                "code": "MESBG2_AUHD",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 9375,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6267,
-                "sos": 0
+                "primaryPoints": 1298,
+                "secondaryPoints": 13,
+                "tertiaryPoints": 16,
+                "sos": 54,
+                "path": "WWLL"
             }
         }
     ],
     "teams": [],
-    "points": "760",
+    "points": "525",
     "patch": "NIGHTLINGS",
     "tournament_type": "LOKAL"
 }

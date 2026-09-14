@@ -177,7 +177,7 @@
             "createdAt": "2025-12-02T20:40:30.279Z",
             "user": {
                 "id": "7825ed24-d5e7-4e12-b627-23c81c278c00",
-                "avatar": "1771963701812.jpg",
+                "avatar": "1789292366575.png",
                 "displayName": "Klusekk",
                 "firstName": "Damian",
                 "lastName": "Dudasz",
@@ -228,66 +228,6 @@
                 "primaryPoints": 1319,
                 "secondaryPoints": 13,
                 "tertiaryPoints": 38,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
-            "id": "568097d8-2340-4f7b-b69c-07363e84d9fa",
-            "createdAt": "2025-12-02T21:02:35.663Z",
-            "user": {
-                "id": "c70f135f-cff3-481e-b4de-25725df57a2c",
-                "avatar": null,
-                "displayName": "Wielki Kacpi ",
-                "firstName": null,
-                "lastName": null,
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 444,
-                "name": "The Beornings",
-                "subfraction": null,
-                "code": "MESBG2_TB",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "9de0fbb6-d07b-4ac9-b9a0-d52625b5553e",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3076,
-                "place": 4,
-                "poolPlace": null,
-                "singlePlace": 7,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1209,
-                "secondaryPoints": 12,
-                "tertiaryPoints": 36,
                 "sos": 0,
                 "path": ""
             }
@@ -353,14 +293,74 @@
             }
         },
         {
-            "id": "e6ccfa59-380a-4072-b65c-44628dbc0a78",
+            "id": "568097d8-2340-4f7b-b69c-07363e84d9fa",
+            "createdAt": "2025-12-02T21:02:35.663Z",
+            "user": {
+                "id": "c70f135f-cff3-481e-b4de-25725df57a2c",
+                "avatar": null,
+                "displayName": "Wielki Kacpi ",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 444,
+                "name": "The Beornings",
+                "subfraction": null,
+                "code": "MESBG2_TB",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "9de0fbb6-d07b-4ac9-b9a0-d52625b5553e",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3076,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": 7,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 1209,
+                "secondaryPoints": 12,
+                "tertiaryPoints": 36,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "19bf7dbd-245d-473d-9f2d-267e1bec8e4b",
             "createdAt": "2025-12-05T15:00:40.631Z",
             "user": {
-                "id": "6e8fd6ad-52e1-4877-84dc-2fce2d7ab7da",
-                "avatar": "1756152479087.jpg",
-                "displayName": "makelele",
-                "firstName": "Mi\u0142osz",
-                "lastName": "Szybist",
+                "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
+                "avatar": "1744129501318.jpg",
+                "displayName": "Medved",
+                "firstName": "Medard",
+                "lastName": "Grabowski",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -413,14 +413,14 @@
             }
         },
         {
-            "id": "19bf7dbd-245d-473d-9f2d-267e1bec8e4b",
+            "id": "e6ccfa59-380a-4072-b65c-44628dbc0a78",
             "createdAt": "2025-12-05T15:00:40.631Z",
             "user": {
-                "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                "avatar": "1744129501318.jpg",
-                "displayName": "Medved",
-                "firstName": "Medard",
-                "lastName": "Grabowski",
+                "id": "6e8fd6ad-52e1-4877-84dc-2fce2d7ab7da",
+                "avatar": "1756152479087.jpg",
+                "displayName": "makelele",
+                "firstName": "Mi\u0142osz",
+                "lastName": "Szybist",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -695,14 +695,14 @@
             }
         },
         {
-            "id": "4437e491-4f8e-47c0-afde-eedc36161c05",
+            "id": "21207efa-fd58-49eb-997f-e62176e4f57f",
             "createdAt": "2025-12-09T00:15:56.006Z",
             "user": {
-                "id": "a1809942-e6cc-45fe-a56a-7cd147c2d690",
+                "id": "3095fe86-18e4-4b0b-a307-f5b638304cb5",
                 "avatar": null,
-                "displayName": "D\u017cemm",
-                "firstName": "",
-                "lastName": "",
+                "displayName": "Batsy",
+                "firstName": "Julia",
+                "lastName": "Gas",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -755,14 +755,14 @@
             }
         },
         {
-            "id": "21207efa-fd58-49eb-997f-e62176e4f57f",
+            "id": "4437e491-4f8e-47c0-afde-eedc36161c05",
             "createdAt": "2025-12-09T00:15:56.006Z",
             "user": {
-                "id": "3095fe86-18e4-4b0b-a307-f5b638304cb5",
+                "id": "a1809942-e6cc-45fe-a56a-7cd147c2d690",
                 "avatar": null,
-                "displayName": "Batsy",
-                "firstName": "Julia",
-                "lastName": "Gas",
+                "displayName": "D\u017cemm",
+                "firstName": "",
+                "lastName": "",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",

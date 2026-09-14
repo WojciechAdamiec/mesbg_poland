@@ -1,58 +1,6 @@
 {
     "people": [
         {
-            "id": "bc5b9092-75e4-404a-9a09-87988eb28882",
-            "createdAt": "2025-11-10T20:35:03.789Z",
-            "user": {
-                "id": "4312b892-eb2e-491a-b14a-6f7cff1ab128",
-                "avatar": "1747816180455.jpg",
-                "displayName": "Stefano",
-                "firstName": "Mateusz",
-                "lastName": "Rosiek",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "07939b18-6665-4f59-9a72-73c6ebd96775",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3079,
-                "place": 8,
-                "poolPlace": null,
-                "singlePlace": 10,
-                "wins": 1,
-                "draws": 1,
-                "loss": 1,
-                "primaryPoints": 9,
-                "secondaryPoints": 21,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "30cce2d2-7344-4e57-9a6b-0ea4f381b7e1",
             "createdAt": "2025-11-10T20:35:03.789Z",
             "user": {
@@ -99,6 +47,58 @@
                 "loss": 2,
                 "primaryPoints": 5,
                 "secondaryPoints": 9,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "bc5b9092-75e4-404a-9a09-87988eb28882",
+            "createdAt": "2025-11-10T20:35:03.789Z",
+            "user": {
+                "id": "4312b892-eb2e-491a-b14a-6f7cff1ab128",
+                "avatar": "1747816180455.jpg",
+                "displayName": "Stefano",
+                "firstName": "Mateusz",
+                "lastName": "Rosiek",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "07939b18-6665-4f59-9a72-73c6ebd96775",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3079,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": 10,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 9,
+                "secondaryPoints": 21,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -697,66 +697,6 @@
             }
         },
         {
-            "id": "b692c732-0c5b-4342-9f6d-94bd338e3336",
-            "createdAt": "2025-12-05T09:00:40.200Z",
-            "user": {
-                "id": "71f045ad-ce24-4e8b-865a-1dc0f634a42d",
-                "avatar": null,
-                "displayName": "Malbeth",
-                "firstName": "Aleksander ",
-                "lastName": "Jaworski-Martycz",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 453,
-                "name": "Moria",
-                "subfraction": null,
-                "code": "MESBG2_M",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "2006034e-aaf9-47e0-8751-2af1a278eba5",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3079,
-                "place": 7,
-                "poolPlace": null,
-                "singlePlace": 9,
-                "wins": 1,
-                "draws": 1,
-                "loss": 1,
-                "primaryPoints": 9,
-                "secondaryPoints": 23,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "84b49fab-8fe3-4e32-8439-72c13d21a41a",
             "createdAt": "2025-12-05T09:00:40.200Z",
             "user": {
@@ -811,6 +751,66 @@
                 "loss": 2,
                 "primaryPoints": 6,
                 "secondaryPoints": 22,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "b692c732-0c5b-4342-9f6d-94bd338e3336",
+            "createdAt": "2025-12-05T09:00:40.200Z",
+            "user": {
+                "id": "71f045ad-ce24-4e8b-865a-1dc0f634a42d",
+                "avatar": null,
+                "displayName": "Malbeth",
+                "firstName": "Aleksander ",
+                "lastName": "Jaworski-Martycz",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "2006034e-aaf9-47e0-8751-2af1a278eba5",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3079,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 9,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 9,
+                "secondaryPoints": 23,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

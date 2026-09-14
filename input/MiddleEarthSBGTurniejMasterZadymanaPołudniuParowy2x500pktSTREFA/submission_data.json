@@ -65,7 +65,7 @@
             "createdAt": "2026-06-16T07:59:47.463Z",
             "user": {
                 "id": "7825ed24-d5e7-4e12-b627-23c81c278c00",
-                "avatar": "1771963701812.jpg",
+                "avatar": "1789292366575.png",
                 "displayName": "Klusekk",
                 "firstName": "Damian",
                 "lastName": "Dudasz",
@@ -653,66 +653,6 @@
             }
         },
         {
-            "id": "896855b4-12ee-4635-87a8-3c4d299fccbc",
-            "createdAt": "2026-06-24T20:16:46.451Z",
-            "user": {
-                "id": "7129c934-aacc-4988-9527-976c04e381ac",
-                "avatar": null,
-                "displayName": "Malinus",
-                "firstName": "Lukasz",
-                "lastName": "Malinowski",
-                "city": {
-                    "id": 223,
-                    "name": "Bielsko-bia\u0142a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": true,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 322,
-                "name": "Battle of Fornost",
-                "subfraction": null,
-                "code": "MESBG2_BoF",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "15beb1a9-825b-46aa-90b6-fed0bdebebf3",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 38,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4521,
-                "place": 21,
-                "poolPlace": null,
-                "singlePlace": 45,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 30,
-                "secondaryPoints": 51,
-                "tertiaryPoints": 0,
-                "sos": 38,
-                "path": "LLWLWW"
-            }
-        },
-        {
             "id": "fc65a300-f03e-46a0-b2f7-72003ce5152c",
             "createdAt": "2026-06-24T20:16:46.451Z",
             "user": {
@@ -766,6 +706,66 @@
                 "draws": 0,
                 "loss": 3,
                 "primaryPoints": 32,
+                "secondaryPoints": 51,
+                "tertiaryPoints": 0,
+                "sos": 38,
+                "path": "LLWLWW"
+            }
+        },
+        {
+            "id": "896855b4-12ee-4635-87a8-3c4d299fccbc",
+            "createdAt": "2026-06-24T20:16:46.451Z",
+            "user": {
+                "id": "7129c934-aacc-4988-9527-976c04e381ac",
+                "avatar": null,
+                "displayName": "Malinus",
+                "firstName": "Lukasz",
+                "lastName": "Malinowski",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": true,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 322,
+                "name": "Battle of Fornost",
+                "subfraction": null,
+                "code": "MESBG2_BoF",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "15beb1a9-825b-46aa-90b6-fed0bdebebf3",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 38,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4521,
+                "place": 21,
+                "poolPlace": null,
+                "singlePlace": 45,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 30,
                 "secondaryPoints": 51,
                 "tertiaryPoints": 0,
                 "sos": 38,
@@ -3989,7 +3989,7 @@
             "createdAt": "2026-08-11T05:34:27.056Z",
             "user": {
                 "id": "1857125d-c4f2-4a84-a26c-18ff4acbbcaf",
-                "avatar": "1759219256948.jpg",
+                "avatar": "1789139169638.jpg",
                 "displayName": "Kajoj",
                 "firstName": "Karol",
                 "lastName": "P\u0119kala",

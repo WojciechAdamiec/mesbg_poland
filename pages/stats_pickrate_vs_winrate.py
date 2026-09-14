@@ -2,39 +2,26 @@ import dash
 import dash_mantine_components as dmc
 from dash import callback, Input, Output
 from store import load_armies, load_battles
+from pages.stats_filters import (
+    FACTIONS,
+    FACTION_COLORS,
+    GAME_TYPES,
+    GAME_TYPE_MAP,
+    MAX_GAMES,
+    MAX_POINTS,
+    MIN_POINTS,
+    PATCHES,
+    PATCH_MAP,
+    create_filter_controls,
+    filter_ids,
+    filter_inputs,
+)
 
 
-dash.register_page(__name__, path='/stats/pickrate_vs_winratio', name="Pickrate vs Winratio")
-
-GAME_TYPES = ["Locals", "Challengers", "Masters", "Online"]
-PATCHES = ["Balrog Age", "Gwaihir Age", "Nightlings Age"]
-FACTIONS = ["Good", "Evil"]
-FACTION_COLORS = {"Good": "green.6", "Evil": "red.6"}
-
-GAME_TYPE_MAP = {
-    "Locals": "LOCAL",
-    "Challengers": "CHALLENGER",
-    "Masters": "MASTER",
-    "Online": "ONLINE",
-}
-
-PATCH_MAP = {
-    "Balrog Age": "BALROG",
-    "Gwaihir Age": "GWAIHIR",
-    "Nightlings Age": "NIGHTLINGS",
-}
-
-FACTION_MAP = {
-    "Good": "GOOD",
-    "Evil": "EVIL",
-}
+dash.register_page(__name__, path='/stats/pickrate_vs_winrate', name="Pickrate vs Winrate")
 
 battles_data = load_battles()
 armies_data = load_armies()
-
-MIN_POINTS = 0
-MAX_POINTS = 1000
-MAX_GAMES = 100
 
 
 def compute_chart_data(battles, armies, points_range, game_types, patches, factions, exclude_vegetables, min_games):
@@ -148,55 +135,11 @@ initial_chart_data = compute_chart_data(
     patches=PATCHES,
     factions=FACTIONS,
     exclude_vegetables=False,
-    min_games=0,
+    min_games=40,
 )
 
-controls = dmc.Stack(
-    [
-        dmc.Text("Points range", fw=600),
-        dmc.RangeSlider(
-            id="pvw-points-range",
-            min=MIN_POINTS,
-            max=MAX_POINTS,
-            step=10,
-            value=[MIN_POINTS, MAX_POINTS],
-            marks=[{"value": p, "label": str(p)} for p in range(0, 1001, 100)],
-            labelAlwaysOn=True,
-            mb=30,
-        ),
-        dmc.Text("Game type", fw=600),
-        dmc.CheckboxGroup(
-            id="pvw-game-types",
-            value=GAME_TYPES,
-            children=dmc.Group([dmc.Checkbox(label=gt, value=gt) for gt in GAME_TYPES]),
-        ),
-        dmc.Text("Patch", fw=600, mt="md"),
-        dmc.CheckboxGroup(
-            id="pvw-patches",
-            value=PATCHES,
-            children=dmc.Group([dmc.Checkbox(label=p, value=p) for p in PATCHES]),
-        ),
-        dmc.Text("Factions", fw=600, mt="md"),
-        dmc.CheckboxGroup(
-            id="pvw-factions",
-            value=FACTIONS,
-            children=dmc.Group([dmc.Checkbox(label=f, value=f) for f in FACTIONS]),
-        ),
-        dmc.Text("Ranking", fw=600, mt="md"),
-        dmc.Checkbox(id="pvw-exclude-vegetables", label="Exclude Vegetables"),
-        dmc.Text("Minimum games played", fw=600, mt="md"),
-        dmc.Slider(
-            id="pvw-min-games",
-            min=0,
-            max=MAX_GAMES,
-            step=1,
-            value=0,
-            marks=[{"value": p, "label": str(p)} for p in range(0, 101, 20)],
-            labelAlwaysOn=False,
-            mb=30,
-        ),
-    ]
-)
+controls = create_filter_controls("pvw", max_games=60, default_min_games=40)
+ids = filter_ids("pvw")
 
 layout = dmc.Box(
     [
@@ -229,12 +172,12 @@ layout = dmc.Box(
 
 @callback(
     Output("pvw-chart", "data"),
-    Input("pvw-points-range", "value"),
-    Input("pvw-game-types", "value"),
-    Input("pvw-patches", "value"),
-    Input("pvw-factions", "value"),
-    Input("pvw-exclude-vegetables", "checked"),
-    Input("pvw-min-games", "value"),
+    Input(ids["points_range"], "value"),
+    Input(ids["game_types"], "value"),
+    Input(ids["patches"], "value"),
+    Input(ids["factions"], "value"),
+    Input(ids["exclude_vegetables"], "checked"),
+    Input(ids["min_games"], "value"),
 )
 def update_chart(points_range, game_types, patches, factions, exclude_vegetables, min_games):
     return compute_chart_data(

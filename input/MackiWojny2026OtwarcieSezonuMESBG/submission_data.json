@@ -1949,14 +1949,14 @@
             }
         },
         {
-            "id": "e3aa6211-052a-436d-be7b-d06568f4f5e1",
+            "id": "dff93dea-5772-44f7-9b13-9732a3e13e18",
             "createdAt": "2025-10-26T06:26:44.822Z",
             "user": {
-                "id": "7db60bf3-1d9f-4ce6-8b5d-32e66d16000d",
-                "avatar": "1739820624712.jpg",
-                "displayName": "Eskobar",
-                "firstName": "Pawe\u0142",
-                "lastName": "Lisak",
+                "id": "33c02a77-8b2d-4cfc-a72f-bd991ce0c950",
+                "avatar": "1743194647280.jpg",
+                "displayName": "Sheldi",
+                "firstName": "Damian",
+                "lastName": "Szreder",
                 "city": {
                     "id": 234,
                     "name": "Tr\u00f3jmiasto",
@@ -1991,14 +1991,14 @@
             }
         },
         {
-            "id": "dff93dea-5772-44f7-9b13-9732a3e13e18",
+            "id": "e3aa6211-052a-436d-be7b-d06568f4f5e1",
             "createdAt": "2025-10-26T06:26:44.822Z",
             "user": {
-                "id": "33c02a77-8b2d-4cfc-a72f-bd991ce0c950",
-                "avatar": "1743194647280.jpg",
-                "displayName": "Sheldi",
-                "firstName": "Damian",
-                "lastName": "Szreder",
+                "id": "7db60bf3-1d9f-4ce6-8b5d-32e66d16000d",
+                "avatar": "1739820624712.jpg",
+                "displayName": "Eskobar",
+                "firstName": "Pawe\u0142",
+                "lastName": "Lisak",
                 "city": {
                     "id": 234,
                     "name": "Tr\u00f3jmiasto",
@@ -3263,66 +3263,6 @@
             }
         },
         {
-            "id": "47604af7-d0ae-4015-818f-23a56b0a6d31",
-            "createdAt": "2025-10-27T13:46:21.662Z",
-            "user": {
-                "id": "5f55d7f6-e77c-45a0-b083-60691560a665",
-                "avatar": "1747173965326.png",
-                "displayName": "D\u0119bowy",
-                "firstName": "Miko\u0142aj",
-                "lastName": "D\u0119bicki",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 333,
-                "name": "Garrison of Ithilien",
-                "subfraction": null,
-                "code": "MESBG2_GoI",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "4d22e805-d78f-4cff-a3b7-d603494329fa",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3257,
-                "place": 15,
-                "poolPlace": null,
-                "singlePlace": 64,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 17,
-                "secondaryPoints": 30,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "6cba9aea-7423-4873-83a4-a7f18da8341f",
             "createdAt": "2025-10-27T13:46:21.662Z",
             "user": {
@@ -3377,6 +3317,66 @@
                 "loss": 2,
                 "primaryPoints": 24,
                 "secondaryPoints": 60,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "47604af7-d0ae-4015-818f-23a56b0a6d31",
+            "createdAt": "2025-10-27T13:46:21.662Z",
+            "user": {
+                "id": "5f55d7f6-e77c-45a0-b083-60691560a665",
+                "avatar": "1747173965326.png",
+                "displayName": "D\u0119bowy",
+                "firstName": "Miko\u0142aj",
+                "lastName": "D\u0119bicki",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 333,
+                "name": "Garrison of Ithilien",
+                "subfraction": null,
+                "code": "MESBG2_GoI",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "4d22e805-d78f-4cff-a3b7-d603494329fa",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3257,
+                "place": 15,
+                "poolPlace": null,
+                "singlePlace": 64,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 17,
+                "secondaryPoints": 30,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

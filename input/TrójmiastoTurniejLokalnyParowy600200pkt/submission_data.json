@@ -431,74 +431,6 @@
             }
         },
         {
-            "id": "41aa965e-d9f9-4340-b7c9-fe18d9c00943",
-            "createdAt": "2026-03-23T19:42:03.833Z",
-            "user": {
-                "id": "00edbb80-803b-49da-af81-f9d0f5df0d01",
-                "avatar": null,
-                "displayName": "Jelly",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 234,
-                    "name": "Tr\u00f3jmiasto",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "APPROVED",
-            "army": {
-                "id": 375,
-                "name": "Host of the Witch-King",
-                "subfraction": null,
-                "code": "MESBG2_HotWK",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 375,
-                "name": "Host of the Witch-King",
-                "subfraction": null,
-                "code": "MESBG2_HotWK",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "a2f52dfa-8fab-4456-a5c7-8307560d885a",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4084,
-                "place": 8,
-                "poolPlace": null,
-                "singlePlace": 9,
-                "wins": 2,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 14,
-                "secondaryPoints": 47,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "73e896f4-b44d-4d0c-972e-328c78d6e382",
             "createdAt": "2026-03-23T19:42:03.833Z",
             "user": {
@@ -561,6 +493,74 @@
                 "loss": 3,
                 "primaryPoints": 6,
                 "secondaryPoints": 19,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "41aa965e-d9f9-4340-b7c9-fe18d9c00943",
+            "createdAt": "2026-03-23T19:42:03.833Z",
+            "user": {
+                "id": "00edbb80-803b-49da-af81-f9d0f5df0d01",
+                "avatar": null,
+                "displayName": "Jelly",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 375,
+                "name": "Host of the Witch-King",
+                "subfraction": null,
+                "code": "MESBG2_HotWK",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 375,
+                "name": "Host of the Witch-King",
+                "subfraction": null,
+                "code": "MESBG2_HotWK",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "a2f52dfa-8fab-4456-a5c7-8307560d885a",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4084,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": 9,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 14,
+                "secondaryPoints": 47,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -1085,74 +1085,6 @@
             }
         },
         {
-            "id": "60ab26e3-27c6-48de-b29b-e84936104b2d",
-            "createdAt": "2026-03-28T12:11:59.930Z",
-            "user": {
-                "id": "3bd8cb51-dd0c-4400-9388-b3a76c4a14a1",
-                "avatar": null,
-                "displayName": "Wojti",
-                "firstName": "Wojciech",
-                "lastName": "Gramacki",
-                "city": {
-                    "id": 234,
-                    "name": "Tr\u00f3jmiasto",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "APPROVED",
-            "army": {
-                "id": 360,
-                "name": "Army of Gundabad",
-                "subfraction": null,
-                "code": "MESBG2_AoGu",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 360,
-                "name": "Army of Gundabad",
-                "subfraction": null,
-                "code": "MESBG2_AoGu",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "834fd5c3-9054-4277-aa6f-bee054c054d1",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4084,
-                "place": 1,
-                "poolPlace": null,
-                "singlePlace": 4,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 19,
-                "secondaryPoints": 42,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "5161cc0e-e0cf-4dbc-99e0-5f401a36ce64",
             "createdAt": "2026-03-28T12:11:59.930Z",
             "user": {
@@ -1215,6 +1147,74 @@
                 "loss": 0,
                 "primaryPoints": 22,
                 "secondaryPoints": 47,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "60ab26e3-27c6-48de-b29b-e84936104b2d",
+            "createdAt": "2026-03-28T12:11:59.930Z",
+            "user": {
+                "id": "3bd8cb51-dd0c-4400-9388-b3a76c4a14a1",
+                "avatar": null,
+                "displayName": "Wojti",
+                "firstName": "Wojciech",
+                "lastName": "Gramacki",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 360,
+                "name": "Army of Gundabad",
+                "subfraction": null,
+                "code": "MESBG2_AoGu",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 360,
+                "name": "Army of Gundabad",
+                "subfraction": null,
+                "code": "MESBG2_AoGu",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "834fd5c3-9054-4277-aa6f-bee054c054d1",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4084,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": 4,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 19,
+                "secondaryPoints": 42,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

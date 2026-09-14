@@ -1,21 +1,21 @@
 {
     "people": [
         {
-            "id": "61cf3d90-2e11-47af-8158-9456c63e04db",
+            "id": "00644b1d-87d7-4ec8-8a30-0f4afac1f08b",
             "createdAt": "2026-03-22T16:55:34.152Z",
             "user": {
-                "id": "804c4802-b3bc-41ec-9f1b-de92ffe4897e",
-                "avatar": "1769176746811.jpg",
-                "displayName": "Pan Maruda",
-                "firstName": "Wojciech",
-                "lastName": "Zacher",
+                "id": "ef46c5bc-e9ab-450b-85f5-4b88323ef1b8",
+                "avatar": null,
+                "displayName": "Adam Rodeo",
+                "firstName": "Adam",
+                "lastName": "Rodek",
                 "city": {
                     "id": 227,
                     "name": "Katowice",
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": "raczyjelen"
+                "discordUsername": null
             },
             "listApproved": true,
             "listAdded": true,
@@ -24,12 +24,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 325,
-                "name": "Defenders of the Hornburg",
+                "id": 449,
+                "name": "The Serpent Horde",
                 "subfraction": null,
-                "code": "MESBG2_DotH",
+                "code": "MESBG2_TSH",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
@@ -61,21 +61,21 @@
             }
         },
         {
-            "id": "00644b1d-87d7-4ec8-8a30-0f4afac1f08b",
+            "id": "61cf3d90-2e11-47af-8158-9456c63e04db",
             "createdAt": "2026-03-22T16:55:34.152Z",
             "user": {
-                "id": "ef46c5bc-e9ab-450b-85f5-4b88323ef1b8",
-                "avatar": null,
-                "displayName": "Adam Rodeo",
-                "firstName": "Adam",
-                "lastName": "Rodek",
+                "id": "804c4802-b3bc-41ec-9f1b-de92ffe4897e",
+                "avatar": "1769176746811.jpg",
+                "displayName": "Pan Maruda",
+                "firstName": "Wojciech",
+                "lastName": "Zacher",
                 "city": {
                     "id": 227,
                     "name": "Katowice",
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": null
+                "discordUsername": "raczyjelen"
             },
             "listApproved": true,
             "listAdded": true,
@@ -84,12 +84,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 449,
-                "name": "The Serpent Horde",
+                "id": 325,
+                "name": "Defenders of the Hornburg",
                 "subfraction": null,
-                "code": "MESBG2_TSH",
+                "code": "MESBG2_DotH",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,

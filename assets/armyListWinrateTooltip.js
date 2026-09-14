@@ -1,7 +1,7 @@
 var dmcfuncs = window.dashMantineFunctions = window.dashMantineFunctions || {};
 var dmc = window.dash_mantine_components;
 
-dmcfuncs.pickrateTooltip = ({ payload }) => {
+dmcfuncs.armyListWinrateTooltip = ({ payload }) => {
   if (!payload || payload.length === 0) return null;
 
   var point = payload[0].payload;
@@ -14,11 +14,6 @@ dmcfuncs.pickrateTooltip = ({ payload }) => {
         dmc.Text,
         { key: "name", fw: 700, fz: "md", mb: 4 },
         point.army
-      ),
-      React.createElement(
-        dmc.Text,
-        { key: "pickrate", fz: "md" },
-        `Pickrate: ${point.pickrate.toFixed(1)}%`
       ),
       React.createElement(
         dmc.Text,

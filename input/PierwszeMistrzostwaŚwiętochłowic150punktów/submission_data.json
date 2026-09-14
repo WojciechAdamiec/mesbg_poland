@@ -120,6 +120,51 @@
             }
         },
         {
+            "id": "8356018f-c1f8-450f-a5a5-351594689f05",
+            "createdAt": "2026-01-13T12:35:37.722Z",
+            "user": {
+                "id": "1e9856f6-4d32-4dd1-8b4c-51a421469f4c",
+                "avatar": null,
+                "displayName": "KrakerrS ",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 224,
+                    "name": "Bydgoszcz",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 6486,
+                "name": "Bydgoszcz"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3440,
+                "sos": 0
+            }
+        },
+        {
             "id": "5407bbf3-b484-4014-afa5-6952369527fa",
             "createdAt": "2026-01-13T12:35:37.722Z",
             "user": {
@@ -180,51 +225,6 @@
                 "tertiaryPoints": 0,
                 "sos": 50,
                 "path": ""
-            }
-        },
-        {
-            "id": "8356018f-c1f8-450f-a5a5-351594689f05",
-            "createdAt": "2026-01-13T12:35:37.722Z",
-            "user": {
-                "id": "1e9856f6-4d32-4dd1-8b4c-51a421469f4c",
-                "avatar": null,
-                "displayName": "KrakerrS ",
-                "firstName": null,
-                "lastName": null,
-                "city": {
-                    "id": 224,
-                    "name": "Bydgoszcz",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 6486,
-                "name": "Bydgoszcz"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3440,
-                "sos": 0
             }
         },
         {
