@@ -357,6 +357,62 @@
             }
         },
         {
+            "id": "839d3a95-cc6d-4b47-99ef-f3d34bb03bff",
+            "createdAt": "2026-06-19T14:45:34.242Z",
+            "user": {
+                "id": "ab63d4ea-e622-4b2d-8ad2-38b15679c94f",
+                "avatar": "1733865632402.jpg",
+                "displayName": "nvrstopping",
+                "firstName": "Radek",
+                "lastName": "P",
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 461,
+                "name": "Fields of Celebrant",
+                "subfraction": null,
+                "code": "MESBG2_FoC",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "63d75306-36b8-44da-b9bd-9c8c49704cc0",
+            "pointsModification": 2,
+            "pointsModificationDescription": "",
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 37,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4521,
+                "place": 23,
+                "poolPlace": null,
+                "singlePlace": 42,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 32,
+                "secondaryPoints": 43,
+                "tertiaryPoints": 0,
+                "sos": 37,
+                "path": "LLWWLW"
+            }
+        },
+        {
             "id": "eb8092d5-565e-4fa8-9434-43f498c8ae34",
             "createdAt": "2026-06-19T14:45:34.242Z",
             "user": {
@@ -410,62 +466,6 @@
                 "draws": 0,
                 "loss": 3,
                 "primaryPoints": 30,
-                "secondaryPoints": 43,
-                "tertiaryPoints": 0,
-                "sos": 37,
-                "path": "LLWWLW"
-            }
-        },
-        {
-            "id": "839d3a95-cc6d-4b47-99ef-f3d34bb03bff",
-            "createdAt": "2026-06-19T14:45:34.242Z",
-            "user": {
-                "id": "ab63d4ea-e622-4b2d-8ad2-38b15679c94f",
-                "avatar": "1733865632402.jpg",
-                "displayName": "nvrstopping",
-                "firstName": "Radek",
-                "lastName": "P",
-                "city": null,
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 461,
-                "name": "Fields of Celebrant",
-                "subfraction": null,
-                "code": "MESBG2_FoC",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "63d75306-36b8-44da-b9bd-9c8c49704cc0",
-            "pointsModification": 2,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 37,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4521,
-                "place": 23,
-                "poolPlace": null,
-                "singlePlace": 42,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 32,
                 "secondaryPoints": 43,
                 "tertiaryPoints": 0,
                 "sos": 37,
@@ -1097,7 +1097,7 @@
             "createdAt": "2026-06-30T08:23:44.407Z",
             "user": {
                 "id": "40eca01a-ba05-4c54-afa1-205dbb9e86dc",
-                "avatar": "1768296701843.jpg",
+                "avatar": "1789468512195.jpg",
                 "displayName": "lolek",
                 "firstName": "Daniel",
                 "lastName": "Legan",
@@ -2309,7 +2309,7 @@
             "createdAt": "2026-07-15T06:49:28.456Z",
             "user": {
                 "id": "1e4b9bdf-6062-4736-aef3-52bc568f8803",
-                "avatar": "1788157964464.png",
+                "avatar": "1792219728431.png",
                 "displayName": "Fleetmaster",
                 "firstName": "Arkadiusz ",
                 "lastName": "Kilian",
@@ -2610,7 +2610,7 @@
             "user": {
                 "id": "8ff29fce-8c75-4248-858e-93b2df913982",
                 "avatar": "1776886446968.jpg",
-                "displayName": "Wybraniec",
+                "displayName": "Wybrany",
                 "firstName": "Wojciech",
                 "lastName": "Wybraniec",
                 "city": {
@@ -3697,7 +3697,7 @@
             "createdAt": "2026-08-09T12:43:17.530Z",
             "user": {
                 "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                "avatar": "1744129501318.jpg",
+                "avatar": "1789801756023.png",
                 "displayName": "Medved",
                 "firstName": "Medard",
                 "lastName": "Grabowski",
@@ -4054,8 +4054,8 @@
                 "firstName": "Micha\u0142",
                 "lastName": "Bala",
                 "city": {
-                    "id": 3114,
-                    "name": "Poland",
+                    "id": 252,
+                    "name": "Rzesz\u00f3w",
                     "country": "PL"
                 },
                 "country": "PL",
@@ -4166,8 +4166,8 @@
                 "firstName": "Jakub",
                 "lastName": "Krochmal",
                 "city": {
-                    "id": 3134,
-                    "name": "Kozy",
+                    "id": 3148,
+                    "name": "\u015awiebodzin",
                     "country": "PL"
                 },
                 "country": "PL",

@@ -43,66 +43,6 @@
             }
         },
         {
-            "id": "9c0d1de3-32fc-40e9-ae12-e7e00c684113",
-            "createdAt": "2026-05-21T17:29:27.678Z",
-            "user": {
-                "id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
-                "avatar": "1788788763604.png",
-                "displayName": "Leni",
-                "firstName": "\u0141ukasz",
-                "lastName": "Zembrowski D\u015a62",
-                "city": {
-                    "id": 236,
-                    "name": "Wroc\u0142aw",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": "leni1924"
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 346,
-                "name": "Reclamation of Osgiliath",
-                "subfraction": null,
-                "code": "MESBG2_RoO",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "813a1f52-29ba-4561-867d-746acfe50572",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 67,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 5355,
-                "place": 13,
-                "poolPlace": null,
-                "singlePlace": 24,
-                "wins": 4,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 22,
-                "secondaryPoints": 54,
-                "tertiaryPoints": 0,
-                "sos": 67,
-                "path": "WWLWWL"
-            }
-        },
-        {
             "id": "a21ba147-0761-49f8-bb74-fc270e807df9",
             "createdAt": "2026-05-21T17:29:27.678Z",
             "user": {
@@ -160,6 +100,66 @@
                 "tertiaryPoints": 0,
                 "sos": 57,
                 "path": "WLWLWL"
+            }
+        },
+        {
+            "id": "9c0d1de3-32fc-40e9-ae12-e7e00c684113",
+            "createdAt": "2026-05-21T17:29:27.678Z",
+            "user": {
+                "id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
+                "avatar": "1788788763604.png",
+                "displayName": "Leni",
+                "firstName": "\u0141ukasz",
+                "lastName": "Zembrowski D\u015a62",
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "leni1924"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 346,
+                "name": "Reclamation of Osgiliath",
+                "subfraction": null,
+                "code": "MESBG2_RoO",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "813a1f52-29ba-4561-867d-746acfe50572",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 67,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5355,
+                "place": 13,
+                "poolPlace": null,
+                "singlePlace": 24,
+                "wins": 4,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 22,
+                "secondaryPoints": 54,
+                "tertiaryPoints": 0,
+                "sos": 67,
+                "path": "WWLWWL"
             }
         },
         {
@@ -243,52 +243,6 @@
             }
         },
         {
-            "id": "dac0b53b-3c78-4fe5-b40d-f6d3b301f31a",
-            "createdAt": "2026-05-21T19:39:57.938Z",
-            "user": {
-                "id": "a15d42d2-401a-42d5-a0e7-e8f88c780302",
-                "avatar": null,
-                "displayName": "Mariusz Solmyr Futyma",
-                "firstName": "",
-                "lastName": "",
-                "city": null,
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "WAITING",
-            "army": {
-                "id": 341,
-                "name": "Minas Tirith",
-                "subfraction": null,
-                "code": "MESBG2_MT",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "8dc16b13-9299-43ee-9848-13e5884da490",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 5355,
-                "sos": 0
-            }
-        },
-        {
             "id": "1bf92634-7eb4-4189-8a76-97bdda43cc7a",
             "createdAt": "2026-05-21T19:39:57.938Z",
             "user": {
@@ -339,19 +293,15 @@
             }
         },
         {
-            "id": "f2ee0552-7ce0-46b5-b348-b25728b86a0f",
-            "createdAt": "2026-05-21T19:49:18.088Z",
+            "id": "dac0b53b-3c78-4fe5-b40d-f6d3b301f31a",
+            "createdAt": "2026-05-21T19:39:57.938Z",
             "user": {
-                "id": "222c2b52-47fd-4345-a6ec-a83ee05ccb12",
+                "id": "a15d42d2-401a-42d5-a0e7-e8f88c780302",
                 "avatar": null,
-                "displayName": "Maradona",
-                "firstName": "Rafa\u0142",
-                "lastName": "Macioszek",
-                "city": {
-                    "id": 227,
-                    "name": "Katowice",
-                    "country": "PL"
-                },
+                "displayName": "Mariusz Solmyr Futyma",
+                "firstName": "",
+                "lastName": "",
+                "city": null,
                 "country": "PL",
                 "discordUsername": null
             },
@@ -360,42 +310,32 @@
             "listHidden": false,
             "lunchApproved": false,
             "payApproved": true,
-            "status": "APPROVED",
+            "status": "WAITING",
             "army": {
-                "id": 379,
-                "name": "Muster of Isengard",
+                "id": 341,
+                "name": "Minas Tirith",
                 "subfraction": null,
-                "code": "MESBG2_MoI",
+                "code": "MESBG2_MT",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "a3edff52-08ae-4829-a370-e672d7a893ac",
+            "teamId": "8dc16b13-9299-43ee-9848-13e5884da490",
             "pointsModification": null,
             "pointsModificationDescription": null,
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 37,
+            "primaryPointsSos": 0,
             "primaryPointsPoolSos": 0,
             "travelGroup": null,
             "poolResult": null,
             "finalResult": {
                 "stageId": 5355,
-                "place": 9,
-                "poolPlace": null,
-                "singlePlace": 25,
-                "wins": 4,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 22,
-                "secondaryPoints": 48,
-                "tertiaryPoints": 0,
-                "sos": 37,
-                "path": "LWWLWW"
+                "sos": 0
             }
         },
         {
@@ -456,6 +396,66 @@
                 "tertiaryPoints": 0,
                 "sos": 48,
                 "path": "LLWWWW"
+            }
+        },
+        {
+            "id": "f2ee0552-7ce0-46b5-b348-b25728b86a0f",
+            "createdAt": "2026-05-21T19:49:18.088Z",
+            "user": {
+                "id": "222c2b52-47fd-4345-a6ec-a83ee05ccb12",
+                "avatar": null,
+                "displayName": "Maradona",
+                "firstName": "Rafa\u0142",
+                "lastName": "Macioszek",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 379,
+                "name": "Muster of Isengard",
+                "subfraction": null,
+                "code": "MESBG2_MoI",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "a3edff52-08ae-4829-a370-e672d7a893ac",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 37,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5355,
+                "place": 9,
+                "poolPlace": null,
+                "singlePlace": 25,
+                "wins": 4,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 22,
+                "secondaryPoints": 48,
+                "tertiaryPoints": 0,
+                "sos": 37,
+                "path": "LWWLWW"
             }
         },
         {
@@ -575,66 +575,6 @@
             }
         },
         {
-            "id": "9678665c-d2e6-4f9e-9c7c-99c0d98928a3",
-            "createdAt": "2026-05-21T19:55:17.749Z",
-            "user": {
-                "id": "97c5e5bc-7502-4f16-9c1b-53ead4fab5b2",
-                "avatar": "1737917063672.png",
-                "displayName": "\u017badney Bo\u017cy",
-                "firstName": "Bartek",
-                "lastName": "Bednarek",
-                "city": {
-                    "id": 231,
-                    "name": "Pozna\u0144",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 379,
-                "name": "Muster of Isengard",
-                "subfraction": null,
-                "code": "MESBG2_MoI",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "349d1544-254b-438a-bdd1-11e8f7ecd59a",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 63,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 5355,
-                "place": 7,
-                "poolPlace": null,
-                "singlePlace": 5,
-                "wins": 4,
-                "draws": 2,
-                "loss": 0,
-                "primaryPoints": 30,
-                "secondaryPoints": 69,
-                "tertiaryPoints": 0,
-                "sos": 63,
-                "path": "WDWWWD"
-            }
-        },
-        {
             "id": "9bd6568c-0d6d-45df-8b3b-fdbfa067e9bf",
             "createdAt": "2026-05-21T19:55:17.749Z",
             "user": {
@@ -692,6 +632,66 @@
                 "tertiaryPoints": 0,
                 "sos": 56,
                 "path": "WWLWLL"
+            }
+        },
+        {
+            "id": "9678665c-d2e6-4f9e-9c7c-99c0d98928a3",
+            "createdAt": "2026-05-21T19:55:17.749Z",
+            "user": {
+                "id": "97c5e5bc-7502-4f16-9c1b-53ead4fab5b2",
+                "avatar": "1737917063672.png",
+                "displayName": "\u017badney Bo\u017cy",
+                "firstName": "Bartek",
+                "lastName": "Bednarek",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 379,
+                "name": "Muster of Isengard",
+                "subfraction": null,
+                "code": "MESBG2_MoI",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "349d1544-254b-438a-bdd1-11e8f7ecd59a",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 63,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5355,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 5,
+                "wins": 4,
+                "draws": 2,
+                "loss": 0,
+                "primaryPoints": 30,
+                "secondaryPoints": 69,
+                "tertiaryPoints": 0,
+                "sos": 63,
+                "path": "WDWWWD"
             }
         },
         {
@@ -1259,66 +1259,6 @@
             }
         },
         {
-            "id": "d27a07b4-2c57-4dd5-917c-191abda90e86",
-            "createdAt": "2026-05-21T20:13:39.044Z",
-            "user": {
-                "id": "27e5fd8e-fc73-48f9-802e-3546fde22d25",
-                "avatar": "1771946951705.jpeg",
-                "displayName": "TwojaStaraToTw\u00f3jStary",
-                "firstName": "Patryk",
-                "lastName": "Kazimierski",
-                "city": {
-                    "id": 236,
-                    "name": "Wroc\u0142aw",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 378,
-                "name": "Minas Morgul",
-                "subfraction": null,
-                "code": "MESBG2_MM",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "6c67bb65-e2af-4206-989e-7fbb6348c17d",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 40,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 5355,
-                "place": 28,
-                "poolPlace": null,
-                "singlePlace": 46,
-                "wins": 2,
-                "draws": 1,
-                "loss": 3,
-                "primaryPoints": 14,
-                "secondaryPoints": 20,
-                "tertiaryPoints": 0,
-                "sos": 40,
-                "path": "LWLLWD"
-            }
-        },
-        {
             "id": "95579e78-501f-4ddc-aa69-b35781db69fd",
             "createdAt": "2026-05-21T20:13:39.044Z",
             "user": {
@@ -1376,6 +1316,66 @@
                 "tertiaryPoints": 0,
                 "sos": 43,
                 "path": "LWWLLD"
+            }
+        },
+        {
+            "id": "d27a07b4-2c57-4dd5-917c-191abda90e86",
+            "createdAt": "2026-05-21T20:13:39.044Z",
+            "user": {
+                "id": "27e5fd8e-fc73-48f9-802e-3546fde22d25",
+                "avatar": "1771946951705.jpeg",
+                "displayName": "TwojaStaraToTw\u00f3jStary",
+                "firstName": "Patryk",
+                "lastName": "Kazimierski",
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 378,
+                "name": "Minas Morgul",
+                "subfraction": null,
+                "code": "MESBG2_MM",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "6c67bb65-e2af-4206-989e-7fbb6348c17d",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 40,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5355,
+                "place": 28,
+                "poolPlace": null,
+                "singlePlace": 46,
+                "wins": 2,
+                "draws": 1,
+                "loss": 3,
+                "primaryPoints": 14,
+                "secondaryPoints": 20,
+                "tertiaryPoints": 0,
+                "sos": 40,
+                "path": "LWLLWD"
             }
         },
         {
@@ -1983,7 +1983,7 @@
             "createdAt": "2026-05-22T04:46:45.177Z",
             "user": {
                 "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                "avatar": "1744129501318.jpg",
+                "avatar": "1789801756023.png",
                 "displayName": "Medved",
                 "firstName": "Medard",
                 "lastName": "Grabowski",
@@ -2433,7 +2433,7 @@
             "createdAt": "2026-05-22T14:09:45.027Z",
             "user": {
                 "id": "20cda92d-c8f4-48b5-bfc5-b0fb09a52c38",
-                "avatar": null,
+                "avatar": "1790859830892.jpg",
                 "displayName": "W00kie",
                 "firstName": "\u0141ukasz",
                 "lastName": "Tomaszewski",
@@ -2637,7 +2637,7 @@
             "createdAt": "2026-05-23T12:12:17.122Z",
             "user": {
                 "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                "avatar": "1744795538269.jpg",
+                "avatar": "1789759965171.jpg",
                 "displayName": "Emsikej",
                 "firstName": "Kacper",
                 "lastName": "Micek",
@@ -2679,7 +2679,7 @@
             "createdAt": "2026-05-23T12:18:35.678Z",
             "user": {
                 "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                "avatar": "1744795538269.jpg",
+                "avatar": "1789759965171.jpg",
                 "displayName": "Emsikej",
                 "firstName": "Kacper",
                 "lastName": "Micek",
@@ -2721,7 +2721,7 @@
             "createdAt": "2026-05-23T12:20:09.950Z",
             "user": {
                 "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                "avatar": "1744795538269.jpg",
+                "avatar": "1789759965171.jpg",
                 "displayName": "Emsikej",
                 "firstName": "Kacper",
                 "lastName": "Micek",
@@ -4084,8 +4084,8 @@
                 "firstName": "Jakub",
                 "lastName": "Krochmal",
                 "city": {
-                    "id": 3134,
-                    "name": "Kozy",
+                    "id": 3148,
+                    "name": "\u015awiebodzin",
                     "country": "PL"
                 },
                 "country": "PL",
@@ -5695,7 +5695,7 @@
             "createdAt": "2026-08-01T22:05:58.354Z",
             "user": {
                 "id": "20cda92d-c8f4-48b5-bfc5-b0fb09a52c38",
-                "avatar": null,
+                "avatar": "1790859830892.jpg",
                 "displayName": "W00kie",
                 "firstName": "\u0141ukasz",
                 "lastName": "Tomaszewski",

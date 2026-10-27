@@ -6,8 +6,6 @@ from store import load_main_ranking
 
 dash.register_page(__name__, path='/ranking_main')
 
-
-
 data = load_main_ranking()
 
 # key, header label, text-align for both the header and its column cells

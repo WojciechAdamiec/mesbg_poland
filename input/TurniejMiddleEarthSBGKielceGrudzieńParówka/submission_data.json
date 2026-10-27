@@ -61,66 +61,6 @@
             }
         },
         {
-            "id": "1e7bf847-d98b-4bca-96ff-898c0b4d7943",
-            "createdAt": "2025-10-31T22:37:51.694Z",
-            "user": {
-                "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                "avatar": "1744129501318.jpg",
-                "displayName": "Medved",
-                "firstName": "Medard",
-                "lastName": "Grabowski",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 453,
-                "name": "Moria",
-                "subfraction": null,
-                "code": "MESBG2_M",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "9ab89898-7d17-4570-b6d8-b8c22d5851cf",
-            "pointsModification": 100,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3023,
-                "place": 4,
-                "poolPlace": null,
-                "singlePlace": 7,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 1206,
-                "secondaryPoints": 11,
-                "tertiaryPoints": 29,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "53d692ae-2451-495e-b959-5bef1061627c",
             "createdAt": "2025-10-31T22:37:51.694Z",
             "user": {
@@ -177,14 +117,14 @@
             }
         },
         {
-            "id": "a8a7dd05-94bd-4495-af18-54ba225d2bb5",
-            "createdAt": "2025-11-02T15:48:12.070Z",
+            "id": "1e7bf847-d98b-4bca-96ff-898c0b4d7943",
+            "createdAt": "2025-10-31T22:37:51.694Z",
             "user": {
-                "id": "d6fa65f5-0af3-4f67-ab45-015c121507f0",
-                "avatar": "1742569168080.jpg",
-                "displayName": "Fox.",
-                "firstName": "Daniel",
-                "lastName": "Bujalski",
+                "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
+                "avatar": "1789801756023.png",
+                "displayName": "Medved",
+                "firstName": "Medard",
+                "lastName": "Grabowski",
                 "city": {
                     "id": 228,
                     "name": "Krak\u00f3w",
@@ -200,10 +140,10 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 361,
-                "name": "Army of the White Hand",
+                "id": 453,
+                "name": "Moria",
                 "subfraction": null,
-                "code": "MESBG2_AotWH",
+                "code": "MESBG2_M",
                 "metadata": {
                     "mesbgType": "EVIL"
                 }
@@ -211,7 +151,7 @@
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "c4603c14-4899-4522-a582-5963b40b091f",
+            "teamId": "9ab89898-7d17-4570-b6d8-b8c22d5851cf",
             "pointsModification": 100,
             "pointsModificationDescription": "",
             "metadata": null,
@@ -223,15 +163,15 @@
             "poolResult": null,
             "finalResult": {
                 "stageId": 3023,
-                "place": 8,
+                "place": 4,
                 "poolPlace": null,
-                "singlePlace": 15,
-                "wins": 0,
+                "singlePlace": 7,
+                "wins": 2,
                 "draws": 0,
-                "loss": 3,
-                "primaryPoints": 289,
-                "secondaryPoints": 2,
-                "tertiaryPoints": 16,
+                "loss": 1,
+                "primaryPoints": 1206,
+                "secondaryPoints": 11,
+                "tertiaryPoints": 29,
                 "sos": 0,
                 "path": ""
             }
@@ -290,6 +230,66 @@
                 "draws": 0,
                 "loss": 3,
                 "primaryPoints": 189,
+                "secondaryPoints": 2,
+                "tertiaryPoints": 16,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "a8a7dd05-94bd-4495-af18-54ba225d2bb5",
+            "createdAt": "2025-11-02T15:48:12.070Z",
+            "user": {
+                "id": "d6fa65f5-0af3-4f67-ab45-015c121507f0",
+                "avatar": "1742569168080.jpg",
+                "displayName": "Fox.",
+                "firstName": "Daniel",
+                "lastName": "Bujalski",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 361,
+                "name": "Army of the White Hand",
+                "subfraction": null,
+                "code": "MESBG2_AotWH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "c4603c14-4899-4522-a582-5963b40b091f",
+            "pointsModification": 100,
+            "pointsModificationDescription": "",
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3023,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": 15,
+                "wins": 0,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 289,
                 "secondaryPoints": 2,
                 "tertiaryPoints": 16,
                 "sos": 0,
@@ -537,48 +537,6 @@
             }
         },
         {
-            "id": "c8bf5526-7058-45b1-be3e-90247bfbe0a4",
-            "createdAt": "2025-11-04T12:53:38.772Z",
-            "user": {
-                "id": "7fa5ba4b-28df-44e8-a4f2-d87072e98a2b",
-                "avatar": "1744139126244.jpeg",
-                "displayName": "Bakson",
-                "firstName": "Jakub",
-                "lastName": "Czy\u017c",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "1d0ae72b-5c3f-4ccf-a9c5-ff8ef686b50e",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3023,
-                "sos": 0
-            }
-        },
-        {
             "id": "5dc02f83-75db-400a-b46a-a2bf93ece761",
             "createdAt": "2025-11-04T12:53:38.772Z",
             "user": {
@@ -610,6 +568,48 @@
                     "mesbgType": "GOOD"
                 }
             },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "1d0ae72b-5c3f-4ccf-a9c5-ff8ef686b50e",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3023,
+                "sos": 0
+            }
+        },
+        {
+            "id": "c8bf5526-7058-45b1-be3e-90247bfbe0a4",
+            "createdAt": "2025-11-04T12:53:38.772Z",
+            "user": {
+                "id": "7fa5ba4b-28df-44e8-a4f2-d87072e98a2b",
+                "avatar": "1744139126244.jpeg",
+                "displayName": "Bakson",
+                "firstName": "Jakub",
+                "lastName": "Czy\u017c",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "DECLINED",
+            "army": null,
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
@@ -809,14 +809,14 @@
             }
         },
         {
-            "id": "98ff65e3-893f-44d8-819b-d08fd665f702",
+            "id": "6838a079-eb00-4ecc-89f0-cfa4c2820d47",
             "createdAt": "2025-11-14T21:37:52.685Z",
             "user": {
-                "id": "386d0c33-6dc8-433e-a8bf-897cb624352d",
-                "avatar": "1738575278838.png",
-                "displayName": "M00rek",
-                "firstName": "Iwo",
-                "lastName": "Szczeci\u0144ski",
+                "id": "1d259229-d22a-41d7-875a-d42dcb899d72",
+                "avatar": null,
+                "displayName": "Grooth",
+                "firstName": null,
+                "lastName": null,
                 "city": {
                     "id": 3111,
                     "name": "Kielce",
@@ -832,12 +832,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 381,
-                "name": "Rise of the Necromancer",
+                "id": 330,
+                "name": "Fangorn",
                 "subfraction": null,
-                "code": "MESBG2_RotN",
+                "code": "MESBG2_F",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,
@@ -869,14 +869,14 @@
             }
         },
         {
-            "id": "6838a079-eb00-4ecc-89f0-cfa4c2820d47",
+            "id": "98ff65e3-893f-44d8-819b-d08fd665f702",
             "createdAt": "2025-11-14T21:37:52.685Z",
             "user": {
-                "id": "1d259229-d22a-41d7-875a-d42dcb899d72",
-                "avatar": null,
-                "displayName": "Grooth",
-                "firstName": null,
-                "lastName": null,
+                "id": "386d0c33-6dc8-433e-a8bf-897cb624352d",
+                "avatar": "1738575278838.png",
+                "displayName": "M00rek",
+                "firstName": "Iwo",
+                "lastName": "Szczeci\u0144ski",
                 "city": {
                     "id": 3111,
                     "name": "Kielce",
@@ -892,12 +892,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 330,
-                "name": "Fangorn",
+                "id": 381,
+                "name": "Rise of the Necromancer",
                 "subfraction": null,
-                "code": "MESBG2_F",
+                "code": "MESBG2_RotN",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,

@@ -62,6 +62,23 @@ nav = dmc.Box([
             ),
         ],
     ),
+    dmc.NavLink(
+        label="Hall of Fame",
+        active="children",
+        childrenOffset=28,
+        children=[
+            dmc.NavLink(
+                label="2026 Winners",
+                href="/hall_of_fame/2026_winners",
+                active="exact-with-search",
+            ),
+            dmc.NavLink(
+                label="Nations Cup 2027",
+                href="/hall_of_fame/nations_cup_2027",
+                active="exact-with-search",
+            ),
+        ],
+    ),
     dmc.NavLink(label="Masters", href="/masters", active="exact"),
     dmc.NavLink(label="Centers", href="/centers", active="exact"),
 ])

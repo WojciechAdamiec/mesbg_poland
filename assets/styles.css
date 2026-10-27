@@ -223,3 +223,8 @@ p {
   background: rgb(0, 157, 224) !important;
 }
 
+@media (max-width: 74.99em) {
+  .hall-of-fame-winner-spacer {
+    display: none;
+  }
+}

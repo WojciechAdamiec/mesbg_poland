@@ -1,5 +1,944 @@
 [
     {
+        "master_id": "2b307bec-26d6-447f-b2da-b6fafd2b9d4b",
+        "master_name": "Cień Wschodu - Fajkowy Szlem 2026",
+        "master_date": "2026-10-24",
+        "master_points": "600",
+        "people": [
+            {
+                "user": {
+                    "id": "fe2829dd-d3d5-4397-9c63-f65a285aba6e",
+                    "avatar": "1740771618803.jpg",
+                    "displayName": "Jacenty41",
+                    "firstName": "Jacek",
+                    "lastName": "Pl",
+                    "city": {
+                        "id": 3152,
+                        "name": "Lublin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 7
+            },
+            {
+                "user": {
+                    "id": "bd51334f-700f-46ea-9801-7fa43e9c53d0",
+                    "avatar": "1742386211433.jpg",
+                    "displayName": "AjasFalcon",
+                    "firstName": "Adam",
+                    "lastName": "Sokół",
+                    "city": {
+                        "id": 231,
+                        "name": "Poznań",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 42
+            },
+            {
+                "user": {
+                    "id": "6bec13b2-87d9-4e6d-b7ca-06b9e90bf3ba",
+                    "avatar": null,
+                    "displayName": "Jawor",
+                    "firstName": "Piotr",
+                    "lastName": "Jaworski",
+                    "city": {
+                        "id": 3152,
+                        "name": "Lublin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 24
+            },
+            {
+                "user": {
+                    "id": "224b8d3d-7e1f-4095-853a-088883879195",
+                    "avatar": "1756972952200.jpeg",
+                    "displayName": "Żaba Boży",
+                    "firstName": "Jacek ",
+                    "lastName": "Disterheft ",
+                    "city": {
+                        "id": 231,
+                        "name": "Poznań",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 17
+            },
+            {
+                "user": {
+                    "id": "3eb3c237-e910-43c1-b4a4-4c8ada505d6f",
+                    "avatar": "1748541702437.jpg",
+                    "displayName": "Imrikko",
+                    "firstName": "Adam",
+                    "lastName": "Marciniak",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 34
+            },
+            {
+                "user": {
+                    "id": "69a11808-e3ca-44e5-9ac0-e4d735625b21",
+                    "avatar": null,
+                    "displayName": "FrodoWroclaw",
+                    "firstName": "Sebastian ",
+                    "lastName": "Kruszelnicki ",
+                    "city": {
+                        "id": 236,
+                        "name": "Wrocław",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 51
+            },
+            {
+                "user": {
+                    "id": "08219a4e-e2d0-4904-b18d-f0320cd8d48b",
+                    "avatar": "1747421843433.jpg",
+                    "displayName": "Adam Młynarczyk",
+                    "firstName": "",
+                    "lastName": "",
+                    "city": {
+                        "id": 227,
+                        "name": "Katowice",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 46
+            },
+            {
+                "user": {
+                    "id": "3723b773-cadb-46d3-8758-e1260476e981",
+                    "avatar": "1737908473268.jpg",
+                    "displayName": "Zack_BB",
+                    "firstName": "Zachary",
+                    "lastName": "Adamczyk",
+                    "city": {
+                        "id": 223,
+                        "name": "Bielsko-biała",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 37
+            },
+            {
+                "user": {
+                    "id": "70266969-1e35-47ca-9876-4628421f6cf6",
+                    "avatar": "1748521378648.jpeg",
+                    "displayName": "Gozdek",
+                    "firstName": "Patryk",
+                    "lastName": "Gozdek",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 22
+            },
+            {
+                "user": {
+                    "id": "eacb0c29-8302-462e-9e47-c61d95ce5ff3",
+                    "avatar": "1761770402857.jpg",
+                    "displayName": "Yogi",
+                    "firstName": "Adam",
+                    "lastName": "Kielar",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": "yogiwwa"
+                },
+                "result": 43
+            },
+            {
+                "user": {
+                    "id": "9641c0c9-16e9-4bb7-a7f4-e73245f48db2",
+                    "avatar": "1748522739684.jpg",
+                    "displayName": "Szyber_LB",
+                    "firstName": "Jakub ",
+                    "lastName": "Tomczyk ",
+                    "city": {
+                        "id": 3152,
+                        "name": "Lublin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 4
+            },
+            {
+                "user": {
+                    "id": "6c1b533a-5a81-442a-8d96-1100083dcb4b",
+                    "avatar": null,
+                    "displayName": "Kołodziej ",
+                    "firstName": null,
+                    "lastName": null,
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 10
+            },
+            {
+                "user": {
+                    "id": "beec30f8-4a47-431b-b7ed-e7f37e95bbbc",
+                    "avatar": "1737744023170.png",
+                    "displayName": "Macu Boży",
+                    "firstName": "Maciej",
+                    "lastName": "Wardejn",
+                    "city": {
+                        "id": 231,
+                        "name": "Poznań",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 9
+            },
+            {
+                "user": {
+                    "id": "57cefe9a-fa1b-45a6-a166-3e94e0d12d49",
+                    "avatar": null,
+                    "displayName": "FRrANEK",
+                    "firstName": "Mateusz ",
+                    "lastName": "Frankowski ",
+                    "city": null,
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 5
+            },
+            {
+                "user": {
+                    "id": "0b9e69bb-46e8-4b18-949b-c788fd37fe1e",
+                    "avatar": "1786343626055.jpeg",
+                    "displayName": "Knoxville",
+                    "firstName": "Konrad",
+                    "lastName": "Pinscher",
+                    "city": {
+                        "id": 228,
+                        "name": "Kraków",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": "knox9077"
+                },
+                "result": 35
+            },
+            {
+                "user": {
+                    "id": "7d79e669-7010-4328-bbf5-3f7203dddd9a",
+                    "avatar": "1745401385513.jpeg",
+                    "displayName": "isengard1",
+                    "firstName": "Daniel ",
+                    "lastName": "Derda",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 20
+            },
+            {
+                "user": {
+                    "id": "08415651-02b1-4f99-92db-758e55efce47",
+                    "avatar": "1765108493384.jpeg",
+                    "displayName": "Jelon",
+                    "firstName": "Michał",
+                    "lastName": "Jaworski",
+                    "city": {
+                        "id": 3152,
+                        "name": "Lublin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 19
+            },
+            {
+                "user": {
+                    "id": "9f838a1a-8b9b-4c57-9faa-251f6768a5e9",
+                    "avatar": "1765570851795.jpg",
+                    "displayName": "Kirkor",
+                    "firstName": "Mateusz ",
+                    "lastName": "Zając ",
+                    "city": {
+                        "id": 252,
+                        "name": "Rzeszów",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 18
+            },
+            {
+                "user": {
+                    "id": "4e8fbce8-9600-4b61-af86-6731e366fce3",
+                    "avatar": "1744053367688.png",
+                    "displayName": "Jaskier",
+                    "firstName": "Marcin",
+                    "lastName": "Markiewicz",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 13
+            },
+            {
+                "user": {
+                    "id": "bbbe191e-78cb-42d6-acc6-fd53718b1fd2",
+                    "avatar": null,
+                    "displayName": "Dominik Kazek",
+                    "firstName": "",
+                    "lastName": "",
+                    "city": {
+                        "id": 228,
+                        "name": "Kraków",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": "_kaz3k"
+                },
+                "result": 31
+            },
+            {
+                "user": {
+                    "id": "1b3a7062-b9d5-4a5a-b5b4-47543d96425e",
+                    "avatar": "1788434303573.jpg",
+                    "displayName": "TheChosenJuan",
+                    "firstName": "Damian",
+                    "lastName": "Krawczyk",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 21
+            },
+            {
+                "user": {
+                    "id": "6df80142-0804-43f3-910e-3d51131586cf",
+                    "avatar": "1764267726557.jpg",
+                    "displayName": "Istar",
+                    "firstName": "Rafał",
+                    "lastName": "Cichy",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 14
+            },
+            {
+                "user": {
+                    "id": "4775ff22-98bd-4dcb-bfd3-28ee7cd79a08",
+                    "avatar": "1747895034495.jpg",
+                    "displayName": "Adrian Velion",
+                    "firstName": "Adrian ",
+                    "lastName": "Peńsko",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 55
+            },
+            {
+                "user": {
+                    "id": "6732875f-9e3b-44e5-b4a1-5ce209a9b359",
+                    "avatar": "1763833029166.jpg",
+                    "displayName": "Mikruk",
+                    "firstName": "Karol",
+                    "lastName": "Czerwonka",
+                    "city": {
+                        "id": 3152,
+                        "name": "Lublin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 32
+            },
+            {
+                "user": {
+                    "id": "cbfbcd40-cbf7-4546-885f-4d061496fe8c",
+                    "avatar": "1788440111242.jpg",
+                    "displayName": "Kłos",
+                    "firstName": "Jakub",
+                    "lastName": "Kłosiński",
+                    "city": {
+                        "id": 3113,
+                        "name": "Płock",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": "drklos"
+                },
+                "result": 44
+            },
+            {
+                "user": {
+                    "id": "e193927e-381f-4695-ac85-685e297bb182",
+                    "avatar": "1773693898536.png",
+                    "displayName": "Kosin",
+                    "firstName": "Jan",
+                    "lastName": "Kłosiński",
+                    "city": {
+                        "id": 3113,
+                        "name": "Płock",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": "klos_p"
+                },
+                "result": 48
+            },
+            {
+                "user": {
+                    "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
+                    "avatar": "1789759965171.jpg",
+                    "displayName": "Emsikej",
+                    "firstName": "Kacper",
+                    "lastName": "Micek",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 52
+            },
+            {
+                "user": {
+                    "id": "76870d30-055b-4a89-a141-78ef032269f2",
+                    "avatar": "1744314118349.png",
+                    "displayName": "Czaki",
+                    "firstName": "",
+                    "lastName": "",
+                    "city": {
+                        "id": 227,
+                        "name": "Katowice",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 1
+            },
+            {
+                "user": {
+                    "id": "dfae3b97-3154-43b8-a7cf-26ece499fa82",
+                    "avatar": "1748805490124.jpeg",
+                    "displayName": "Nie_Wiem",
+                    "firstName": "Radosław",
+                    "lastName": "Dziubiński",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": "tiredarchitect."
+                },
+                "result": 33
+            },
+            {
+                "user": {
+                    "id": "f48752fd-e96a-49e3-bb78-8c12475d82ae",
+                    "avatar": "1778836741385.png",
+                    "displayName": "Piotras",
+                    "firstName": "Piotr",
+                    "lastName": "Bąk",
+                    "city": {
+                        "id": 3152,
+                        "name": "Lublin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 38
+            },
+            {
+                "user": {
+                    "id": "5de541e0-dfa6-4c41-b224-90684a3b5e1c",
+                    "avatar": null,
+                    "displayName": "Zichu",
+                    "firstName": "",
+                    "lastName": "",
+                    "city": {
+                        "id": 227,
+                        "name": "Katowice",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 8
+            },
+            {
+                "user": {
+                    "id": "56219f44-91ef-4e22-9ebf-1c5f1ae21933",
+                    "avatar": "1750525016249.png",
+                    "displayName": "Tomaszek_11",
+                    "firstName": "Tomasz",
+                    "lastName": "Michali",
+                    "city": {
+                        "id": 227,
+                        "name": "Katowice",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 39
+            },
+            {
+                "user": {
+                    "id": "9d5bc521-d1ac-416e-952c-926b6aef9e60",
+                    "avatar": null,
+                    "displayName": "Kostek",
+                    "firstName": null,
+                    "lastName": null,
+                    "city": {
+                        "id": 3147,
+                        "name": "Sosnowiec",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 11
+            },
+            {
+                "user": {
+                    "id": "63c2331e-0577-4bdc-a5fa-98ec6d23cbc5",
+                    "avatar": "1743104790616.jpg",
+                    "displayName": "Manyy",
+                    "firstName": "Aleksander",
+                    "lastName": "Wójcicki",
+                    "city": {
+                        "id": 3111,
+                        "name": "Kielce",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": "arystomeneles"
+                },
+                "result": 29
+            },
+            {
+                "user": {
+                    "id": "a8c5dace-3769-45a7-9812-c134eda0fcae",
+                    "avatar": null,
+                    "displayName": "Oskarr",
+                    "firstName": "Oskar",
+                    "lastName": "Platta",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 12
+            },
+            {
+                "user": {
+                    "id": "4edd7b4a-f5e4-4136-9363-aa93d7e9b8e3",
+                    "avatar": "1739537512473.jpeg",
+                    "displayName": "Czarek Garo",
+                    "firstName": "Cezary",
+                    "lastName": "Przeczek",
+                    "city": {
+                        "id": 223,
+                        "name": "Bielsko-biała",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 36
+            },
+            {
+                "user": {
+                    "id": "2fa7f179-c8a2-4ee8-913e-2bcfb9ea1f59",
+                    "avatar": null,
+                    "displayName": "OrkuOrku",
+                    "firstName": "Jakub",
+                    "lastName": "Krochmal",
+                    "city": {
+                        "id": 3148,
+                        "name": "Świebodzin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 16
+            },
+            {
+                "user": {
+                    "id": "72214086-3cc8-4fa1-8520-7a6de92529de",
+                    "avatar": "1788440922265.jpeg",
+                    "displayName": "Mikziu",
+                    "firstName": "Michał",
+                    "lastName": "Żórawski",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 45
+            },
+            {
+                "user": {
+                    "id": "7ca2b5ee-c648-4e98-bcba-50d159612ecc",
+                    "avatar": "1773249585571.jpg",
+                    "displayName": "Jacrk",
+                    "firstName": "",
+                    "lastName": "",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 49
+            },
+            {
+                "user": {
+                    "id": "f45e23b0-3f14-4eb8-81ca-98c70ba5931c",
+                    "avatar": null,
+                    "displayName": "Rebelus",
+                    "firstName": "Robert ",
+                    "lastName": "Pleskot",
+                    "city": {
+                        "id": 3152,
+                        "name": "Lublin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 47
+            },
+            {
+                "user": {
+                    "id": "e11c9221-5fee-4a26-b4a8-23f3ee654de2",
+                    "avatar": null,
+                    "displayName": "Ringil",
+                    "firstName": "Michał",
+                    "lastName": "Danes",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 25
+            },
+            {
+                "user": {
+                    "id": "2bdc0a90-370f-4465-b487-42a48a1a245c",
+                    "avatar": "1745401305789.jpg",
+                    "displayName": "MiFciak",
+                    "firstName": "Maciek",
+                    "lastName": "R",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 53
+            },
+            {
+                "user": {
+                    "id": "9fa82917-385d-469e-84c0-8db3e5214cd5",
+                    "avatar": "1776111241298.jpg",
+                    "displayName": "Titoo",
+                    "firstName": "Bartłomiej",
+                    "lastName": "Szczygieł ",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 27
+            },
+            {
+                "user": {
+                    "id": "f0b719fd-09d6-4d2a-a87c-bd6e7fcd6990",
+                    "avatar": "1789763592609.jpg",
+                    "displayName": "DariuS",
+                    "firstName": "Dariusz",
+                    "lastName": "Gniadek",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 30
+            },
+            {
+                "user": {
+                    "id": "6a2a00f2-2511-49bb-abf4-034ba4382126",
+                    "avatar": "1744203093313.jpg",
+                    "displayName": "J. Spytek",
+                    "firstName": "",
+                    "lastName": "",
+                    "city": {
+                        "id": 228,
+                        "name": "Kraków",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 3
+            },
+            {
+                "user": {
+                    "id": "dd590de0-2e3d-412d-94fa-46084e78b05c",
+                    "avatar": null,
+                    "displayName": "UngaBunga",
+                    "firstName": null,
+                    "lastName": null,
+                    "city": {
+                        "id": 3152,
+                        "name": "Lublin",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 54
+            },
+            {
+                "user": {
+                    "id": "93cda88b-c976-4e61-8f65-9a5a5f1ecf7b",
+                    "avatar": null,
+                    "displayName": "GoblinGoblin",
+                    "firstName": "Filip",
+                    "lastName": "Łukomski",
+                    "city": {
+                        "id": 231,
+                        "name": "Poznań",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 6
+            },
+            {
+                "user": {
+                    "id": "1279e92f-2cd2-4ab8-855a-9630a43d2c60",
+                    "avatar": null,
+                    "displayName": "RobZug",
+                    "firstName": "Robert",
+                    "lastName": "Zugaj",
+                    "city": {
+                        "id": 227,
+                        "name": "Katowice",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 23
+            },
+            {
+                "user": {
+                    "id": "448193ff-e2b4-4650-898a-1dd8dc3fd5e1",
+                    "avatar": "1744203228680.jpg",
+                    "displayName": "Mateusz Miłkowski ",
+                    "firstName": "",
+                    "lastName": "",
+                    "city": {
+                        "id": 228,
+                        "name": "Kraków",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 2
+            },
+            {
+                "user": {
+                    "id": "5d01b02f-444d-4547-958a-e2dcac24e017",
+                    "avatar": "1788434768698.jpg",
+                    "displayName": "KaMiKaZee",
+                    "firstName": "Radosław ",
+                    "lastName": "Góra ",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 40
+            },
+            {
+                "user": {
+                    "id": "0117f017-2d2b-4322-910f-c7c1b3aae435",
+                    "avatar": "1784105610678.png",
+                    "displayName": "SeraphiN",
+                    "firstName": "Maciej",
+                    "lastName": "Porada",
+                    "city": {
+                        "id": 252,
+                        "name": "Rzeszów",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 41
+            },
+            {
+                "user": {
+                    "id": "7508e7c6-6d9d-46a3-a29f-dc70f0917a46",
+                    "avatar": "1743023981139.jpg",
+                    "displayName": "MagicznyCysiu",
+                    "firstName": "Krzysztof",
+                    "lastName": "Hardyl",
+                    "city": {
+                        "id": 252,
+                        "name": "Rzeszów",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 50
+            },
+            {
+                "user": {
+                    "id": "d96af431-77bb-4909-bb15-61df62e81b15",
+                    "avatar": "1733574981038.png",
+                    "displayName": "Marian Dominator Sudoł",
+                    "firstName": "Marian",
+                    "lastName": "Sudoł",
+                    "city": {
+                        "id": 236,
+                        "name": "Wrocław",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 15
+            },
+            {
+                "user": {
+                    "id": "73041097-fc19-45a2-a648-890f46b3c998",
+                    "avatar": null,
+                    "displayName": "soczek",
+                    "firstName": "",
+                    "lastName": "",
+                    "city": {
+                        "id": 235,
+                        "name": "Warszawa",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 28
+            },
+            {
+                "user": {
+                    "id": "62553300-be05-4e64-a57e-a9d7ea1b9e88",
+                    "avatar": null,
+                    "displayName": "Wiciu72",
+                    "firstName": "Witold",
+                    "lastName": "Gutkowski",
+                    "city": {
+                        "id": 231,
+                        "name": "Poznań",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
+                },
+                "result": 26
+            }
+        ]
+    },
+    {
         "master_id": "4ff143c6-50f2-4e4d-905e-355cf001dd7b",
         "master_name": "Middle-Earth SBG Turniej Master 'Zadyma na Południu' Parowy 2x500 pkt [STREFA]",
         "master_date": "2026-09-05",
@@ -152,23 +1091,6 @@
             },
             {
                 "user": {
-                    "id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
-                    "avatar": "1788788763604.png",
-                    "displayName": "Leni",
-                    "firstName": "Łukasz",
-                    "lastName": "Zembrowski DŚ62",
-                    "city": {
-                        "id": 236,
-                        "name": "Wrocław",
-                        "country": "PL"
-                    },
-                    "country": "PL",
-                    "discordUsername": "leni1924"
-                },
-                "result": 16
-            },
-            {
-                "user": {
                     "id": "dd081a04-8bbb-4409-aed7-f6ceedf4d7d0",
                     "avatar": "1761573880869.png",
                     "displayName": "Shogun",
@@ -181,6 +1103,23 @@
                     },
                     "country": "PL",
                     "discordUsername": "shogun99"
+                },
+                "result": 16
+            },
+            {
+                "user": {
+                    "id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
+                    "avatar": "1788788763604.png",
+                    "displayName": "Leni",
+                    "firstName": "Łukasz",
+                    "lastName": "Zembrowski DŚ62",
+                    "city": {
+                        "id": 236,
+                        "name": "Wrocław",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": "leni1924"
                 },
                 "result": 16
             },
@@ -289,7 +1228,7 @@
             {
                 "user": {
                     "id": "40eca01a-ba05-4c54-afa1-205dbb9e86dc",
-                    "avatar": "1768296701843.jpg",
+                    "avatar": "1789468512195.jpg",
                     "displayName": "lolek",
                     "firstName": "Daniel",
                     "lastName": "Legan",
@@ -608,7 +1547,7 @@
             {
                 "user": {
                     "id": "1e4b9bdf-6062-4736-aef3-52bc568f8803",
-                    "avatar": "1788157964464.png",
+                    "avatar": "1792219728431.png",
                     "displayName": "Fleetmaster",
                     "firstName": "Arkadiusz ",
                     "lastName": "Kilian",
@@ -694,7 +1633,7 @@
                 "user": {
                     "id": "8ff29fce-8c75-4248-858e-93b2df913982",
                     "avatar": "1776886446968.jpg",
-                    "displayName": "Wybraniec",
+                    "displayName": "Wybrany",
                     "firstName": "Wojciech",
                     "lastName": "Wybraniec",
                     "city": {
@@ -982,7 +1921,7 @@
             {
                 "user": {
                     "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                    "avatar": "1744129501318.jpg",
+                    "avatar": "1789801756023.png",
                     "displayName": "Medved",
                     "firstName": "Medard",
                     "lastName": "Grabowski",
@@ -1089,8 +2028,8 @@
                     "firstName": "Michał",
                     "lastName": "Bala",
                     "city": {
-                        "id": 3114,
-                        "name": "Poland",
+                        "id": 252,
+                        "name": "Rzeszów",
                         "country": "PL"
                     },
                     "country": "PL",
@@ -1123,8 +2062,8 @@
                     "firstName": "Jakub",
                     "lastName": "Krochmal",
                     "city": {
-                        "id": 3134,
-                        "name": "Kozy",
+                        "id": 3148,
+                        "name": "Świebodzin",
                         "country": "PL"
                     },
                     "country": "PL",
@@ -2057,7 +2996,7 @@
             {
                 "user": {
                     "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                    "avatar": "1744795538269.jpg",
+                    "avatar": "1789759965171.jpg",
                     "displayName": "Emsikej",
                     "firstName": "Kacper",
                     "lastName": "Micek",
@@ -2317,8 +3256,8 @@
                     "firstName": "Jakub",
                     "lastName": "Krochmal",
                     "city": {
-                        "id": 3134,
-                        "name": "Kozy",
+                        "id": 3148,
+                        "name": "Świebodzin",
                         "country": "PL"
                     },
                     "country": "PL",
@@ -2618,7 +3557,7 @@
             {
                 "user": {
                     "id": "20cda92d-c8f4-48b5-bfc5-b0fb09a52c38",
-                    "avatar": null,
+                    "avatar": "1790859830892.jpg",
                     "displayName": "W00kie",
                     "firstName": "Łukasz",
                     "lastName": "Tomaszewski",
@@ -2881,7 +3820,7 @@
             {
                 "user": {
                     "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                    "avatar": "1744795538269.jpg",
+                    "avatar": "1789759965171.jpg",
                     "displayName": "Emsikej",
                     "firstName": "Kacper",
                     "lastName": "Micek",
@@ -2932,7 +3871,7 @@
             {
                 "user": {
                     "id": "1e4b9bdf-6062-4736-aef3-52bc568f8803",
-                    "avatar": "1788157964464.png",
+                    "avatar": "1792219728431.png",
                     "displayName": "Fleetmaster",
                     "firstName": "Arkadiusz ",
                     "lastName": "Kilian",
@@ -3800,8 +4739,8 @@
                     "firstName": "Jakub",
                     "lastName": "Krochmal",
                     "city": {
-                        "id": 3134,
-                        "name": "Kozy",
+                        "id": 3148,
+                        "name": "Świebodzin",
                         "country": "PL"
                     },
                     "country": "PL",
@@ -4229,7 +5168,7 @@
             {
                 "user": {
                     "id": "40eca01a-ba05-4c54-afa1-205dbb9e86dc",
-                    "avatar": "1768296701843.jpg",
+                    "avatar": "1789468512195.jpg",
                     "displayName": "lolek",
                     "firstName": "Daniel",
                     "lastName": "Legan",
@@ -4331,7 +5270,7 @@
             {
                 "user": {
                     "id": "f0b719fd-09d6-4d2a-a87c-bd6e7fcd6990",
-                    "avatar": "1754933041003.jpg",
+                    "avatar": "1789763592609.jpg",
                     "displayName": "DariuS",
                     "firstName": "Dariusz",
                     "lastName": "Gniadek",
@@ -4492,7 +5431,7 @@
             {
                 "user": {
                     "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                    "avatar": "1744795538269.jpg",
+                    "avatar": "1789759965171.jpg",
                     "displayName": "Emsikej",
                     "firstName": "Kacper",
                     "lastName": "Micek",
@@ -4645,7 +5584,7 @@
             {
                 "user": {
                     "id": "f0b719fd-09d6-4d2a-a87c-bd6e7fcd6990",
-                    "avatar": "1754933041003.jpg",
+                    "avatar": "1789763592609.jpg",
                     "displayName": "DariuS",
                     "firstName": "Dariusz",
                     "lastName": "Gniadek",
@@ -5224,8 +6163,8 @@
                     "firstName": "Jakub",
                     "lastName": "Krochmal",
                     "city": {
-                        "id": 3134,
-                        "name": "Kozy",
+                        "id": 3148,
+                        "name": "Świebodzin",
                         "country": "PL"
                     },
                     "country": "PL",
@@ -5720,7 +6659,7 @@
             {
                 "user": {
                     "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                    "avatar": "1744795538269.jpg",
+                    "avatar": "1789759965171.jpg",
                     "displayName": "Emsikej",
                     "firstName": "Kacper",
                     "lastName": "Micek",
@@ -5737,7 +6676,7 @@
             {
                 "user": {
                     "id": "f0b719fd-09d6-4d2a-a87c-bd6e7fcd6990",
-                    "avatar": "1754933041003.jpg",
+                    "avatar": "1789763592609.jpg",
                     "displayName": "DariuS",
                     "firstName": "Dariusz",
                     "lastName": "Gniadek",
@@ -6430,7 +7369,7 @@
             {
                 "user": {
                     "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                    "avatar": "1744129501318.jpg",
+                    "avatar": "1789801756023.png",
                     "displayName": "Medved",
                     "firstName": "Medard",
                     "lastName": "Grabowski",
@@ -6463,23 +7402,6 @@
             },
             {
                 "user": {
-                    "id": "309de8ee-ad9e-4a87-911b-e3a5d480d491",
-                    "avatar": "1747071407311.jpg",
-                    "displayName": "Kuli ",
-                    "firstName": "Paweł",
-                    "lastName": "Kuligowski",
-                    "city": {
-                        "id": 231,
-                        "name": "Poznań",
-                        "country": "PL"
-                    },
-                    "country": "PL",
-                    "discordUsername": null
-                },
-                "result": 24
-            },
-            {
-                "user": {
                     "id": "6bfe026e-18ff-45b8-bbfb-57f575b6f81b",
                     "avatar": "1778431028029.jpg",
                     "displayName": "J.h.i.n",
@@ -6492,6 +7414,23 @@
                     },
                     "country": "PL",
                     "discordUsername": "em.ess"
+                },
+                "result": 24
+            },
+            {
+                "user": {
+                    "id": "309de8ee-ad9e-4a87-911b-e3a5d480d491",
+                    "avatar": "1747071407311.jpg",
+                    "displayName": "Kuli ",
+                    "firstName": "Paweł",
+                    "lastName": "Kuligowski",
+                    "city": {
+                        "id": 231,
+                        "name": "Poznań",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
                 },
                 "result": 24
             },
@@ -6693,7 +7632,7 @@
             {
                 "user": {
                     "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                    "avatar": "1744795538269.jpg",
+                    "avatar": "1789759965171.jpg",
                     "displayName": "Emsikej",
                     "firstName": "Kacper",
                     "lastName": "Micek",
@@ -6948,7 +7887,7 @@
             {
                 "user": {
                     "id": "f0b719fd-09d6-4d2a-a87c-bd6e7fcd6990",
-                    "avatar": "1754933041003.jpg",
+                    "avatar": "1789763592609.jpg",
                     "displayName": "DariuS",
                     "firstName": "Dariusz",
                     "lastName": "Gniadek",
@@ -7568,7 +8507,7 @@
             {
                 "user": {
                     "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                    "avatar": "1744129501318.jpg",
+                    "avatar": "1789801756023.png",
                     "displayName": "Medved",
                     "firstName": "Medard",
                     "lastName": "Grabowski",
@@ -8006,7 +8945,7 @@
             {
                 "user": {
                     "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                    "avatar": "1744795538269.jpg",
+                    "avatar": "1789759965171.jpg",
                     "displayName": "Emsikej",
                     "firstName": "Kacper",
                     "lastName": "Micek",
@@ -8291,7 +9230,7 @@
             {
                 "user": {
                     "id": "1e4b9bdf-6062-4736-aef3-52bc568f8803",
-                    "avatar": "1788157964464.png",
+                    "avatar": "1792219728431.png",
                     "displayName": "Fleetmaster",
                     "firstName": "Arkadiusz ",
                     "lastName": "Kilian",
@@ -8831,7 +9770,7 @@
             {
                 "user": {
                     "id": "f0b719fd-09d6-4d2a-a87c-bd6e7fcd6990",
-                    "avatar": "1754933041003.jpg",
+                    "avatar": "1789763592609.jpg",
                     "displayName": "DariuS",
                     "firstName": "Dariusz",
                     "lastName": "Gniadek",
@@ -9779,7 +10718,7 @@
             {
                 "user": {
                     "id": "22a23162-8fd8-4dcc-833c-430aafa67491",
-                    "avatar": "1744129501318.jpg",
+                    "avatar": "1789801756023.png",
                     "displayName": "Medved",
                     "firstName": "Medard",
                     "lastName": "Grabowski",
@@ -10311,7 +11250,7 @@
             {
                 "user": {
                     "id": "40eca01a-ba05-4c54-afa1-205dbb9e86dc",
-                    "avatar": "1768296701843.jpg",
+                    "avatar": "1789468512195.jpg",
                     "displayName": "lolek",
                     "firstName": "Daniel",
                     "lastName": "Legan",
@@ -11174,7 +12113,7 @@
             {
                 "user": {
                     "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                    "avatar": "1744795538269.jpg",
+                    "avatar": "1789759965171.jpg",
                     "displayName": "Emsikej",
                     "firstName": "Kacper",
                     "lastName": "Micek",
@@ -11622,8 +12561,8 @@
                     "id": "21066989-54d5-4f5b-b9f2-4ef34bb62943",
                     "avatar": null,
                     "displayName": "Mościk",
-                    "firstName": null,
-                    "lastName": null,
+                    "firstName": "Monika",
+                    "lastName": "Stołowska",
                     "city": {
                         "id": 226,
                         "name": "Łódź",
@@ -11705,7 +12644,7 @@
             {
                 "user": {
                     "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                    "avatar": "1744795538269.jpg",
+                    "avatar": "1789759965171.jpg",
                     "displayName": "Emsikej",
                     "firstName": "Kacper",
                     "lastName": "Micek",
@@ -11722,7 +12661,7 @@
             {
                 "user": {
                     "id": "f0b719fd-09d6-4d2a-a87c-bd6e7fcd6990",
-                    "avatar": "1754933041003.jpg",
+                    "avatar": "1789763592609.jpg",
                     "displayName": "DariuS",
                     "firstName": "Dariusz",
                     "lastName": "Gniadek",
@@ -11908,11 +12847,11 @@
             },
             {
                 "user": {
-                    "id": "a8c5dace-3769-45a7-9812-c134eda0fcae",
+                    "id": "83bffbd7-d053-452e-a6ad-1da65ccb448a",
                     "avatar": null,
-                    "displayName": "Oskarr",
-                    "firstName": "Oskar",
-                    "lastName": "Platta",
+                    "displayName": "macadox",
+                    "firstName": "Maciej",
+                    "lastName": "Okniński",
                     "city": {
                         "id": 235,
                         "name": "Warszawa",
@@ -11925,11 +12864,11 @@
             },
             {
                 "user": {
-                    "id": "83bffbd7-d053-452e-a6ad-1da65ccb448a",
+                    "id": "a8c5dace-3769-45a7-9812-c134eda0fcae",
                     "avatar": null,
-                    "displayName": "macadox",
-                    "firstName": "Maciej",
-                    "lastName": "Okniński",
+                    "displayName": "Oskarr",
+                    "firstName": "Oskar",
+                    "lastName": "Platta",
                     "city": {
                         "id": 235,
                         "name": "Warszawa",
@@ -12546,23 +13485,6 @@
             },
             {
                 "user": {
-                    "id": "1e4b9bdf-6062-4736-aef3-52bc568f8803",
-                    "avatar": "1788157964464.png",
-                    "displayName": "Fleetmaster",
-                    "firstName": "Arkadiusz ",
-                    "lastName": "Kilian",
-                    "city": {
-                        "id": 3137,
-                        "name": "Tarnów",
-                        "country": "PL"
-                    },
-                    "country": "PL",
-                    "discordUsername": null
-                },
-                "result": 5
-            },
-            {
-                "user": {
                     "id": "5dd629bc-7618-4bd4-9b02-0c13fc7b7a34",
                     "avatar": "1787316153799.png",
                     "displayName": "Maslo",
@@ -12575,6 +13497,23 @@
                     },
                     "country": "PL",
                     "discordUsername": "masloo"
+                },
+                "result": 5
+            },
+            {
+                "user": {
+                    "id": "1e4b9bdf-6062-4736-aef3-52bc568f8803",
+                    "avatar": "1792219728431.png",
+                    "displayName": "Fleetmaster",
+                    "firstName": "Arkadiusz ",
+                    "lastName": "Kilian",
+                    "city": {
+                        "id": 3137,
+                        "name": "Tarnów",
+                        "country": "PL"
+                    },
+                    "country": "PL",
+                    "discordUsername": null
                 },
                 "result": 5
             },
@@ -12614,14 +13553,14 @@
             },
             {
                 "user": {
-                    "id": "68bf04f5-3d30-4e15-9d0e-10ff004496e9",
-                    "avatar": "1771016601740.jpg",
-                    "displayName": "Bamar12",
-                    "firstName": "Bartosz",
-                    "lastName": "Marczyński ",
+                    "id": "85e858a0-eb30-4b0d-8622-f6bdbc8c12e8",
+                    "avatar": null,
+                    "displayName": "PiotrChec",
+                    "firstName": "Piotr ",
+                    "lastName": "Chęciński ",
                     "city": {
-                        "id": 231,
-                        "name": "Poznań",
+                        "id": 3113,
+                        "name": "Płock",
                         "country": "PL"
                     },
                     "country": "PL",
@@ -12631,14 +13570,14 @@
             },
             {
                 "user": {
-                    "id": "85e858a0-eb30-4b0d-8622-f6bdbc8c12e8",
-                    "avatar": null,
-                    "displayName": "PiotrChec",
-                    "firstName": "Piotr ",
-                    "lastName": "Chęciński ",
+                    "id": "68bf04f5-3d30-4e15-9d0e-10ff004496e9",
+                    "avatar": "1771016601740.jpg",
+                    "displayName": "Bamar12",
+                    "firstName": "Bartosz",
+                    "lastName": "Marczyński ",
                     "city": {
-                        "id": 3113,
-                        "name": "Płock",
+                        "id": 231,
+                        "name": "Poznań",
                         "country": "PL"
                     },
                     "country": "PL",
@@ -12767,11 +13706,11 @@
             },
             {
                 "user": {
-                    "id": "337cf4cf-c3db-40f2-bccb-d9d98d3928b9",
-                    "avatar": "1783161340699.jpeg",
-                    "displayName": "Patryk Papi Sadowiński ",
-                    "firstName": "Patryk",
-                    "lastName": "Sadowiński",
+                    "id": "a946ead4-d386-4d2f-b350-64a65f00e5e2",
+                    "avatar": null,
+                    "displayName": "Piotr Mędykowski",
+                    "firstName": "Piotr",
+                    "lastName": "Mędykowski",
                     "city": {
                         "id": 236,
                         "name": "Wrocław",
@@ -12784,11 +13723,11 @@
             },
             {
                 "user": {
-                    "id": "a946ead4-d386-4d2f-b350-64a65f00e5e2",
-                    "avatar": null,
-                    "displayName": "Piotr Mędykowski",
-                    "firstName": "Piotr",
-                    "lastName": "Mędykowski",
+                    "id": "337cf4cf-c3db-40f2-bccb-d9d98d3928b9",
+                    "avatar": "1783161340699.jpeg",
+                    "displayName": "Patryk Papi Sadowiński ",
+                    "firstName": "Patryk",
+                    "lastName": "Sadowiński",
                     "city": {
                         "id": 236,
                         "name": "Wrocław",

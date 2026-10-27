@@ -571,7 +571,7 @@
             "createdAt": "2026-03-24T14:52:22.106Z",
             "user": {
                 "id": "20cda92d-c8f4-48b5-bfc5-b0fb09a52c38",
-                "avatar": null,
+                "avatar": "1790859830892.jpg",
                 "displayName": "W00kie",
                 "firstName": "\u0141ukasz",
                 "lastName": "Tomaszewski",
@@ -1085,74 +1085,6 @@
             }
         },
         {
-            "id": "5161cc0e-e0cf-4dbc-99e0-5f401a36ce64",
-            "createdAt": "2026-03-28T12:11:59.930Z",
-            "user": {
-                "id": "9f936b49-9012-4b81-ba42-324cf1cc4cb2",
-                "avatar": "1771348903296.jpg",
-                "displayName": "Pirx",
-                "firstName": "B\u0142a\u017cej",
-                "lastName": "Leporowski",
-                "city": {
-                    "id": 234,
-                    "name": "Tr\u00f3jmiasto",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "APPROVED",
-            "army": {
-                "id": 438,
-                "name": "Kingdom of Khazad-d\u00fbm",
-                "subfraction": null,
-                "code": "MESBG2_KoKd",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": {
-                "id": 438,
-                "name": "Kingdom of Khazad-d\u00fbm",
-                "subfraction": null,
-                "code": "MESBG2_KoKd",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "834fd5c3-9054-4277-aa6f-bee054c054d1",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4084,
-                "place": 1,
-                "poolPlace": null,
-                "singlePlace": 2,
-                "wins": 3,
-                "draws": 0,
-                "loss": 0,
-                "primaryPoints": 22,
-                "secondaryPoints": 47,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "60ab26e3-27c6-48de-b29b-e84936104b2d",
             "createdAt": "2026-03-28T12:11:59.930Z",
             "user": {
@@ -1215,6 +1147,74 @@
                 "loss": 1,
                 "primaryPoints": 19,
                 "secondaryPoints": 42,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "5161cc0e-e0cf-4dbc-99e0-5f401a36ce64",
+            "createdAt": "2026-03-28T12:11:59.930Z",
+            "user": {
+                "id": "9f936b49-9012-4b81-ba42-324cf1cc4cb2",
+                "avatar": "1771348903296.jpg",
+                "displayName": "Pirx",
+                "firstName": "B\u0142a\u017cej",
+                "lastName": "Leporowski",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 438,
+                "name": "Kingdom of Khazad-d\u00fbm",
+                "subfraction": null,
+                "code": "MESBG2_KoKd",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 438,
+                "name": "Kingdom of Khazad-d\u00fbm",
+                "subfraction": null,
+                "code": "MESBG2_KoKd",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "834fd5c3-9054-4277-aa6f-bee054c054d1",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4084,
+                "place": 1,
+                "poolPlace": null,
+                "singlePlace": 2,
+                "wins": 3,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 22,
+                "secondaryPoints": 47,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

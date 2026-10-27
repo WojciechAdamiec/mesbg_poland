@@ -181,66 +181,6 @@
             }
         },
         {
-            "id": "db46378c-5803-4624-9973-52dee65f9bbf",
-            "createdAt": "2026-04-02T18:26:25.623Z",
-            "user": {
-                "id": "bb2a8efe-f745-4f44-94ee-831d41404935",
-                "avatar": null,
-                "displayName": "Antonio_m",
-                "firstName": "Antoni",
-                "lastName": "Maszewski",
-                "city": {
-                    "id": 223,
-                    "name": "Bielsko-bia\u0142a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 450,
-                "name": "Host of the Dragon Emperor",
-                "subfraction": null,
-                "code": "MESBG2_HotDE",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "3ee94172-ee85-47c1-bb92-902d374fd2b0",
-            "pointsModification": 3,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4012,
-                "place": 4,
-                "poolPlace": null,
-                "singlePlace": 6,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 23,
-                "secondaryPoints": 37,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "63ae95c4-e814-461e-9a65-6c3b6d6f3c3c",
             "createdAt": "2026-04-02T18:26:25.623Z",
             "user": {
@@ -294,6 +234,66 @@
                 "draws": 0,
                 "loss": 1,
                 "primaryPoints": 20,
+                "secondaryPoints": 37,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "db46378c-5803-4624-9973-52dee65f9bbf",
+            "createdAt": "2026-04-02T18:26:25.623Z",
+            "user": {
+                "id": "bb2a8efe-f745-4f44-94ee-831d41404935",
+                "avatar": null,
+                "displayName": "Antonio_m",
+                "firstName": "Antoni",
+                "lastName": "Maszewski",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 450,
+                "name": "Host of the Dragon Emperor",
+                "subfraction": null,
+                "code": "MESBG2_HotDE",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "3ee94172-ee85-47c1-bb92-902d374fd2b0",
+            "pointsModification": 3,
+            "pointsModificationDescription": "",
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4012,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": 6,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 23,
                 "secondaryPoints": 37,
                 "tertiaryPoints": 0,
                 "sos": 0,
@@ -893,66 +893,6 @@
             }
         },
         {
-            "id": "fbae8b1a-1db3-447e-a99b-887c7b85c7f2",
-            "createdAt": "2026-04-10T05:59:48.863Z",
-            "user": {
-                "id": "83253c68-f02c-46cf-86c7-4e574c79154b",
-                "avatar": null,
-                "displayName": "Tumnus",
-                "firstName": "Tymoteusz ",
-                "lastName": "Go\u0142ek",
-                "city": {
-                    "id": 223,
-                    "name": "Bielsko-bia\u0142a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 366,
-                "name": "The Black Gate",
-                "subfraction": null,
-                "code": "MESBG2_TBGO",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "64a7d559-a0b6-407c-997e-6b68be547cc2",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4012,
-                "place": 9,
-                "poolPlace": null,
-                "singlePlace": 18,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 10,
-                "secondaryPoints": 14,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "4e15280e-197e-492a-97f3-358bd532b425",
             "createdAt": "2026-04-10T05:59:48.863Z",
             "user": {
@@ -1013,14 +953,14 @@
             }
         },
         {
-            "id": "9eb826fd-4354-41c5-8fad-aae7c281d3f5",
-            "createdAt": "2026-04-10T13:56:51.852Z",
+            "id": "fbae8b1a-1db3-447e-a99b-887c7b85c7f2",
+            "createdAt": "2026-04-10T05:59:48.863Z",
             "user": {
-                "id": "7918000f-f66c-4750-b2c6-3277bc3bfcd3",
-                "avatar": "1746731438005.jpg",
-                "displayName": "Franko",
-                "firstName": "",
-                "lastName": "",
+                "id": "83253c68-f02c-46cf-86c7-4e574c79154b",
+                "avatar": null,
+                "displayName": "Tumnus",
+                "firstName": "Tymoteusz ",
+                "lastName": "Go\u0142ek",
                 "city": {
                     "id": 223,
                     "name": "Bielsko-bia\u0142a",
@@ -1029,17 +969,17 @@
                 "country": "PL",
                 "discordUsername": null
             },
-            "listApproved": false,
+            "listApproved": true,
             "listAdded": true,
             "listHidden": false,
             "lunchApproved": false,
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 449,
-                "name": "The Serpent Horde",
+                "id": 366,
+                "name": "The Black Gate",
                 "subfraction": null,
-                "code": "MESBG2_TSH",
+                "code": "MESBG2_TBGO",
                 "metadata": {
                     "mesbgType": "EVIL"
                 }
@@ -1047,9 +987,9 @@
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "90beb71d-5603-45cb-a07e-ca1dc4fc2008",
-            "pointsModification": 3,
-            "pointsModificationDescription": "",
+            "teamId": "64a7d559-a0b6-407c-997e-6b68be547cc2",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
@@ -1059,14 +999,14 @@
             "poolResult": null,
             "finalResult": {
                 "stageId": 4012,
-                "place": 7,
+                "place": 9,
                 "poolPlace": null,
-                "singlePlace": 11,
+                "singlePlace": 18,
                 "wins": 1,
                 "draws": 0,
                 "loss": 2,
-                "primaryPoints": 13,
-                "secondaryPoints": 19,
+                "primaryPoints": 10,
+                "secondaryPoints": 14,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -1126,6 +1066,66 @@
                 "draws": 0,
                 "loss": 2,
                 "primaryPoints": 10,
+                "secondaryPoints": 19,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "9eb826fd-4354-41c5-8fad-aae7c281d3f5",
+            "createdAt": "2026-04-10T13:56:51.852Z",
+            "user": {
+                "id": "7918000f-f66c-4750-b2c6-3277bc3bfcd3",
+                "avatar": "1746731438005.jpg",
+                "displayName": "Franko",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 449,
+                "name": "The Serpent Horde",
+                "subfraction": null,
+                "code": "MESBG2_TSH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "90beb71d-5603-45cb-a07e-ca1dc4fc2008",
+            "pointsModification": 3,
+            "pointsModificationDescription": "",
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4012,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 11,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 13,
                 "secondaryPoints": 19,
                 "tertiaryPoints": 0,
                 "sos": 0,

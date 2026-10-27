@@ -1,58 +1,6 @@
 {
     "people": [
         {
-            "id": "30cce2d2-7344-4e57-9a6b-0ea4f381b7e1",
-            "createdAt": "2025-11-10T20:35:03.789Z",
-            "user": {
-                "id": "dfae3b97-3154-43b8-a7cf-26ece499fa82",
-                "avatar": "1748805490124.jpeg",
-                "displayName": "Nie_Wiem",
-                "firstName": "Rados\u0142aw",
-                "lastName": "Dziubi\u0144ski",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": "tiredarchitect."
-            },
-            "listApproved": true,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "07939b18-6665-4f59-9a72-73c6ebd96775",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3079,
-                "place": 8,
-                "poolPlace": null,
-                "singlePlace": 16,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 5,
-                "secondaryPoints": 9,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "bc5b9092-75e4-404a-9a09-87988eb28882",
             "createdAt": "2025-11-10T20:35:03.789Z",
             "user": {
@@ -105,11 +53,63 @@
             }
         },
         {
+            "id": "30cce2d2-7344-4e57-9a6b-0ea4f381b7e1",
+            "createdAt": "2025-11-10T20:35:03.789Z",
+            "user": {
+                "id": "dfae3b97-3154-43b8-a7cf-26ece499fa82",
+                "avatar": "1748805490124.jpeg",
+                "displayName": "Nie_Wiem",
+                "firstName": "Rados\u0142aw",
+                "lastName": "Dziubi\u0144ski",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "tiredarchitect."
+            },
+            "listApproved": true,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "07939b18-6665-4f59-9a72-73c6ebd96775",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3079,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": 16,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 5,
+                "secondaryPoints": 9,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
             "id": "3a1f1201-8796-412a-a733-8791fb1fc122",
             "createdAt": "2025-11-10T21:11:31.755Z",
             "user": {
                 "id": "20a238b0-37e6-400b-a2a1-20935ab4cc00",
-                "avatar": "1744795538269.jpg",
+                "avatar": "1789759965171.jpg",
                 "displayName": "Emsikej",
                 "firstName": "Kacper",
                 "lastName": "Micek",
@@ -697,66 +697,6 @@
             }
         },
         {
-            "id": "84b49fab-8fe3-4e32-8439-72c13d21a41a",
-            "createdAt": "2025-12-05T09:00:40.200Z",
-            "user": {
-                "id": "4e8fbce8-9600-4b61-af86-6731e366fce3",
-                "avatar": "1744053367688.png",
-                "displayName": "Jaskier",
-                "firstName": "Marcin",
-                "lastName": "Markiewicz",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 459,
-                "name": "Expedition to the East",
-                "subfraction": null,
-                "code": "MESBG2_EttE",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "2006034e-aaf9-47e0-8751-2af1a278eba5",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3079,
-                "place": 7,
-                "poolPlace": null,
-                "singlePlace": 12,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 6,
-                "secondaryPoints": 22,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "b692c732-0c5b-4342-9f6d-94bd338e3336",
             "createdAt": "2025-12-05T09:00:40.200Z",
             "user": {
@@ -811,6 +751,66 @@
                 "loss": 1,
                 "primaryPoints": 9,
                 "secondaryPoints": 23,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "84b49fab-8fe3-4e32-8439-72c13d21a41a",
+            "createdAt": "2025-12-05T09:00:40.200Z",
+            "user": {
+                "id": "4e8fbce8-9600-4b61-af86-6731e366fce3",
+                "avatar": "1744053367688.png",
+                "displayName": "Jaskier",
+                "firstName": "Marcin",
+                "lastName": "Markiewicz",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 459,
+                "name": "Expedition to the East",
+                "subfraction": null,
+                "code": "MESBG2_EttE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "2006034e-aaf9-47e0-8751-2af1a278eba5",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3079,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 12,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 22,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -1089,7 +1089,7 @@
             "createdAt": "2025-12-10T15:44:52.846Z",
             "user": {
                 "id": "f0b719fd-09d6-4d2a-a87c-bd6e7fcd6990",
-                "avatar": "1754933041003.jpg",
+                "avatar": "1789763592609.jpg",
                 "displayName": "DariuS",
                 "firstName": "Dariusz",
                 "lastName": "Gniadek",
