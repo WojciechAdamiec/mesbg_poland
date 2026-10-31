@@ -213,10 +213,10 @@
             "createdAt": "2025-11-10T21:41:32.646Z",
             "user": {
                 "id": "6c1b533a-5a81-442a-8d96-1100083dcb4b",
-                "avatar": null,
-                "displayName": "Ko\u0142odziej ",
-                "firstName": null,
-                "lastName": null,
+                "avatar": "1793010125560.png",
+                "displayName": "Ko\u0142odziej",
+                "firstName": "",
+                "lastName": "",
                 "city": {
                     "id": 235,
                     "name": "Warszawa",
@@ -255,66 +255,6 @@
                 "loss": 1,
                 "primaryPoints": 13,
                 "secondaryPoints": 35,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
-            "id": "a0ed29be-b939-48fc-acc1-b3a42102420f",
-            "createdAt": "2025-11-11T08:16:04.779Z",
-            "user": {
-                "id": "7d79e669-7010-4328-bbf5-3f7203dddd9a",
-                "avatar": "1745401385513.jpeg",
-                "displayName": "isengard1",
-                "firstName": "Daniel ",
-                "lastName": "Derda",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 330,
-                "name": "Fangorn",
-                "subfraction": null,
-                "code": "MESBG2_F",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "aa9dc861-1423-48e8-aa43-95dc1b4a12c4",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3079,
-                "place": 5,
-                "poolPlace": null,
-                "singlePlace": 14,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 6,
-                "secondaryPoints": 12,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -375,6 +315,66 @@
                 "loss": 0,
                 "primaryPoints": 17,
                 "secondaryPoints": 46,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "a0ed29be-b939-48fc-acc1-b3a42102420f",
+            "createdAt": "2025-11-11T08:16:04.779Z",
+            "user": {
+                "id": "7d79e669-7010-4328-bbf5-3f7203dddd9a",
+                "avatar": "1745401385513.jpeg",
+                "displayName": "isengard1",
+                "firstName": "Daniel ",
+                "lastName": "Derda",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 330,
+                "name": "Fangorn",
+                "subfraction": null,
+                "code": "MESBG2_F",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "aa9dc861-1423-48e8-aa43-95dc1b4a12c4",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3079,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": 14,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 12,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -697,66 +697,6 @@
             }
         },
         {
-            "id": "b692c732-0c5b-4342-9f6d-94bd338e3336",
-            "createdAt": "2025-12-05T09:00:40.200Z",
-            "user": {
-                "id": "71f045ad-ce24-4e8b-865a-1dc0f634a42d",
-                "avatar": null,
-                "displayName": "Malbeth",
-                "firstName": "Aleksander ",
-                "lastName": "Jaworski-Martycz",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 453,
-                "name": "Moria",
-                "subfraction": null,
-                "code": "MESBG2_M",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "2006034e-aaf9-47e0-8751-2af1a278eba5",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3079,
-                "place": 7,
-                "poolPlace": null,
-                "singlePlace": 9,
-                "wins": 1,
-                "draws": 1,
-                "loss": 1,
-                "primaryPoints": 9,
-                "secondaryPoints": 23,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "84b49fab-8fe3-4e32-8439-72c13d21a41a",
             "createdAt": "2025-12-05T09:00:40.200Z",
             "user": {
@@ -811,6 +751,66 @@
                 "loss": 2,
                 "primaryPoints": 6,
                 "secondaryPoints": 22,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "b692c732-0c5b-4342-9f6d-94bd338e3336",
+            "createdAt": "2025-12-05T09:00:40.200Z",
+            "user": {
+                "id": "71f045ad-ce24-4e8b-865a-1dc0f634a42d",
+                "avatar": null,
+                "displayName": "Malbeth",
+                "firstName": "Aleksander ",
+                "lastName": "Jaworski-Martycz",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "2006034e-aaf9-47e0-8751-2af1a278eba5",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3079,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 9,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 9,
+                "secondaryPoints": 23,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

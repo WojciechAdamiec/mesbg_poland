@@ -1,14 +1,14 @@
 {
     "people": [
         {
-            "id": "761c9ddb-a62e-48d0-a0cf-4eb286c4de56",
+            "id": "fd99a991-0adb-4e8e-aa70-8fc729de04d4",
             "createdAt": "2026-02-14T12:21:05.110Z",
             "user": {
-                "id": "d9604cb1-9be4-4870-a49e-01dc101470ca",
+                "id": "c0e5c936-b855-43d8-aa70-0fd1a8ab470e",
                 "avatar": null,
-                "displayName": "Marcin Laskowski",
-                "firstName": null,
-                "lastName": null,
+                "displayName": "Oskar Pantkowski",
+                "firstName": "",
+                "lastName": "",
                 "city": {
                     "id": 224,
                     "name": "Bydgoszcz",
@@ -43,14 +43,14 @@
             }
         },
         {
-            "id": "fd99a991-0adb-4e8e-aa70-8fc729de04d4",
+            "id": "761c9ddb-a62e-48d0-a0cf-4eb286c4de56",
             "createdAt": "2026-02-14T12:21:05.110Z",
             "user": {
-                "id": "c0e5c936-b855-43d8-aa70-0fd1a8ab470e",
+                "id": "d9604cb1-9be4-4870-a49e-01dc101470ca",
                 "avatar": null,
-                "displayName": "Oskar Pantkowski",
-                "firstName": "",
-                "lastName": "",
+                "displayName": "Marcin Laskowski",
+                "firstName": null,
+                "lastName": null,
                 "city": {
                     "id": 224,
                     "name": "Bydgoszcz",
@@ -221,74 +221,6 @@
             }
         },
         {
-            "id": "e51f2702-1767-4301-b7aa-4652999552df",
-            "createdAt": "2026-02-14T16:35:13.340Z",
-            "user": {
-                "id": "7db60bf3-1d9f-4ce6-8b5d-32e66d16000d",
-                "avatar": "1739820624712.jpg",
-                "displayName": "Eskobar",
-                "firstName": "Pawe\u0142",
-                "lastName": "Lisak",
-                "city": {
-                    "id": 234,
-                    "name": "Tr\u00f3jmiasto",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 437,
-                "name": "Army of Erebor",
-                "subfraction": null,
-                "code": "MESBG2_AoEr",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": {
-                "id": 437,
-                "name": "Army of Erebor",
-                "subfraction": null,
-                "code": "MESBG2_AoEr",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "355e6023-e1a4-4c8f-8789-c6ef504ad0ee",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4216,
-                "place": 30,
-                "poolPlace": null,
-                "singlePlace": 57,
-                "wins": 1,
-                "draws": 0,
-                "loss": 4,
-                "primaryPoints": 12,
-                "secondaryPoints": 43,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "5cf7e2ee-055c-4cea-984a-75555a1747a2",
             "createdAt": "2026-02-14T16:35:13.340Z",
             "user": {
@@ -351,6 +283,74 @@
                 "loss": 3,
                 "primaryPoints": 15,
                 "secondaryPoints": 41,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "e51f2702-1767-4301-b7aa-4652999552df",
+            "createdAt": "2026-02-14T16:35:13.340Z",
+            "user": {
+                "id": "7db60bf3-1d9f-4ce6-8b5d-32e66d16000d",
+                "avatar": "1739820624712.jpg",
+                "displayName": "Eskobar",
+                "firstName": "Pawe\u0142",
+                "lastName": "Lisak",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 437,
+                "name": "Army of Erebor",
+                "subfraction": null,
+                "code": "MESBG2_AoEr",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 437,
+                "name": "Army of Erebor",
+                "subfraction": null,
+                "code": "MESBG2_AoEr",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "355e6023-e1a4-4c8f-8789-c6ef504ad0ee",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4216,
+                "place": 30,
+                "poolPlace": null,
+                "singlePlace": 57,
+                "wins": 1,
+                "draws": 0,
+                "loss": 4,
+                "primaryPoints": 12,
+                "secondaryPoints": 43,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -1307,10 +1307,10 @@
             "createdAt": "2026-02-16T10:54:15.956Z",
             "user": {
                 "id": "6c1b533a-5a81-442a-8d96-1100083dcb4b",
-                "avatar": null,
-                "displayName": "Ko\u0142odziej ",
-                "firstName": null,
-                "lastName": null,
+                "avatar": "1793010125560.png",
+                "displayName": "Ko\u0142odziej",
+                "firstName": "",
+                "lastName": "",
                 "city": {
                     "id": 235,
                     "name": "Warszawa",
@@ -2429,74 +2429,6 @@
             }
         },
         {
-            "id": "a2611fb8-c887-474d-bdf1-a1db48e75235",
-            "createdAt": "2026-02-22T11:45:16.614Z",
-            "user": {
-                "id": "013435de-6dfa-4aa3-b660-b670b6a245e5",
-                "avatar": null,
-                "displayName": "Mauro",
-                "firstName": "Maurycy",
-                "lastName": "Maziuk",
-                "city": {
-                    "id": 236,
-                    "name": "Wroc\u0142aw",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 382,
-                "name": "Shadows of Angmar",
-                "subfraction": null,
-                "code": "MESBG2_SoA",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 382,
-                "name": "Shadows of Angmar",
-                "subfraction": null,
-                "code": "MESBG2_SoA",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "bbb94905-0a4d-41fd-9e1f-dbd1c18bf84c",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4216,
-                "place": 10,
-                "poolPlace": null,
-                "singlePlace": 36,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 19,
-                "secondaryPoints": 47,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "cd82af0e-e30c-4455-b8c7-71702133318b",
             "createdAt": "2026-02-22T11:45:16.614Z",
             "user": {
@@ -2559,6 +2491,74 @@
                 "loss": 2,
                 "primaryPoints": 25,
                 "secondaryPoints": 66,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "a2611fb8-c887-474d-bdf1-a1db48e75235",
+            "createdAt": "2026-02-22T11:45:16.614Z",
+            "user": {
+                "id": "013435de-6dfa-4aa3-b660-b670b6a245e5",
+                "avatar": null,
+                "displayName": "Mauro",
+                "firstName": "Maurycy",
+                "lastName": "Maziuk",
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 382,
+                "name": "Shadows of Angmar",
+                "subfraction": null,
+                "code": "MESBG2_SoA",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 382,
+                "name": "Shadows of Angmar",
+                "subfraction": null,
+                "code": "MESBG2_SoA",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "bbb94905-0a4d-41fd-9e1f-dbd1c18bf84c",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4216,
+                "place": 10,
+                "poolPlace": null,
+                "singlePlace": 36,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 19,
+                "secondaryPoints": 47,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -4121,48 +4121,6 @@
             }
         },
         {
-            "id": "b58fb9a9-8617-4c00-9801-29d23b0c4545",
-            "createdAt": "2026-03-22T09:59:37.415Z",
-            "user": {
-                "id": "55b3019a-a7e5-4c3c-9c51-0643513d2296",
-                "avatar": "1747765344654.png",
-                "displayName": "FishPriest",
-                "firstName": "Micha\u0142 ",
-                "lastName": "Rybarczyk",
-                "city": {
-                    "id": 226,
-                    "name": "\u0141\u00f3d\u017a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "db1344fa-b996-4dd5-86bf-e7eb01345f69",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4216,
-                "sos": 0
-            }
-        },
-        {
             "id": "b40159d5-bb22-40a0-9db1-72cf012bbab7",
             "createdAt": "2026-03-22T09:59:37.415Z",
             "user": {
@@ -4205,49 +4163,33 @@
             }
         },
         {
-            "id": "8f389faf-53ea-445a-8ebe-7972f81b9b6d",
-            "createdAt": "2026-03-23T12:37:20.333Z",
+            "id": "b58fb9a9-8617-4c00-9801-29d23b0c4545",
+            "createdAt": "2026-03-22T09:59:37.415Z",
             "user": {
-                "id": "9f936b49-9012-4b81-ba42-324cf1cc4cb2",
-                "avatar": "1771348903296.jpg",
-                "displayName": "Pirx",
-                "firstName": "B\u0142a\u017cej",
-                "lastName": "Leporowski",
+                "id": "55b3019a-a7e5-4c3c-9c51-0643513d2296",
+                "avatar": "1747765344654.png",
+                "displayName": "FishPriest",
+                "firstName": "Micha\u0142 ",
+                "lastName": "Rybarczyk",
                 "city": {
-                    "id": 234,
-                    "name": "Tr\u00f3jmiasto",
+                    "id": 226,
+                    "name": "\u0141\u00f3d\u017a",
                     "country": "PL"
                 },
                 "country": "PL",
                 "discordUsername": null
             },
-            "listApproved": true,
-            "listAdded": true,
+            "listApproved": false,
+            "listAdded": false,
             "listHidden": false,
             "lunchApproved": false,
             "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 438,
-                "name": "Kingdom of Khazad-d\u00fbm",
-                "subfraction": null,
-                "code": "MESBG2_KoKd",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": {
-                "id": 438,
-                "name": "Kingdom of Khazad-d\u00fbm",
-                "subfraction": null,
-                "code": "MESBG2_KoKd",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "7375cd08-fb64-4be6-821b-8c32fd916d39",
+            "teamId": "db1344fa-b996-4dd5-86bf-e7eb01345f69",
             "pointsModification": null,
             "pointsModificationDescription": null,
             "metadata": null,
@@ -4259,17 +4201,7 @@
             "poolResult": null,
             "finalResult": {
                 "stageId": 4216,
-                "place": 21,
-                "poolPlace": null,
-                "singlePlace": 25,
-                "wins": 3,
-                "draws": 1,
-                "loss": 2,
-                "primaryPoints": 22,
-                "secondaryPoints": 57,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
+                "sos": 0
             }
         },
         {
@@ -4335,6 +4267,74 @@
                 "loss": 4,
                 "primaryPoints": 12,
                 "secondaryPoints": 35,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "8f389faf-53ea-445a-8ebe-7972f81b9b6d",
+            "createdAt": "2026-03-23T12:37:20.333Z",
+            "user": {
+                "id": "9f936b49-9012-4b81-ba42-324cf1cc4cb2",
+                "avatar": "1771348903296.jpg",
+                "displayName": "Pirx",
+                "firstName": "B\u0142a\u017cej",
+                "lastName": "Leporowski",
+                "city": {
+                    "id": 234,
+                    "name": "Tr\u00f3jmiasto",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 438,
+                "name": "Kingdom of Khazad-d\u00fbm",
+                "subfraction": null,
+                "code": "MESBG2_KoKd",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 438,
+                "name": "Kingdom of Khazad-d\u00fbm",
+                "subfraction": null,
+                "code": "MESBG2_KoKd",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "7375cd08-fb64-4be6-821b-8c32fd916d39",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4216,
+                "place": 21,
+                "poolPlace": null,
+                "singlePlace": 25,
+                "wins": 3,
+                "draws": 1,
+                "loss": 2,
+                "primaryPoints": 22,
+                "secondaryPoints": 57,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

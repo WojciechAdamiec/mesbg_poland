@@ -27,6 +27,19 @@
     },
     {
         "place": 3,
+        "score": 81,
+        "player_id": "6df80142-0804-43f3-910e-3d51131586cf",
+        "displayName": "Istar",
+        "city_name": "Warszawa",
+        "online_total": 81,
+        "online_1": 21,
+        "online_2": 19,
+        "online_3": 17,
+        "online_4": 16,
+        "online_5": 8
+    },
+    {
+        "place": 4,
         "score": 76,
         "player_id": "dd081a04-8bbb-4409-aed7-f6ceedf4d7d0",
         "displayName": "Shogun",
@@ -39,7 +52,7 @@
         "online_5": 13
     },
     {
-        "place": 4,
+        "place": 5,
         "score": 74,
         "player_id": "089ddc86-e373-4d2e-9d6f-0bfeff90c90a",
         "displayName": "Myrthan",
@@ -52,7 +65,7 @@
         "online_5": 9
     },
     {
-        "place": 5,
+        "place": 6,
         "score": 70,
         "player_id": "bbbe191e-78cb-42d6-acc6-fd53718b1fd2",
         "displayName": "Dominik Kazek",
@@ -65,20 +78,33 @@
         "online_5": 11
     },
     {
-        "place": 5,
-        "score": 70,
-        "player_id": "6df80142-0804-43f3-910e-3d51131586cf",
-        "displayName": "Istar",
-        "city_name": "Warszawa",
-        "online_total": 70,
-        "online_1": 21,
-        "online_2": 19,
-        "online_3": 17,
-        "online_4": 8,
-        "online_5": 5
+        "place": 7,
+        "score": 66,
+        "player_id": "0bfb2478-4d20-4d4b-8371-cdf968ed3447",
+        "displayName": "Mazi z Opolskiego",
+        "city_name": null,
+        "online_total": 66,
+        "online_1": 17,
+        "online_2": 16,
+        "online_3": 14,
+        "online_4": 12,
+        "online_5": 7
     },
     {
         "place": 7,
+        "score": 66,
+        "player_id": "f99891d1-d482-4c43-b373-ff9a7faf530e",
+        "displayName": "Skurkowaniec",
+        "city_name": "Warszawa",
+        "online_total": 66,
+        "online_1": 18,
+        "online_2": 14,
+        "online_3": 13,
+        "online_4": 11,
+        "online_5": 10
+    },
+    {
+        "place": 9,
         "score": 64,
         "player_id": "cbfbcd40-cbf7-4546-885f-4d061496fe8c",
         "displayName": "Kłos",
@@ -91,7 +117,7 @@
         "online_5": 11
     },
     {
-        "place": 8,
+        "place": 10,
         "score": 63,
         "player_id": "4a511f44-0b5e-4f86-b9ea-6db298859c11",
         "displayName": "ADAM MAZI",
@@ -102,32 +128,6 @@
         "online_3": 11,
         "online_4": 8,
         "online_5": 5
-    },
-    {
-        "place": 9,
-        "score": 58,
-        "player_id": "0bfb2478-4d20-4d4b-8371-cdf968ed3447",
-        "displayName": "Mazi z Opolskiego",
-        "city_name": null,
-        "online_total": 58,
-        "online_1": 17,
-        "online_2": 16,
-        "online_3": 12,
-        "online_4": 7,
-        "online_5": 6
-    },
-    {
-        "place": 10,
-        "score": 55,
-        "player_id": "f99891d1-d482-4c43-b373-ff9a7faf530e",
-        "displayName": "Skurkowaniec",
-        "city_name": "Warszawa",
-        "online_total": 55,
-        "online_1": 18,
-        "online_2": 14,
-        "online_3": 13,
-        "online_4": 10,
-        "online_5": 0
     },
     {
         "place": 11,
@@ -157,6 +157,19 @@
     },
     {
         "place": 13,
+        "score": 42,
+        "player_id": "cb67ea1b-6562-48e3-99e2-c7d66c880c28",
+        "displayName": "Leszczu",
+        "city_name": "Katowice",
+        "online_total": 42,
+        "online_1": 15,
+        "online_2": 10,
+        "online_3": 9,
+        "online_4": 8,
+        "online_5": 0
+    },
+    {
+        "place": 14,
         "score": 38,
         "player_id": "8584b195-954a-48ed-85bb-22d759304615",
         "displayName": "Boberek",
@@ -167,19 +180,6 @@
         "online_3": 5,
         "online_4": 5,
         "online_5": 5
-    },
-    {
-        "place": 14,
-        "score": 34,
-        "player_id": "cb67ea1b-6562-48e3-99e2-c7d66c880c28",
-        "displayName": "Leszczu",
-        "city_name": "Katowice",
-        "online_total": 34,
-        "online_1": 15,
-        "online_2": 10,
-        "online_3": 9,
-        "online_4": 0,
-        "online_5": 0
     },
     {
         "place": 15,
@@ -222,6 +222,19 @@
     },
     {
         "place": 18,
+        "score": 29,
+        "player_id": "9acacf31-d8da-4104-a8e3-5a8b19ab96f0",
+        "displayName": "Koza krz",
+        "city_name": null,
+        "online_total": 29,
+        "online_1": 8,
+        "online_2": 6,
+        "online_3": 5,
+        "online_4": 5,
+        "online_5": 5
+    },
+    {
+        "place": 19,
         "score": 26,
         "player_id": "8b598a8c-6653-4761-bf1e-6954cf967146",
         "displayName": "Michal",
@@ -234,20 +247,20 @@
         "online_5": 0
     },
     {
-        "place": 19,
+        "place": 20,
         "score": 24,
-        "player_id": "9acacf31-d8da-4104-a8e3-5a8b19ab96f0",
-        "displayName": "Koza krz",
-        "city_name": null,
+        "player_id": "77118329-d3a5-4448-ae43-715db9aa271d",
+        "displayName": "Pe_Pe",
+        "city_name": "Gdańsk",
         "online_total": 24,
-        "online_1": 8,
-        "online_2": 6,
+        "online_1": 12,
+        "online_2": 7,
         "online_3": 5,
-        "online_4": 5,
+        "online_4": 0,
         "online_5": 0
     },
     {
-        "place": 20,
+        "place": 21,
         "score": 23,
         "player_id": "ad4836af-7b5d-4389-a937-446249ae3deb",
         "displayName": "Mikołaj Prorok Deszcz",
@@ -260,7 +273,7 @@
         "online_5": 0
     },
     {
-        "place": 21,
+        "place": 22,
         "score": 22,
         "player_id": "21ff41f3-549d-4b12-922e-862bfc088bc3",
         "displayName": "Piotr Włodarczyk ",
@@ -274,6 +287,19 @@
     },
     {
         "place": 22,
+        "score": 22,
+        "player_id": "290faf83-b5ae-4619-bfba-82ddb9749723",
+        "displayName": "Empe93",
+        "city_name": "Częstochowa",
+        "online_total": 22,
+        "online_1": 7,
+        "online_2": 5,
+        "online_3": 5,
+        "online_4": 5,
+        "online_5": 0
+    },
+    {
+        "place": 24,
         "score": 21,
         "player_id": "e193927e-381f-4695-ac85-685e297bb182",
         "displayName": "Kosin",
@@ -286,7 +312,7 @@
         "online_5": 0
     },
     {
-        "place": 23,
+        "place": 25,
         "score": 19,
         "player_id": "9d5bc521-d1ac-416e-952c-926b6aef9e60",
         "displayName": "Kostek",
@@ -299,20 +325,7 @@
         "online_5": 0
     },
     {
-        "place": 24,
-        "score": 17,
-        "player_id": "290faf83-b5ae-4619-bfba-82ddb9749723",
-        "displayName": "Empe93",
-        "city_name": "Częstochowa",
-        "online_total": 17,
-        "online_1": 7,
-        "online_2": 5,
-        "online_3": 5,
-        "online_4": 0,
-        "online_5": 0
-    },
-    {
-        "place": 25,
+        "place": 26,
         "score": 15,
         "player_id": "2a69f764-5cb1-4177-9200-d58b7117a089",
         "displayName": "Daniel TommyDeVito Cichoniec",
@@ -326,6 +339,19 @@
     },
     {
         "place": 26,
+        "score": 15,
+        "player_id": "cb320e87-633f-4584-908c-3fd6e435fcbf",
+        "displayName": "Krzysztof10",
+        "city_name": null,
+        "online_total": 15,
+        "online_1": 5,
+        "online_2": 5,
+        "online_3": 5,
+        "online_4": 0,
+        "online_5": 0
+    },
+    {
+        "place": 28,
         "score": 12,
         "player_id": "63c2331e-0577-4bdc-a5fa-98ec6d23cbc5",
         "displayName": "Manyy",
@@ -338,7 +364,7 @@
         "online_5": 0
     },
     {
-        "place": 26,
+        "place": 28,
         "score": 12,
         "player_id": "6bfe026e-18ff-45b8-bbfb-57f575b6f81b",
         "displayName": "J.h.i.n",
@@ -351,7 +377,7 @@
         "online_5": 0
     },
     {
-        "place": 26,
+        "place": 28,
         "score": 12,
         "player_id": "961f7757-d114-4d08-a7d5-7a32635b571c",
         "displayName": "Deafy",
@@ -364,20 +390,7 @@
         "online_5": 0
     },
     {
-        "place": 26,
-        "score": 12,
-        "player_id": "77118329-d3a5-4448-ae43-715db9aa271d",
-        "displayName": "Pe_Pe",
-        "city_name": "Gdańsk",
-        "online_total": 12,
-        "online_1": 7,
-        "online_2": 5,
-        "online_3": 0,
-        "online_4": 0,
-        "online_5": 0
-    },
-    {
-        "place": 30,
+        "place": 31,
         "score": 11,
         "player_id": "93d647e6-e5b4-4797-8941-dcfb38fd8b6e",
         "displayName": "Paweł Koshara",
@@ -390,7 +403,7 @@
         "online_5": 0
     },
     {
-        "place": 30,
+        "place": 31,
         "score": 11,
         "player_id": "289932ee-6bb1-405e-b6d8-4ff67f3a7cbe",
         "displayName": "Szymon Łukaszewicz",
@@ -398,19 +411,6 @@
         "online_total": 11,
         "online_1": 11,
         "online_2": 0,
-        "online_3": 0,
-        "online_4": 0,
-        "online_5": 0
-    },
-    {
-        "place": 32,
-        "score": 10,
-        "player_id": "cb320e87-633f-4584-908c-3fd6e435fcbf",
-        "displayName": "Krzysztof10",
-        "city_name": null,
-        "online_total": 10,
-        "online_1": 5,
-        "online_2": 5,
         "online_3": 0,
         "online_4": 0,
         "online_5": 0

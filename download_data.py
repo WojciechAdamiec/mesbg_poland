@@ -28,6 +28,7 @@ MASTER_RANKING_FILE = "master_ranking.json"
 MASTER_TOURNAMENTS_FILE = "master_tournaments.json"
 BATTLES_FILE = "battles.json"
 ARMIES_FILE = "armies.json"
+PLAYER_PROFILES_FILE = "player_profiles.json"
 ACCESS_TOKEN = "PASTER_TOKEN_HERE"
 INPUT_DIRECTORY = "input"
 
@@ -512,6 +513,104 @@ def extract_armies_data(battles_file=None, input_directory=INPUT_DIRECTORY):
     return armies_list
 
 
+def _winrate(wins, games, draws=0):
+    return round((wins + 0.5 * draws) / games * 100, 2) if games else 0.0
+
+
+def _bump(table, key, won, lost, **extra):
+    entry = table.setdefault(key, {**extra, "games": 0, "wins": 0, "draws": 0, "losses": 0})
+    entry["games"] += 1
+    if won:
+        entry["wins"] += 1
+    elif lost:
+        entry["losses"] += 1
+    else:
+        entry["draws"] += 1
+
+
+def _finalize(table, sort_key=None):
+    rows = []
+    for entry in table.values():
+        entry["winrate"] = _winrate(entry["wins"], entry["games"], entry["draws"])
+        rows.append(entry)
+    rows.sort(key=sort_key or (lambda r: (-r["games"], -r["winrate"])))
+    return rows
+
+
+def build_player_profiles(battles, main_ranking):
+    """Per-player stats; a win is a strictly higher score (draws are not wins)."""
+    place_by_id = {u.get("player_id"): u.get("place") for u in main_ranking}
+    names = {}
+    players = {}
+
+    for battle in battles:
+        if battle.get("format") == "DOUBLES":
+            continue
+        result = battle.get("result")
+        if not result or len(result) != 2:
+            continue
+        for me, opp in (("1", "2"), ("2", "1")):
+            player_id = battle.get(f"player_{me}_id")
+            opponent_id = battle.get(f"player_{opp}_id")
+            if not player_id:
+                continue
+            names[player_id] = battle.get(f"player_{me}_name")
+            my_score = result[int(me) - 1]
+            opp_score = result[int(opp) - 1]
+            won, lost = my_score > opp_score, my_score < opp_score
+            my_army = battle.get(f"army_{me}_id")
+            opp_army = battle.get(f"army_{opp}_id")
+
+            profile = players.setdefault(
+                player_id,
+                {"total": {"games": 0, "wins": 0, "draws": 0, "losses": 0},
+                 "armies": {}, "opponents": {}, "opponent_armies": {}, "defeated": {}},
+            )
+            total = profile["total"]
+            total["games"] += 1
+            total["wins" if won else "losses" if lost else "draws"] += 1
+
+            _bump(profile["armies"], my_army, won, lost,
+                  army_id=my_army, army_name=battle.get(f"army_{me}_name"))
+            _bump(profile["opponent_armies"], opp_army, won, lost,
+                  army_id=opp_army, army_name=battle.get(f"army_{opp}_name"))
+            if opponent_id:
+                names[opponent_id] = battle.get(f"player_{opp}_name")
+                _bump(profile["opponents"], opponent_id, won, lost,
+                      player_id=opponent_id, displayName=battle.get(f"player_{opp}_name"))
+                if won:
+                    _bump(profile["defeated"], opponent_id, True, False,
+                          player_id=opponent_id, displayName=battle.get(f"player_{opp}_name"))
+
+    profiles = []
+    for player_id, p in players.items():
+        total = p["total"]
+        total["winrate"] = _winrate(total["wins"], total["games"], total["draws"])
+        defeated = [
+            {"player_id": d["player_id"], "displayName": d["displayName"],
+             "main_ranking_place": place_by_id[d["player_id"]], "times_defeated": d["wins"]}
+            for d in p["defeated"].values()
+            if place_by_id.get(d["player_id"]) is not None
+        ]
+        defeated.sort(key=lambda d: d["main_ranking_place"])
+        profiles.append({
+            "player_id": player_id,
+            "displayName": names.get(player_id),
+            "main_ranking_place": place_by_id.get(player_id),
+            "games_played": total["games"],
+            "wins": total["wins"],
+            "draws": total["draws"],
+            "losses": total["losses"],
+            "winrate": total["winrate"],
+            "army_lists": _finalize(p["armies"]),
+            "opponents": _finalize(p["opponents"]),
+            "opponent_army_lists": _finalize(p["opponent_armies"]),
+            "top5_defeated_players": defeated[:5],
+        })
+    profiles.sort(key=lambda r: (-r["games_played"], r["displayName"] or ""))
+    return profiles
+
+
 def load_metadata():
     metadata_path = os.path.join(DATA_DIRECTORY, METADATA_FILE)
     if not os.path.exists(metadata_path):
@@ -569,6 +668,10 @@ def download_data(force=False):
             input_directory=INPUT_DIRECTORY,
         )
         save_data(armies_data, ARMIES_FILE)
+
+        with open(os.path.join(DATA_DIRECTORY, BATTLES_FILE), "r", encoding="utf-8") as f:
+            battles_data = json.load(f)
+        save_data(build_player_profiles(battles_data, main_ranking_json), PLAYER_PROFILES_FILE)
 
         metadata["time"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
         save_metadata(metadata)

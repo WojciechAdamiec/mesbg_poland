@@ -8,6 +8,7 @@ from download_data import (
     MASTER_TOURNAMENTS_FILE,
     BATTLES_FILE,
     ARMIES_FILE,
+    PLAYER_PROFILES_FILE,
 )
 
 
@@ -56,4 +57,11 @@ def load_armies():
     if not os.path.exists(armies_path):
         return []
     with open(armies_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def load_player_profiles():
+    path = os.path.join(DATA_DIRECTORY, PLAYER_PROFILES_FILE)
+    if not os.path.exists(path):
+        return []
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)

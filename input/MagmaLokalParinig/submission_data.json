@@ -285,148 +285,6 @@
             }
         },
         {
-            "id": "f0d67fae-f500-441f-a0e2-d127f4fa9fb1",
-            "createdAt": "2026-04-18T10:47:50.386Z",
-            "user": {
-                "id": "06e08db4-eeb0-41a3-9e0c-7a8d0203bc0e",
-                "avatar": "1761240449704.png",
-                "displayName": "Krell",
-                "firstName": "Franciszek ",
-                "lastName": "Doligalski",
-                "city": {
-                    "id": 3146,
-                    "name": "Toru\u0144",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "APPROVED",
-            "army": {
-                "id": 361,
-                "name": "Army of the White Hand",
-                "subfraction": null,
-                "code": "MESBG2_AotWH",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 361,
-                "name": "Army of the White Hand",
-                "subfraction": null,
-                "code": "MESBG2_AotWH",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 46,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 8026,
-                "name": "Toru\u0144"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4057,
-                "place": 4,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 2,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 12,
-                "secondaryPoints": 30,
-                "tertiaryPoints": 0,
-                "sos": 46,
-                "path": ""
-            }
-        },
-        {
-            "id": "b5303b3f-2169-47ea-8bcc-ca9aa1d5aeca",
-            "createdAt": "2026-04-18T10:47:50.386Z",
-            "user": {
-                "id": "845884f6-55a1-45c5-99a4-83842b39aa8d",
-                "avatar": null,
-                "displayName": "Spider",
-                "firstName": "Jan",
-                "lastName": "Doligalski",
-                "city": {
-                    "id": 3146,
-                    "name": "Toru\u0144",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": "_spider_99"
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "APPROVED",
-            "army": {
-                "id": 340,
-                "name": "Men of the West",
-                "subfraction": null,
-                "code": "MESBG2_MotW",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": {
-                "id": 340,
-                "name": "Men of the West",
-                "subfraction": null,
-                "code": "MESBG2_MotW",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 43,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 8026,
-                "name": "Toru\u0144"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4057,
-                "place": 10,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 0,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 0,
-                "secondaryPoints": 8,
-                "tertiaryPoints": 0,
-                "sos": 43,
-                "path": ""
-            }
-        },
-        {
             "id": "987cff68-25a1-4a7c-aab5-928d3d2d3d17",
             "createdAt": "2026-04-18T10:47:50.386Z",
             "user": {
@@ -691,6 +549,148 @@
                 "secondaryPoints": 29,
                 "tertiaryPoints": 0,
                 "sos": 44,
+                "path": ""
+            }
+        },
+        {
+            "id": "f0d67fae-f500-441f-a0e2-d127f4fa9fb1",
+            "createdAt": "2026-04-18T10:47:50.386Z",
+            "user": {
+                "id": "06e08db4-eeb0-41a3-9e0c-7a8d0203bc0e",
+                "avatar": "1761240449704.png",
+                "displayName": "Krell",
+                "firstName": "Franciszek ",
+                "lastName": "Doligalski",
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 361,
+                "name": "Army of the White Hand",
+                "subfraction": null,
+                "code": "MESBG2_AotWH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 361,
+                "name": "Army of the White Hand",
+                "subfraction": null,
+                "code": "MESBG2_AotWH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 46,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8026,
+                "name": "Toru\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4057,
+                "place": 4,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 2,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 12,
+                "secondaryPoints": 30,
+                "tertiaryPoints": 0,
+                "sos": 46,
+                "path": ""
+            }
+        },
+        {
+            "id": "b5303b3f-2169-47ea-8bcc-ca9aa1d5aeca",
+            "createdAt": "2026-04-18T10:47:50.386Z",
+            "user": {
+                "id": "845884f6-55a1-45c5-99a4-83842b39aa8d",
+                "avatar": null,
+                "displayName": "Spider",
+                "firstName": "Jan",
+                "lastName": "Doligalski",
+                "city": {
+                    "id": 3146,
+                    "name": "Toru\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "_spider_99"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 340,
+                "name": "Men of the West",
+                "subfraction": null,
+                "code": "MESBG2_MotW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 340,
+                "name": "Men of the West",
+                "subfraction": null,
+                "code": "MESBG2_MotW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 43,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 8026,
+                "name": "Toru\u0144"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4057,
+                "place": 10,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 0,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 0,
+                "secondaryPoints": 8,
+                "tertiaryPoints": 0,
+                "sos": 43,
                 "path": ""
             }
         }

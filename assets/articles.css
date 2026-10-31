@@ -1,0 +1,81 @@
+.article-body {
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.article-body h2 {
+    margin-top: 2rem;
+}
+
+.article-body img {
+    display: block;
+    max-width: 100%;
+    margin: 1.5rem auto 0.5rem;
+    border-radius: 8px;
+}
+
+.article-body em {
+    opacity: 0.75;
+}
+
+.article-body table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.article-body th,
+.article-body td {
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    padding: 6px 10px;
+    text-align: left;
+}
+
+.article-body blockquote {
+    margin: 1rem 0;
+    padding: 0.25rem 1rem;
+    border-left: 4px solid #00ffff;
+    background: rgba(0, 255, 255, 0.06);
+}
+
+.article-card,
+.article-card .mantine-Text-root {
+    color: #e6edf5;
+}
+
+.article-card {
+    background: linear-gradient(135deg, #0d1421 0%, #1a2336 100%) !important;
+    border: 1px solid rgba(0, 255, 255, 0.25) !important;
+    transition: border-color 0.15s, transform 0.15s;
+}
+
+.article-card:hover {
+    border-color: #00ffff !important;
+    transform: translateY(-2px);
+}
+
+.article-card .mantine-Text-root[data-c="dimmed"],
+.article-card [class*="dimmed"] {
+    color: #9aa7b5 !important;
+}
+
+.article-accordion .mantine-Accordion-item {
+    background: #111a2b;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.article-accordion .mantine-Accordion-control,
+.article-accordion .mantine-Accordion-label,
+.article-accordion .mantine-Accordion-panel {
+    color: #e6edf5;
+    background: transparent;
+}
+
+.article-accordion .mantine-Accordion-control:hover {
+    background: rgba(0, 255, 255, 0.08);
+}
+
+.article-cover {
+    margin: 1rem 0 1.5rem;
+}

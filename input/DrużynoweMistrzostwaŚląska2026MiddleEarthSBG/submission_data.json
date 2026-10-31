@@ -119,6 +119,74 @@
             }
         },
         {
+            "id": "0e83270b-1732-4d49-afbd-933833858795",
+            "createdAt": "2026-09-02T10:39:32.575Z",
+            "user": {
+                "id": "76870d30-055b-4a89-a141-78ef032269f2",
+                "avatar": "1744314118349.png",
+                "displayName": "Czaki",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": true,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 468,
+                "name": "Assault on Lothl\u00f3rien",
+                "subfraction": null,
+                "code": "MESBG2_AoL",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 449,
+                "name": "The Serpent Horde",
+                "subfraction": null,
+                "code": "MESBG2_TSH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "675edc34-86ae-41f0-8716-ba623c355183",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 51,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6519,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": 7,
+                "wins": 3,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 17,
+                "secondaryPoints": 47,
+                "tertiaryPoints": 0,
+                "sos": 51,
+                "path": "WWLW"
+            }
+        },
+        {
             "id": "441ed46d-85e9-4cfa-8807-cbe67ab09024",
             "createdAt": "2026-09-02T10:39:32.575Z",
             "user": {
@@ -236,74 +304,6 @@
                 "tertiaryPoints": 0,
                 "sos": 63,
                 "path": "WWWL"
-            }
-        },
-        {
-            "id": "0e83270b-1732-4d49-afbd-933833858795",
-            "createdAt": "2026-09-02T10:39:32.575Z",
-            "user": {
-                "id": "76870d30-055b-4a89-a141-78ef032269f2",
-                "avatar": "1744314118349.png",
-                "displayName": "Czaki",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 227,
-                    "name": "Katowice",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": true,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 468,
-                "name": "Assault on Lothl\u00f3rien",
-                "subfraction": null,
-                "code": "MESBG2_AoL",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 449,
-                "name": "The Serpent Horde",
-                "subfraction": null,
-                "code": "MESBG2_TSH",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "675edc34-86ae-41f0-8716-ba623c355183",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 51,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6519,
-                "place": 5,
-                "poolPlace": null,
-                "singlePlace": 7,
-                "wins": 3,
-                "draws": 0,
-                "loss": 1,
-                "primaryPoints": 17,
-                "secondaryPoints": 47,
-                "tertiaryPoints": 0,
-                "sos": 51,
-                "path": "WWLW"
             }
         },
         {
@@ -435,74 +435,6 @@
             }
         },
         {
-            "id": "387fe430-1997-4185-9fb1-5a4870459281",
-            "createdAt": "2026-09-03T07:13:06.365Z",
-            "user": {
-                "id": "addf7c1a-9d70-4bf7-b1fa-0dfdec7e437f",
-                "avatar": "1760527025027.jpeg",
-                "displayName": "bondar72",
-                "firstName": "Edgar",
-                "lastName": "Bondarewicz",
-                "city": {
-                    "id": 2864,
-                    "name": "Rybnik",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": "edi0404"
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": true,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 452,
-                "name": "Dragons of the North",
-                "subfraction": null,
-                "code": "MESBG2_DotNt",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 361,
-                "name": "Army of the White Hand",
-                "subfraction": null,
-                "code": "MESBG2_AotWH",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "f8ed3d76-eabf-4a43-8d5a-4acc3dee758a",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 22,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6519,
-                "place": 12,
-                "poolPlace": null,
-                "singlePlace": 30,
-                "wins": 1,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 4,
-                "secondaryPoints": 34,
-                "tertiaryPoints": 0,
-                "sos": 22,
-                "path": "LLLW"
-            }
-        },
-        {
             "id": "78afc0c1-c208-4938-82db-dc565d95a681",
             "createdAt": "2026-09-03T07:13:06.365Z",
             "user": {
@@ -612,6 +544,74 @@
                 "tertiaryPoints": 0,
                 "sos": 33,
                 "path": "LWLL"
+            }
+        },
+        {
+            "id": "387fe430-1997-4185-9fb1-5a4870459281",
+            "createdAt": "2026-09-03T07:13:06.365Z",
+            "user": {
+                "id": "addf7c1a-9d70-4bf7-b1fa-0dfdec7e437f",
+                "avatar": "1760527025027.jpeg",
+                "displayName": "bondar72",
+                "firstName": "Edgar",
+                "lastName": "Bondarewicz",
+                "city": {
+                    "id": 2864,
+                    "name": "Rybnik",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "edi0404"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": true,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 452,
+                "name": "Dragons of the North",
+                "subfraction": null,
+                "code": "MESBG2_DotNt",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 361,
+                "name": "Army of the White Hand",
+                "subfraction": null,
+                "code": "MESBG2_AotWH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "f8ed3d76-eabf-4a43-8d5a-4acc3dee758a",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 22,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6519,
+                "place": 12,
+                "poolPlace": null,
+                "singlePlace": 30,
+                "wins": 1,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 4,
+                "secondaryPoints": 34,
+                "tertiaryPoints": 0,
+                "sos": 22,
+                "path": "LLLW"
             }
         },
         {
@@ -803,6 +803,74 @@
             }
         },
         {
+            "id": "cec41c9a-3c62-4ec7-9bd0-a249f376e327",
+            "createdAt": "2026-09-07T09:30:25.506Z",
+            "user": {
+                "id": "9d5bc521-d1ac-416e-952c-926b6aef9e60",
+                "avatar": null,
+                "displayName": "Kostek",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 3147,
+                    "name": "Sosnowiec",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": true,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 346,
+                "name": "Reclamation of Osgiliath",
+                "subfraction": null,
+                "code": "MESBG2_RoO",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 468,
+                "name": "Assault on Lothl\u00f3rien",
+                "subfraction": null,
+                "code": "MESBG2_AoL",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "95522e15-7a3d-4152-9beb-6946863dbd6e",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 55,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6519,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": 6,
+                "wins": 3,
+                "draws": 0,
+                "loss": 1,
+                "primaryPoints": 18,
+                "secondaryPoints": 44,
+                "tertiaryPoints": 0,
+                "sos": 55,
+                "path": "LWWW"
+            }
+        },
+        {
             "id": "828f6415-f27e-43f3-b400-ba02614c98db",
             "createdAt": "2026-09-07T09:30:25.506Z",
             "user": {
@@ -923,17 +991,17 @@
             }
         },
         {
-            "id": "cec41c9a-3c62-4ec7-9bd0-a249f376e327",
-            "createdAt": "2026-09-07T09:30:25.506Z",
+            "id": "d1dc5816-6da8-4f14-bb04-7ab385f2fc69",
+            "createdAt": "2026-09-07T20:12:47.088Z",
             "user": {
-                "id": "9d5bc521-d1ac-416e-952c-926b6aef9e60",
-                "avatar": null,
-                "displayName": "Kostek",
-                "firstName": null,
-                "lastName": null,
+                "id": "6841eef6-931a-4375-ae1b-79843a97a82e",
+                "avatar": "1726047024218.jpeg",
+                "displayName": "Przemys\u0142aw Draga",
+                "firstName": "",
+                "lastName": "",
                 "city": {
-                    "id": 3147,
-                    "name": "Sosnowiec",
+                    "id": 227,
+                    "name": "Katowice",
                     "country": "PL"
                 },
                 "country": "PL",
@@ -946,48 +1014,48 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 346,
-                "name": "Reclamation of Osgiliath",
+                "id": 361,
+                "name": "Army of the White Hand",
                 "subfraction": null,
-                "code": "MESBG2_RoO",
+                "code": "MESBG2_AotWH",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": {
-                "id": 468,
-                "name": "Assault on Lothl\u00f3rien",
+                "id": 372,
+                "name": "Desolator of the North",
                 "subfraction": null,
-                "code": "MESBG2_AoL",
+                "code": "MESBG2_DotN",
                 "metadata": {
                     "mesbgType": "EVIL"
                 }
             },
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "95522e15-7a3d-4152-9beb-6946863dbd6e",
+            "teamId": "19bcbe15-fffa-4ddd-b258-1b2854ad34f6",
             "pointsModification": null,
             "pointsModificationDescription": null,
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 55,
+            "primaryPointsSos": 47,
             "primaryPointsPoolSos": 0,
             "travelGroup": null,
             "poolResult": null,
             "finalResult": {
                 "stageId": 6519,
-                "place": 3,
+                "place": 7,
                 "poolPlace": null,
-                "singlePlace": 6,
-                "wins": 3,
+                "singlePlace": 15,
+                "wins": 2,
                 "draws": 0,
-                "loss": 1,
-                "primaryPoints": 18,
-                "secondaryPoints": 44,
+                "loss": 2,
+                "primaryPoints": 10,
+                "secondaryPoints": 31,
                 "tertiaryPoints": 0,
-                "sos": 55,
-                "path": "LWWW"
+                "sos": 47,
+                "path": "LWLW"
             }
         },
         {
@@ -1107,142 +1175,6 @@
                 "secondaryPoints": 24,
                 "tertiaryPoints": 0,
                 "sos": 40,
-                "path": "WLLW"
-            }
-        },
-        {
-            "id": "d1dc5816-6da8-4f14-bb04-7ab385f2fc69",
-            "createdAt": "2026-09-07T20:12:47.088Z",
-            "user": {
-                "id": "6841eef6-931a-4375-ae1b-79843a97a82e",
-                "avatar": "1726047024218.jpeg",
-                "displayName": "Przemys\u0142aw Draga",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 227,
-                    "name": "Katowice",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": true,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 361,
-                "name": "Army of the White Hand",
-                "subfraction": null,
-                "code": "MESBG2_AotWH",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 372,
-                "name": "Desolator of the North",
-                "subfraction": null,
-                "code": "MESBG2_DotN",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "19bcbe15-fffa-4ddd-b258-1b2854ad34f6",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 47,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6519,
-                "place": 7,
-                "poolPlace": null,
-                "singlePlace": 15,
-                "wins": 2,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 10,
-                "secondaryPoints": 31,
-                "tertiaryPoints": 0,
-                "sos": 47,
-                "path": "LWLW"
-            }
-        },
-        {
-            "id": "339f5072-6dd0-4cd2-b8f3-ca20fe958f4d",
-            "createdAt": "2026-09-07T23:05:00.251Z",
-            "user": {
-                "id": "d0cc3137-fab5-4977-bfac-cf0a791bd9b0",
-                "avatar": null,
-                "displayName": "Karolczi",
-                "firstName": "Karol",
-                "lastName": "Stempie\u0144",
-                "city": {
-                    "id": 227,
-                    "name": "Katowice",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": true,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 361,
-                "name": "Army of the White Hand",
-                "subfraction": null,
-                "code": "MESBG2_AotWH",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": {
-                "id": 330,
-                "name": "Fangorn",
-                "subfraction": null,
-                "code": "MESBG2_F",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "b0fb79c8-8dc2-4d62-814c-2d4936b6f396",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 60,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 6519,
-                "place": 2,
-                "poolPlace": null,
-                "singlePlace": 12,
-                "wins": 2,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 11,
-                "secondaryPoints": 35,
-                "tertiaryPoints": 0,
-                "sos": 60,
                 "path": "WLLW"
             }
         },
@@ -1372,6 +1304,74 @@
                 "tertiaryPoints": 0,
                 "sos": 57,
                 "path": "LLWW"
+            }
+        },
+        {
+            "id": "339f5072-6dd0-4cd2-b8f3-ca20fe958f4d",
+            "createdAt": "2026-09-07T23:05:00.251Z",
+            "user": {
+                "id": "d0cc3137-fab5-4977-bfac-cf0a791bd9b0",
+                "avatar": null,
+                "displayName": "Karolczi",
+                "firstName": "Karol",
+                "lastName": "Stempie\u0144",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": true,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 361,
+                "name": "Army of the White Hand",
+                "subfraction": null,
+                "code": "MESBG2_AotWH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": {
+                "id": 330,
+                "name": "Fangorn",
+                "subfraction": null,
+                "code": "MESBG2_F",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "b0fb79c8-8dc2-4d62-814c-2d4936b6f396",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 60,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 6519,
+                "place": 2,
+                "poolPlace": null,
+                "singlePlace": 12,
+                "wins": 2,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 11,
+                "secondaryPoints": 35,
+                "tertiaryPoints": 0,
+                "sos": 60,
+                "path": "WLLW"
             }
         },
         {

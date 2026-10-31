@@ -8,7 +8,28 @@ from dash import Dash
 import download_data
 
 
-app = Dash(__name__, use_pages=True, suppress_callback_exceptions=True)
+APP_TITLE = "MESBG Poland"
+APP_DESCRIPTION = "Data collector and visualiser for Polish MESBG League tournaments"
+APP_URL = "https://mesbg-poland.plotly.app"
+
+# Link previews need absolute image URLs; Dash's auto-generated page tags are disabled as they would be empty.
+app = Dash(
+    __name__,
+    use_pages=True,
+    suppress_callback_exceptions=True,
+    title=APP_TITLE,
+    description=APP_DESCRIPTION,
+    include_pages_meta=False,
+    meta_tags=[
+        {"name": "description", "content": APP_DESCRIPTION},
+        {"property": "og:type", "content": "website"},
+        {"property": "og:site_name", "content": APP_TITLE},
+        {"property": "og:title", "content": APP_TITLE},
+        {"property": "og:description", "content": APP_DESCRIPTION},
+        {"property": "og:image", "content": f"{APP_URL}/assets/banner.png"},
+        {"name": "twitter:card", "content": "summary_large_image"},
+    ],
+)
 
 
 def get_last_update_text():
@@ -60,6 +81,16 @@ nav = dmc.Box([
                 href="/stats/army_list_winrates",
                 active="exact-with-search",
             ),
+            dmc.NavLink(
+                label="Player Profiles",
+                href="/stats/player_profiles",
+                active="exact-with-search",
+            ),
+            dmc.NavLink(
+                label="Player Comparison",
+                href="/stats/player_comparison",
+                active="exact-with-search",
+            ),
         ],
     ),
     dmc.NavLink(
@@ -73,7 +104,12 @@ nav = dmc.Box([
                 active="exact-with-search",
             ),
             dmc.NavLink(
-                label="Nations Cup 2027",
+                label="2026 Online Winners",
+                href="/hall_of_fame/2026_online_winners",
+                active="exact-with-search",
+            ),
+            dmc.NavLink(
+                label="2027 Nations Cup",
                 href="/hall_of_fame/nations_cup_2027",
                 active="exact-with-search",
             ),
@@ -81,6 +117,7 @@ nav = dmc.Box([
     ),
     dmc.NavLink(label="Masters", href="/masters", active="exact"),
     dmc.NavLink(label="Centers", href="/centers", active="exact"),
+    dmc.NavLink(label="Articles", href="/articles", active="partial"),
 ])
 
 top_bar = dmc.Box(

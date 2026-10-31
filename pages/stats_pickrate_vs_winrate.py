@@ -1,3 +1,5 @@
+import math
+
 import dash
 import dash_mantine_components as dmc
 from dash import callback, Input, Output
@@ -6,13 +8,20 @@ from pages.stats_filters import (
     FACTIONS,
     FACTION_COLORS,
     GAME_TYPES,
+    DEFAULT_FORMATS,
     GAME_TYPE_MAP,
     MAX_GAMES,
     MAX_POINTS,
     MIN_POINTS,
     PATCHES,
     PATCH_MAP,
+    count_filtered_battles,
     create_filter_controls,
+    data_size_label,
+    battle_in_ranking,
+    battle_in_formats,
+    register_ranking_toggle,
+    top_player_ids,
     filter_ids,
     filter_inputs,
 )
@@ -24,9 +33,10 @@ battles_data = load_battles()
 armies_data = load_armies()
 
 
-def compute_chart_data(battles, armies, points_range, game_types, patches, factions, exclude_vegetables, min_games):
+def compute_chart_data(battles, armies, points_range, game_types, patches, factions, formats, min_games, ranking_enabled=False, ranking_top=50):
     allowed_types = {GAME_TYPE_MAP[gt] for gt in (game_types or []) if gt in GAME_TYPE_MAP}
     allowed_patches = {PATCH_MAP[p] for p in (patches or []) if p in PATCH_MAP}
+    top_players = top_player_ids(ranking_enabled, ranking_top)
     low, high = points_range if points_range else (MIN_POINTS, MAX_POINTS)
 
     stats = {
@@ -45,6 +55,11 @@ def compute_chart_data(battles, armies, points_range, game_types, patches, facti
     total_picks = 0
 
     for b in battles:
+        if not battle_in_formats(b, formats):
+            continue
+        if not battle_in_ranking(b, top_players):
+            continue
+
         t_type = b.get("tournament_type")
         if t_type not in allowed_types:
             continue
@@ -53,7 +68,8 @@ def compute_chart_data(battles, armies, points_range, game_types, patches, facti
         if patch not in allowed_patches:
             continue
 
-        pts = b.get("points", {}).get("value") if b.get("points") else None
+        battle_points = b.get("points")
+        pts = battle_points["value"] * (2 if battle_points.get("doubled") else 1) if battle_points else None
         if pts is not None:
             if not (low <= pts <= high):
                 continue
@@ -134,12 +150,43 @@ initial_chart_data = compute_chart_data(
     game_types=GAME_TYPES,
     patches=PATCHES,
     factions=FACTIONS,
-    exclude_vegetables=False,
+    formats=DEFAULT_FORMATS,
     min_games=40,
 )
 
+initial_data_size = count_filtered_battles(
+    battles_data, [MIN_POINTS, MAX_POINTS], GAME_TYPES, PATCHES, DEFAULT_FORMATS
+)
+
+
+def compute_axes(series):
+    points = [p for s in series for p in s["data"]]
+
+    max_pick = max((p["pickrate"] for p in points), default=0)
+    x_max = 5.0 if max_pick <= 5 else math.ceil((max_pick + 0.25) / 0.25) * 0.25
+    x_ticks = [round(i * 0.25, 2) for i in range(int(round(x_max / 0.25)) + 1)]
+
+    if points:
+        wins = [p["winrate"] for p in points]
+        y_min = math.floor((min(wins) - 5) / 2) * 2
+        y_max = math.ceil((max(wins) + 5) / 2) * 2
+    else:
+        y_min, y_max = 40, 60
+    y_min = min(y_min, 50)
+    y_max = max(y_max, 50)
+    y_ticks = list(range(y_min, y_max + 1, 2))
+
+    x_props = {"domain": [0, x_max], "ticks": x_ticks, "type": "number", "interval": 0}
+    y_props = {"domain": [y_min, y_max], "ticks": y_ticks, "type": "number", "interval": 0}
+    return x_props, y_props
+
+
+REFERENCE_LINES = [{"y": 50, "color": "red.7", "lineWidth": 2}]
+initial_x_props, initial_y_props = compute_axes(initial_chart_data)
+
 controls = create_filter_controls("pvw", max_games=60, default_min_games=40)
 ids = filter_ids("pvw")
+register_ranking_toggle("pvw")
 
 layout = dmc.Box(
     [
@@ -148,18 +195,25 @@ layout = dmc.Box(
             [
                 dmc.GridCol(controls, span=3),
                 dmc.GridCol(
-                    dmc.ScatterChart(
-                        id="pvw-chart",
-                        h=500,
-                        data=initial_chart_data,
-                        dataKey={"x": "pickrate", "y": "winrate"},
-                        xAxisLabel="Pickrate (%)",
-                        yAxisLabel="Winrate (%)",
-                        xAxisProps={"tickCount": 20},
-                        yAxisProps={"tickCount": 20},
-                        gridAxis="xy",
-                        withTooltip=True,
-                        tooltipProps={"content": {"function": "pickrateTooltip"}},
+                    dmc.Stack(
+                        [
+                            dmc.Text(data_size_label(initial_data_size), id="pvw-data-size", fw=600, ta="center"),
+                            dmc.ScatterChart(
+                                id="pvw-chart",
+                                h=500,
+                                data=initial_chart_data,
+                                dataKey={"x": "pickrate", "y": "winrate"},
+                                xAxisLabel="Pickrate (%)",
+                                yAxisLabel="Winrate (%)",
+                                xAxisProps=initial_x_props,
+                                yAxisProps=initial_y_props,
+                                referenceLines=REFERENCE_LINES,
+                                gridAxis="xy",
+                                withTooltip=True,
+                                tooltipProps={"content": {"function": "pickrateTooltip"}},
+                            ),
+                        ],
+                        gap="lg",
                     ),
                     span=9,
                 ),
@@ -172,21 +226,33 @@ layout = dmc.Box(
 
 @callback(
     Output("pvw-chart", "data"),
+    Output("pvw-chart", "xAxisProps"),
+    Output("pvw-chart", "yAxisProps"),
+    Output("pvw-data-size", "children"),
     Input(ids["points_range"], "value"),
     Input(ids["game_types"], "value"),
     Input(ids["patches"], "value"),
     Input(ids["factions"], "value"),
-    Input(ids["exclude_vegetables"], "checked"),
+    Input(ids["formats"], "value"),
     Input(ids["min_games"], "value"),
+    Input(ids["ranking_enabled"], "checked"),
+    Input(ids["ranking_top"], "value"),
 )
-def update_chart(points_range, game_types, patches, factions, exclude_vegetables, min_games):
-    return compute_chart_data(
+def update_chart(points_range, game_types, patches, factions, formats, min_games, ranking_enabled, ranking_top):
+    series = compute_chart_data(
         battles_data,
         armies_data,
         points_range=points_range,
         game_types=game_types,
         patches=patches,
         factions=factions,
-        exclude_vegetables=exclude_vegetables,
+        formats=formats,
         min_games=min_games,
+        ranking_enabled=ranking_enabled,
+        ranking_top=ranking_top,
     )
+    x_props, y_props = compute_axes(series)
+    data_size = count_filtered_battles(
+        battles_data, points_range, game_types, patches, formats, ranking_enabled, ranking_top
+    )
+    return series, x_props, y_props, data_size_label(data_size)

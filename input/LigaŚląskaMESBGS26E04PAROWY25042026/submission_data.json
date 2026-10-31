@@ -1,21 +1,21 @@
 {
     "people": [
         {
-            "id": "61cf3d90-2e11-47af-8158-9456c63e04db",
+            "id": "00644b1d-87d7-4ec8-8a30-0f4afac1f08b",
             "createdAt": "2026-03-22T16:55:34.152Z",
             "user": {
-                "id": "804c4802-b3bc-41ec-9f1b-de92ffe4897e",
-                "avatar": "1769176746811.jpg",
-                "displayName": "Pan Maruda",
-                "firstName": "Wojciech",
-                "lastName": "Zacher",
+                "id": "ef46c5bc-e9ab-450b-85f5-4b88323ef1b8",
+                "avatar": null,
+                "displayName": "Adam Rodeo",
+                "firstName": "Adam",
+                "lastName": "Rodek",
                 "city": {
                     "id": 227,
                     "name": "Katowice",
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": "raczyjelen"
+                "discordUsername": null
             },
             "listApproved": true,
             "listAdded": true,
@@ -24,12 +24,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 325,
-                "name": "Defenders of the Hornburg",
+                "id": 449,
+                "name": "The Serpent Horde",
                 "subfraction": null,
-                "code": "MESBG2_DotH",
+                "code": "MESBG2_TSH",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
@@ -61,21 +61,21 @@
             }
         },
         {
-            "id": "00644b1d-87d7-4ec8-8a30-0f4afac1f08b",
+            "id": "61cf3d90-2e11-47af-8158-9456c63e04db",
             "createdAt": "2026-03-22T16:55:34.152Z",
             "user": {
-                "id": "ef46c5bc-e9ab-450b-85f5-4b88323ef1b8",
-                "avatar": null,
-                "displayName": "Adam Rodeo",
-                "firstName": "Adam",
-                "lastName": "Rodek",
+                "id": "804c4802-b3bc-41ec-9f1b-de92ffe4897e",
+                "avatar": "1769176746811.jpg",
+                "displayName": "Pan Maruda",
+                "firstName": "Wojciech",
+                "lastName": "Zacher",
                 "city": {
                     "id": 227,
                     "name": "Katowice",
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": null
+                "discordUsername": "raczyjelen"
             },
             "listApproved": true,
             "listAdded": true,
@@ -84,12 +84,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 449,
-                "name": "The Serpent Horde",
+                "id": 325,
+                "name": "Defenders of the Hornburg",
                 "subfraction": null,
-                "code": "MESBG2_TSH",
+                "code": "MESBG2_DotH",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,
@@ -481,15 +481,19 @@
             }
         },
         {
-            "id": "4b01e858-fa22-408d-8cf1-d0048f9ed786",
+            "id": "ab0a75cc-1abb-43c7-a41b-604abb5692d7",
             "createdAt": "2026-04-03T11:58:55.270Z",
             "user": {
-                "id": "1723649c-e9e5-42eb-9e2a-d9de6492fd21",
-                "avatar": "1739478736644.jpg",
-                "displayName": "Godfryd",
-                "firstName": "Tomasz",
-                "lastName": "Rochatka",
-                "city": null,
+                "id": "76870d30-055b-4a89-a141-78ef032269f2",
+                "avatar": "1744314118349.png",
+                "displayName": "Czaki",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -500,12 +504,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 368,
-                "name": "Buhrdur's Horde",
+                "id": 441,
+                "name": "The Fiefdoms",
                 "subfraction": null,
-                "code": "MESBG2_BH",
+                "code": "MESBG2_TFi",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,
@@ -537,19 +541,15 @@
             }
         },
         {
-            "id": "ab0a75cc-1abb-43c7-a41b-604abb5692d7",
+            "id": "4b01e858-fa22-408d-8cf1-d0048f9ed786",
             "createdAt": "2026-04-03T11:58:55.270Z",
             "user": {
-                "id": "76870d30-055b-4a89-a141-78ef032269f2",
-                "avatar": "1744314118349.png",
-                "displayName": "Czaki",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 227,
-                    "name": "Katowice",
-                    "country": "PL"
-                },
+                "id": "1723649c-e9e5-42eb-9e2a-d9de6492fd21",
+                "avatar": "1739478736644.jpg",
+                "displayName": "Godfryd",
+                "firstName": "Tomasz",
+                "lastName": "Rochatka",
+                "city": null,
                 "country": "PL",
                 "discordUsername": null
             },
@@ -560,12 +560,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 441,
-                "name": "The Fiefdoms",
+                "id": 368,
+                "name": "Buhrdur's Horde",
                 "subfraction": null,
-                "code": "MESBG2_TFi",
+                "code": "MESBG2_BH",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
@@ -957,14 +957,14 @@
             }
         },
         {
-            "id": "b1106807-f1cc-4fd0-b69b-ba493a120ff4",
+            "id": "b1194ebd-f948-4a6a-9f4f-45ef9fbd6642",
             "createdAt": "2026-04-12T21:27:14.506Z",
             "user": {
-                "id": "cb67ea1b-6562-48e3-99e2-c7d66c880c28",
+                "id": "222c2b52-47fd-4345-a6ec-a83ee05ccb12",
                 "avatar": null,
-                "displayName": "Leszczu",
-                "firstName": "",
-                "lastName": "",
+                "displayName": "Maradona",
+                "firstName": "Rafa\u0142",
+                "lastName": "Macioszek",
                 "city": {
                     "id": 227,
                     "name": "Katowice",
@@ -980,12 +980,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 329,
-                "name": "Erebor Reclaimed",
+                "id": 453,
+                "name": "Moria",
                 "subfraction": null,
-                "code": "MESBG2_ER",
+                "code": "MESBG2_M",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
@@ -1017,14 +1017,14 @@
             }
         },
         {
-            "id": "b1194ebd-f948-4a6a-9f4f-45ef9fbd6642",
+            "id": "b1106807-f1cc-4fd0-b69b-ba493a120ff4",
             "createdAt": "2026-04-12T21:27:14.506Z",
             "user": {
-                "id": "222c2b52-47fd-4345-a6ec-a83ee05ccb12",
+                "id": "cb67ea1b-6562-48e3-99e2-c7d66c880c28",
                 "avatar": null,
-                "displayName": "Maradona",
-                "firstName": "Rafa\u0142",
-                "lastName": "Macioszek",
+                "displayName": "Leszczu",
+                "firstName": "",
+                "lastName": "",
                 "city": {
                     "id": 227,
                     "name": "Katowice",
@@ -1040,12 +1040,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 453,
-                "name": "Moria",
+                "id": 329,
+                "name": "Erebor Reclaimed",
                 "subfraction": null,
-                "code": "MESBG2_M",
+                "code": "MESBG2_ER",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,

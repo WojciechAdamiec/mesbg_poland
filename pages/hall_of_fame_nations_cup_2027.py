@@ -189,7 +189,7 @@ def team_section(team):
 layout = dmc.Box(
     [
         dmc.Text(
-            "Nations Cup 2027",
+            "2027 Nations Cup",
             style={"fontSize": "40px", "marginBottom": "20px"},
         ),
         dmc.Text(

@@ -431,74 +431,6 @@
             }
         },
         {
-            "id": "73e896f4-b44d-4d0c-972e-328c78d6e382",
-            "createdAt": "2026-03-23T19:42:03.833Z",
-            "user": {
-                "id": "1fc2fb7f-b8fa-4e87-9a27-782883d1c9cd",
-                "avatar": null,
-                "displayName": "Orzel",
-                "firstName": null,
-                "lastName": null,
-                "city": {
-                    "id": 2180,
-                    "name": "San Juan",
-                    "country": "PR"
-                },
-                "country": "PR",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "APPROVED",
-            "army": {
-                "id": 340,
-                "name": "Men of the West",
-                "subfraction": null,
-                "code": "MESBG2_MotW",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": {
-                "id": 340,
-                "name": "Men of the West",
-                "subfraction": null,
-                "code": "MESBG2_MotW",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "a2f52dfa-8fab-4456-a5c7-8307560d885a",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4084,
-                "place": 8,
-                "poolPlace": null,
-                "singlePlace": 14,
-                "wins": 1,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 6,
-                "secondaryPoints": 19,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "41aa965e-d9f9-4340-b7c9-fe18d9c00943",
             "createdAt": "2026-03-23T19:42:03.833Z",
             "user": {
@@ -561,6 +493,74 @@
                 "loss": 2,
                 "primaryPoints": 14,
                 "secondaryPoints": 47,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "73e896f4-b44d-4d0c-972e-328c78d6e382",
+            "createdAt": "2026-03-23T19:42:03.833Z",
+            "user": {
+                "id": "1fc2fb7f-b8fa-4e87-9a27-782883d1c9cd",
+                "avatar": null,
+                "displayName": "Orzel",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 2180,
+                    "name": "San Juan",
+                    "country": "PR"
+                },
+                "country": "PR",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "APPROVED",
+            "army": {
+                "id": 340,
+                "name": "Men of the West",
+                "subfraction": null,
+                "code": "MESBG2_MotW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": {
+                "id": 340,
+                "name": "Men of the West",
+                "subfraction": null,
+                "code": "MESBG2_MotW",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "a2f52dfa-8fab-4456-a5c7-8307560d885a",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4084,
+                "place": 8,
+                "poolPlace": null,
+                "singlePlace": 14,
+                "wins": 1,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 6,
+                "secondaryPoints": 19,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

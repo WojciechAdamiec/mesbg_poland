@@ -3101,66 +3101,6 @@
             }
         },
         {
-            "id": "fd1b0642-5e8a-4003-9d24-5ccd9b2e81a1",
-            "createdAt": "2026-05-24T06:39:59.731Z",
-            "user": {
-                "id": "cd36b01c-87a1-47c9-b877-a65940b24b12",
-                "avatar": "1727984168047.jpg",
-                "displayName": "Marcin Werewolf Noszczy\u0144ski",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 225,
-                    "name": "Cz\u0119stochowa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 339,
-                "name": "Lothlorien",
-                "subfraction": null,
-                "code": "MESBG2_Lo",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "52cb3800-d2bb-4528-9995-4268997aeae1",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 43,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 5355,
-                "place": 20,
-                "poolPlace": null,
-                "singlePlace": 32,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 19,
-                "secondaryPoints": 36,
-                "tertiaryPoints": 0,
-                "sos": 43,
-                "path": "LLLWWW"
-            }
-        },
-        {
             "id": "1e3884f5-27a4-4d39-a81e-a13edc712270",
             "createdAt": "2026-05-24T06:39:59.731Z",
             "user": {
@@ -3218,6 +3158,66 @@
                 "tertiaryPoints": 0,
                 "sos": 35,
                 "path": "LWWLWL"
+            }
+        },
+        {
+            "id": "fd1b0642-5e8a-4003-9d24-5ccd9b2e81a1",
+            "createdAt": "2026-05-24T06:39:59.731Z",
+            "user": {
+                "id": "cd36b01c-87a1-47c9-b877-a65940b24b12",
+                "avatar": "1727984168047.jpg",
+                "displayName": "Marcin Werewolf Noszczy\u0144ski",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 225,
+                    "name": "Cz\u0119stochowa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 339,
+                "name": "Lothlorien",
+                "subfraction": null,
+                "code": "MESBG2_Lo",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "52cb3800-d2bb-4528-9995-4268997aeae1",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 43,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5355,
+                "place": 20,
+                "poolPlace": null,
+                "singlePlace": 32,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 19,
+                "secondaryPoints": 36,
+                "tertiaryPoints": 0,
+                "sos": 43,
+                "path": "LLLWWW"
             }
         },
         {
@@ -3471,10 +3471,10 @@
             "createdAt": "2026-05-24T14:34:39.755Z",
             "user": {
                 "id": "6c1b533a-5a81-442a-8d96-1100083dcb4b",
-                "avatar": null,
-                "displayName": "Ko\u0142odziej ",
-                "firstName": null,
-                "lastName": null,
+                "avatar": "1793010125560.png",
+                "displayName": "Ko\u0142odziej",
+                "firstName": "",
+                "lastName": "",
                 "city": {
                     "id": 235,
                     "name": "Warszawa",
