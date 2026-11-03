@@ -261,66 +261,6 @@
             }
         },
         {
-            "id": "dd23f5ae-ce8e-4795-98ed-b2fa58bc5883",
-            "createdAt": "2025-11-11T08:16:04.779Z",
-            "user": {
-                "id": "bbe7d7b9-232d-4b4d-a17a-5f4c72ea758b",
-                "avatar": "1761304236146.jpeg",
-                "displayName": "HerrTylko aka Maximus vel Bols",
-                "firstName": "Dominik",
-                "lastName": "Tylko",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": "dominiktylko"
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 382,
-                "name": "Shadows of Angmar",
-                "subfraction": null,
-                "code": "MESBG2_SoA",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "aa9dc861-1423-48e8-aa43-95dc1b4a12c4",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3079,
-                "place": 5,
-                "poolPlace": null,
-                "singlePlace": 3,
-                "wins": 3,
-                "draws": 0,
-                "loss": 0,
-                "primaryPoints": 17,
-                "secondaryPoints": 46,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "a0ed29be-b939-48fc-acc1-b3a42102420f",
             "createdAt": "2025-11-11T08:16:04.779Z",
             "user": {
@@ -375,6 +315,66 @@
                 "loss": 2,
                 "primaryPoints": 6,
                 "secondaryPoints": 12,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "dd23f5ae-ce8e-4795-98ed-b2fa58bc5883",
+            "createdAt": "2025-11-11T08:16:04.779Z",
+            "user": {
+                "id": "bbe7d7b9-232d-4b4d-a17a-5f4c72ea758b",
+                "avatar": "1761304236146.jpeg",
+                "displayName": "HerrTylko aka Maximus vel Bols",
+                "firstName": "Dominik",
+                "lastName": "Tylko",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": "dominiktylko"
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 382,
+                "name": "Shadows of Angmar",
+                "subfraction": null,
+                "code": "MESBG2_SoA",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "aa9dc861-1423-48e8-aa43-95dc1b4a12c4",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3079,
+                "place": 5,
+                "poolPlace": null,
+                "singlePlace": 3,
+                "wins": 3,
+                "draws": 0,
+                "loss": 0,
+                "primaryPoints": 17,
+                "secondaryPoints": 46,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -697,66 +697,6 @@
             }
         },
         {
-            "id": "84b49fab-8fe3-4e32-8439-72c13d21a41a",
-            "createdAt": "2025-12-05T09:00:40.200Z",
-            "user": {
-                "id": "4e8fbce8-9600-4b61-af86-6731e366fce3",
-                "avatar": "1744053367688.png",
-                "displayName": "Jaskier",
-                "firstName": "Marcin",
-                "lastName": "Markiewicz",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 459,
-                "name": "Expedition to the East",
-                "subfraction": null,
-                "code": "MESBG2_EttE",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "2006034e-aaf9-47e0-8751-2af1a278eba5",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3079,
-                "place": 7,
-                "poolPlace": null,
-                "singlePlace": 12,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 6,
-                "secondaryPoints": 22,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "b692c732-0c5b-4342-9f6d-94bd338e3336",
             "createdAt": "2025-12-05T09:00:40.200Z",
             "user": {
@@ -811,6 +751,66 @@
                 "loss": 1,
                 "primaryPoints": 9,
                 "secondaryPoints": 23,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "84b49fab-8fe3-4e32-8439-72c13d21a41a",
+            "createdAt": "2025-12-05T09:00:40.200Z",
+            "user": {
+                "id": "4e8fbce8-9600-4b61-af86-6731e366fce3",
+                "avatar": "1744053367688.png",
+                "displayName": "Jaskier",
+                "firstName": "Marcin",
+                "lastName": "Markiewicz",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 459,
+                "name": "Expedition to the East",
+                "subfraction": null,
+                "code": "MESBG2_EttE",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "2006034e-aaf9-47e0-8751-2af1a278eba5",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3079,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 12,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 6,
+                "secondaryPoints": 22,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

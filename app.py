@@ -7,6 +7,9 @@ import dash_mantine_components as dmc
 from dash import Dash
 import download_data
 
+# Dash Mantine Components v3 requires React 19.
+dash._dash_renderer._set_react_version("19.2.4")
+
 
 APP_TITLE = "MESBG Poland"
 APP_DESCRIPTION = "Data collector and visualiser for Polish MESBG League tournaments"

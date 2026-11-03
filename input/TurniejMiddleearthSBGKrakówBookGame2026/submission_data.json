@@ -981,51 +981,6 @@
             }
         },
         {
-            "id": "c39920f2-c459-4020-beb7-985dd54421fc",
-            "createdAt": "2026-03-16T19:43:35.574Z",
-            "user": {
-                "id": "e2d714cd-6b6f-42d3-a62d-ae0b293e4413",
-                "avatar": "1758921906690.jpg",
-                "displayName": "Leesu",
-                "firstName": "Maciej",
-                "lastName": "Lis",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": false,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 7556,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3874,
-                "sos": 0
-            }
-        },
-        {
             "id": "d8e4258e-933b-4683-8e14-9331ee5f07a4",
             "createdAt": "2026-03-16T19:43:35.574Z",
             "user": {
@@ -1152,6 +1107,51 @@
             }
         },
         {
+            "id": "c39920f2-c459-4020-beb7-985dd54421fc",
+            "createdAt": "2026-03-16T19:43:35.574Z",
+            "user": {
+                "id": "e2d714cd-6b6f-42d3-a62d-ae0b293e4413",
+                "avatar": "1758921906690.jpg",
+                "displayName": "Leesu",
+                "firstName": "Maciej",
+                "lastName": "Lis",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": false,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7556,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3874,
+                "sos": 0
+            }
+        },
+        {
             "id": "f91ce98e-e175-4913-8f72-296fb116a240",
             "createdAt": "2026-03-16T19:43:54.745Z",
             "user": {
@@ -1211,69 +1211,6 @@
                 "secondaryPoints": 10,
                 "tertiaryPoints": 12,
                 "sos": 50,
-                "path": ""
-            }
-        },
-        {
-            "id": "ad559861-1c16-45bb-aafc-d2811b1193b1",
-            "createdAt": "2026-03-16T19:44:38.255Z",
-            "user": {
-                "id": "9da2af4f-72f3-41ac-94ab-f4d0f86de13d",
-                "avatar": "1744128471171.jpg",
-                "displayName": "Hugluk",
-                "firstName": "Hubert ",
-                "lastName": "Malik ",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 333,
-                "name": "Garrison of Ithilien",
-                "subfraction": null,
-                "code": "MESBG2_GoI",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 26,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": {
-                "id": 7556,
-                "name": "Krak\u00f3w"
-            },
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3874,
-                "place": 19,
-                "poolPlace": null,
-                "singlePlace": null,
-                "wins": 1,
-                "draws": 1,
-                "loss": 1,
-                "primaryPoints": 906,
-                "secondaryPoints": 9,
-                "tertiaryPoints": 23,
-                "sos": 26,
                 "path": ""
             }
         },
@@ -1400,6 +1337,69 @@
                 "secondaryPoints": 12,
                 "tertiaryPoints": 32,
                 "sos": 46,
+                "path": ""
+            }
+        },
+        {
+            "id": "ad559861-1c16-45bb-aafc-d2811b1193b1",
+            "createdAt": "2026-03-16T19:44:38.255Z",
+            "user": {
+                "id": "9da2af4f-72f3-41ac-94ab-f4d0f86de13d",
+                "avatar": "1744128471171.jpg",
+                "displayName": "Hugluk",
+                "firstName": "Hubert ",
+                "lastName": "Malik ",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 333,
+                "name": "Garrison of Ithilien",
+                "subfraction": null,
+                "code": "MESBG2_GoI",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 26,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": {
+                "id": 7556,
+                "name": "Krak\u00f3w"
+            },
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3874,
+                "place": 19,
+                "poolPlace": null,
+                "singlePlace": null,
+                "wins": 1,
+                "draws": 1,
+                "loss": 1,
+                "primaryPoints": 906,
+                "secondaryPoints": 9,
+                "tertiaryPoints": 23,
+                "sos": 26,
                 "path": ""
             }
         },
@@ -1628,6 +1628,44 @@
             }
         },
         {
+            "id": "c9151c92-a601-4000-aeb3-d57b8c4fd9b3",
+            "createdAt": "2026-03-16T19:47:18.670Z",
+            "user": {
+                "id": "fd60fbcb-36b7-4638-9d8f-4bce3e341ccf",
+                "avatar": "1771161326689.jpeg",
+                "displayName": "Mathewmisior",
+                "firstName": "Mathew",
+                "lastName": "Misior",
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "DECLINED",
+            "army": null,
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": null,
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3874,
+                "sos": 0
+            }
+        },
+        {
             "id": "d0e95e6e-366d-4921-a522-eda3e40e9f3c",
             "createdAt": "2026-03-16T19:47:18.670Z",
             "user": {
@@ -1688,44 +1726,6 @@
                 "tertiaryPoints": 27,
                 "sos": 54,
                 "path": ""
-            }
-        },
-        {
-            "id": "c9151c92-a601-4000-aeb3-d57b8c4fd9b3",
-            "createdAt": "2026-03-16T19:47:18.670Z",
-            "user": {
-                "id": "fd60fbcb-36b7-4638-9d8f-4bce3e341ccf",
-                "avatar": "1771161326689.jpeg",
-                "displayName": "Mathewmisior",
-                "firstName": "Mathew",
-                "lastName": "Misior",
-                "city": null,
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": null,
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3874,
-                "sos": 0
             }
         },
         {

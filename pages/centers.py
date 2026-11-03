@@ -414,7 +414,7 @@ def create_center_card(town_name):
                 dmc.Box(
                     [
                         dmc.Group(header_items, justify="space-between", mt="xs", mb="xs"),
-                        dmc.Grid(col_children, gutter="sm"),
+                        dmc.Grid(col_children, style={"gap": "var(--mantine-spacing-sm)"}),
                     ],
                     mb="md",
                 )
@@ -693,5 +693,4 @@ def update_center(click_data, current_selection):
 
     card = ALL_CENTER_CARDS.get(selected, WELCOME_CARD)
     return figure_patch, card, selected
-
 

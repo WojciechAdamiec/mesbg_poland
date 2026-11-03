@@ -1,7 +1,9 @@
 import dash
 import dash_mantine_components as dmc
 
-from articles import article_header, load_articles, render_body
+from dash import html
+
+from articles import article_header, article_tracker, load_articles, render_body
 
 dash.register_page(__name__, path_template="/articles/<slug>")
 
@@ -29,4 +31,13 @@ def layout(slug=None, **_):
     if article["cover"]:
         header.append(dmc.Image(src=article["cover"], radius="md", className="article-cover"))
 
-    return dmc.Container([*header, *render_body(article["body"])], size="md", py="xl")
+    body, toc = render_body(article["body"])
+    return dmc.Container(
+        html.Div(
+            [article_tracker(toc), html.Div([*header, *body], className="article-main")],
+            className="article-layout" if toc else "article-layout article-layout-single",
+        ),
+        size="xl",
+        py="xl",
+        className="article-page",
+    )

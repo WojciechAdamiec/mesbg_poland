@@ -85,66 +85,6 @@
             }
         },
         {
-            "id": "4c755852-c3b6-485b-ae52-37782c0b3666",
-            "createdAt": "2026-05-07T16:02:18.284Z",
-            "user": {
-                "id": "d49d9342-cc0c-46cc-83bf-ddd443b7aa8b",
-                "avatar": null,
-                "displayName": "Maciek Maciek",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 226,
-                    "name": "\u0141\u00f3d\u017a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 326,
-                "name": "Defenders of the Pelennor",
-                "subfraction": null,
-                "code": "MESBG2_DotP",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "8571b6c7-101e-4ba3-b435-256e53d81710",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4465,
-                "place": 10,
-                "poolPlace": null,
-                "singlePlace": 19,
-                "wins": 2,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 22,
-                "secondaryPoints": 47,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "d30f1b09-6524-4ed1-a9ec-b9a789ccfeb9",
             "createdAt": "2026-05-07T16:02:18.284Z",
             "user": {
@@ -205,14 +145,14 @@
             }
         },
         {
-            "id": "4eb8d6a2-1881-4232-9f34-74aa08b3f6e6",
-            "createdAt": "2026-05-07T16:08:29.344Z",
+            "id": "4c755852-c3b6-485b-ae52-37782c0b3666",
+            "createdAt": "2026-05-07T16:02:18.284Z",
             "user": {
-                "id": "a487586e-54dd-4f57-bd18-2ab1f172ab7c",
+                "id": "d49d9342-cc0c-46cc-83bf-ddd443b7aa8b",
                 "avatar": null,
-                "displayName": "Dudi",
-                "firstName": "Jakub",
-                "lastName": "Dudek",
+                "displayName": "Maciek Maciek",
+                "firstName": "",
+                "lastName": "",
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -228,10 +168,10 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 337,
-                "name": "The Last Alliance",
+                "id": 326,
+                "name": "Defenders of the Pelennor",
                 "subfraction": null,
-                "code": "MESBG2_TLA",
+                "code": "MESBG2_DotP",
                 "metadata": {
                     "mesbgType": "GOOD"
                 }
@@ -239,7 +179,7 @@
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "7ca16b57-e431-4fd9-9132-e26a2eebb50b",
+            "teamId": "8571b6c7-101e-4ba3-b435-256e53d81710",
             "pointsModification": null,
             "pointsModificationDescription": null,
             "metadata": null,
@@ -251,14 +191,14 @@
             "poolResult": null,
             "finalResult": {
                 "stageId": 4465,
-                "place": 16,
+                "place": 10,
                 "poolPlace": null,
-                "singlePlace": 31,
-                "wins": 0,
+                "singlePlace": 19,
+                "wins": 2,
                 "draws": 0,
-                "loss": 4,
-                "primaryPoints": 4,
-                "secondaryPoints": 25,
+                "loss": 2,
+                "primaryPoints": 22,
+                "secondaryPoints": 47,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -294,6 +234,66 @@
                 "code": "MESBG2_HotDE",
                 "metadata": {
                     "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "7ca16b57-e431-4fd9-9132-e26a2eebb50b",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4465,
+                "place": 16,
+                "poolPlace": null,
+                "singlePlace": 31,
+                "wins": 0,
+                "draws": 0,
+                "loss": 4,
+                "primaryPoints": 4,
+                "secondaryPoints": 25,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "4eb8d6a2-1881-4232-9f34-74aa08b3f6e6",
+            "createdAt": "2026-05-07T16:08:29.344Z",
+            "user": {
+                "id": "a487586e-54dd-4f57-bd18-2ab1f172ab7c",
+                "avatar": null,
+                "displayName": "Dudi",
+                "firstName": "Jakub",
+                "lastName": "Dudek",
+                "city": {
+                    "id": 226,
+                    "name": "\u0141\u00f3d\u017a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 337,
+                "name": "The Last Alliance",
+                "subfraction": null,
+                "code": "MESBG2_TLA",
+                "metadata": {
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,
@@ -1933,14 +1933,14 @@
             }
         },
         {
-            "id": "63bfe658-97c9-431a-adc7-747efbf01a75",
+            "id": "345cd798-9b34-478f-ae9e-4dd19d0d2bc8",
             "createdAt": "2026-06-15T20:13:35.657Z",
             "user": {
-                "id": "21066989-54d5-4f5b-b9f2-4ef34bb62943",
-                "avatar": null,
-                "displayName": "Mo\u015bcik",
-                "firstName": "Monika",
-                "lastName": "Sto\u0142owska",
+                "id": "55b3019a-a7e5-4c3c-9c51-0643513d2296",
+                "avatar": "1747765344654.png",
+                "displayName": "FishPriest",
+                "firstName": "Micha\u0142 ",
+                "lastName": "Rybarczyk",
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -1956,12 +1956,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 336,
-                "name": "Kingdom of Rohan",
+                "id": 378,
+                "name": "Minas Morgul",
                 "subfraction": null,
-                "code": "MESBG2_KoR",
+                "code": "MESBG2_MM",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
@@ -1993,14 +1993,14 @@
             }
         },
         {
-            "id": "345cd798-9b34-478f-ae9e-4dd19d0d2bc8",
+            "id": "63bfe658-97c9-431a-adc7-747efbf01a75",
             "createdAt": "2026-06-15T20:13:35.657Z",
             "user": {
-                "id": "55b3019a-a7e5-4c3c-9c51-0643513d2296",
-                "avatar": "1747765344654.png",
-                "displayName": "FishPriest",
-                "firstName": "Micha\u0142 ",
-                "lastName": "Rybarczyk",
+                "id": "21066989-54d5-4f5b-b9f2-4ef34bb62943",
+                "avatar": null,
+                "displayName": "Mo\u015bcik",
+                "firstName": "Monika",
+                "lastName": "Sto\u0142owska",
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -2016,12 +2016,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 378,
-                "name": "Minas Morgul",
+                "id": 336,
+                "name": "Kingdom of Rohan",
                 "subfraction": null,
-                "code": "MESBG2_MM",
+                "code": "MESBG2_KoR",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,

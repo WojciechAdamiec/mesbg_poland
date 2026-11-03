@@ -917,7 +917,11 @@
                 "displayName": "Jerzy P",
                 "firstName": "Jerzy ",
                 "lastName": "Parzych",
-                "city": null,
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -963,7 +967,11 @@
                 "displayName": "Jerzy P",
                 "firstName": "Jerzy ",
                 "lastName": "Parzych",
-                "city": null,
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },

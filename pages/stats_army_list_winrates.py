@@ -94,6 +94,8 @@ def compute_chart_data(
         opponents[opponent_id]["games"] += 1
         if selected_score > opponent_score:
             opponents[opponent_id]["wins"] += 1
+        elif selected_score == opponent_score:
+            opponents[opponent_id]["wins"] += 0.5
 
     data = []
     for opponent_id, stats in opponents.items():

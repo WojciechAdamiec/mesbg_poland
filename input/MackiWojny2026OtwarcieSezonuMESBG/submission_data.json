@@ -1458,9 +1458,9 @@
             "user": {
                 "id": "a7f6afd7-7e8e-4a00-a3ba-fc637ca964fd",
                 "avatar": "1710175869548.png",
-                "displayName": "Piotr G\u0105sowski",
-                "firstName": "",
-                "lastName": "",
+                "displayName": "Speedy2905",
+                "firstName": "Piotr ",
+                "lastName": "G\u0105sowski",
                 "city": {
                     "id": 224,
                     "name": "Bydgoszcz",
@@ -3263,66 +3263,6 @@
             }
         },
         {
-            "id": "6cba9aea-7423-4873-83a4-a7f18da8341f",
-            "createdAt": "2025-10-27T13:46:21.662Z",
-            "user": {
-                "id": "71f045ad-ce24-4e8b-865a-1dc0f634a42d",
-                "avatar": null,
-                "displayName": "Malbeth",
-                "firstName": "Aleksander ",
-                "lastName": "Jaworski-Martycz",
-                "city": {
-                    "id": 235,
-                    "name": "Warszawa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 379,
-                "name": "Muster of Isengard",
-                "subfraction": null,
-                "code": "MESBG2_MoI",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "4d22e805-d78f-4cff-a3b7-d603494329fa",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3257,
-                "place": 15,
-                "poolPlace": null,
-                "singlePlace": 19,
-                "wins": 4,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 24,
-                "secondaryPoints": 60,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "47604af7-d0ae-4015-818f-23a56b0a6d31",
             "createdAt": "2025-10-27T13:46:21.662Z",
             "user": {
@@ -3377,6 +3317,66 @@
                 "loss": 3,
                 "primaryPoints": 17,
                 "secondaryPoints": 30,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "6cba9aea-7423-4873-83a4-a7f18da8341f",
+            "createdAt": "2025-10-27T13:46:21.662Z",
+            "user": {
+                "id": "71f045ad-ce24-4e8b-865a-1dc0f634a42d",
+                "avatar": null,
+                "displayName": "Malbeth",
+                "firstName": "Aleksander ",
+                "lastName": "Jaworski-Martycz",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 379,
+                "name": "Muster of Isengard",
+                "subfraction": null,
+                "code": "MESBG2_MoI",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "4d22e805-d78f-4cff-a3b7-d603494329fa",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3257,
+                "place": 15,
+                "poolPlace": null,
+                "singlePlace": 19,
+                "wins": 4,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 24,
+                "secondaryPoints": 60,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""

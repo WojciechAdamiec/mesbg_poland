@@ -537,48 +537,6 @@
             }
         },
         {
-            "id": "c8bf5526-7058-45b1-be3e-90247bfbe0a4",
-            "createdAt": "2025-11-04T12:53:38.772Z",
-            "user": {
-                "id": "7fa5ba4b-28df-44e8-a4f2-d87072e98a2b",
-                "avatar": "1744139126244.jpeg",
-                "displayName": "Bakson",
-                "firstName": "Jakub",
-                "lastName": "Czy\u017c",
-                "city": {
-                    "id": 228,
-                    "name": "Krak\u00f3w",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": false,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "DECLINED",
-            "army": null,
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "1d0ae72b-5c3f-4ccf-a9c5-ff8ef686b50e",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 3023,
-                "sos": 0
-            }
-        },
-        {
             "id": "5dc02f83-75db-400a-b46a-a2bf93ece761",
             "createdAt": "2025-11-04T12:53:38.772Z",
             "user": {
@@ -610,6 +568,48 @@
                     "mesbgType": "GOOD"
                 }
             },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "1d0ae72b-5c3f-4ccf-a9c5-ff8ef686b50e",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 3023,
+                "sos": 0
+            }
+        },
+        {
+            "id": "c8bf5526-7058-45b1-be3e-90247bfbe0a4",
+            "createdAt": "2025-11-04T12:53:38.772Z",
+            "user": {
+                "id": "7fa5ba4b-28df-44e8-a4f2-d87072e98a2b",
+                "avatar": "1744139126244.jpeg",
+                "displayName": "Bakson",
+                "firstName": "Jakub",
+                "lastName": "Czy\u017c",
+                "city": {
+                    "id": 228,
+                    "name": "Krak\u00f3w",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": false,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "DECLINED",
+            "army": null,
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,

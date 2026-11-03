@@ -357,62 +357,6 @@
             }
         },
         {
-            "id": "839d3a95-cc6d-4b47-99ef-f3d34bb03bff",
-            "createdAt": "2026-06-19T14:45:34.242Z",
-            "user": {
-                "id": "ab63d4ea-e622-4b2d-8ad2-38b15679c94f",
-                "avatar": "1733865632402.jpg",
-                "displayName": "nvrstopping",
-                "firstName": "Radek",
-                "lastName": "P",
-                "city": null,
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 461,
-                "name": "Fields of Celebrant",
-                "subfraction": null,
-                "code": "MESBG2_FoC",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "63d75306-36b8-44da-b9bd-9c8c49704cc0",
-            "pointsModification": 2,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 37,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4521,
-                "place": 23,
-                "poolPlace": null,
-                "singlePlace": 42,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 32,
-                "secondaryPoints": 43,
-                "tertiaryPoints": 0,
-                "sos": 37,
-                "path": "LLWWLW"
-            }
-        },
-        {
             "id": "eb8092d5-565e-4fa8-9434-43f498c8ae34",
             "createdAt": "2026-06-19T14:45:34.242Z",
             "user": {
@@ -466,6 +410,62 @@
                 "draws": 0,
                 "loss": 3,
                 "primaryPoints": 30,
+                "secondaryPoints": 43,
+                "tertiaryPoints": 0,
+                "sos": 37,
+                "path": "LLWWLW"
+            }
+        },
+        {
+            "id": "839d3a95-cc6d-4b47-99ef-f3d34bb03bff",
+            "createdAt": "2026-06-19T14:45:34.242Z",
+            "user": {
+                "id": "ab63d4ea-e622-4b2d-8ad2-38b15679c94f",
+                "avatar": "1733865632402.jpg",
+                "displayName": "nvrstopping",
+                "firstName": "Radek",
+                "lastName": "P",
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 461,
+                "name": "Fields of Celebrant",
+                "subfraction": null,
+                "code": "MESBG2_FoC",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "63d75306-36b8-44da-b9bd-9c8c49704cc0",
+            "pointsModification": 2,
+            "pointsModificationDescription": "",
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 37,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4521,
+                "place": 23,
+                "poolPlace": null,
+                "singlePlace": 42,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 32,
                 "secondaryPoints": 43,
                 "tertiaryPoints": 0,
                 "sos": 37,

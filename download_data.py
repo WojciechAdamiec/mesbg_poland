@@ -538,7 +538,7 @@ def _finalize(table, sort_key=None):
 
 
 def build_player_profiles(battles, main_ranking):
-    """Per-player stats; a win is a strictly higher score (draws are not wins)."""
+    """Per-player stats; winrates count each draw as half a win."""
     place_by_id = {u.get("player_id"): u.get("place") for u in main_ranking}
     names = {}
     players = {}

@@ -3101,66 +3101,6 @@
             }
         },
         {
-            "id": "1e3884f5-27a4-4d39-a81e-a13edc712270",
-            "createdAt": "2026-05-24T06:39:59.731Z",
-            "user": {
-                "id": "457f9c1a-0e9a-4c0e-ae41-7f00e3646fba",
-                "avatar": null,
-                "displayName": "LukaszStoch",
-                "firstName": null,
-                "lastName": null,
-                "city": {
-                    "id": 227,
-                    "name": "Katowice",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 378,
-                "name": "Minas Morgul",
-                "subfraction": null,
-                "code": "MESBG2_MM",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "52cb3800-d2bb-4528-9995-4268997aeae1",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 35,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 5355,
-                "place": 20,
-                "poolPlace": null,
-                "singlePlace": 39,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 17,
-                "secondaryPoints": 52,
-                "tertiaryPoints": 0,
-                "sos": 35,
-                "path": "LWWLWL"
-            }
-        },
-        {
             "id": "fd1b0642-5e8a-4003-9d24-5ccd9b2e81a1",
             "createdAt": "2026-05-24T06:39:59.731Z",
             "user": {
@@ -3218,6 +3158,66 @@
                 "tertiaryPoints": 0,
                 "sos": 43,
                 "path": "LLLWWW"
+            }
+        },
+        {
+            "id": "1e3884f5-27a4-4d39-a81e-a13edc712270",
+            "createdAt": "2026-05-24T06:39:59.731Z",
+            "user": {
+                "id": "457f9c1a-0e9a-4c0e-ae41-7f00e3646fba",
+                "avatar": null,
+                "displayName": "LukaszStoch",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 227,
+                    "name": "Katowice",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 378,
+                "name": "Minas Morgul",
+                "subfraction": null,
+                "code": "MESBG2_MM",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "52cb3800-d2bb-4528-9995-4268997aeae1",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 35,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5355,
+                "place": 20,
+                "poolPlace": null,
+                "singlePlace": 39,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 17,
+                "secondaryPoints": 52,
+                "tertiaryPoints": 0,
+                "sos": 35,
+                "path": "LWWLWL"
             }
         },
         {

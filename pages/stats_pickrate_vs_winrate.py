@@ -113,7 +113,7 @@ def compute_chart_data(battles, armies, points_range, game_types, patches, facti
             continue
 
         pickrate = round((st["games"] / total_picks) * 100, 2) if total_picks > 0 else 0.0
-        winrate = round((st["wins"] / st["games"]) * 100, 2) if st["games"] > 0 else 0.0
+        winrate = round(((st["wins"] + 0.5 * st["draws"]) / st["games"]) * 100, 2) if st["games"] > 0 else 0.0
 
         item = {
             "army": st["army"],

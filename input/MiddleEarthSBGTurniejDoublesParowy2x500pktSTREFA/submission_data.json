@@ -1013,66 +1013,6 @@
             }
         },
         {
-            "id": "9eb826fd-4354-41c5-8fad-aae7c281d3f5",
-            "createdAt": "2026-04-10T13:56:51.852Z",
-            "user": {
-                "id": "7918000f-f66c-4750-b2c6-3277bc3bfcd3",
-                "avatar": "1746731438005.jpg",
-                "displayName": "Franko",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 223,
-                    "name": "Bielsko-bia\u0142a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 449,
-                "name": "The Serpent Horde",
-                "subfraction": null,
-                "code": "MESBG2_TSH",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "90beb71d-5603-45cb-a07e-ca1dc4fc2008",
-            "pointsModification": 3,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4012,
-                "place": 7,
-                "poolPlace": null,
-                "singlePlace": 11,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 13,
-                "secondaryPoints": 19,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "2e313d25-c38d-446e-a26d-5414fdda471b",
             "createdAt": "2026-04-10T13:56:51.852Z",
             "user": {
@@ -1126,6 +1066,66 @@
                 "draws": 0,
                 "loss": 2,
                 "primaryPoints": 10,
+                "secondaryPoints": 19,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "9eb826fd-4354-41c5-8fad-aae7c281d3f5",
+            "createdAt": "2026-04-10T13:56:51.852Z",
+            "user": {
+                "id": "7918000f-f66c-4750-b2c6-3277bc3bfcd3",
+                "avatar": "1746731438005.jpg",
+                "displayName": "Franko",
+                "firstName": "",
+                "lastName": "",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 449,
+                "name": "The Serpent Horde",
+                "subfraction": null,
+                "code": "MESBG2_TSH",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "90beb71d-5603-45cb-a07e-ca1dc4fc2008",
+            "pointsModification": 3,
+            "pointsModificationDescription": "",
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4012,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 11,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 13,
                 "secondaryPoints": 19,
                 "tertiaryPoints": 0,
                 "sos": 0,
