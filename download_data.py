@@ -639,11 +639,11 @@ def download_data(force=False):
     load_time = datetime.datetime.fromisoformat(raw_time) if raw_time else None
 
     is_stale = force or load_time is None or (
-        datetime.datetime.now(datetime.timezone.utc) - load_time > datetime.timedelta(hours=12)
+        datetime.datetime.now(datetime.timezone.utc) - load_time > datetime.timedelta(hours=24)
     )
 
     if is_stale:
-        print(f"Data is missing or older than 3 days, refreshing data...")
+        print(f"Data is missing or older than 24 hours, refreshing data...")
 
         main_ranking_json = get_main_ranking_data()
         save_data(main_ranking_json, MAIN_RANKING_FILE)

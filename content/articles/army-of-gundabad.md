@@ -16,7 +16,7 @@ Gundabad to bardzo ładna, klimatyczna armia z dostępem do wielu unikalnych mec
 
 Armia oferuje szeroki wachlarz modeli: od tanich goblińskich najemników, przez elitarnych wojowników orków, aż po potężnych bohaterów i drogie potwory.
 
-Choć próg wejścia do grania Gundabadem nie jest wcale wysoki (co czyni te armię stosunkowo przystępną dla nowych graczy) to opanowanie do perfekcji wszystkich jej unikalnych narzędzi wymaga sporo ogrania.
+Choć próg wejścia do grania Gundabadem nie jest wcale wysoki (co czyni tę armię stosunkowo przystępną dla nowych graczy), to opanowanie do perfekcji wszystkich jej unikalnych narzędzi wymaga sporo ogrania.
 
 # Przegląd Armii
 
@@ -34,7 +34,7 @@ Choć próg wejścia do grania Gundabadem nie jest wcale wysoki (co czyni te arm
 
   Mega silny róg, który nierzadko powoduje, że przeciwnik z brejka w ćwiartkę przechodzi w ciągu jednej tury.
 
-- **Raise the Banners** – *Co turę do wyboru inny globalny bonus: Sztandar, Darmowy Marsz albo FnP na 6+.*
+- **Raise the Banners** – *Co turę do wyboru inny globalny bonus: Sztandar, darmowy marsz albo FnP na 6+.*
 
   Jedna z najsilniejszych oraz najbardziej elastycznych armijnych zasad w grze.
 
@@ -54,11 +54,11 @@ Base Size: 25mm
 **Stone Flail (Active)**: This is a Unique two-handed weapon. If Azog uses the Stone Flail during a Combat, he gains the Mighty Blow special rule, though reduces his Fight Value to 6 for the duration of the Combat - even after a Heroic Strike. Additionally, any model that is struck by the Stone Flail and not slain will be Knocked Prone at the end of the Combat.
 :::
 
-Azog to drogi bohater z górnej półki - który konkuruje o miejsce w rozpisce z jego synem Bolgiem. Główny problem Azoga polega na tym, że te kłótnie rodzinną zwykle przegrywa.
+Azog to drogi bohater z górnej półki - który konkuruje o miejsce w rozpisce z jego synem Bolgiem. Główny problem Azoga polega na tym, że tę kłótnię rodzinną zwykle przegrywa.
 
 Jeśli przyjrzymy się profilowi Azoga to zobaczymy, że jego główną specjalizacją jest polowanie na wrogich bohaterów - dzięki ranieniu ich na 3+ niezależnie od Obrony.
 
-Problem pojawia się jednak, gdy trafimy na przeciwnika, który nie ma cennych bohaterów do zabicia - lub co gorsza Ci bohaterowie są w stanie z Azogiem wygrać (a pojedynczy punkt Losu powoduje, że Azog niezbyt przepada za przegranymi walkami).
+Problem pojawia się jednak, gdy trafimy na przeciwnika, który nie ma cennych bohaterów do zabicia - lub co gorsza ci bohaterowie są w stanie z Azogiem wygrać (a pojedynczy punkt Losu powoduje, że Azog niezbyt przepada za przegranymi walkami).
 
 Przeciwko wojownikom Azog nie wypada wcale tak dobrze - brak możliwości wzięcia wierzchowca ogranicza nas do 3 ataków z S5, które statystycznie pozwalają nam na zabicie pojedynczej blachy. Sytuacja wygląda nieco lepiej przy wykupionym dwuraku, który niestety z kolei oddala nas od kosztu punktowego Bolga już aż o 25pkt.
 
@@ -83,7 +83,7 @@ Chociaż w walce z bohaterami Bolg wypada nieco gorzej od Azoga, bo S5+1 nie zaw
 
 Sytuacja wygląda jednak znacznie lepiej, gdy Bolgowi przychodzi walczyć ze zwykłymi wojownikami - S5+1 pozwala na skuteczne zabijanie dwóch modeli na turę - szczególnie, jeśli dołożymy Bolgowi wsparcie.
 
-Dodatkowo Bolg wraz z zabijanymi przeciwnikami robi się co raz groźniejszy. Alosza twierdzi, że o ile do **Mighty Hero** dochodzi się zwykle co trzecią grę, o tyle do pakietu **Terror** + **Harbringer** dochodzi się niemal zawsze. Jest to bardzo przydatne biorąc pod uwagę powszechność Terroru w armii Gundabadu.
+Dodatkowo Bolg z każdym zabitym przeciwnikiem robi się coraz groźniejszy. Alosza twierdzi, że o ile do **Mighty Hero** dochodzi się zwykle co trzecią grę, o tyle do pakietu **Terror** + **Harbinger** dochodzi się niemal zawsze. Jest to bardzo przydatne biorąc pod uwagę powszechność Terroru w armii Gundabadu.
 
 Jeśli mamy przypuszczenie, że na danym turnieju nie napotkamy zbyt wielu Legolasów ani potworów - można również rozważyć wzięcie psa dla Bolga, który drastycznie zwiększa jego efektywność na polu bitwy.
 
@@ -174,9 +174,9 @@ Model Trollopulty jest przekozacki - na tym jednak kończą się zalety tego pro
 
 W cenie 180pkt katapulta niemal nie ma możliwości by zarobić na swoje utrzymanie. Do tego jest bardzo losowa i nie można na niej polegać.
 
-Wiele osób nie zdaje sobie również sprawy z tego jak olbrzymia jest podstawka tego modelu - i jak bardzo utrudnia to granie. Wystarczy powiedzieć, że obwód podstawki wynosi ponad 19", a to oznacza, że model piechoty potrzebuje więcej niż 3 tury, by zrobić kółko wokół  Trollopulty.
+Wiele osób nie zdaje sobie również sprawy z tego jak olbrzymia jest podstawka tego modelu - i jak bardzo utrudnia to granie. Wystarczy powiedzieć, że obwód podstawki wynosi ponad 19", a to oznacza, że model piechoty potrzebuje więcej niż 3 tury, by zrobić kółko wokół Trollopulty.
 
-Manewrowaniem tym modelem po stole to czysty masochizm, a wielkość modelu drastycznie ułatwia przeciwnikowi walkę z nim - banalnie łatwo bowiem go otoczyć i/lub zaatakować dużą liczbą modeli.
+Manewrowanie tym modelem po stole to czysty masochizm, a wielkość modelu drastycznie ułatwia przeciwnikowi walkę z nim - banalnie łatwo bowiem go otoczyć i/lub zaatakować dużą liczbą modeli.
 
 Podsumowując, Trollopulta nadaje się jedynie do gry towarzyskiej, a na turniejowych stołach niestety (lub stety) nie za bardzo jest dla niej miejsce.
 
@@ -191,7 +191,7 @@ Base Size: 25mm
 **Ancient Enemies (Dwarf)(Elf) (Active)**
 :::
 
-W cenie Uruk-hai otrzymujemy profil bliźniaczo do niego podobny. Orki stanowią solidny trzon armii Gundabadu.
+W cenie 9pkt otrzymujemy profil niemal identyczny jak u Uruk-hai. Orki stanowią solidny trzon armii Gundabadu.
 
 :::model Goblin Mercenary
 points: 6
@@ -218,7 +218,7 @@ Base Size: 25mm
 **Oblivious to Pain (Passive)**: Whenever this model suffers a Wound, roll a D6. On a roll of a natural 6, the Wound is ignored.
 :::
 
-Beserkerzy są zbyt drodzy by mogli stanowić trzon armii. Są jednak idealną jednostką do zadań specjalnych.
+Berserkerzy są zbyt drodzy by mogli stanowić trzon armii. Są jednak idealną jednostką do zadań specjalnych.
 
 W pakiecie za 15pkt otrzymujemy bardzo odważny model, który biega z prędkością kozy oraz całkiem skutecznie radzi sobie w walce z pojedynczymi przeciwnikami.
 
@@ -259,7 +259,7 @@ Choć na pierwszy rzut oka Ogr sprawia wrażenie taniej podróbki Trolla Jaskini
 
 Najbardziej kluczowa dla tego modelu jest jednak jego stosunkowo wysoka inteligencja, która nie tylko ułatwia Gundabadowi kopanie artefaktów, ale przede wszystkim pozwala na skuteczne wykonywanie Hurli.
 
-W pakiecie za 60pkt otrzymujemy zatem pełnoprawnego potwora, który potrafi wykonać Hurla z podobną skutecznością co smok za 300pkt. Każda armia Gundabadu powinna przynajmniej rozważyć wzięcie ze sobą Ogra (Lub Ogrów) jako kontry przeciwko wrogim bohaterom.
+W pakiecie za 60pkt otrzymujemy zatem pełnoprawnego potwora, który potrafi wykonać Hurla z podobną skutecznością co smok za 300pkt. Każda armia Gundabadu powinna przynajmniej rozważyć wzięcie ze sobą Ogra (lub Ogrów) jako kontry przeciwko wrogim bohaterom.
 
 :::model Gundabad Troll
 points: 120
@@ -277,7 +277,7 @@ Base Size: 80mm
 
 Starszy i nieco bardziej ociężały brat Ogra.
 
-Chociaż jest znacznie mocniejszy w walce to niestety posiada kilka kluczowych wad:
+Chociaż jest znacznie mocniejszy w walce, to niestety posiada kilka kluczowych wad:
 - Ma sporą podstawkę - co znacząco ułatwia przeciwnikowi zabicie go.
 - Rusza się tylko 6" i nie potrafi deptać modeli.
 - Kosztuje tyle co dwa Ogry, a w razie czego Hurluje tylko raz.
@@ -287,16 +287,16 @@ Oba warianty ekwipunku mają swoje zalety. Troll z pałką statystycznie wygrywa
 # Analiza Armii
 
 ## Mocne Strony
-- Jedne z najlepszych zasad armijnych z gry
+- Jedne z najlepszych zasad armijnych w grze
 - Duża mobilność armii
 - Łatwość robienia większości scenariuszy
 - Mocny dwuszereg piechoty
 - Dużo użytecznych narzędzi taktycznych
 
 ## Słabe Strony
-- Kiepska wyporność na magię (Szczególnie bolesny jest **Compel**)
-- Podatność na armie z powszechnym **Fearless**'em
-- Zazwyczaj brak VPs za banner
+- Kiepska odporność na magię (Szczególnie bolesny jest **Compel**)
+- Podatność na armie z powszechnym **Fearlessem**
+- Zazwyczaj brak VP za sztandar
 - Ciężko zdobyć przewagę w walce ze zgrupowanym przeciwnikiem
 
 ## Format
@@ -311,13 +311,13 @@ Niezłe: 600-700
 Kiepskie: 0-600
 :::
 
-Gundabad potrafi sobie poradzić zarówno na Dobro jak i na Zło. Biorąc pod uwagę, że statycznie Zło ma mniej jakościowe modele oraz niższą Odwagę - można uznać, że uśredniając lepiej radzimy sobie w mirrorach. 
+Gundabad potrafi sobie poradzić zarówno na Dobro, jak i na Zło. Biorąc pod uwagę, że statystycznie Zło ma mniej jakościowe modele oraz niższą Odwagę - można uznać, że średnio radzimy sobie lepiej w mirrorach.
 
 ## Scenariusze
 
 Preferencje Gundabadu do scenariuszy wynikają głównie z trzech czynników:
-- Dostępu do Zasadzki Goblinów (Która czasami za darmo wygrywa scenariusz)
-- Wysokiej mobilności armii (Darmowe marsze oraz modele, które biegają 8")
+- Dostępu do zasadzki goblinów (która czasami za darmo wygrywa scenariusz)
+- Wysokiej mobilności armii (darmowe marsze oraz modele, które biegają 8")
 - Globalnego Sztandaru oraz Rogu
 
 Taki zestaw daje nam bardzo elastyczne narzędzia do wygrywania scenariuszy, które wymuszają na graczach mocną decentralizację armii:
@@ -326,7 +326,7 @@ Taki zestaw daje nam bardzo elastyczne narzędzia do wygrywania scenariuszy, kt�
 - Rozdzielony przeciwnik wreszcie ucieka ze stołu po brejku (dzięki debuffowi -2 do Odwagi) - my jesteśmy w stanie utrzymać się na polu bitwy.
 
 :::scenarios
-Dobre: Domination, Capture & Control, Breakthrough, Stake a Claim, Contest of Champions, Heirloom of Ages Past, Sites of Power, Command the Battlefield, Destroy the Supplies, Seize the Prizes, Reconnoitre, Storm the Camp, Divide & Conquer, Escort the Wounded, Breakthrough, Command the Battlefield, Convergence
+Dobre: Domination, Capture & Control, Breakthrough, Stake a Claim, Contest of Champions, Heirloom of Ages Past, Sites of Power, Command the Battlefield, Destroy the Supplies, Seize the Prizes, Reconnoitre, Storm the Camp, Divide & Conquer, Escort the Wounded, Convergence
 Niezłe: To The Death!, Lords of Battle, Assassination, Hold Ground, Retrieval, Treasure Hoard, Fog of War, Lead From the Front
 Kiepskie: Clash by Moonlight
 :::
@@ -346,7 +346,7 @@ Dla Gundabadu absolutnie kluczowym elementem bitwy jest wbicie przeciwnikowi bre
 ### Pakiet Antybohaterski
 
 Gundabad ma bardzo silny pakiet do radzenia sobie z wrogimi bohaterami. W jaki sposób można to zrobić?
-- Po pierwsze konny bohater - to groźny bohater: Musimy zrzucić wrogich bohaterów z ich wierzchowców. W tym celu możemy wykorzystać Hurla Ogra bądź Trolla lub alternatywnie wjechać we wrogiego kawalerzystę Brutem (**Trample** generuje 2 hity w jeźdźca **oraz** 2 hity w wierzchowca).
+- Po pierwsze: konny bohater to groźny bohater. Musimy zrzucić wrogich bohaterów z ich wierzchowców. W tym celu możemy wykorzystać Hurla Ogra bądź Trolla lub alternatywnie wjechać we wrogiego kawalerzystę Brutem (**Trample** generuje 2 hity w jeźdźca **oraz** 2 hity w wierzchowca).
 - Warto przy tym pamiętać, że jeśli wrogi bohater spadnie z rowerka - wówczas jedynie rezultat 6-stki w rzucie na tabelkę upadku pozwala mu zadawać w tej turze jakiekolwiek obrażenia.
 - Gdy mamy do czynienia z pieszym bohaterem - wachlarz naszych możliwości zostaje poszerzony o możliwość przewracania go nietoperzami.
 - Od tej pory plan jest prosty: Staramy się utrzymać przeciwnego bohatera na ziemi tak długo jak to możliwe - w oczekiwaniu na to, aż Hurl, Trample albo wygrany pojedynek doprowadzi ostatecznie do jego śmierci.
@@ -355,7 +355,7 @@ Gundabad ma bardzo silny pakiet do radzenia sobie z wrogimi bohaterami. W jaki s
 
 Warto odnotować, że zarówno Róg jak i Wieża Sygnałowa działa tylko wówczas, gdy nasz generał nadal żyje - musimy zatem brać pod uwagę, że w przypadku Gundabadu oddanie generała to nie jest jedynie strata 2-3VP, ale również pozbawienie się naszych głównych przewag.
 
-Gdy lwia część naszej armii walczy - bezspornie najlepszym wyborem dla wieży sygnałowej jest wybór globalnego sztandaru. Sytuacja nie jest jednak tak oczywista dla tur, gdzie wybór sztandaru jest niemożliwy.
+Gdy lwia część naszej armii walczy - bezspornie najlepszym wyborem dla wieży sygnałowej jest wybór globalnego sztandaru. Sytuacja nie jest jednak tak oczywista dla tur, w których wybór sztandaru jest niemożliwy.
 
 Zanim wybierzemy FnP na 6+ powinniśmy się dokładnie zastanowić czy przypadkiem nie ma jakiegoś dobrego wykorzystania dla marszu. Życie 1-2 orków może okazać się dla przebiegu bitwy mniej kluczowe niż skuteczne wykonanie flankowania lub zdobycie odległych znaczników.
 
@@ -373,11 +373,11 @@ Warto pamiętać, że szansa na przewrócenie wrogiego modelu przysługuje nam z
 
 Chociaż bruty i ogry są duże i groźne - to nie są nieśmiertelne. Nie warto posyłać ich przodem na wrogi szereg, jeśli wiemy, że w pobliżu znajduje się wrogi bohater zdolny im zaszkodzić.
 
-Zamiast tego znacznie lepiej poczekać jest, aż wrogi bohater znajdzie się w walce. Wówczas możemy bezpiecznie dostawić nasze modele do przeciwnych - korzystając z opcji Trampla lub Relentless Advance.
+Zamiast tego znacznie lepiej jest poczekać, aż wrogi bohater znajdzie się w walce. Wówczas możemy bezpiecznie dostawić nasze modele do przeciwnych - korzystając z opcji Trampla lub Relentless Advance.
 
-Warto zauważyć, że jeśli spodziewamy się konieczności rozdeptania swoich własnych modeli - to równie dobrze możemy się na to przygotować. Warto w takiej sytuacji maksymalnie rozszerzyć formację piechoty (zostawić między modelami 0.99 cala przerwy), pozbyć się wsparcia z miejsc, gdzie będziemy chcieli potencjalnie wstawić Bruta lub Ogra, a nawet posłać na pierwszą linie najemników zamiast orków - żeby minimalizować nieuchronne straty.
+Warto zauważyć, że jeśli spodziewamy się konieczności rozdeptania swoich własnych modeli - to równie dobrze możemy się na to przygotować. Warto w takiej sytuacji maksymalnie rozszerzyć formację piechoty (zostawić między modelami 0.99 cala przerwy), pozbyć się wsparcia z miejsc, gdzie będziemy chcieli potencjalnie wstawić Bruta lub Ogra, a nawet posłać na pierwszą linię najemników zamiast orków - żeby minimalizować nieuchronne straty.
 
-Gdy to my decydujemy na jakich warunkach odbędzie się walka - możemy już skutecznie dosunąć Bruta we wrogiego bohatera, a Ogra dosunąć do walki z pojedynczym wrogim wojownikiem w pobliżu - by móc nim w odpowiednim momencie rzucić w bohatera.
+Gdy to my decydujemy na jakich warunkach odbędzie się walka - możemy już skutecznie podprowadzić Bruta do wrogiego bohatera, a Ogra dosunąć do walki z pojedynczym wrogim wojownikiem w pobliżu - by móc nim w odpowiednim momencie rzucić w bohatera.
 
 ### Bolg na Psie
 
@@ -390,23 +390,23 @@ Budowę armii należy zacząć od wyboru generała. Mamy tutaj dwie realne opcje
 - Azog lub Bolg: Mocny, ale również drogi bohater, który da nam sporo możliwości, ale też zredukuje znacznie liczebność armii.
 - Ork Kapitan: Tani bohater o średnich statystykach, który pozwala drastycznie zwiększyć liczebność armii.
 
-Następnie powinniśmy się zastanowić jakie kluczowe jednostki będą stanowić esencje naszej armii. Chcemy grać Bruta, Trolla, Ogry, a może jakiś miks?
+Następnie powinniśmy się zastanowić jakie kluczowe jednostki będą stanowić esencję naszej armii. Chcemy grać Bruta, Trolla, Ogry, a może jakiś miks?
 
 Następnie należy dodać do naszej armii trzon piechoty w postaci orków oraz wsparcie w postaci najemnych goblinów w zasadzce.
 
-Warto przy okazji omówić problem sztandaru. W przypadku Gundabadu efektywność tradycyjnego sztandaru jest znacznie ograniczona przez nasze preferencje do zdecentralizowanej gry oraz fakt, że co drugą rundę będziemy mieli tak czy siak globalne przerzuty. Wzięcie fizyczny sztandaru można rozważyć, gdy mamy pewność, że zagramy same scenariusze z jego udziałem - lub gramy na bardzo wysokie punkty.
+Warto przy okazji omówić problem sztandaru. W przypadku Gundabadu efektywność tradycyjnego sztandaru jest znacznie ograniczona przez nasze preferencje do zdecentralizowanej gry oraz fakt, że co drugą rundę będziemy mieli tak czy siak globalne przerzuty. Wzięcie fizycznego sztandaru można rozważyć, gdy mamy pewność, że zagramy same scenariusze z jego udziałem - lub gramy na bardzo wysokie punkty.
 
-Na koniec musimy upewnić się, że w naszej rozpisce pozostało miejsce dla jednostek wsparcia - Nietoperzy i/lub Beserkerów.
+Na koniec musimy upewnić się, że w naszej rozpisce pozostało miejsce dla jednostek wsparcia - Nietoperzy i/lub Berserkerów.
 
-{{ army_list: /assets/articles/army-of-gundabad/400.png | Army of Gundabad 600 points }}
+{{ army_list: /assets/articles/army-of-gundabad/600.png | Army of Gundabad 600}}
 
-{{ army_list: /assets/articles/army-of-gundabad/400.png | Army of Gundabad 700 points }}
+{{ army_list: /assets/articles/army-of-gundabad/700.png | Army of Gundabad 700}}
 
-{{ army_list: /assets/articles/army-of-gundabad/400.png | Army of Gundabad 800 points Variant A}}
+{{ army_list: /assets/articles/army-of-gundabad/800_Bruty.png | Army of Gundabad 800 Bruty}}
 
-{{ army_list: /assets/articles/army-of-gundabad/400.png | Army of Gundabad 800 points Variant B}}
+{{ army_list: /assets/articles/army-of-gundabad/800_Ogry.png | Army of Gundabad 800 Ogry}}
 
-{{ army_list: /assets/articles/army-of-gundabad/400.png | Army of Gundabad 800 points Variant C}}
+{{ army_list: /assets/articles/army-of-gundabad/800_Miks.png | Army of Gundabad 800 Miks}}
 
 # Podsumowanie
 
