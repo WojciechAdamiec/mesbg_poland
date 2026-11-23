@@ -1,0 +1,213 @@
+[
+    {
+        "id": "rohan",
+        "name": "Rohan",
+        "desc": "Army of Edoras\nDefenders of Helm's Deep\nDefenders of the Hornburg\nFields of Celebrant\nFords of Isen\nKingdom of Rohan\nPaths of the Drúadan\nRide Out\nRiders of Eomer\nRiders of Theoden\nRoad to Helm's Deep\nThe Grief of Éomer",
+        "items": [
+            315,
+            324,
+            325,
+            461,
+            443,
+            336,
+            442,
+            348,
+            349,
+            350,
+            352,
+            440
+        ]
+    },
+    {
+        "id": "gondor",
+        "name": "Gondor",
+        "desc": "Atop the Wall\nBattle of Fornost\nDefenders of the Pelennor\nExpedition to the East\nFields of Celebrant\nGarrison of Ithilien\nMen of the West\nMinas Tirith\nReclamation of Osgiliath\nThe Fiefdoms\nThe Grief of Éomer",
+        "items": [
+            320,
+            322,
+            326,
+            459,
+            461,
+            333,
+            340,
+            341,
+            346,
+            441,
+            440
+        ]
+    },
+    {
+        "id": "isengard",
+        "name": "Isengard",
+        "desc": "Army of the White Hand\nAssault Upon Helm's Deep\nLurtz's Scouts\nMuster of Isengard\nSharkey’s Rogues\nUgluk's Scouts\nWolves of Isengard",
+        "items": [
+            361,
+            362,
+            377,
+            379,
+            454,
+            384,
+            387
+        ]
+    },
+    {
+        "id": "mordor",
+        "name": "Mordor",
+        "desc": "Army of Gothmog\nArmy of the Great Eye\nAssault on Lothlórien\nBarad-Dur\nCirith Ungol\nLegions of Mordor\nMinas Morgul\nRavagers of the Shire\nThe Black Gate",
+        "items": [
+            359,
+            446,
+            468,
+            364,
+            369,
+            376,
+            378,
+            464,
+            366
+        ]
+    },
+    {
+        "id": "moria",
+        "name": "Moria",
+        "desc": "Depths of Moria\nDragons of the North\nMoria",
+        "items": [
+            371,
+            452,
+            453
+        ]
+    },
+    {
+        "id": "evil-north",
+        "name": "Evil North",
+        "desc": "Army of Gundabad\nAzog's Hunters\nBuhrdur's Horde\nFell Beings of Mirkwood\nGoblin-Town\nHost of the Witch-King\nPits of Dol Guldur\nShadows of Angmar\nThe Spider Queen’s Brood\nWolf Pack of Angmar",
+        "items": [
+            360,
+            363,
+            368,
+            462,
+            373,
+            375,
+            380,
+            382,
+            463,
+            386
+        ]
+    },
+    {
+        "id": "evil-men",
+        "name": "Evil Men",
+        "desc": "Army of Carn Dum\nArmy of Dunland\nArmy of the White Hand\nBesiegers of the Hornburg\nCorsair Fleet\nFar Harad\nGrand Army of the South\nHarad\nHost of the Dragon Emperor\nThe Easterlings\nThe Serpent Horde\nUmbar\nUsurpers of Edoras\nVariags of Khand",
+        "items": [
+            358,
+            467,
+            361,
+            365,
+            370,
+            465,
+            447,
+            374,
+            450,
+            451,
+            449,
+            448,
+            385,
+            466
+        ]
+    },
+    {
+        "id": "elves",
+        "name": "Elves",
+        "desc": "Halls of Thranduil\nLindon\nLothlorien\nRangers of Mirkwood\nRivendell\nThe Last Alliance",
+        "items": [
+            334,
+            338,
+            339,
+            344,
+            351,
+            337
+        ]
+    },
+    {
+        "id": "dwarves",
+        "name": "Dwarves",
+        "desc": "Army of Erebor\nArmy of Thror\nDefenders of Erebor\nErebor & Dale\nErebor Reclaimed\nExpedition to the East\nKingdom of Khazad-dûm\nReclamation of Moria\nThe Iron Hills",
+        "items": [
+            437,
+            317,
+            436,
+            328,
+            329,
+            459,
+            438,
+            460,
+            335
+        ]
+    },
+    {
+        "id": "hobbits",
+        "name": "Hobbits",
+        "desc": "Battle of Bywater\nBattle of Greenfields\nThe Shire",
+        "items": [
+            435,
+            458,
+            354
+        ]
+    },
+    {
+        "id": "monsters",
+        "name": "Monsters",
+        "desc": "Desolator of the North\nDragons of the North\nFangorn\nRadagast's Alliance\nThe Beornings\nThe Eagles\nThe Three Trolls\nWraiths on Wings",
+        "items": [
+            372,
+            452,
+            330,
+            343,
+            444,
+            327,
+            383,
+            388
+        ]
+    },
+    {
+        "id": "wizards",
+        "name": "Wizards",
+        "desc": "Rise of the Necromancer\nThe Black Riders\nThe White Council\nWraiths on Wings",
+        "items": [
+            381,
+            367,
+            357,
+            388
+        ]
+    },
+    {
+        "id": "hero-armies",
+        "name": "Hero Armies",
+        "desc": "Arathorn's Stand\nAssault on Ravenhill\nBreaking of the Fellowship\nRadagast's Alliance\nRoad to Rivendell\nThe Fellowship\nThe Grey Company\nThorin's Company",
+        "items": [
+            314,
+            319,
+            323,
+            343,
+            353,
+            331,
+            445,
+            356
+        ]
+    },
+    {
+        "id": "good-men",
+        "name": "Good Men",
+        "desc": "Army of Dale\nArmy of Lake-town\nArnor\nGarrison of Dale\nNumenor\nRealms of Men\nReturn of the King\nSurvivors of Lake-town\nThe Battle of Five Armies",
+        "items": [
+            439,
+            316,
+            318,
+            332,
+            342,
+            345,
+            347,
+            355,
+            321
+        ]
+    }
+]

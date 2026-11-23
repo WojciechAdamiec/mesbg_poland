@@ -10,7 +10,11 @@ Article file format:
     ---
     Markdown body...
 
-Extra syntax inside the body (each on its own line):
+Inline syntax:
+
+    [[tag:army_lists:rohan]]                   inline keyword with a tag tooltip
+
+Line-based directives (each on its own line):
 
     {{ army_stats: Army of Gundabad | 5 | Medium }}   live stats with optional difficulty rating and label
     :::details Section title             collapsible section, closed by a line with ':::'
@@ -47,6 +51,7 @@ from dash import dcc, html
 
 from battle import Scenario
 from store import load_battles
+from tags import render_tagged_text
 
 ARTICLES_DIRECTORY = os.path.join("content", "articles")
 CATEGORY_LABELS = {"army-list": "Army list", "guide": "Guide"}
@@ -199,7 +204,13 @@ def _army_stats_card(value):
 
 def _markdown(lines):
     text = "\n".join(lines).strip()
-    return dcc.Markdown(text, className="article-body") if text else None
+    if not text:
+        return None
+    rendered = render_tagged_text(
+        text,
+        render_text=lambda part: dcc.Markdown(part, className="article-body"),
+    )
+    return rendered if not isinstance(rendered, str) else dcc.Markdown(text, className="article-body")
 
 
 def _points_timeline(lines):

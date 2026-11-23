@@ -249,7 +249,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -357,6 +361,62 @@
             }
         },
         {
+            "id": "839d3a95-cc6d-4b47-99ef-f3d34bb03bff",
+            "createdAt": "2026-06-19T14:45:34.242Z",
+            "user": {
+                "id": "ab63d4ea-e622-4b2d-8ad2-38b15679c94f",
+                "avatar": "1733865632402.jpg",
+                "displayName": "nvrstopping",
+                "firstName": "Radek",
+                "lastName": "P",
+                "city": null,
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 461,
+                "name": "Fields of Celebrant",
+                "subfraction": null,
+                "code": "MESBG2_FoC",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "63d75306-36b8-44da-b9bd-9c8c49704cc0",
+            "pointsModification": 2,
+            "pointsModificationDescription": "",
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 37,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4521,
+                "place": 23,
+                "poolPlace": null,
+                "singlePlace": 42,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 32,
+                "secondaryPoints": 43,
+                "tertiaryPoints": 0,
+                "sos": 37,
+                "path": "LLWWLW"
+            }
+        },
+        {
             "id": "eb8092d5-565e-4fa8-9434-43f498c8ae34",
             "createdAt": "2026-06-19T14:45:34.242Z",
             "user": {
@@ -410,62 +470,6 @@
                 "draws": 0,
                 "loss": 3,
                 "primaryPoints": 30,
-                "secondaryPoints": 43,
-                "tertiaryPoints": 0,
-                "sos": 37,
-                "path": "LLWWLW"
-            }
-        },
-        {
-            "id": "839d3a95-cc6d-4b47-99ef-f3d34bb03bff",
-            "createdAt": "2026-06-19T14:45:34.242Z",
-            "user": {
-                "id": "ab63d4ea-e622-4b2d-8ad2-38b15679c94f",
-                "avatar": "1733865632402.jpg",
-                "displayName": "nvrstopping",
-                "firstName": "Radek",
-                "lastName": "P",
-                "city": null,
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 461,
-                "name": "Fields of Celebrant",
-                "subfraction": null,
-                "code": "MESBG2_FoC",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "63d75306-36b8-44da-b9bd-9c8c49704cc0",
-            "pointsModification": 2,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 37,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4521,
-                "place": 23,
-                "poolPlace": null,
-                "singlePlace": 42,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 32,
                 "secondaryPoints": 43,
                 "tertiaryPoints": 0,
                 "sos": 37,
@@ -533,66 +537,6 @@
             }
         },
         {
-            "id": "6611ce96-31f4-416c-8b88-a4020a13b5ad",
-            "createdAt": "2026-06-22T19:25:58.369Z",
-            "user": {
-                "id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
-                "avatar": "1788788763604.png",
-                "displayName": "Leni",
-                "firstName": "\u0141ukasz",
-                "lastName": "Zembrowski D\u015a62",
-                "city": {
-                    "id": 236,
-                    "name": "Wroc\u0142aw",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": "leni1924"
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 322,
-                "name": "Battle of Fornost",
-                "subfraction": null,
-                "code": "MESBG2_BoF",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "5e4f8d83-884e-4614-9653-40c39b7e39ae",
-            "pointsModification": 2,
-            "pointsModificationDescription": "",
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 57,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4521,
-                "place": 16,
-                "poolPlace": null,
-                "singlePlace": 30,
-                "wins": 3,
-                "draws": 1,
-                "loss": 2,
-                "primaryPoints": 37,
-                "secondaryPoints": 44,
-                "tertiaryPoints": 0,
-                "sos": 57,
-                "path": "WWDLLW"
-            }
-        },
-        {
             "id": "9bc8d0ce-8d18-409d-af0f-6c535df6ab9a",
             "createdAt": "2026-06-22T19:25:58.369Z",
             "user": {
@@ -653,63 +597,63 @@
             }
         },
         {
-            "id": "fc65a300-f03e-46a0-b2f7-72003ce5152c",
-            "createdAt": "2026-06-24T20:16:46.451Z",
+            "id": "6611ce96-31f4-416c-8b88-a4020a13b5ad",
+            "createdAt": "2026-06-22T19:25:58.369Z",
             "user": {
-                "id": "869300c0-1611-4a41-84e8-bb7e3afa22f9",
-                "avatar": null,
-                "displayName": "Malina66",
-                "firstName": "Szymon ",
-                "lastName": "Malinowski ",
+                "id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
+                "avatar": "1788788763604.png",
+                "displayName": "Leni",
+                "firstName": "\u0141ukasz",
+                "lastName": "Zembrowski D\u015a62",
                 "city": {
-                    "id": 223,
-                    "name": "Bielsko-bia\u0142a",
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": null
+                "discordUsername": "leni1924"
             },
             "listApproved": true,
             "listAdded": true,
             "listHidden": false,
-            "lunchApproved": true,
+            "lunchApproved": false,
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 453,
-                "name": "Moria",
+                "id": 322,
+                "name": "Battle of Fornost",
                 "subfraction": null,
-                "code": "MESBG2_M",
+                "code": "MESBG2_BoF",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "15beb1a9-825b-46aa-90b6-fed0bdebebf3",
+            "teamId": "5e4f8d83-884e-4614-9653-40c39b7e39ae",
             "pointsModification": 2,
             "pointsModificationDescription": "",
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 38,
+            "primaryPointsSos": 57,
             "primaryPointsPoolSos": 0,
             "travelGroup": null,
             "poolResult": null,
             "finalResult": {
                 "stageId": 4521,
-                "place": 21,
+                "place": 16,
                 "poolPlace": null,
-                "singlePlace": 39,
+                "singlePlace": 30,
                 "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 32,
-                "secondaryPoints": 51,
+                "draws": 1,
+                "loss": 2,
+                "primaryPoints": 37,
+                "secondaryPoints": 44,
                 "tertiaryPoints": 0,
-                "sos": 38,
-                "path": "LLWLWW"
+                "sos": 57,
+                "path": "WWDLLW"
             }
         },
         {
@@ -773,12 +717,72 @@
             }
         },
         {
+            "id": "fc65a300-f03e-46a0-b2f7-72003ce5152c",
+            "createdAt": "2026-06-24T20:16:46.451Z",
+            "user": {
+                "id": "869300c0-1611-4a41-84e8-bb7e3afa22f9",
+                "avatar": null,
+                "displayName": "Malina66",
+                "firstName": "Szymon ",
+                "lastName": "Malinowski ",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": true,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 453,
+                "name": "Moria",
+                "subfraction": null,
+                "code": "MESBG2_M",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "15beb1a9-825b-46aa-90b6-fed0bdebebf3",
+            "pointsModification": 2,
+            "pointsModificationDescription": "",
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 38,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4521,
+                "place": 21,
+                "poolPlace": null,
+                "singlePlace": 39,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 32,
+                "secondaryPoints": 51,
+                "tertiaryPoints": 0,
+                "sos": 38,
+                "path": "LLWLWW"
+            }
+        },
+        {
             "id": "e39c8b47-6e57-4fb2-84e7-ae11d53fb058",
             "createdAt": "2026-06-25T12:41:07.961Z",
             "user": {
                 "id": "cd905d3f-c042-479b-81f6-61d3ffcc713f",
                 "avatar": "1736596072757.jpg",
-                "displayName": "Yebunny Spocuch",
+                "displayName": "Yebunny Spocuch D\u015a 64",
                 "firstName": "Adam ",
                 "lastName": "Pach",
                 "city": {
@@ -2609,7 +2613,7 @@
             "createdAt": "2026-07-18T14:22:44.749Z",
             "user": {
                 "id": "8ff29fce-8c75-4248-858e-93b2df913982",
-                "avatar": "1776886446968.jpg",
+                "avatar": "",
                 "displayName": "Wybrany",
                 "firstName": "Wojciech",
                 "lastName": "Wybraniec",
@@ -3586,7 +3590,7 @@
             "user": {
                 "id": "13e9bcf5-c291-4537-b0aa-29592b68612f",
                 "avatar": null,
-                "displayName": "Bimber",
+                "displayName": "Arthas pij\u0105cy Bimber",
                 "firstName": "Artur",
                 "lastName": "Pagie\u0142a",
                 "city": {
@@ -3809,7 +3813,7 @@
             "createdAt": "2026-08-09T13:14:50.189Z",
             "user": {
                 "id": "e0392558-e263-4874-b380-e33152fcecbe",
-                "avatar": "1747065796992.PNG",
+                "avatar": "27a95a7a-3009-4e09-aede-582d3dfb9f71.jpeg",
                 "displayName": "B\u0105czas Bo\u017cy",
                 "firstName": "Piotr",
                 "lastName": "B\u0105czyk",
@@ -3991,7 +3995,7 @@
                 "id": "1857125d-c4f2-4a84-a26c-18ff4acbbcaf",
                 "avatar": "1789139169638.jpg",
                 "displayName": "Kajoj",
-                "firstName": "Karol",
+                "firstName": "Karol ",
                 "lastName": "P\u0119kala",
                 "city": {
                     "id": 252,
@@ -5293,7 +5297,7 @@
             "createdAt": "2026-08-23T16:02:07.422Z",
             "user": {
                 "id": "0d4776d9-63a3-4ffe-989f-ca6e8925fa18",
-                "avatar": "1760812124216.jpeg",
+                "avatar": "1794251968618.jpeg",
                 "displayName": "Filoplankton 11",
                 "firstName": "Filip",
                 "lastName": "Konieczny",
@@ -5437,7 +5441,7 @@
             "createdAt": "2026-08-23T16:03:14.708Z",
             "user": {
                 "id": "0d4776d9-63a3-4ffe-989f-ca6e8925fa18",
-                "avatar": "1760812124216.jpeg",
+                "avatar": "1794251968618.jpeg",
                 "displayName": "Filoplankton 11",
                 "firstName": "Filip",
                 "lastName": "Konieczny",
@@ -7150,5 +7154,6 @@
     ],
     "points": "2x500",
     "patch": "NIGHTLINGS",
-    "tournament_type": "MASTER"
+    "tournament_type": "MASTER",
+    "season": 2026
 }

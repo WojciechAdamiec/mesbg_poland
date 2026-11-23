@@ -278,7 +278,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -318,7 +322,7 @@
                 "lastName": "Hujdus",
                 "city": null,
                 "country": "PL",
-                "discordUsername": null
+                "discordUsername": "hujdus"
             },
             "listApproved": true,
             "listAdded": true,
@@ -998,5 +1002,6 @@
     "teams": [],
     "points": "600",
     "patch": "NIGHTLINGS",
-    "tournament_type": "LOKAL"
+    "tournament_type": "LOKAL",
+    "season": 2026
 }

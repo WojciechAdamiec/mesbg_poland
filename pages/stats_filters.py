@@ -8,6 +8,7 @@ PATCHES = ["Balrog Age", "Gwaihir Age", "Nightlings Age"]
 FORMATS = ["Individual", "Team", "Doubles"]
 DEFAULT_FORMATS = ["Individual", "Team"]
 FACTIONS = ["Good", "Evil"]
+SEASONS = ["2026", "2027"]
 FACTION_COLORS = {"Good": "green.6", "Evil": "red.6"}
 
 GAME_TYPE_MAP = {
@@ -46,6 +47,7 @@ def filter_ids(prefix):
         "patches": f"{prefix}-patches",
         "factions": f"{prefix}-factions",
         "formats": f"{prefix}-formats",
+        "seasons": f"{prefix}-seasons",
         "min_games": f"{prefix}-min-games",
         "ranking_enabled": f"{prefix}-ranking-enabled",
         "ranking_top": f"{prefix}-ranking-top",
@@ -71,7 +73,14 @@ def battle_in_ranking(battle, top_players):
     return battle.get("player_1_id") in top_players and battle.get("player_2_id") in top_players
 
 
-def battle_matches_filters(battle, points_range, game_types, patches, formats, top_players=None):
+def battle_in_seasons(battle, seasons=None):
+    selected = SEASONS if seasons is None else seasons
+    return str(battle.get("season", 2026)) in selected
+
+
+def battle_matches_filters(battle, points_range, game_types, patches, formats, top_players=None, seasons=None):
+    if not battle_in_seasons(battle, seasons):
+        return False
     if not battle_in_formats(battle, formats) or not battle_in_ranking(battle, top_players):
         return False
     allowed_types = {GAME_TYPE_MAP[item] for item in (game_types or []) if item in GAME_TYPE_MAP}
@@ -86,12 +95,12 @@ def battle_matches_filters(battle, points_range, game_types, patches, formats, t
     return low <= MIN_POINTS and high >= MAX_POINTS
 
 
-def count_filtered_battles(battles, points_range, game_types, patches, formats, ranking_enabled=False, ranking_top=50):
+def count_filtered_battles(battles, points_range, game_types, patches, formats, ranking_enabled=False, ranking_top=50, seasons=None):
     top_players = top_player_ids(ranking_enabled, ranking_top)
     return sum(
         1
         for battle in battles
-        if battle_matches_filters(battle, points_range, game_types, patches, formats, top_players)
+        if battle_matches_filters(battle, points_range, game_types, patches, formats, top_players, seasons)
         and len(battle.get("result") or ()) == 2
     )
 
@@ -122,10 +131,11 @@ def filter_inputs(prefix):
         ids["min_games"],
         ids["ranking_enabled"],
         ids["ranking_top"],
+        ids["seasons"],
     ]
 
 
-def create_filter_controls(prefix, max_games=MAX_GAMES, default_min_games=0):
+def create_filter_controls(prefix, max_games=MAX_GAMES, default_min_games=0, min_games_mark_step=None):
     ids = filter_ids(prefix)
     return dmc.Stack(
         [
@@ -136,7 +146,8 @@ def create_filter_controls(prefix, max_games=MAX_GAMES, default_min_games=0):
                 max=MAX_POINTS,
                 step=10,
                 value=[MIN_POINTS, MAX_POINTS],
-                marks=[{"value": p, "label": str(p)} for p in range(0, 1001, 100)],
+                updatemode="drag",
+                marks=[{"value": p, "label": str(p)} for p in range(0, 1001, 200)],
                 labelAlwaysOn=False,
                 mb=30,
             ),
@@ -158,6 +169,12 @@ def create_filter_controls(prefix, max_games=MAX_GAMES, default_min_games=0):
                 value=PATCHES,
                 children=dmc.Group([dmc.Checkbox(label=p, value=p) for p in PATCHES]),
             ),
+            dmc.Text("Season", fw=600, mt="md"),
+            dmc.CheckboxGroup(
+                id=ids["seasons"],
+                value=SEASONS,
+                children=dmc.Group([dmc.Checkbox(label=season, value=season) for season in SEASONS]),
+            ),
             dmc.Text("Factions", fw=600, mt="md"),
             dmc.CheckboxGroup(
                 id=ids["factions"],
@@ -173,8 +190,9 @@ def create_filter_controls(prefix, max_games=MAX_GAMES, default_min_games=0):
                 max=200,
                 step=1,
                 value=50,
+                updatemode="drag",
                 disabled=True,
-                marks=[{"value": p, "label": str(p)} for p in (10, 25, 50, 75, 100, 125, 150, 175, 200)],
+                marks=[{"value": p, "label": str(p)} for p in (10, 50, 100, 150, 200)],
                 labelAlwaysOn=False,
                 mb=30,
             ),
@@ -185,9 +203,10 @@ def create_filter_controls(prefix, max_games=MAX_GAMES, default_min_games=0):
                 max=max_games,
                 step=1,
                 value=default_min_games,
+                updatemode="drag",
                 marks=[
                     {"value": p, "label": str(p)}
-                    for p in range(0, max_games + 1, max(1, max_games // 5))
+                    for p in range(0, max_games + 1, min_games_mark_step or max(1, max_games // 5))
                 ],
                 labelAlwaysOn=False,
                 mb=30,

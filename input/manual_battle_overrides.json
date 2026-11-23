@@ -1,0 +1,106 @@
+{
+  "description": "Entries here replace automatic parsing for that tournament. List only the individual pairings to keep; each battle is identified by table_id and may override player_1_id/name, army_1_id/name, player_2_id/name, army_2_id/name, and result [p1_vp, p2_vp].",
+  "tournaments": {
+    "475d3cd0-79e5-41a2-babb-ffe5d82f179c": {
+      "name": "Marauder Grill and Chill - Challenger Middle-Earth SBG w Łodzi",
+      "battles": [
+        {
+          "table_id": "14346c27-91c7-40b1-a4cc-5feebc8348c4",
+          "player_1_id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
+          "player_1_name": "Leni",
+          "army_1_id": 449,
+          "army_1_name": "The Serpent Horde",
+          "player_2_id": "224b8d3d-7e1f-4095-853a-088883879195",
+          "player_2_name": "Żaba Boży",
+          "army_2_id": 374,
+          "army_2_name": "Harad",
+          "result": [0, 0]
+        },
+        {
+          "table_id": "e68bda9f-ae6a-415d-8c24-bb897b0de2de",
+          "player_1_id": "dd081a04-8bbb-4409-aed7-f6ceedf4d7d0",
+          "player_1_name": "Shogun",
+          "army_1_id": 339,
+          "army_1_name": "Lothlorien",
+          "player_2_id": "21c12fb0-4289-4df3-8bad-f18c2a49fd0d",
+          "player_2_name": "Włodas Boży",
+          "army_2_id": 352,
+          "army_2_name": "Road to Helm's Deep",
+          "result": [6, 0]
+        },
+        {
+          "table_id": "0588a73c-6bd6-41ec-acea-6a43365cbfa0",
+          "player_1_id": "dedfc2b9-4e69-452e-a9ae-35e131680cd5",
+          "player_1_name": "Darkstalker",
+          "army_1_id": 326,
+          "army_1_name": "Defenders of the Pelennor",
+          "player_2_id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
+          "player_2_name": "Leni",
+          "army_2_id": 449,
+          "army_2_name": "The Serpent Horde",
+          "result": [0, 20]
+        },
+        {
+          "table_id": "6501743d-a485-4c47-b88b-527727cb884c",
+          "player_1_id": "06e08db4-eeb0-41a3-9e0c-7a8d0203bc0e",
+          "player_1_name": "Krell",
+          "army_1_id": 446,
+          "army_1_name": "Army of the Great Eye",
+          "player_2_id": "dd081a04-8bbb-4409-aed7-f6ceedf4d7d0",
+          "player_2_name": "Shogun",
+          "army_2_id": 339,
+          "army_2_name": "Lothlorien",
+          "result": [0, 20]
+        },
+        {
+          "table_id": "4447a4df-680d-48ba-8f81-f8ed7a5a9041",
+          "player_1_id": "76870d30-055b-4a89-a141-78ef032269f2",
+          "player_1_name": "Czaki",
+          "army_1_id": 458,
+          "army_1_name": "Battle of Greenfields",
+          "player_2_id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
+          "player_2_name": "Leni",
+          "army_2_id": 449,
+          "army_2_name": "The Serpent Horde",
+          "result": [0, 0]
+        },
+        {
+          "table_id": "8471fefd-daec-4122-9900-785011241f85",
+          "player_1_id": "ef46c5bc-e9ab-450b-85f5-4b88323ef1b8",
+          "player_1_name": "Adam Rodeo",
+          "army_1_id": 449,
+          "army_1_name": "The Serpent Horde",
+          "player_2_id": "dd081a04-8bbb-4409-aed7-f6ceedf4d7d0",
+          "player_2_name": "Shogun",
+          "army_2_id": 339,
+          "army_2_name": "Lothlorien",
+          "result": [0, 0]
+        },
+        {
+          "table_id": "e5e46ca5-4d24-4321-9508-860d05589f0a",
+          "player_1_id": "d46af0a2-c60d-45ef-9286-540bdc4ee510",
+          "player_1_name": "Leni",
+          "army_1_id": 449,
+          "army_1_name": "The Serpent Horde",
+          "player_2_id": "19971c89-b3a4-42ef-99c8-c4892df70e0e",
+          "player_2_name": "Kamil_KMG",
+          "army_2_id": 334,
+          "army_2_name": "Halls of Thranduil",
+          "result": [17, 3]
+        },
+        {
+          "table_id": "dd7c2142-f76b-4328-ab6f-09c2730d71b8",
+          "player_1_id": "dd081a04-8bbb-4409-aed7-f6ceedf4d7d0",
+          "player_1_name": "Shogun",
+          "army_1_id": 339,
+          "army_1_name": "Lothlorien",
+          "player_2_id": "4a55491b-3a8e-47bb-8c61-85b9446dca01",
+          "player_2_name": "Darkion",
+          "army_2_id": 361,
+          "army_2_name": "Army of the White Hand",
+          "result": [8, 3]
+        }
+      ]
+    }
+  }
+}

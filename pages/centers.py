@@ -237,10 +237,11 @@ def create_welcome_card():
         withBorder=True,
         shadow="sm",
         radius="md",
-        w=700,
+        w="100%",
         style={
             "background": "transparent",
             "borderColor": "var(--mantine-color-gray-6)",
+            "minWidth": 0,
         },
     )
 
@@ -607,10 +608,11 @@ def create_center_card(town_name):
         withBorder=True,
         shadow="sm",
         radius="md",
-        w=700,
+        w="100%",
         style={
             "background": "transparent",
             "borderColor": "var(--mantine-color-gray-6)",
+            "minWidth": 0,
         },
     )
 
@@ -640,23 +642,28 @@ layout = dmc.Box([
         },
     ),
     dmc.Text("MESBG Centers Map", style={"fontSize": "40px", "marginBottom": "20px"}),
-    dmc.Group(
+    dmc.Grid(
         children=[
-            dcc.Graph(
-                id="centers-map",
-                figure=INITIAL_MAP_FIGURE,
-                style={"height": "80vh", "width": "100%"},
-                responsive=True,
+            dmc.GridCol(
+                dcc.Graph(
+                    id="centers-map",
+                    figure=INITIAL_MAP_FIGURE,
+                    style={"height": "80vh", "width": "100%"},
+                    responsive=True,
+                ),
+                span={"base": 12, "lg": 7},
             ),
-            dmc.Box(
-                id="center-card-container",
-                children=WELCOME_CARD,
+            dmc.GridCol(
+                dmc.Box(
+                    id="center-card-container",
+                    children=WELCOME_CARD,
+                    style={"width": "100%", "minWidth": 0},
+                ),
+                span={"base": 12, "lg": 5},
             ),
         ],
-        justify="center",
-        align="flex-start",
+        align="center",
         gap="xl",
-        grow=True,
     ),
 ])
 
@@ -693,4 +700,3 @@ def update_center(click_data, current_selection):
 
     card = ALL_CENTER_CARDS.get(selected, WELCOME_CARD)
     return figure_patch, card, selected
-

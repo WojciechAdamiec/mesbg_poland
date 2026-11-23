@@ -3352,8 +3352,8 @@
                 "firstName": "",
                 "lastName": "",
                 "city": {
-                    "id": 236,
-                    "name": "Wroc\u0142aw",
+                    "id": 253,
+                    "name": "Jelenia G\u00f3ra",
                     "country": "PL"
                 },
                 "country": "PL",
@@ -5519,7 +5519,7 @@
                 "id": "1857125d-c4f2-4a84-a26c-18ff4acbbcaf",
                 "avatar": "1789139169638.jpg",
                 "displayName": "Kajoj",
-                "firstName": "Karol",
+                "firstName": "Karol ",
                 "lastName": "P\u0119kala",
                 "city": {
                     "id": 252,
@@ -6160,7 +6160,7 @@
             "user": {
                 "id": "13e9bcf5-c291-4537-b0aa-29592b68612f",
                 "avatar": null,
-                "displayName": "Bimber",
+                "displayName": "Arthas pij\u0105cy Bimber",
                 "firstName": "Artur",
                 "lastName": "Pagie\u0142a",
                 "city": {
@@ -6230,8 +6230,8 @@
             "createdAt": "2026-01-05T21:36:11.715Z",
             "user": {
                 "id": "93cda88b-c976-4e61-8f65-9a5a5f1ecf7b",
-                "avatar": null,
-                "displayName": "GoblinGoblin",
+                "avatar": "7e4984b8-cace-4bfb-96f9-ad9f69ada22c.jpeg",
+                "displayName": "Goblin1",
                 "firstName": "Filip",
                 "lastName": "\u0141ukomski",
                 "city": {
@@ -8581,7 +8581,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -9606,7 +9610,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -10256,7 +10264,7 @@
             "createdAt": "2026-01-20T16:53:40.940Z",
             "user": {
                 "id": "21c12fb0-4289-4df3-8bad-f18c2a49fd0d",
-                "avatar": "1758214908867.jpeg",
+                "avatar": "224a3560-ac1b-466b-b2a5-dd542a3f0a6e.jpeg",
                 "displayName": "W\u0142odas Bo\u017cy",
                 "firstName": "Krzysztof",
                 "lastName": "Napiera\u0142a",
@@ -10791,7 +10799,7 @@
             "user": {
                 "id": "d676ab50-4520-4a0a-9fde-3dc9f075198e",
                 "avatar": "1767607541331.jpg",
-                "displayName": "QB_witcher",
+                "displayName": "Jakub vel Wied\u017amin",
                 "firstName": "Jakub",
                 "lastName": "Ferens",
                 "city": {
@@ -10977,7 +10985,7 @@
             "createdAt": "2026-02-08T16:14:08.516Z",
             "user": {
                 "id": "e99aafd2-d310-49bd-b0d5-b12b6acd1600",
-                "avatar": null,
+                "avatar": "eaa7884e-2fec-47a3-9d4e-005b28dc6c7f.jpeg",
                 "displayName": "TenSauron",
                 "firstName": "Grzegorz",
                 "lastName": "Walendowski",
@@ -11089,7 +11097,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -11451,5 +11463,6 @@
     "teams": [],
     "points": "745",
     "patch": "GWAIHIR",
-    "tournament_type": "MASTER"
+    "tournament_type": "MASTER",
+    "season": 2026
 }

@@ -837,7 +837,7 @@
             "createdAt": "2026-04-10T05:47:52.191Z",
             "user": {
                 "id": "0d4776d9-63a3-4ffe-989f-ca6e8925fa18",
-                "avatar": "1760812124216.jpeg",
+                "avatar": "1794251968618.jpeg",
                 "displayName": "Filoplankton 11",
                 "firstName": "Filip",
                 "lastName": "Konieczny",
@@ -1013,66 +1013,6 @@
             }
         },
         {
-            "id": "2e313d25-c38d-446e-a26d-5414fdda471b",
-            "createdAt": "2026-04-10T13:56:51.852Z",
-            "user": {
-                "id": "f389357a-f3f0-4aca-b121-e0e809448b29",
-                "avatar": null,
-                "displayName": "Big Jacob",
-                "firstName": "Jakub",
-                "lastName": "Koba",
-                "city": {
-                    "id": 223,
-                    "name": "Bielsko-bia\u0142a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 438,
-                "name": "Kingdom of Khazad-d\u00fbm",
-                "subfraction": null,
-                "code": "MESBG2_KoKd",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "90beb71d-5603-45cb-a07e-ca1dc4fc2008",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4012,
-                "place": 7,
-                "poolPlace": null,
-                "singlePlace": 16,
-                "wins": 1,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 10,
-                "secondaryPoints": 19,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "9eb826fd-4354-41c5-8fad-aae7c281d3f5",
             "createdAt": "2026-04-10T13:56:51.852Z",
             "user": {
@@ -1126,6 +1066,66 @@
                 "draws": 0,
                 "loss": 2,
                 "primaryPoints": 13,
+                "secondaryPoints": 19,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "2e313d25-c38d-446e-a26d-5414fdda471b",
+            "createdAt": "2026-04-10T13:56:51.852Z",
+            "user": {
+                "id": "f389357a-f3f0-4aca-b121-e0e809448b29",
+                "avatar": null,
+                "displayName": "Big Jacob",
+                "firstName": "Jakub",
+                "lastName": "Koba",
+                "city": {
+                    "id": 223,
+                    "name": "Bielsko-bia\u0142a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 438,
+                "name": "Kingdom of Khazad-d\u00fbm",
+                "subfraction": null,
+                "code": "MESBG2_KoKd",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "90beb71d-5603-45cb-a07e-ca1dc4fc2008",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4012,
+                "place": 7,
+                "poolPlace": null,
+                "singlePlace": 16,
+                "wins": 1,
+                "draws": 0,
+                "loss": 2,
+                "primaryPoints": 10,
                 "secondaryPoints": 19,
                 "tertiaryPoints": 0,
                 "sos": 0,
@@ -1507,5 +1507,6 @@
     ],
     "points": "500",
     "patch": "GWAIHIR",
-    "tournament_type": "LOKAL"
+    "tournament_type": "LOKAL",
+    "season": 2026
 }

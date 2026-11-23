@@ -692,7 +692,7 @@
             "user": {
                 "id": "cd905d3f-c042-479b-81f6-61d3ffcc713f",
                 "avatar": "1736596072757.jpg",
-                "displayName": "Yebunny Spocuch",
+                "displayName": "Yebunny Spocuch D\u015a 64",
                 "firstName": "Adam ",
                 "lastName": "Pach",
                 "city": {
@@ -1073,7 +1073,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -2053,5 +2057,6 @@
     "teams": [],
     "points": "745",
     "patch": "GWAIHIR",
-    "tournament_type": "LOKAL"
+    "tournament_type": "LOKAL",
+    "season": 2026
 }

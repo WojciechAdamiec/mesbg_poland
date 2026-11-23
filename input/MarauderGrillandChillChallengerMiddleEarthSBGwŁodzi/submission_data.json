@@ -85,66 +85,6 @@
             }
         },
         {
-            "id": "d30f1b09-6524-4ed1-a9ec-b9a789ccfeb9",
-            "createdAt": "2026-05-07T16:02:18.284Z",
-            "user": {
-                "id": "1162e493-2a1e-4b15-aa4d-70fd185e8f8d",
-                "avatar": null,
-                "displayName": "Micha\u0142 Polak",
-                "firstName": "Micha\u0142",
-                "lastName": "Polak",
-                "city": {
-                    "id": 226,
-                    "name": "\u0141\u00f3d\u017a",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 453,
-                "name": "Moria",
-                "subfraction": null,
-                "code": "MESBG2_M",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "8571b6c7-101e-4ba3-b435-256e53d81710",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 0,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4465,
-                "place": 10,
-                "poolPlace": null,
-                "singlePlace": 19,
-                "wins": 2,
-                "draws": 0,
-                "loss": 2,
-                "primaryPoints": 22,
-                "secondaryPoints": 47,
-                "tertiaryPoints": 0,
-                "sos": 0,
-                "path": ""
-            }
-        },
-        {
             "id": "4c755852-c3b6-485b-ae52-37782c0b3666",
             "createdAt": "2026-05-07T16:02:18.284Z",
             "user": {
@@ -205,14 +145,14 @@
             }
         },
         {
-            "id": "b0bf50ca-7644-4586-8029-99c409391cd3",
-            "createdAt": "2026-05-07T16:08:29.344Z",
+            "id": "d30f1b09-6524-4ed1-a9ec-b9a789ccfeb9",
+            "createdAt": "2026-05-07T16:02:18.284Z",
             "user": {
-                "id": "73de21a8-323e-470e-8e98-8aba0d14d244",
+                "id": "1162e493-2a1e-4b15-aa4d-70fd185e8f8d",
                 "avatar": null,
-                "displayName": "Abraham ",
-                "firstName": null,
-                "lastName": null,
+                "displayName": "Micha\u0142 Polak",
+                "firstName": "Micha\u0142",
+                "lastName": "Polak",
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -228,10 +168,10 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 450,
-                "name": "Host of the Dragon Emperor",
+                "id": 453,
+                "name": "Moria",
                 "subfraction": null,
-                "code": "MESBG2_HotDE",
+                "code": "MESBG2_M",
                 "metadata": {
                     "mesbgType": "EVIL"
                 }
@@ -239,7 +179,7 @@
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "7ca16b57-e431-4fd9-9132-e26a2eebb50b",
+            "teamId": "8571b6c7-101e-4ba3-b435-256e53d81710",
             "pointsModification": null,
             "pointsModificationDescription": null,
             "metadata": null,
@@ -251,14 +191,14 @@
             "poolResult": null,
             "finalResult": {
                 "stageId": 4465,
-                "place": 16,
+                "place": 10,
                 "poolPlace": null,
-                "singlePlace": 31,
-                "wins": 0,
+                "singlePlace": 19,
+                "wins": 2,
                 "draws": 0,
-                "loss": 4,
-                "primaryPoints": 4,
-                "secondaryPoints": 25,
+                "loss": 2,
+                "primaryPoints": 22,
+                "secondaryPoints": 47,
                 "tertiaryPoints": 0,
                 "sos": 0,
                 "path": ""
@@ -294,6 +234,66 @@
                 "code": "MESBG2_TLA",
                 "metadata": {
                     "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "7ca16b57-e431-4fd9-9132-e26a2eebb50b",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 0,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4465,
+                "place": 16,
+                "poolPlace": null,
+                "singlePlace": 31,
+                "wins": 0,
+                "draws": 0,
+                "loss": 4,
+                "primaryPoints": 4,
+                "secondaryPoints": 25,
+                "tertiaryPoints": 0,
+                "sos": 0,
+                "path": ""
+            }
+        },
+        {
+            "id": "b0bf50ca-7644-4586-8029-99c409391cd3",
+            "createdAt": "2026-05-07T16:08:29.344Z",
+            "user": {
+                "id": "73de21a8-323e-470e-8e98-8aba0d14d244",
+                "avatar": null,
+                "displayName": "Abraham ",
+                "firstName": null,
+                "lastName": null,
+                "city": {
+                    "id": 226,
+                    "name": "\u0141\u00f3d\u017a",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 450,
+                "name": "Host of the Dragon Emperor",
+                "subfraction": null,
+                "code": "MESBG2_HotDE",
+                "metadata": {
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
@@ -1217,7 +1217,7 @@
             "createdAt": "2026-05-20T18:33:30.717Z",
             "user": {
                 "id": "21c12fb0-4289-4df3-8bad-f18c2a49fd0d",
-                "avatar": "1758214908867.jpeg",
+                "avatar": "224a3560-ac1b-466b-b2a5-dd542a3f0a6e.jpeg",
                 "displayName": "W\u0142odas Bo\u017cy",
                 "firstName": "Krzysztof",
                 "lastName": "Napiera\u0142a",
@@ -1933,14 +1933,14 @@
             }
         },
         {
-            "id": "345cd798-9b34-478f-ae9e-4dd19d0d2bc8",
+            "id": "63bfe658-97c9-431a-adc7-747efbf01a75",
             "createdAt": "2026-06-15T20:13:35.657Z",
             "user": {
-                "id": "55b3019a-a7e5-4c3c-9c51-0643513d2296",
-                "avatar": "1747765344654.png",
-                "displayName": "FishPriest",
-                "firstName": "Micha\u0142 ",
-                "lastName": "Rybarczyk",
+                "id": "21066989-54d5-4f5b-b9f2-4ef34bb62943",
+                "avatar": null,
+                "displayName": "Mo\u015bcik",
+                "firstName": "Monika",
+                "lastName": "Sto\u0142owska",
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -1956,12 +1956,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 378,
-                "name": "Minas Morgul",
+                "id": 336,
+                "name": "Kingdom of Rohan",
                 "subfraction": null,
-                "code": "MESBG2_MM",
+                "code": "MESBG2_KoR",
                 "metadata": {
-                    "mesbgType": "EVIL"
+                    "mesbgType": "GOOD"
                 }
             },
             "secondaryArmy": null,
@@ -1993,14 +1993,14 @@
             }
         },
         {
-            "id": "63bfe658-97c9-431a-adc7-747efbf01a75",
+            "id": "345cd798-9b34-478f-ae9e-4dd19d0d2bc8",
             "createdAt": "2026-06-15T20:13:35.657Z",
             "user": {
-                "id": "21066989-54d5-4f5b-b9f2-4ef34bb62943",
-                "avatar": null,
-                "displayName": "Mo\u015bcik",
-                "firstName": "Monika",
-                "lastName": "Sto\u0142owska",
+                "id": "55b3019a-a7e5-4c3c-9c51-0643513d2296",
+                "avatar": "1747765344654.png",
+                "displayName": "FishPriest",
+                "firstName": "Micha\u0142 ",
+                "lastName": "Rybarczyk",
                 "city": {
                     "id": 226,
                     "name": "\u0141\u00f3d\u017a",
@@ -2016,12 +2016,12 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 336,
-                "name": "Kingdom of Rohan",
+                "id": 378,
+                "name": "Minas Morgul",
                 "subfraction": null,
-                "code": "MESBG2_KoR",
+                "code": "MESBG2_MM",
                 "metadata": {
-                    "mesbgType": "GOOD"
+                    "mesbgType": "EVIL"
                 }
             },
             "secondaryArmy": null,
@@ -2736,5 +2736,6 @@
     ],
     "points": "650",
     "patch": "GWAIHIR",
-    "tournament_type": "CHALLENGER"
+    "tournament_type": "CHALLENGER",
+    "season": 2026
 }

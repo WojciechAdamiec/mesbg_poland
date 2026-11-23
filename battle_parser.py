@@ -10,6 +10,18 @@ INPUT_DIRECTORY = "input"
 CSV_FILE = "pairings_history.csv"
 JSON_FILE = "submission_data.json"
 SCENARIOS_FILE = "rounds.json"
+MANUAL_BATTLE_OVERRIDES_FILE = "manual_battle_overrides.json"
+MANUAL_BATTLE_FIELDS = {
+    "player_1_id",
+    "player_1_name",
+    "army_1_id",
+    "army_1_name",
+    "player_2_id",
+    "player_2_name",
+    "army_2_id",
+    "army_2_name",
+    "result",
+}
 
 INDIVIDUAL = "INDIVIDUAL"
 DOUBLES = "DOUBLES"
@@ -72,7 +84,7 @@ def parse_tournament_type(raw_type: str | None) -> TournamentType | None:
         "LOKAL": TournamentType.LOCAL,
         "CHALLENGER": TournamentType.CHALLENGER,
         "MASTER": TournamentType.MASTER,
-        "DMP": TournamentType.DMP,
+        "DMP": TournamentType.MASTER,
         "ONLINE": TournamentType.ONLINE,
     }
 
@@ -115,12 +127,17 @@ def load_submissions(path: str) -> dict:
     submissions["points"] = data.get("points", None)
     submissions["patch"] = data.get("patch", None)
     submissions["tournament_type"] = data.get("tournament_type", None)
+    submissions["season"] = data.get("season", 2026)
     return submissions
 
 
-def parse_result(row: dict) -> tuple[int, int] | None:
-    p1_vp = row.get("P1 Secondary Points (VP)")
-    p2_vp = row.get("P2 Secondary Points (VP)")
+def parse_result(row: dict, dmp: bool = False) -> tuple[int, int] | None:
+    field = "Tertiary Points" if dmp else "Secondary Points (VP)"
+    p1_vp = row.get(f"P1 {field}")
+    p2_vp = row.get(f"P2 {field}")
+
+    if dmp and (p1_vp in ("", None) or p2_vp in ("", None)):
+        return None
 
     if p1_vp == "" or p1_vp is None:
         p1_vp = "0"
@@ -155,6 +172,146 @@ def load_user_teams(path: str) -> dict:
 def _read_finished_rows(csv_path: str) -> list[dict]:
     with open(csv_path, "r", encoding="utf-8-sig", newline="") as f:
         return [row for row in csv.DictReader(f) if row.get("Round Status") == "FINISHED"]
+
+
+def tournament_input_id(json_path: str, csv_path: str) -> str | None:
+    with open(json_path, encoding="utf-8") as f:
+        tournament_id = json.load(f).get("tournament_id")
+    if tournament_id:
+        return str(tournament_id)
+    if os.path.isfile(csv_path):
+        with open(csv_path, encoding="utf-8-sig", newline="") as f:
+            return next(csv.DictReader(f), {}).get("Tournament ID") or None
+    return None
+
+
+def saved_eligible_tournament_ids() -> set[str]:
+    path = os.path.join("data", "tournaments.json")
+    with open(path, encoding="utf-8") as f:
+        return {event["tournament_id"] for event in json.load(f)}
+
+
+def load_manual_battle_overrides(input_directory: str = INPUT_DIRECTORY) -> dict:
+    """Load per-tournament battles that replace automatic tournament parsing."""
+    path = os.path.join(input_directory, MANUAL_BATTLE_OVERRIDES_FILE)
+    if not os.path.exists(path):
+        return {}
+
+    with open(path, "r", encoding="utf-8") as f:
+        config = json.load(f)
+
+    tournaments = config.get("tournaments") if isinstance(config, dict) else None
+    if not isinstance(tournaments, dict):
+        raise ValueError(f"{path} must contain a 'tournaments' object")
+
+    for tournament_id, override in tournaments.items():
+        if not isinstance(override, dict) or not isinstance(override.get("battles"), list):
+            raise ValueError(
+                f"Manual overrides for tournament {tournament_id} must have a 'battles' list"
+            )
+        table_ids = set()
+        for battle in override["battles"]:
+            if not isinstance(battle, dict) or not isinstance(battle.get("table_id"), str):
+                raise ValueError(
+                    f"Each manual battle for tournament {tournament_id} needs a string table_id"
+                )
+            table_id = battle["table_id"]
+            if not table_id:
+                raise ValueError(f"Manual battle table_id cannot be empty in tournament {tournament_id}")
+            if table_id in table_ids:
+                raise ValueError(f"Duplicate manual battle table_id {table_id} in tournament {tournament_id}")
+            table_ids.add(table_id)
+            unknown_fields = set(battle) - MANUAL_BATTLE_FIELDS - {"table_id"}
+            if unknown_fields:
+                raise ValueError(
+                    f"Unsupported manual battle fields in tournament {tournament_id}, "
+                    f"table {table_id}: {', '.join(sorted(unknown_fields))}"
+                )
+            if "result" in battle and (
+                not isinstance(battle["result"], list)
+                or len(battle["result"]) != 2
+                or any(type(score) is not int for score in battle["result"])
+            ):
+                raise ValueError(
+                    f"Manual result for tournament {tournament_id}, table {table_id} "
+                    "must be a pair of integers"
+                )
+
+    return tournaments
+
+
+def _parse_manual_battles(
+    tournament_id: str,
+    override: dict,
+    rows: list[dict],
+    submissions: dict,
+    tournament_dir: str,
+    input_directory: str,
+) -> list[Battle]:
+    """Parse only explicitly listed rows, overriding their player/army/result values."""
+    rows_by_table_id = {}
+    for row in rows:
+        table_id = row.get("Table ID")
+        if table_id in rows_by_table_id:
+            raise ValueError(f"Duplicate Table ID {table_id} in tournament {tournament_id}")
+        rows_by_table_id[table_id] = row
+
+    battles = []
+    for correction in override["battles"]:
+        table_id = correction["table_id"]
+        row = rows_by_table_id.get(table_id)
+        if row is None:
+            raise ValueError(
+                f"Manual battle table_id {table_id} not found in tournament {tournament_id}"
+            )
+
+        p1 = submissions.get(row.get("P1 User ID"))
+        p2 = submissions.get(row.get("P2 User ID"))
+        values = {}
+        for side, player in (("1", p1), ("2", p2)):
+            if player is not None:
+                values[f"player_{side}_id"] = player["player_id"]
+                values[f"player_{side}_name"] = player["player_name"]
+                use_secondary = row.get(f"P{side} Use Secondary List")
+                flag = True if use_secondary == "True" else False if use_secondary == "False" else None
+                values[f"army_{side}_id"], values[f"army_{side}_name"] = resolve_army(player, flag)
+
+        result = parse_result(row, submissions.get("tournament_type", "").upper() == "DMP")
+        if result is not None:
+            values["result"] = result
+        values.update({key: value for key, value in correction.items() if key != "table_id"})
+
+        required_fields = (
+            "player_1_id", "player_1_name", "player_2_id", "player_2_name", "result"
+        )
+        missing_fields = [key for key in required_fields if values.get(key) is None]
+        if missing_fields:
+            raise ValueError(
+                f"Manual battle tournament {tournament_id}, table {table_id} "
+                f"is missing required fields: {', '.join(missing_fields)}"
+            )
+
+        battles.append(Battle(
+            points=parse_points(submissions.get("points")),
+            army_1_id=values.get("army_1_id"),
+            army_2_id=values.get("army_2_id"),
+            army_1_name=values.get("army_1_name"),
+            army_2_name=values.get("army_2_name"),
+            result=tuple(values["result"]),
+            patch=parse_patch(submissions.get("patch")),
+            player_1_id=values["player_1_id"],
+            player_2_id=values["player_2_id"],
+            player_1_name=values["player_1_name"],
+            player_2_name=values["player_2_name"],
+            scenario=parse_scenario(row.get("Round Title"), tournament_dir, input_directory),
+            tournament_id=tournament_id,
+            tournament_name=row.get("Tournament Name"),
+            tournament_type=parse_tournament_type(submissions.get("tournament_type")),
+            format=INDIVIDUAL,
+            season=submissions["season"],
+        ))
+
+    return battles
 
 
 def _team_groups(rows: list[dict], user_teams: dict) -> dict:
@@ -306,30 +463,55 @@ def parse_doubles_battles(rows: list[dict], submissions: dict, user_teams: dict,
                     tournament_name=first_row.get("Tournament Name"),
                     tournament_type=parse_tournament_type(submissions.get("tournament_type")),
                     format=DOUBLES,
+                    season=submissions["season"],
                 ))
     return battles
 
 
 def get_tournament_kind(csv_path: str, json_path: str) -> str:
     rows = _read_finished_rows(csv_path)
+    submissions = load_submissions(json_path)
+    user_teams = load_user_teams(json_path)
+    if (submissions.get("tournament_type") or "").upper() == "DMP":
+        return TEAM if user_teams else INDIVIDUAL
     return classify_tournament(
         rows,
-        load_user_teams(json_path),
-        load_submissions(json_path).get("points"),
+        user_teams,
+        submissions.get("points"),
         rows[0].get("Tournament Name") if rows else "",
     )
 
 
-def parse_battles(csv_path: str, json_path: str, tournament_dir: str, input_directory: str = INPUT_DIRECTORY) -> list[Battle]:
+def parse_battles(
+    csv_path: str,
+    json_path: str,
+    tournament_dir: str,
+    input_directory: str = INPUT_DIRECTORY,
+    manual_overrides: dict | None = None,
+) -> list[Battle]:
     submissions = load_submissions(json_path)
     battles = []
 
+    rows = _read_finished_rows(csv_path)
+    if manual_overrides is None:
+        manual_overrides = load_manual_battle_overrides(input_directory)
+    tournament_id = rows[0].get("Tournament ID") if rows else None
     if parse_tournament_type(submissions.get("tournament_type")) is None:
         return []
 
-    rows = _read_finished_rows(csv_path)
+    if tournament_id in manual_overrides:
+        return _parse_manual_battles(
+            tournament_id,
+            manual_overrides[tournament_id],
+            rows,
+            submissions,
+            tournament_dir,
+            input_directory,
+        )
+
     user_teams = load_user_teams(json_path)
-    kind = classify_tournament(
+    is_dmp = (submissions.get("tournament_type") or "").upper() == "DMP"
+    kind = (TEAM if user_teams else INDIVIDUAL) if is_dmp else classify_tournament(
         rows, user_teams, submissions.get("points"), rows[0].get("Tournament Name") if rows else ""
     )
     if kind == TEAM_AGGREGATE:
@@ -366,7 +548,7 @@ def parse_battles(csv_path: str, json_path: str, tournament_dir: str, input_dire
                 print(f"WARNING: P2 user not found: {p2_user_id}")
                 continue
 
-            result = parse_result(row)
+            result = parse_result(row, is_dmp)
             if result is None:
                 print(f"WARNING: Invalid result in table {row.get('Table ID')}")
                 continue
@@ -391,17 +573,24 @@ def parse_battles(csv_path: str, json_path: str, tournament_dir: str, input_dire
                 tournament_name=row.get("Tournament Name"),
                 tournament_type=parse_tournament_type(submissions.get("tournament_type")),
                 format=kind,
+                season=submissions["season"],
             )
             battles.append(battle)
 
     return battles
 
 
-def import_battles(input_directory: str = INPUT_DIRECTORY, db_file: str = DB_FILE) -> list[Battle]:
+def import_battles(input_directory: str = INPUT_DIRECTORY, db_file: str = DB_FILE, eligible_ids: set[str] | None = None) -> list[Battle]:
     db = BattleDB(db_file)
     if not os.path.exists(input_directory):
         print(f"Directory {input_directory} does not exist.")
         return []
+    if eligible_ids is None and input_directory == INPUT_DIRECTORY:
+        eligible_ids = saved_eligible_tournament_ids()
+    if eligible_ids is not None:
+        db.battles = [battle for battle in db.battles if battle.tournament_id in eligible_ids]
+    manual_overrides = load_manual_battle_overrides(input_directory)
+    used_manual_overrides = set()
 
     for tournament_dir in os.listdir(input_directory):
         tournament_path = os.path.join(input_directory, tournament_dir)
@@ -410,12 +599,38 @@ def import_battles(input_directory: str = INPUT_DIRECTORY, db_file: str = DB_FIL
             json_file = os.path.join(tournament_path, JSON_FILE)
 
             if os.path.exists(csv_file) and os.path.exists(json_file):
+                input_id = tournament_input_id(json_file, csv_file)
+                if eligible_ids is not None and input_id not in eligible_ids:
+                    continue
                 kind = "NO_TOURNAMENT_TYPE" if parse_tournament_type(load_submissions(json_file).get("tournament_type")) is None else get_tournament_kind(csv_file, json_file)
-                battles = parse_battles(csv_file, json_file, tournament_dir, input_directory)
+                tournament_rows = _read_finished_rows(csv_file)
+                tournament_id = tournament_rows[0].get("Tournament ID") if tournament_rows else None
+                if tournament_id in manual_overrides:
+                    kind = "MANUAL_INDIVIDUAL"
+                    used_manual_overrides.add(tournament_id)
+                battles = parse_battles(
+                    csv_file, json_file, tournament_dir, input_directory, manual_overrides
+                )
                 print(f"Parsed {len(battles)} battles from {tournament_dir} [{kind}].")
+                raw_type = load_submissions(json_file).get("tournament_type") or ""
+                if input_id and (input_id in manual_overrides or raw_type.upper() == "DMP"):
+                    db.battles = [
+                        battle for battle in db.battles
+                        if battle.tournament_id != input_id
+                    ]
                 db.battles.extend(battles)
             else:
                 print(f"Missing CSV or JSON file in {tournament_dir}. Skipping.")
+
+    relevant_overrides = set(manual_overrides)
+    if eligible_ids is not None:
+        relevant_overrides &= eligible_ids
+    unused_overrides = relevant_overrides - used_manual_overrides
+    if unused_overrides:
+        raise ValueError(
+            "Manual battle overrides did not match tournament IDs in input data: "
+            + ", ".join(sorted(unused_overrides))
+        )
 
     db.save()
     print(f"Import finished. Database at {db_file} now contains {len(db.battles)} battles.")

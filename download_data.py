@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 import copy
+import csv
 import datetime
 import json
 import os
@@ -12,23 +13,29 @@ from battle_parser import (
     JSON_FILE,
     SCENARIOS_FILE,
     import_battles,
+    tournament_input_id,
 )
 from db import BattleDB
 
 
 START_DATE = datetime.datetime.strptime("05-12-2025", "%d-%m-%Y").date()
 END_DATE = datetime.datetime.strptime("30-11-2050", "%d-%m-%Y").date()
+SEASON_2027_START = datetime.date(2026, 11, 24)
+TOURNAMENT_REFRESH_WINDOW = datetime.timedelta(days=7)
 
 
 DATA_DIRECTORY = "data"
 METADATA_FILE = "metadata.json"
 MAIN_RANKING_FILE = "main_ranking.json"
+MAIN_RANKING_2027_FILE = "main_ranking_2027.json"
 ONLINE_RANKING_FILE = "online_ranking.json"
 MASTER_RANKING_FILE = "master_ranking.json"
 MASTER_TOURNAMENTS_FILE = "master_tournaments.json"
 BATTLES_FILE = "battles.json"
 ARMIES_FILE = "armies.json"
 PLAYER_PROFILES_FILE = "player_profiles.json"
+TOURNAMENTS_FILE = "tournaments.json"
+PLAYER_CITIES_FILE = "player_cities.json"
 ACCESS_TOKEN = "PASTER_TOKEN_HERE"
 INPUT_DIRECTORY = "input"
 
@@ -46,13 +53,17 @@ def transform_ranking_data(raw_data):
     for user in raw_data:
         user_data = get_user_tournaments(user.get("id"))
         user_tournament_data = parse_user_tournament_data(user_data)
+        player = user.get("user") or {}
 
         simplified_entry = {
             "place": user.get("place"),
             "score": user.get("score"),
-            "player_id": (user.get("user") or {}).get("id"),
-            "displayName": (user.get("user") or {}).get("displayName"),
-            "city_name": ((user.get("user") or {}).get("city") or {}).get("name"),
+            "player_id": player.get("id"),
+            "displayName": player.get("displayName"),
+            "city_name": (player.get("city") or {}).get("name"),
+            "city_id": (player.get("city") or {}).get("id"),
+            "city_country": (player.get("city") or {}).get("country"),
+            "discord_linked": bool(player.get("discordUsername")),
         }
         data_to_display = copy.copy(simplified_entry)
         data_to_display.update(user_tournament_data)
@@ -69,6 +80,9 @@ def transform_master_ranking_data(raw_data, master_tournaments_data, main_rankin
         user_master_results[(user.get("user") or {}).get("id")] = []
 
     for tournament in master_tournaments_data:
+        tournament_date = datetime.date.fromisoformat(tournament["master_date"])
+        if not START_DATE <= tournament_date < SEASON_2027_START:
+            continue
         for person in tournament.get("people", []):
             user_id = (person.get("user") or {}).get("id")
             result = person.get("result")
@@ -82,28 +96,30 @@ def transform_master_ranking_data(raw_data, master_tournaments_data, main_rankin
 
     for user in raw_data:
         user_id = (user.get("user") or {}).get("id")
-        place = user.get("place")
-        score = user.get("score")
+        results = user_master_results[user_id]
+        if len(results) < 3:
+            continue
+        score = sum(results[:3])
         tie_breaker = user_main_score.get(user_id, 0)
         simplified_entry = {
-            "place": place,
+            "place": None,
             "score": score,
             "tie_breaker": tie_breaker,
             "displayName": (user.get("user") or {}).get("displayName"),
             "city_name": ((user.get("user") or {}).get("city") or {}).get("name"),
-            "top_2": user_master_results.get(user_id, [0, 0, 0])[0] + user_master_results.get(user_id, [0, 0, 0])[1],
-            "master_1": user_master_results.get(user_id, [0, 0, 0])[0],
-            "master_2": user_master_results.get(user_id, [0, 0, 0])[1],
-            "master_3": user_master_results.get(user_id, [0, 0, 0])[2],
+            "top_2": sum(results[:2]),
+            "master_1": results[0],
+            "master_2": results[1],
+            "master_3": results[2],
         }
         data_to_display = copy.copy(simplified_entry)
         transformed.append(data_to_display)
 
-    transformed.sort(key=lambda entry: (entry["place"], -entry["tie_breaker"]))
+    transformed.sort(key=lambda entry: (entry["score"], -entry["tie_breaker"]))
 
     prev_entry = None
     for index, entry in enumerate(transformed):
-        if prev_entry is not None and entry["place"] == prev_entry["place"] and entry["tie_breaker"] == prev_entry["tie_breaker"]:
+        if prev_entry is not None and entry["score"] == prev_entry["score"] and entry["tie_breaker"] == prev_entry["tie_breaker"]:
             entry["place"] = prev_entry["place"]
         else:
             entry["place"] = index + 1
@@ -118,13 +134,17 @@ def transform_online_ranking_data(raw_data):
     for user in raw_data:
         user_data = get_user_online_tournaments(user.get("id"))
         user_tournament_data = parse_user_online_tournament_data(user_data)
+        player = user.get("user") or {}
 
         simplified_entry = {
             "place": user.get("place"),
             "score": user.get("score"),
-            "player_id": (user.get("user") or {}).get("id"),
-            "displayName": (user.get("user") or {}).get("displayName"),
-            "city_name": ((user.get("user") or {}).get("city") or {}).get("name"),
+            "player_id": player.get("id"),
+            "displayName": player.get("displayName"),
+            "city_name": (player.get("city") or {}).get("name"),
+            "city_id": (player.get("city") or {}).get("id"),
+            "city_country": (player.get("city") or {}).get("country"),
+            "discord_linked": bool(player.get("discordUsername")),
         }
         data_to_display = copy.copy(simplified_entry)
         data_to_display.update(user_tournament_data)
@@ -153,6 +173,24 @@ def get_main_ranking_data():
     return res_json
 
 
+def get_main_ranking_2027_data():
+    print("Downloading 2027 main ranking data from Champions Hub API...")
+    url = "https://api.championshub.app/api/ranking/results/mesbg-pl?season=33&cityId=PL"
+    response = requests.get(url, headers=headers, cookies=cookies, timeout=15)
+    response.raise_for_status()
+    return [
+        {
+            "player_id": player["user"]["id"],
+            "displayName": player["user"].get("displayName"),
+            "place": player.get("place"),
+            "city_id": (player["user"].get("city") or {}).get("id"),
+            "city_name": (player["user"].get("city") or {}).get("name"),
+            "city_country": (player["user"].get("city") or {}).get("country"),
+        }
+        for player in response.json()
+    ]
+
+
 def get_online_ranking_data():
     print("Downloading online ranking data from Champions Hub API...")
     url_details = f"https://api.championshub.app/api/ranking/results/mesbg-pl-online?season=30&cityId=PL/"
@@ -177,15 +215,15 @@ def parse_user_tournament_data(user_tournaments):
     challenger_values = []
 
     for tournament in user_tournaments:
-        tournament_type = tournament.get("rankingEventType", {}).get("name", "")
+        tournament_type = (tournament.get("rankingEventType") or {}).get("name", "").upper()
         score = tournament.get("rankingResult")
-        if tournament_type == "master":
+        if tournament_type == "MASTER":
             master_values.append(score)
         elif tournament_type == "DMP":
-            master_values.append(score)
-        elif tournament_type == "lokal":
+            master_values.append(30)
+        elif tournament_type == "LOKAL":
             local_values.append(score)
-        elif tournament_type == "challenger":
+        elif tournament_type == "CHALLENGER":
             challenger_values.append(score)
 
     challenger_values.sort(reverse=True)
@@ -260,24 +298,21 @@ def get_finished_events():
     skip = 0
     while True:
         payload = {"ranking": None, "statuses": ["FINISHED"], "take": 100, "skip": skip}
-        try:
-            r = requests.post(
-                "https://api.championshub.app/api/event-management/list",
-                headers=headers,
-                cookies=cookies,
-                json=payload,
-                timeout=15,
-            )
-            data = r.json().get("data", [])
-            if not data:
-                break
-            all_events_raw.extend(data)
-            if len(data) < 100:
-                break
-            skip += 100
-        except Exception as e:
-            print(f"Error fetching event list: {e}")
+        r = requests.post(
+            "https://api.championshub.app/api/event-management/list",
+            headers=headers,
+            cookies=cookies,
+            json=payload,
+            timeout=15,
+        )
+        r.raise_for_status()
+        data = r.json()["data"]
+        if not data:
             break
+        all_events_raw.extend(data)
+        if len(data) < 100:
+            break
+        skip += 100
     return all_events_raw
 
 
@@ -288,23 +323,28 @@ def get_polish_events(all_events_raw):
         raw_start = ev.get("startsAt")
         t_points = ev.get("pointsLimit")
         if raw_start and city_data.get("country") == "PL":
-            corrected_date = (pd.to_datetime(raw_start) + pd.Timedelta(hours=2)).date()
+            corrected_date = pd.to_datetime(raw_start, utc=True).tz_convert("Europe/Warsaw").date()
             if START_DATE <= corrected_date <= END_DATE:
                 t_id = ev.get("id")
                 t_name = ev.get("name")
                 ranking_event_type = ev.get("rankingEventType")
                 tournament_type = ranking_event_type.get("name").upper() if ranking_event_type else None
+                if tournament_type not in {"LOKAL", "CHALLENGER", "MASTER", "DMP", "ONLINE"}:
+                    continue
                 target_events.append({
                     "id": t_id,
                     "name": t_name,
                     "date": corrected_date,
+                    "ends_at": ev.get("endsAt"),
                     "points": t_points,
                     "tournament_type": tournament_type,
+                    "city": {"id": city_data.get("id"), "name": city_data.get("name"),
+                             "country": city_data.get("country")},
                 })
     return target_events
 
 
-def download_master_tournaments_data(polish_events=None):
+def download_master_tournaments_data(polish_events=None, submissions_by_id=None):
     print("Downloading masters data from Champions Hub API...")
     if polish_events is None:
         all_events = get_finished_events()
@@ -320,31 +360,77 @@ def download_master_tournaments_data(polish_events=None):
         master_points = master["points"]
         url_details = f"https://api.championshub.app/api/submission/{master_id}"
         try:
-            res_details = requests.get(url_details, headers=headers, cookies=cookies, timeout=15)
-            if res_details.status_code == 200:
+            res_json = (submissions_by_id or {}).get(master_id)
+            if res_json is None:
+                res_details = requests.get(url_details, headers=headers, cookies=cookies, timeout=15)
+                if res_details.status_code != 200:
+                    print(f"Error downloading master tournament {master_name} ({master_id}): HTTP {res_details.status_code}")
+                    continue
                 res_json = res_details.json()
-                people = res_json.get("people", [])
-                people_data = []
-                for person in people:
-                    user = person.get("user", {})
-                    result = person.get("finalResult", {}).get("place", None)
-                    if result:
-                        people_data.append({
-                            "user": user,
-                            "result": result
-                        })
+            people = res_json.get("people", [])
+            people_data = []
+            for person in people:
+                user = person.get("user", {})
+                result = (person.get("finalResult") or {}).get("place")
+                if result:
+                    people_data.append({
+                        "user": user,
+                        "result": result
+                    })
 
-                master_tournaments_data.append({
-                    "master_id": master_id,
-                    "master_name": master_name,
-                    "master_date": str(master_date),
-                    "master_points": master_points,
-                    "people": people_data
-                })
+            master_tournaments_data.append({
+                "master_id": master_id,
+                "master_name": master_name,
+                "master_date": str(master_date),
+                "master_points": master_points,
+                "people": people_data
+            })
         except Exception as e:
             print(f"Error downloading master tournament {master_name} ({master_id}): {e}")
 
     return master_tournaments_data
+
+
+def load_cached_tournament(ev, directory):
+    raw_end = ev.get("ends_at")
+    if not raw_end:
+        return None
+    try:
+        if not isinstance(raw_end, str):
+            raise ValueError("expected an ISO date string")
+        end = datetime.datetime.fromisoformat(raw_end.replace("Z", "+00:00"))
+        if end.tzinfo is None:
+            raise ValueError("missing timezone")
+    except (TypeError, ValueError) as e:
+        print(f"Invalid end date for {ev['name']} ({ev['id']}): {e}; downloading again")
+        return None
+    if datetime.datetime.now(datetime.timezone.utc) - end <= TOURNAMENT_REFRESH_WINDOW:
+        return None
+
+    submission_path = os.path.join(directory, JSON_FILE)
+    csv_path = os.path.join(directory, CSV_FILE)
+    if not os.path.isfile(submission_path) or not os.path.isfile(csv_path):
+        return None
+    if any(os.path.getmtime(path) < end.timestamp() for path in (submission_path, csv_path)):
+        return None
+    try:
+        with open(submission_path, encoding="utf-8") as f:
+            submission = json.load(f)
+        if not isinstance(submission, dict) or not isinstance(submission.get("people"), list):
+            raise ValueError("invalid submission data")
+        with open(csv_path, encoding="utf-8", newline="") as f:
+            rows = csv.DictReader(f)
+            if not rows.fieldnames and submission.get("tournament_id") == ev["id"]:
+                return submission
+            if not rows.fieldnames or "Tournament ID" not in rows.fieldnames:
+                raise ValueError("missing tournament ID column")
+            ids = {row["Tournament ID"] for row in rows}
+        if ids != {str(ev["id"])}:
+            raise ValueError("missing or mismatched tournament ID")
+        return submission
+    except (OSError, UnicodeError, json.JSONDecodeError, csv.Error, ValueError) as e:
+        print(f"Cannot use cached data for {ev['name']} ({ev['id']}): {e}; downloading again")
+        return None
 
 
 def download_tournament_battles_data(polish_events=None):
@@ -353,30 +439,53 @@ def download_tournament_battles_data(polish_events=None):
         all_events = get_finished_events()
         polish_events = get_polish_events(all_events)
 
+    submissions_by_id = {}
     for ev in polish_events:
         t_id = ev["id"]
         t_name = ev["name"]
         t_date = ev["date"]
         t_points = ev["points"]
         tournament_type = ev["tournament_type"]
+        season = 2027 if t_date >= SEASON_2027_START else 2026
 
-        print(f"Downloading battles for event: {t_name}")
         folder_name = "".join(x for x in t_name if x.isalnum())
         t_directory = os.path.join(INPUT_DIRECTORY, folder_name)
+        cached_submission = load_cached_tournament(ev, t_directory)
+        if cached_submission is not None:
+            patch_obj = select_patch(t_date)
+            metadata = {
+                "points": t_points,
+                "patch": patch_obj.name if patch_obj else None,
+                "tournament_type": tournament_type,
+                "season": season,
+            }
+            if any(cached_submission.get(key) != value for key, value in metadata.items()):
+                cached_submission.update(metadata)
+                with open(os.path.join(t_directory, JSON_FILE), "w", encoding="utf-8") as f:
+                    json.dump(cached_submission, f, indent=4)
+            submissions_by_id[t_id] = cached_submission
+            print(f"Using cached data for event: {t_name}")
+            continue
+
+        print(f"Downloading battles for event: {t_name}")
         os.makedirs(t_directory, exist_ok=True)
 
         url_rounds_list = f"https://api.championshub.app/api/round/{t_id}"
         all_pairings_flat = []
+        rounds_complete = False
         try:
             res_rounds = requests.get(url_rounds_list, headers=headers, cookies=cookies, timeout=15)
             if res_rounds.status_code == 200:
                 rounds_list = res_rounds.json().get("rounds", [])
+                rounds_complete = True
                 for rd in rounds_list:
                     r_id = rd.get("id")
                     r_title = rd.get("title") or rd.get("name")
                     url_details = f"https://api.championshub.app/api/round/{t_id}/{r_id}"
                     res_details = requests.get(url_details, headers=headers, cookies=cookies, timeout=15)
                     if res_details.status_code != 200:
+                        print(f"Error fetching round {r_id} for {t_name} ({t_id}): HTTP {res_details.status_code}")
+                        rounds_complete = False
                         continue
                     round_data = res_details.json()
                     pairings = round_data.get("pairings", [])
@@ -409,22 +518,31 @@ def download_tournament_battles_data(polish_events=None):
                             "Added by User ID": p.get("addedByUserId"),
                         }
                         all_pairings_flat.append(row)
+            else:
+                print(f"Error fetching rounds for {t_name} ({t_id}): HTTP {res_rounds.status_code}")
         except Exception as e:
+            rounds_complete = False
             print(f"Error fetching rounds for {t_name} ({t_id}): {e}")
-
-        final_pairings_history = pd.DataFrame(all_pairings_flat)
-        csv_path = os.path.join(t_directory, CSV_FILE)
-        final_pairings_history.to_csv(csv_path, index=False)
 
         url_submission = f"https://api.championshub.app/api/submission/{t_id}"
         try:
             res_sub = requests.get(url_submission, headers=headers, cookies=cookies, timeout=15)
             if res_sub.status_code == 200:
                 res_json = res_sub.json()
+                submissions_by_id[t_id] = res_json
                 res_json["points"] = t_points
                 patch_obj = select_patch(t_date)
                 res_json["patch"] = patch_obj.name if patch_obj else None
                 res_json["tournament_type"] = tournament_type
+                res_json["season"] = season
+                res_json["tournament_id"] = t_id
+
+                if not rounds_complete:
+                    continue
+
+                final_pairings_history = pd.DataFrame(all_pairings_flat)
+                csv_path = os.path.join(t_directory, CSV_FILE)
+                final_pairings_history.to_csv(csv_path, index=False)
 
                 rounds_path = os.path.join(t_directory, SCENARIOS_FILE)
                 if not os.path.exists(rounds_path):
@@ -434,18 +552,73 @@ def download_tournament_battles_data(polish_events=None):
                 submission_path = os.path.join(t_directory, JSON_FILE)
                 with open(submission_path, "w", encoding="utf-8") as f:
                     json.dump(res_json, f, indent=4)
+            else:
+                print(f"Error fetching submissions for {t_name} ({t_id}): HTTP {res_sub.status_code}")
         except Exception as e:
             print(f"Error fetching submissions for {t_name} ({t_id}): {e}")
+    return submissions_by_id
 
 
-def parse_and_store_battles(input_directory=INPUT_DIRECTORY, db_file=None):
+def build_tournament_records(events, submissions_by_id):
+    """Keep tournament towns and ranked participant IDs; missing submissions remain unknown."""
+    records = []
+    for event in events:
+        submission = submissions_by_id.get(event["id"])
+        participant_ids = None
+        if submission is not None:
+            participant_ids = sorted({
+                person["user"]["id"]
+                for person in submission.get("people", [])
+                if (person.get("user") or {}).get("id") and (person.get("finalResult") or {}).get("place")
+            })
+        records.append({
+            "tournament_id": event["id"],
+            "name": event["name"],
+            "date": str(event["date"]),
+            "tournament_type": "MASTER" if event["tournament_type"] == "DMP" else event["tournament_type"],
+            "city": event["city"],
+            "player_ids": participant_ids,
+        })
+    return records
+
+
+def build_player_cities(main_ranking, online_ranking, tournaments, submissions_by_id):
+    """Use ranking cities when available, otherwise the most recent submission snapshot."""
+    cities = {}
+    for tournament in sorted(tournaments, key=lambda event: event["date"]):
+        submission = submissions_by_id.get(tournament["tournament_id"])
+        if submission is None:
+            continue
+        for person in submission.get("people", []):
+            user = person.get("user") or {}
+            if user.get("id"):
+                city = user.get("city")
+                cities[user["id"]] = ({key: city.get(key) for key in ("id", "name", "country")}
+                                      if city else None)
+    for ranking in (online_ranking, main_ranking):
+        for player in ranking:
+            if player.get("player_id"):
+                player_id = player["player_id"]
+                name = player.get("city_name")
+                previous = cities.get(player_id) or {}
+                same_city = name and previous.get("name") == name
+                cities[player_id] = (
+                    {"id": player.get("city_id") or (previous.get("id") if same_city else None),
+                     "name": name,
+                     "country": player.get("city_country") or (previous.get("country") if same_city else None)}
+                    if name else None
+                )
+    return cities
+
+
+def parse_and_store_battles(input_directory=INPUT_DIRECTORY, db_file=None, eligible_ids=None):
     if db_file is None:
         db_file = os.path.join(DATA_DIRECTORY, BATTLES_FILE)
     print(f"Parsing and storing battles from {input_directory} to {db_file}...")
-    import_battles(input_directory=input_directory, db_file=db_file)
+    import_battles(input_directory=input_directory, db_file=db_file, eligible_ids=eligible_ids)
 
 
-def extract_armies_data(battles_file=None, input_directory=INPUT_DIRECTORY):
+def extract_armies_data(battles_file=None, input_directory=INPUT_DIRECTORY, eligible_ids=None):
     if battles_file is None:
         battles_file = os.path.join(DATA_DIRECTORY, BATTLES_FILE)
 
@@ -470,6 +643,9 @@ def extract_armies_data(battles_file=None, input_directory=INPUT_DIRECTORY):
         for tournament_dir in os.listdir(input_directory):
             sub_path = os.path.join(input_directory, tournament_dir, JSON_FILE)
             if os.path.exists(sub_path):
+                csv_path = os.path.join(input_directory, tournament_dir, CSV_FILE)
+                if eligible_ids is not None and tournament_input_id(sub_path, csv_path) not in eligible_ids:
+                    continue
                 try:
                     with open(sub_path, "r", encoding="utf-8") as f:
                         sub_data = json.load(f)
@@ -537,9 +713,16 @@ def _finalize(table, sort_key=None):
     return rows
 
 
-def build_player_profiles(battles, main_ranking):
+def build_player_profiles(battles, main_ranking, online_ranking=None):
     """Per-player stats; winrates count each draw as half a win."""
     place_by_id = {u.get("player_id"): u.get("place") for u in main_ranking}
+    discord_linked_by_id = {}
+    for ranking_player in [*main_ranking, *(online_ranking or [])]:
+        player_id = ranking_player.get("player_id")
+        if player_id:
+            discord_linked_by_id[player_id] = (
+                discord_linked_by_id.get(player_id, False) or bool(ranking_player.get("discord_linked"))
+            )
     names = {}
     players = {}
 
@@ -597,6 +780,7 @@ def build_player_profiles(battles, main_ranking):
             "player_id": player_id,
             "displayName": names.get(player_id),
             "main_ranking_place": place_by_id.get(player_id),
+            "discord_linked": discord_linked_by_id.get(player_id, False),
             "games_played": total["games"],
             "wins": total["wins"],
             "draws": total["draws"],
@@ -648,30 +832,54 @@ def download_data(force=False):
         main_ranking_json = get_main_ranking_data()
         save_data(main_ranking_json, MAIN_RANKING_FILE)
 
+        ranking_2027 = get_main_ranking_2027_data()
+        save_data(ranking_2027, MAIN_RANKING_2027_FILE)
+        rankings_by_season = {2026: main_ranking_json, 2027: ranking_2027}
+
         online_ranking_json = get_online_ranking_data()
         save_data(online_ranking_json, ONLINE_RANKING_FILE)
 
         all_events_raw = get_finished_events()
         polish_events = get_polish_events(all_events_raw)
 
-        master_tournaments_data = download_master_tournaments_data(polish_events)
+        submissions_by_id = download_tournament_battles_data(polish_events)
+        master_tournaments_data = download_master_tournaments_data(polish_events, submissions_by_id)
         save_data(master_tournaments_data, MASTER_TOURNAMENTS_FILE)
 
         master_ranking_json = get_master_ranking_data(master_tournaments_data, main_ranking_json)
         save_data(master_ranking_json, MASTER_RANKING_FILE)
 
-        download_tournament_battles_data(polish_events)
-        parse_and_store_battles(INPUT_DIRECTORY, os.path.join(DATA_DIRECTORY, BATTLES_FILE))
+        tournaments = build_tournament_records(polish_events, submissions_by_id)
+        save_data(tournaments, TOURNAMENTS_FILE)
+        player_cities = build_player_cities(main_ranking_json, online_ranking_json, tournaments, submissions_by_id)
+        save_data(player_cities, PLAYER_CITIES_FILE)
+        eligible_ids = {event["id"] for event in polish_events}
+        parse_and_store_battles(INPUT_DIRECTORY, os.path.join(DATA_DIRECTORY, BATTLES_FILE), eligible_ids)
 
         armies_data = extract_armies_data(
             battles_file=os.path.join(DATA_DIRECTORY, BATTLES_FILE),
             input_directory=INPUT_DIRECTORY,
+            eligible_ids=eligible_ids,
         )
         save_data(armies_data, ARMIES_FILE)
 
         with open(os.path.join(DATA_DIRECTORY, BATTLES_FILE), "r", encoding="utf-8") as f:
             battles_data = json.load(f)
-        save_data(build_player_profiles(battles_data, main_ranking_json), PLAYER_PROFILES_FILE)
+        from achievements import calculate_achievements
+        from store import load_tournament_results
+
+        profiles = build_player_profiles(battles_data, main_ranking_json, online_ranking_json)
+        save_data(calculate_achievements(
+            profiles,
+            load_tournament_results(INPUT_DIRECTORY, main_ranking_json, eligible_ids, rankings_by_season),
+            tournaments,
+            main_ranking=main_ranking_json,
+            rankings_by_season=rankings_by_season,
+            battles=battles_data,
+            armies=armies_data,
+            player_cities=player_cities,
+        ),
+                  PLAYER_PROFILES_FILE)
 
         metadata["time"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
         save_metadata(metadata)

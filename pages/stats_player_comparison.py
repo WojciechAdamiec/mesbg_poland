@@ -1,13 +1,21 @@
+from urllib.parse import parse_qsl, urlencode
+
 import dash
 import dash_mantine_components as dmc
-from dash import Input, Output, callback
+from dash import Input, Output, callback, ctx, dcc, no_update
+from achievements import format_achievement_count
+from battle import TournamentType
 from download_data import _winrate
+from player_profile_stats import ArmyExpertise, seasonal_trophies, unique_trophy_players
 from store import (
+    load_armies,
     load_battles,
     load_main_ranking,
+    load_main_ranking_2027,
     load_master_ranking,
     load_online_ranking,
     load_player_profiles,
+    load_tournament_results,
 )
 
 
@@ -20,19 +28,17 @@ player_options = [
     for p in sorted(profiles, key=lambda item: (item["displayName"] or "").strip().lower())
 ]
 
-main_place_by_id = {r.get("player_id"): r.get("place") for r in load_main_ranking()}
+main_ranking = load_main_ranking()
+main_place_by_id = {r.get("player_id"): r.get("place") for r in main_ranking}
 online_place_by_id = {r.get("player_id"): r.get("place") for r in load_online_ranking()}
 # The master ranking has no player ids, so it is matched by display name.
 master_place_by_name = {(r.get("displayName") or "").strip(): r.get("place") for r in load_master_ranking()}
 
 # Doubles are excluded, consistently with player profiles.
 battles = [b for b in load_battles() if b.get("format") != "DOUBLES" and b.get("result") and len(b["result"]) == 2]
-events_by_player = {}
-for _battle in battles:
-    for _side in ("1", "2"):
-        _pid = _battle.get(f"player_{_side}_id")
-        if _pid:
-            events_by_player.setdefault(_pid, {})[_battle.get("tournament_id")] = _battle.get("tournament_type")
+trophies_by_player = seasonal_trophies(battles, {2026: main_ranking, 2027: load_main_ranking_2027()})
+army_expertise = ArmyExpertise(battles, main_ranking, load_armies())
+tournament_results_by_player = load_tournament_results()
 
 
 master_record_by_player = {}
@@ -57,7 +63,8 @@ def _master_winrate(player_id):
 
 
 def _events_of_type(player_id, tournament_type):
-    return sum(1 for t in events_by_player.get(player_id, {}).values() if t == tournament_type)
+    results = tournament_results_by_player.get(player_id)
+    return results.events.get(TournamentType[tournament_type], 0) if results else 0
 
 HIGHLIGHT = {"backgroundColor": "#14532d", "fontWeight": 700}
 TABLE_STYLE = {"backgroundColor": "#1a1b2e", "color": "white"}
@@ -104,21 +111,27 @@ def _metric_row(label, value_a, value_b, higher_is_better, names, display=None):
 
 
 def _comparison_table(first_header, names, rows):
-    return dmc.Table(
-        [
-            dmc.TableThead(
-                dmc.TableTr(
-                    [dmc.TableTh(first_header, style={"width": "170px"}),
-                     dmc.TableTh(names[0], style={"width": "190px"}),
-                     dmc.TableTh(names[1], style={"width": "190px"}),
-                     dmc.TableTh("Who is better")]
-                )
-            ),
-            dmc.TableTbody(rows),
-        ],
-        withTableBorder=True,
-        withRowBorders=True,
-        style={**TABLE_STYLE, "tableLayout": "fixed", "maxWidth": "900px"},
+    return dmc.ScrollArea(
+        dmc.Table(
+            [
+                dmc.TableThead(
+                    dmc.TableTr(
+                        [dmc.TableTh(first_header, style={"width": "170px"}),
+                         dmc.TableTh(names[0], style={"width": "190px"}),
+                         dmc.TableTh(names[1], style={"width": "190px"}),
+                         dmc.TableTh("Who is better")]
+                    )
+                ),
+                dmc.TableTbody(rows),
+            ],
+            withTableBorder=True,
+            withRowBorders=True,
+            style={**TABLE_STYLE, "tableLayout": "fixed", "maxWidth": "900px"},
+        ),
+        type="auto",
+        scrollbars="x",
+        offsetScrollbars=True,
+        className="table-scroll-area",
     )
 
 
@@ -145,20 +158,26 @@ def _army_table(profile_a, profile_b, names):
                  dmc.TableTd(_fmt(_army_label(army_b)))]
             )
         )
-    return dmc.Table(
-        [
-            dmc.TableThead(
-                dmc.TableTr(
-                    [dmc.TableTh("Rank", style={"width": "170px"}),
-                     dmc.TableTh(names[0], style={"width": "300px"}),
-                     dmc.TableTh(names[1], style={"width": "300px"})]
-                )
-            ),
-            dmc.TableTbody(rows),
-        ],
-        withTableBorder=True,
-        withRowBorders=True,
-        style={**TABLE_STYLE, "tableLayout": "fixed", "maxWidth": "900px"},
+    return dmc.ScrollArea(
+        dmc.Table(
+            [
+                dmc.TableThead(
+                    dmc.TableTr(
+                        [dmc.TableTh("Rank", style={"width": "170px"}),
+                         dmc.TableTh(names[0], style={"width": "300px"}),
+                         dmc.TableTh(names[1], style={"width": "300px"})]
+                    )
+                ),
+                dmc.TableTbody(rows),
+            ],
+            withTableBorder=True,
+            withRowBorders=True,
+            style={**TABLE_STYLE, "tableLayout": "fixed", "maxWidth": "900px"},
+        ),
+        type="auto",
+        scrollbars="x",
+        offsetScrollbars=True,
+        className="table-scroll-area",
     )
 
 def _history(id_a, id_b, name_a, name_b):
@@ -255,6 +274,7 @@ def _select(select_id, label):
 
 layout = dmc.Box(
     [
+        dcc.Location(id="pc-location", refresh=False),
         dmc.Title("Player Comparison", order=2, mb="md"),
         dmc.Box(
             dmc.Grid([_select("pc-player-a", "Player A"), _select("pc-player-b", "Player B")]),
@@ -264,6 +284,41 @@ layout = dmc.Box(
         dmc.Box(id="pc-output"),
     ]
 )
+
+
+def _sync_players_url(search, player_a, player_b, triggered_id):
+    params = parse_qsl((search or "").lstrip("?"), keep_blank_values=True)
+    if triggered_id in ("pc-player-a", "pc-player-b"):
+        params = [(key, value) for key, value in params if key not in ("player_a", "player_b")]
+        if player_a:
+            params.append(("player_a", player_a))
+        if player_b:
+            params.append(("player_b", player_b))
+        query = urlencode(params)
+        new_search = f"?{query}" if query else ""
+        return (new_search if new_search != (search or "") else no_update), no_update, no_update
+
+    url_a = next((value for key, value in params if key == "player_a"), None)
+    url_b = next((value for key, value in params if key == "player_b"), None)
+    selected_a = url_a if url_a in profile_by_id else None
+    selected_b = url_b if url_b in profile_by_id else None
+    return (
+        no_update,
+        selected_a if selected_a != player_a else no_update,
+        selected_b if selected_b != player_b else no_update,
+    )
+
+
+@callback(
+    Output("pc-location", "search"),
+    Output("pc-player-a", "value"),
+    Output("pc-player-b", "value"),
+    Input("pc-location", "search"),
+    Input("pc-player-a", "value"),
+    Input("pc-player-b", "value"),
+)
+def sync_players_url(search, player_a, player_b):
+    return _sync_players_url(search, player_a, player_b, ctx.triggered_id)
 
 
 @callback(
@@ -297,6 +352,14 @@ def update_comparison(id_a, id_b):
         _metric_row("Main ranking place", main_place_by_id.get(id_a), main_place_by_id.get(id_b), False, names),
         _metric_row("Master ranking place", master_place_by_name.get(name_a), master_place_by_name.get(name_b), False, names),
         _metric_row("Online ranking place", online_place_by_id.get(id_a), online_place_by_id.get(id_b), False, names),
+        _metric_row("Tournament locations", profile_a.get("locations_count"),
+                    profile_b.get("locations_count"), True, names),
+        _metric_row("Player trophies", len(unique_trophy_players(trophies_by_player.get(id_a, {}))),
+                    len(unique_trophy_players(trophies_by_player.get(id_b, {}))), True, names),
+        _metric_row("Army specialties", len(army_expertise.for_player(id_a, profile_a["army_lists"])),
+                    len(army_expertise.for_player(id_b, profile_b["army_lists"])), True, names),
+        _metric_row("Achievements unlocked", profile_a.get("achievements_count"),
+                    profile_b.get("achievements_count"), True, names, display=format_achievement_count),
     ]
     return dmc.Stack(
         [

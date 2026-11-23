@@ -4,12 +4,15 @@ from zoneinfo import ZoneInfo
 
 import dash
 import dash_mantine_components as dmc
-from dash import Dash
+from dash import Dash, Input, Output, State, callback, ctx
+from dash_iconify import DashIconify
 import download_data
 
-# Dash Mantine Components v3 requires React 19.
-dash._dash_renderer._set_react_version("19.2.4")
+if __name__ == "__main__":
+    download_data.download_data()
 
+# Dash Mantine Components v3 requires React 19
+dash._dash_renderer._set_react_version("19.2.4")
 
 APP_TITLE = "MESBG Poland"
 APP_DESCRIPTION = "Data collector and visualiser for Polish MESBG League tournaments"
@@ -48,23 +51,45 @@ def get_last_update_text():
 nav = dmc.Box([
     dmc.NavLink(label="Home", href="/", active="exact"),
     dmc.NavLink(
-        label="Rankings",
+        label="2026 Rankings",
         active="children",
         childrenOffset=28,
         children=[
             dmc.NavLink(
                 label="Main Ranking",
-                href="/ranking_main",
+                href="/ranking_main_2026",
                 active="exact-with-search",
             ),
             dmc.NavLink(
                 label="Master Ranking",
-                href="/ranking_master",
+                href="/ranking_master_2026",
                 active="exact-with-search",
             ),
             dmc.NavLink(
                 label="Online Ranking",
-                href="/ranking_online",
+                href="/ranking_online_2026",
+                active="exact-with-search",
+            ),
+        ],
+    ),
+    dmc.NavLink(
+        label="2027 Rankings",
+        active="children",
+        childrenOffset=28,
+        children=[
+            dmc.NavLink(
+                label="Main Ranking",
+                href="/ranking_main_2027",
+                active="exact-with-search",
+            ),
+            dmc.NavLink(
+                label="Master Ranking",
+                href="/ranking_master_2027",
+                active="exact-with-search",
+            ),
+            dmc.NavLink(
+                label="Online Ranking",
+                href="/ranking_online_2027",
                 active="exact-with-search",
             ),
         ],
@@ -80,8 +105,13 @@ nav = dmc.Box([
                 active="exact-with-search",
             ),
             dmc.NavLink(
-                label="Army List Winrates",
+                label="Armies Winrates",
                 href="/stats/army_list_winrates",
+                active="exact-with-search",
+            ),
+            dmc.NavLink(
+                label="Armies Best Players",
+                href="/stats/armies_best_players",
                 active="exact-with-search",
             ),
             dmc.NavLink(
@@ -138,7 +168,8 @@ top_bar = dmc.Box(
                     "textTransform": "uppercase",
                     "textShadow": "0 0 2px #00ffff, 0 0 2px #00ffff, 0 0 3px #00ffff",
                     "margin": "2px",
-                }
+                },
+                className="metro-title",
             ),
             dmc.Text(
                 get_last_update_text(),
@@ -148,10 +179,22 @@ top_bar = dmc.Box(
                     "fontFamily": "Orbitron, monospace",
                     "opacity": 0.8,
                 },
+                className="metro-update",
+            ),
+            dmc.ActionIcon(
+                DashIconify(icon="tabler:menu-2", width=22),
+                id="mobile-nav-toggle",
+                className="mobile-nav-toggle",
+                n_clicks=0,
+                variant="subtle",
+                color="cyan",
+                size=42,
+                attributes={"aria-label": "Open navigation"},
             ),
         ],
         justify="space-between",
         align="center",
+        className="metro-header-content",
         style={"width": "100%", "height": "100%"},
     ),
     className="metro-header",
@@ -164,13 +207,55 @@ app.layout = dmc.MantineProvider(
             dmc.AppShellHeader(top_bar),
             dmc.AppShellNavbar(nav),
             dmc.AppShellMain(dash.page_container),
+            dmc.Drawer(
+                dmc.Box(nav.children, className="mobile-nav"),
+                id="mobile-nav-drawer",
+                opened=False,
+                title="Navigation",
+                position="left",
+                size=280,
+                padding="md",
+                zIndex=1100,
+                styles={
+                    "content": {
+                        "background": "linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 100%)",
+                        "borderRight": "2px solid #009ee0",
+                        "color": "#ffffff",
+                    },
+                    "header": {
+                        "backgroundColor": "#0a0e1a",
+                        "borderBottom": "1px solid #009ee0",
+                    },
+                    "title": {
+                        "color": "#00ffff",
+                        "fontFamily": "Orbitron, monospace",
+                    },
+                    "body": {
+                        "backgroundColor": "#0d1421",
+                        "color": "#ffffff",
+                    },
+                },
+            ),
         ],
         padding="xl",
-        header={"height": 70},
-        navbar={"width": 220},
+        header={"height": 76},
+        navbar={"width": 220, "breakpoint": "1000px", "collapsed": {"mobile": True}},
     )
 )
 
+
+@callback(
+    Output("mobile-nav-drawer", "opened"),
+    Input("mobile-nav-toggle", "n_clicks"),
+    Input("_pages_location", "pathname"),
+    State("mobile-nav-drawer", "opened"),
+    prevent_initial_call=True,
+)
+def toggle_mobile_navigation(_, _pathname, opened):
+    if ctx.triggered_id == "_pages_location":
+        return False
+    return not opened
+
+
 if __name__ == "__main__":
-    download_data.download_data()
     app.run(debug=True)

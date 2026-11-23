@@ -147,7 +147,7 @@ def player_card(player):
                                     gap="xs",
                                 ),
                             ],
-                            cols=2,
+                            cols={"base": 1, "sm": 2},
                             spacing="xs",
                         ),
                     ],
@@ -158,6 +158,7 @@ def player_card(player):
             align="flex-start",
             gap="sm",
             wrap="nowrap",
+            className="winner-card",
         ),
         withBorder=True,
         radius="md",
@@ -175,6 +176,7 @@ layout = dmc.Box(
     [
         dmc.Text(
             "2026 Winners",
+            className="ranking-title",
             style={"fontSize": "40px", "marginBottom": "20px"},
         ),
         dmc.Text(

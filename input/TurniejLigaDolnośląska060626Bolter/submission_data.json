@@ -902,7 +902,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -1533,5 +1537,6 @@
     "teams": [],
     "points": "800",
     "patch": "GWAIHIR",
-    "tournament_type": "LOKAL"
+    "tournament_type": "LOKAL",
+    "season": 2026
 }

@@ -103,64 +103,95 @@ p {
   box-shadow: inset -2px 0 10px rgba(0, 0, 0, 0.5);
   z-index: 999 !important;
   padding-top: 10px !important;
+  overflow-y: auto;
+}
+
+.mantine-AppShell-main {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.table-scroll-area {
+  width: 100%;
+  max-width: 100%;
+}
+
+.mantine-AppShell-main .dash-graph {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.mobile-nav-toggle {
+  display: none !important;
 }
 
 /* NavLink styling */
 .mantine-NavLink-root {
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.025) !important;
   color: #ffffff !important;
   font-family: "Rajdhani", sans-serif !important;
-  font-size: 18px !important;
+  box-sizing: border-box;
+  width: calc(100% - 16px) !important;
+  min-height: 44px;
+  border: 1px solid rgba(0, 158, 224, 0.2) !important;
+  border-left: 3px solid transparent !important;
   border-radius: 6px !important;
-  margin: 6px 8px !important;
-  transition: all 0.3s ease !important;
-  padding: 10px 12px !important;
+  margin: 5px 8px !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease !important;
+  padding: 9px 11px !important;
 }
 
 .mantine-NavLink-root:hover {
   background-color: rgba(0, 158, 224, 0.15) !important;
   color: var(--neon-cyan) !important;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2) !important;
-  border-left: 3px solid var(--blue-line) !important;
-  padding-left: 9px !important;
+  border-left-color: var(--blue-line) !important;
 }
 
+.mantine-NavLink-root[data-active="true"],
 .mantine-NavLink-root[aria-current="page"] {
   background: rgba(0, 255, 255, 0.1) !important;
   color: var(--neon-cyan) !important;
-  border-left: 3px solid var(--neon-cyan) !important;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3) !important;
-  padding-left: 9px !important;
+  border-left-color: var(--neon-cyan) !important;
+}
+
+.mantine-NavLink-root:focus-visible {
+  outline: 2px solid var(--neon-cyan);
+  outline-offset: -2px;
 }
 
 .mantine-NavLink-label {
   color: inherit !important;
   font-family: "Rajdhani", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 /* NavLink children (nested items) */
 .mantine-NavLink-children {
   background-color: rgba(13, 20, 33, 0.5) !important;
   border-left: 2px solid rgba(0, 158, 224, 0.4) !important;
-  margin: 4px 0 !important;
+  margin: 4px 0 4px 12px !important;
+  padding-left: 8px !important;
 }
 
 .mantine-NavLink-children .mantine-NavLink-root {
+  min-height: 40px;
+}
+
+.mantine-NavLink-children .mantine-NavLink-label {
   font-size: 16px !important;
-  padding-left: 20px !important;
 }
 
 .mantine-NavLink-children .mantine-NavLink-root:hover {
   color: var(--orange-line) !important;
   background-color: rgba(255, 140, 0, 0.1) !important;
-  box-shadow: 0 0 10px rgba(255, 140, 0, 0.2) !important;
   border-left-color: var(--orange-line) !important;
-  padding-left: 17px !important;
 }
 
 /* ===== TABLE STYLING ===== */
 
-.mantine-Table-root {
+.mantine-Table-table {
   background-color: rgba(13, 20, 33, 0.9) !important;
   border: 2px solid var(--blue-line) !important;
   border-radius: 8px !important;
@@ -171,12 +202,32 @@ p {
   font-size: 16px !important;
 }
 
-.mantine-Table-root thead {
+#abp-table {
+  width: 100% !important;
+}
+
+.mantine-Table-table.pp-sortable {
+  margin: 0 !important;
+}
+
+.mantine-Table-table.pp-sortable th,
+.mantine-Table-table.pp-sortable td {
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.pp-profile-table-scroll[style*="height"]:has(
+  .mantine-ScrollArea-scrollbar[data-orientation="horizontal"][data-state="visible"]
+) {
+  height: 454px !important;
+}
+
+.mantine-Table-table thead {
   background: linear-gradient(135deg, rgba(0, 158, 224, 0.3) 0%, rgba(0, 100, 150, 0.2) 100%) !important;
   border-bottom: 2px solid var(--blue-line) !important;
 }
 
-.mantine-Table-root th {
+.mantine-Table-table th {
   color: var(--neon-cyan) !important;
   font-family: "Rajdhani", sans-serif !important;
   font-weight: 700 !important;
@@ -186,7 +237,7 @@ p {
   white-space: nowrap !important;
 }
 
-.mantine-Table-root td {
+.mantine-Table-table td {
   color: #ffffff !important;
   font-family: "Rajdhani", sans-serif !important;
   font-size: 16px !important;
@@ -195,15 +246,15 @@ p {
   white-space: nowrap !important;
 }
 
-.mantine-Table-root tbody tr {
+.mantine-Table-table tbody tr {
   transition: all 0.3s ease !important;
 }
 
-.mantine-Table-root tbody tr:nth-child(odd) {
+.mantine-Table-table tbody tr:nth-child(odd) {
   background-color: rgba(20, 35, 55, 0.9) !important;
 }
 
-.mantine-Table-root tbody tr:nth-child(even) {
+.mantine-Table-table tbody tr:nth-child(even) {
   background-color: rgba(15, 28, 45, 0.8) !important;
 }
 
@@ -223,8 +274,163 @@ p {
   background: rgb(0, 157, 224) !important;
 }
 
+.ranking-rules,
+.ranking-rules .mantine-Text-root {
+  color: #e6edf5;
+}
+
+.ranking-rules-content {
+  padding-top: 1rem;
+  overflow-x: auto;
+}
+
+.ranking-rules table th,
+.ranking-rules table td {
+  text-align: center !important;
+}
+
 @media (max-width: 74.99em) {
   .hall-of-fame-winner-spacer {
     display: none;
   }
+}
+
+@media (max-width: 999px) {
+  .mantine-AppShell-main {
+    padding: 88px 12px 12px !important;
+    overflow-x: hidden;
+  }
+
+  .mantine-AppShell-main [style*="padding: 40px"],
+  .mantine-AppShell-main [style*="padding-left: 40px"] {
+    padding: 12px !important;
+  }
+
+  .metro-header {
+    padding: 6px 12px !important;
+  }
+
+  .metro-header-content {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    column-gap: 8px;
+    align-content: center;
+  }
+
+  .metro-title {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: clamp(17px, 5.2vw, 22px) !important;
+    letter-spacing: 1px !important;
+    margin: 0 !important;
+  }
+
+  .metro-update {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 11px !important;
+    line-height: 1.2;
+  }
+
+  .ranking-title {
+    font-size: clamp(1.35rem, 5vw, 1.8rem) !important;
+  }
+
+  .winner-card {
+    flex-direction: column !important;
+  }
+
+  .winner-card > .mantine-Stack-root:first-child {
+    display: grid !important;
+    grid-template-columns: 150px minmax(0, 1fr);
+    align-items: center;
+    width: 100%;
+    flex: none !important;
+  }
+
+  .winner-card > .mantine-Stack-root:first-child > :first-child {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+  }
+
+  .winner-card > .mantine-Stack-root:first-child > :not(:first-child) {
+    grid-column: 2;
+  }
+
+  .winner-card > .mantine-Stack-root:last-child {
+    width: 100%;
+    flex: 1 1 auto !important;
+  }
+
+  .mobile-nav-toggle {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    display: flex !important;
+  }
+
+  .mantine-AppShell-main h1,
+  .mantine-AppShell-main h2 {
+    font-size: clamp(1.35rem, 5vw, 1.8rem) !important;
+  }
+
+}
+
+.tag-keyword {
+  color: var(--neon-cyan);
+  cursor: help;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+
+.tag-keyword.achievement-tag-keyword {
+  color: inherit;
+  font-weight: 700;
+  text-decoration-style: solid;
+}
+
+.tag-keyword:focus-visible {
+  outline: 2px solid var(--neon-cyan);
+  outline-offset: 2px;
+}
+
+.tag-tooltip-popup {
+  box-sizing: border-box;
+  padding: 14px 18px;
+  border: 1px solid rgba(0, 255, 255, 0.55);
+  border-radius: 10px;
+  background: #111827;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+  color: #f8fafc;
+  line-height: 1.4;
+  text-align: left;
+  white-space: normal;
+}
+
+.tag-tooltip-title {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--neon-cyan);
+  font-size: 1.333em;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.tag-tooltip-description {
+  display: block;
+}
+
+.tag-tooltip-line {
+  display: block;
+}
+
+.article-tagged-text .dash-markdown {
+  display: inline;
+}
+
+.article-tagged-text .dash-markdown p {
+  display: inline;
+  margin: 0;
 }

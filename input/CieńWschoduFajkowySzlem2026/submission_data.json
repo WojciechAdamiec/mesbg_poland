@@ -469,7 +469,7 @@
             "createdAt": "2026-08-09T19:37:41.371Z",
             "user": {
                 "id": "21c12fb0-4289-4df3-8bad-f18c2a49fd0d",
-                "avatar": "1758214908867.jpeg",
+                "avatar": "224a3560-ac1b-466b-b2a5-dd542a3f0a6e.jpeg",
                 "displayName": "W\u0142odas Bo\u017cy",
                 "firstName": "Krzysztof",
                 "lastName": "Napiera\u0142a",
@@ -748,7 +748,7 @@
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": null
+                "discordUsername": "ziemniakwololo"
             },
             "listApproved": false,
             "listAdded": true,
@@ -1313,7 +1313,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -2515,7 +2519,7 @@
             "createdAt": "2026-08-11T11:13:05.239Z",
             "user": {
                 "id": "e0392558-e263-4874-b380-e33152fcecbe",
-                "avatar": "1747065796992.PNG",
+                "avatar": "27a95a7a-3009-4e09-aede-582d3dfb9f71.jpeg",
                 "displayName": "B\u0105czas Bo\u017cy",
                 "firstName": "Piotr",
                 "lastName": "B\u0105czyk",
@@ -3388,8 +3392,8 @@
             "createdAt": "2026-08-25T14:11:35.542Z",
             "user": {
                 "id": "077132db-3801-408a-88be-71f4203d83b3",
-                "avatar": null,
-                "displayName": "MelonKrK",
+                "avatar": "9e2f9406-5bc2-418d-81b1-568e84fbadaf.jpeg",
+                "displayName": "Mielon",
                 "firstName": "Igor",
                 "lastName": "Melnik",
                 "city": {
@@ -4497,8 +4501,8 @@
             "createdAt": "2026-09-10T06:29:38.745Z",
             "user": {
                 "id": "93cda88b-c976-4e61-8f65-9a5a5f1ecf7b",
-                "avatar": null,
-                "displayName": "GoblinGoblin",
+                "avatar": "7e4984b8-cace-4bfb-96f9-ad9f69ada22c.jpeg",
+                "displayName": "Goblin1",
                 "firstName": "Filip",
                 "lastName": "\u0141ukomski",
                 "city": {
@@ -4568,7 +4572,7 @@
             "createdAt": "2026-09-10T06:33:24.677Z",
             "user": {
                 "id": "e99aafd2-d310-49bd-b0d5-b12b6acd1600",
-                "avatar": null,
+                "avatar": "eaa7884e-2fec-47a3-9d4e-005b28dc6c7f.jpeg",
                 "displayName": "TenSauron",
                 "firstName": "Grzegorz",
                 "lastName": "Walendowski",
@@ -5211,8 +5215,8 @@
             "createdAt": "2026-10-06T17:08:21.367Z",
             "user": {
                 "id": "077132db-3801-408a-88be-71f4203d83b3",
-                "avatar": null,
-                "displayName": "MelonKrK",
+                "avatar": "9e2f9406-5bc2-418d-81b1-568e84fbadaf.jpeg",
+                "displayName": "Mielon",
                 "firstName": "Igor",
                 "lastName": "Melnik",
                 "city": {
@@ -5479,5 +5483,6 @@
     "teams": [],
     "points": "600",
     "patch": "NIGHTLINGS",
-    "tournament_type": "MASTER"
+    "tournament_type": "MASTER",
+    "season": 2026
 }

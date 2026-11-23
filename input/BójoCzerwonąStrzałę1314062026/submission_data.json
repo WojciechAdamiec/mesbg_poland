@@ -68,7 +68,7 @@
             "createdAt": "2026-03-13T16:39:46.206Z",
             "user": {
                 "id": "e0392558-e263-4874-b380-e33152fcecbe",
-                "avatar": "1747065796992.PNG",
+                "avatar": "27a95a7a-3009-4e09-aede-582d3dfb9f71.jpeg",
                 "displayName": "B\u0105czas Bo\u017cy",
                 "firstName": "Piotr",
                 "lastName": "B\u0105czyk",
@@ -914,7 +914,7 @@
                     "country": "PL"
                 },
                 "country": "PL",
-                "discordUsername": null
+                "discordUsername": "ziemniakwololo"
             },
             "listApproved": true,
             "listAdded": true,
@@ -2795,7 +2795,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -2956,7 +2960,7 @@
             "user": {
                 "id": "e0270b70-2898-453b-9d93-9efdc65f0410",
                 "avatar": null,
-                "displayName": "Hubert Ca\u0142kiemS\u0142odki Naumowicz",
+                "displayName": "Fakboi",
                 "firstName": "Hubert",
                 "lastName": "Naumowicz",
                 "city": null,
@@ -3012,7 +3016,7 @@
             "user": {
                 "id": "a946ead4-d386-4d2f-b350-64a65f00e5e2",
                 "avatar": null,
-                "displayName": "Piotr M\u0119dykowski",
+                "displayName": "Speedbump",
                 "firstName": "Piotr",
                 "lastName": "M\u0119dykowski",
                 "city": {
@@ -4181,7 +4185,7 @@
             "createdAt": "2026-05-06T18:41:02.233Z",
             "user": {
                 "id": "e99aafd2-d310-49bd-b0d5-b12b6acd1600",
-                "avatar": null,
+                "avatar": "eaa7884e-2fec-47a3-9d4e-005b28dc6c7f.jpeg",
                 "displayName": "TenSauron",
                 "firstName": "Grzegorz",
                 "lastName": "Walendowski",
@@ -4684,8 +4688,8 @@
             "createdAt": "2026-05-17T16:03:28.340Z",
             "user": {
                 "id": "93cda88b-c976-4e61-8f65-9a5a5f1ecf7b",
-                "avatar": null,
-                "displayName": "GoblinGoblin",
+                "avatar": "7e4984b8-cace-4bfb-96f9-ad9f69ada22c.jpeg",
+                "displayName": "Goblin1",
                 "firstName": "Filip",
                 "lastName": "\u0141ukomski",
                 "city": {
@@ -5295,5 +5299,6 @@
     "teams": [],
     "points": "915",
     "patch": "GWAIHIR",
-    "tournament_type": "MASTER"
+    "tournament_type": "MASTER",
+    "season": 2026
 }

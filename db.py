@@ -26,6 +26,8 @@ class BattleDB:
             )
             if key not in unique_battles:
                 unique_battles[key] = battle
+            else:
+                unique_battles[key].season = battle.season
         self.battles = list(unique_battles.values())
 
     def load(self):

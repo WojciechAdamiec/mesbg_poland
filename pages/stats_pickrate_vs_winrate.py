@@ -2,7 +2,8 @@ import math
 
 import dash
 import dash_mantine_components as dmc
-from dash import callback, Input, Output
+from dash import callback, Input, Output, State
+from dash import dcc
 from store import load_armies, load_battles
 from pages.stats_filters import (
     FACTIONS,
@@ -20,6 +21,7 @@ from pages.stats_filters import (
     data_size_label,
     battle_in_ranking,
     battle_in_formats,
+    battle_in_seasons,
     register_ranking_toggle,
     top_player_ids,
     filter_ids,
@@ -31,9 +33,10 @@ dash.register_page(__name__, path='/stats/pickrate_vs_winrate', name="Pickrate v
 
 battles_data = load_battles()
 armies_data = load_armies()
+DEFAULT_MIN_GAMES = 50
 
 
-def compute_chart_data(battles, armies, points_range, game_types, patches, factions, formats, min_games, ranking_enabled=False, ranking_top=50):
+def compute_chart_data(battles, armies, points_range, game_types, patches, factions, formats, min_games, ranking_enabled=False, ranking_top=50, seasons=None):
     allowed_types = {GAME_TYPE_MAP[gt] for gt in (game_types or []) if gt in GAME_TYPE_MAP}
     allowed_patches = {PATCH_MAP[p] for p in (patches or []) if p in PATCH_MAP}
     top_players = top_player_ids(ranking_enabled, ranking_top)
@@ -55,6 +58,8 @@ def compute_chart_data(battles, armies, points_range, game_types, patches, facti
     total_picks = 0
 
     for b in battles:
+        if not battle_in_seasons(b, seasons):
+            continue
         if not battle_in_formats(b, formats):
             continue
         if not battle_in_ranking(b, top_players):
@@ -151,7 +156,7 @@ initial_chart_data = compute_chart_data(
     patches=PATCHES,
     factions=FACTIONS,
     formats=DEFAULT_FORMATS,
-    min_games=40,
+    min_games=DEFAULT_MIN_GAMES,
 )
 
 initial_data_size = count_filtered_battles(
@@ -184,7 +189,9 @@ def compute_axes(series):
 REFERENCE_LINES = [{"y": 50, "color": "red.7", "lineWidth": 2}]
 initial_x_props, initial_y_props = compute_axes(initial_chart_data)
 
-controls = create_filter_controls("pvw", max_games=60, default_min_games=40)
+controls = create_filter_controls(
+    "pvw", max_games=MAX_GAMES, default_min_games=DEFAULT_MIN_GAMES, min_games_mark_step=10
+)
 ids = filter_ids("pvw")
 register_ranking_toggle("pvw")
 
@@ -193,7 +200,7 @@ layout = dmc.Box(
         dmc.Title("Pickrate vs Winrate", order=2, mb="md"),
         dmc.Grid(
             [
-                dmc.GridCol(controls, span=3),
+                dmc.GridCol(controls, span={"base": 12, "lg": 3}),
                 dmc.GridCol(
                     dmc.Stack(
                         [
@@ -211,13 +218,21 @@ layout = dmc.Box(
                                 gridAxis="xy",
                                 withTooltip=True,
                                 tooltipProps={"content": {"function": "pickrateTooltip"}},
+                                scatterProps={"r": 6},
+                            ),
+                            dmc.Box(
+                                [
+                                    dmc.Box(id="pvw-armies-table"),
+                                ],
+                                mt="lg",
                             ),
                         ],
                         gap="lg",
                     ),
-                    span=9,
+                    span={"base": 12, "lg": 9},
                 ),
-            ]
+            ],
+            gap="lg",
         ),
     ],
     style={"padding": "40px"},
@@ -229,6 +244,7 @@ layout = dmc.Box(
     Output("pvw-chart", "xAxisProps"),
     Output("pvw-chart", "yAxisProps"),
     Output("pvw-data-size", "children"),
+    Output("pvw-armies-table", "children"),
     Input(ids["points_range"], "value"),
     Input(ids["game_types"], "value"),
     Input(ids["patches"], "value"),
@@ -237,8 +253,9 @@ layout = dmc.Box(
     Input(ids["min_games"], "value"),
     Input(ids["ranking_enabled"], "checked"),
     Input(ids["ranking_top"], "value"),
+    Input(ids["seasons"], "value"),
 )
-def update_chart(points_range, game_types, patches, factions, formats, min_games, ranking_enabled, ranking_top):
+def update_chart(points_range, game_types, patches, factions, formats, min_games, ranking_enabled, ranking_top, seasons):
     series = compute_chart_data(
         battles_data,
         armies_data,
@@ -250,9 +267,70 @@ def update_chart(points_range, game_types, patches, factions, formats, min_games
         min_games=min_games,
         ranking_enabled=ranking_enabled,
         ranking_top=ranking_top,
+        seasons=seasons,
     )
     x_props, y_props = compute_axes(series)
     data_size = count_filtered_battles(
-        battles_data, points_range, game_types, patches, formats, ranking_enabled, ranking_top
+        battles_data, points_range, game_types, patches, formats, ranking_enabled, ranking_top, seasons
     )
-    return series, x_props, y_props, data_size_label(data_size)
+    
+    # Flatten all armies from series into a single list
+    all_armies = []
+    for s in series:
+        all_armies.extend(s["data"])
+    
+    # Sort by winrate by default for initial display
+    all_armies.sort(key=lambda x: x.get("winrate", 0), reverse=True)
+    
+    # Create table rows
+    rows = []
+    for idx, army in enumerate(all_armies, 1):
+        faction = army.get("faction", "")
+        if faction == "Good":
+            row_color = "rgba(47, 158, 68, 0.1)"
+            text_color = "#2f9e44"
+        else:
+            row_color = "rgba(224, 49, 49, 0.1)"
+            text_color = "#e03131"
+        
+        rows.append(
+            dmc.TableTr(
+                [
+                    dmc.TableTd(str(idx), style={"textAlign": "center"}),
+                    dmc.TableTd(army["army"]),
+                    dmc.TableTd(f"{army['winrate']:.1f}%", style={"textAlign": "center"}),
+                    dmc.TableTd(f"{army['pickrate']:.2f}%", style={"textAlign": "center"}),
+                    dmc.TableTd(str(army["games"]), style={"textAlign": "center"}),
+                ],
+                style={
+                    "backgroundColor": row_color,
+                    "borderLeft": f"4px solid {text_color}",
+                },
+            )
+        )
+    
+    table = dmc.ScrollArea(
+        dmc.Table(
+            [
+                dmc.TableThead(
+                    dmc.TableTr([
+                        dmc.TableTh("#", style={"textAlign": "center"}),
+                        dmc.TableTh("Army list"),
+                        dmc.TableTh("Winrate", style={"textAlign": "center"}),
+                        dmc.TableTh("Pickrate", style={"textAlign": "center"}),
+                        dmc.TableTh("Games", style={"textAlign": "center"}),
+                    ])
+                ),
+                dmc.TableTbody(rows),
+            ],
+            striped=True,
+            highlightOnHover=True,
+            className="pp-sortable",
+            style={"backgroundColor": "#1a1b2e", "color": "white"},
+        ),
+        type="auto",
+        offsetScrollbars=True,
+        style={"marginLeft": "30px"},
+    )
+    
+    return series, x_props, y_props, data_size_label(data_size), table

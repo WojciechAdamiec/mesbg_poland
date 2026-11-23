@@ -6,6 +6,7 @@
       "players": [
         {
           "placement": 1,
+          "player_id": "93cda88b-c976-4e61-8f65-9a5a5f1ecf7b",
           "first_name": "Filip",
           "nickname": "Goblin",
           "surname": "Łukomski",
@@ -13,13 +14,13 @@
           "center": "Poznań",
           "club": "Apes Strong Together",
           "placements": 3,
-          "winratio": "75%",
+          "winratio": "75.6%",
           "photo": "/assets/player_photos/goblin.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
             {
               "name": "Lothlorien",
-              "games": "33"
+              "games": "42"
             },
             {
               "name": "Defenders of Helm's Deep",
@@ -30,17 +31,18 @@
               "games": "6"
             },
             {
-              "name": "Garrison of Dale",
+              "name": "Moria",
               "games": "4"
             },
             {
-              "name": "Moria",
+              "name": "Paths of the Drúadan",
               "games": "4"
             }
           ]
         },
         {
           "placement": 2,
+          "player_id": "6a2a00f2-2511-49bb-abf4-034ba4382126",
           "first_name": "Jan",
           "nickname": null,
           "surname": "Spytek",
@@ -48,20 +50,20 @@
           "center": "Kraków",
           "club": "Smoki Południa",
           "placements": 5,
-          "winratio": "74%",
+          "winratio": "76.19%",
           "photo": "/assets/player_photos/spytek.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
+            {
+              "name": "Army of the White Hand",
+              "games": "12"
+            },
             {
               "name": "Army of Edoras",
               "games": "7"
             },
             {
               "name": "Riders of Eomer",
-              "games": "6"
-            },
-            {
-              "name": "Army of the White Hand",
               "games": "6"
             },
             {
@@ -76,6 +78,7 @@
         },
         {
           "placement": 3,
+          "player_id": "5f6a7ffa-1a94-4176-a2f0-42f18d04a39e",
           "first_name": "Kamil",
           "nickname": "Elrond",
           "surname": "Tomyślak",
@@ -83,13 +86,13 @@
           "center": "Poznań",
           "club": "Drużyna Boża",
           "placements": 8,
-          "winratio": "74%",
+          "winratio": "75%",
           "photo": "/assets/player_photos/elrond.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
             {
-              "name": "Army of the Great Eye",
-              "games": "12"
+              "name": "Harad",
+              "games": "15"
             },
             {
               "name": "Halls of Thranduil",
@@ -100,7 +103,7 @@
               "games": "7"
             },
             {
-              "name": "Harad",
+              "name": "Minas Morgul",
               "games": "6"
             },
             {
@@ -111,6 +114,7 @@
         },
         {
           "placement": 4,
+          "player_id": "9e5a191c-e93a-436d-b7b0-95d223dd6e2e",
           "first_name": "Łukasz",
           "nickname": "Ezekiel",
           "surname": "Szewczyk",
@@ -118,24 +122,24 @@
           "center": "Poznań",
           "club": "Armia Północ",
           "placements": 8,
-          "winratio": "75%",
+          "winratio": "75.83%",
           "photo": "/assets/player_photos/ezekiel.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
             {
               "name": "Depths of Moria",
-              "games": "12"
+              "games": "20"
             },
             {
               "name": "The Battle of Five Armies",
               "games": "9"
             },
             {
-              "name": "Lothlorien",
+              "name": "Assault on Lothlórien",
               "games": "6"
             },
             {
-              "name": "Assault on Lothlórien",
+              "name": "Lothlorien",
               "games": "6"
             },
             {
@@ -146,6 +150,7 @@
         },
         {
           "placement": 5,
+          "player_id": "d96af431-77bb-4909-bb15-61df62e81b15",
           "first_name": "Marian",
           "nickname": "Dominator",
           "surname": "Sudoł",
@@ -153,17 +158,17 @@
           "center": "Wrocław",
           "club": "Gdzie był Wrocław",
           "placements": 9,
-          "winratio": "80%",
+          "winratio": "78.26%",
           "photo": "/assets/player_photos/marian.jpg",
           "quote": "Plan był doskonały... szkoda tylko, że przeciwnik miał lepszy.",
           "top_armylists": [
             {
-              "name": "The Battle of Five Armies",
-              "games": "23"
+              "name": "Assault on Lothlórien",
+              "games": "24"
             },
             {
-              "name": "Assault on Lothlórien",
-              "games": "15"
+              "name": "The Battle of Five Armies",
+              "games": "17"
             },
             {
               "name": "Lothlorien",
@@ -181,6 +186,7 @@
         },
         {
           "placement": 6,
+          "player_id": null,
           "first_name": "Name",
           "nickname": "Nick",
           "surname": "Surname A6",
@@ -221,6 +227,7 @@
       "players": [
         {
           "placement": 1,
+          "player_id": null,
           "first_name": "Name",
           "nickname": "Nick",
           "surname": "Surname B1",
@@ -256,6 +263,7 @@
         },
         {
           "placement": 2,
+          "player_id": null,
           "first_name": "Name",
           "nickname": "Nick",
           "surname": "Surname B2",
@@ -291,6 +299,7 @@
         },
         {
           "placement": 3,
+          "player_id": null,
           "first_name": "Name",
           "nickname": "Nick",
           "surname": "Surname B3",
@@ -326,6 +335,7 @@
         },
         {
           "placement": 4,
+          "player_id": null,
           "first_name": "Name",
           "nickname": "Nick",
           "surname": "Surname B4",
@@ -361,6 +371,7 @@
         },
         {
           "placement": 5,
+          "player_id": null,
           "first_name": "Name",
           "nickname": "Nick",
           "surname": "Surname B5",
@@ -396,6 +407,7 @@
         },
         {
           "placement": 6,
+          "player_id": null,
           "first_name": "Name",
           "nickname": "Nick",
           "surname": "Surname B6",

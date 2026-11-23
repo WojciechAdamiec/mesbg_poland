@@ -579,7 +579,7 @@
             "createdAt": "2026-05-21T19:55:17.749Z",
             "user": {
                 "id": "21c12fb0-4289-4df3-8bad-f18c2a49fd0d",
-                "avatar": "1758214908867.jpeg",
+                "avatar": "224a3560-ac1b-466b-b2a5-dd542a3f0a6e.jpeg",
                 "displayName": "W\u0142odas Bo\u017cy",
                 "firstName": "Krzysztof",
                 "lastName": "Napiera\u0142a",
@@ -1119,7 +1119,7 @@
             "createdAt": "2026-05-21T20:10:14.327Z",
             "user": {
                 "id": "e0392558-e263-4874-b380-e33152fcecbe",
-                "avatar": "1747065796992.PNG",
+                "avatar": "27a95a7a-3009-4e09-aede-582d3dfb9f71.jpeg",
                 "displayName": "B\u0105czas Bo\u017cy",
                 "firstName": "Piotr",
                 "lastName": "B\u0105czyk",
@@ -2517,7 +2517,7 @@
             "createdAt": "2026-05-23T06:24:50.926Z",
             "user": {
                 "id": "e99aafd2-d310-49bd-b0d5-b12b6acd1600",
-                "avatar": null,
+                "avatar": "eaa7884e-2fec-47a3-9d4e-005b28dc6c7f.jpeg",
                 "displayName": "TenSauron",
                 "firstName": "Grzegorz",
                 "lastName": "Walendowski",
@@ -2577,8 +2577,8 @@
             "createdAt": "2026-05-23T06:24:50.926Z",
             "user": {
                 "id": "93cda88b-c976-4e61-8f65-9a5a5f1ecf7b",
-                "avatar": null,
-                "displayName": "GoblinGoblin",
+                "avatar": "7e4984b8-cace-4bfb-96f9-ad9f69ada22c.jpeg",
+                "displayName": "Goblin1",
                 "firstName": "Filip",
                 "lastName": "\u0141ukomski",
                 "city": {
@@ -3101,66 +3101,6 @@
             }
         },
         {
-            "id": "fd1b0642-5e8a-4003-9d24-5ccd9b2e81a1",
-            "createdAt": "2026-05-24T06:39:59.731Z",
-            "user": {
-                "id": "cd36b01c-87a1-47c9-b877-a65940b24b12",
-                "avatar": "1727984168047.jpg",
-                "displayName": "Marcin Werewolf Noszczy\u0144ski",
-                "firstName": "",
-                "lastName": "",
-                "city": {
-                    "id": 225,
-                    "name": "Cz\u0119stochowa",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": true,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 339,
-                "name": "Lothlorien",
-                "subfraction": null,
-                "code": "MESBG2_Lo",
-                "metadata": {
-                    "mesbgType": "GOOD"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "52cb3800-d2bb-4528-9995-4268997aeae1",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 43,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 5355,
-                "place": 20,
-                "poolPlace": null,
-                "singlePlace": 32,
-                "wins": 3,
-                "draws": 0,
-                "loss": 3,
-                "primaryPoints": 19,
-                "secondaryPoints": 36,
-                "tertiaryPoints": 0,
-                "sos": 43,
-                "path": "LLLWWW"
-            }
-        },
-        {
             "id": "1e3884f5-27a4-4d39-a81e-a13edc712270",
             "createdAt": "2026-05-24T06:39:59.731Z",
             "user": {
@@ -3221,17 +3161,17 @@
             }
         },
         {
-            "id": "b4bf364d-d3f8-49e5-b22c-18bbd7f1027a",
-            "createdAt": "2026-05-24T11:29:26.751Z",
+            "id": "fd1b0642-5e8a-4003-9d24-5ccd9b2e81a1",
+            "createdAt": "2026-05-24T06:39:59.731Z",
             "user": {
-                "id": "48655433-fa77-4b22-b13e-a33b593f1a57",
-                "avatar": null,
-                "displayName": "Altairio",
-                "firstName": "Micha\u0142",
-                "lastName": "Hapon",
+                "id": "cd36b01c-87a1-47c9-b877-a65940b24b12",
+                "avatar": "1727984168047.jpg",
+                "displayName": "Marcin Werewolf Noszczy\u0144ski",
+                "firstName": "",
+                "lastName": "",
                 "city": {
-                    "id": 235,
-                    "name": "Warszawa",
+                    "id": 225,
+                    "name": "Cz\u0119stochowa",
                     "country": "PL"
                 },
                 "country": "PL",
@@ -3244,10 +3184,10 @@
             "payApproved": true,
             "status": "APPROVED",
             "army": {
-                "id": 334,
-                "name": "Halls of Thranduil",
+                "id": 339,
+                "name": "Lothlorien",
                 "subfraction": null,
-                "code": "MESBG2_HoT",
+                "code": "MESBG2_Lo",
                 "metadata": {
                     "mesbgType": "GOOD"
                 }
@@ -3255,29 +3195,29 @@
             "secondaryArmy": null,
             "listTitle": null,
             "secondaryListTitle": null,
-            "teamId": "e4767cb5-35fb-410a-8b8d-a4d96cbf7239",
+            "teamId": "52cb3800-d2bb-4528-9995-4268997aeae1",
             "pointsModification": null,
             "pointsModificationDescription": null,
             "metadata": null,
             "secondaryMetadata": null,
             "eventPoolId": null,
-            "primaryPointsSos": 59,
+            "primaryPointsSos": 43,
             "primaryPointsPoolSos": 0,
             "travelGroup": null,
             "poolResult": null,
             "finalResult": {
                 "stageId": 5355,
-                "place": 3,
+                "place": 20,
                 "poolPlace": null,
-                "singlePlace": 38,
+                "singlePlace": 32,
                 "wins": 3,
                 "draws": 0,
                 "loss": 3,
-                "primaryPoints": 18,
-                "secondaryPoints": 27,
+                "primaryPoints": 19,
+                "secondaryPoints": 36,
                 "tertiaryPoints": 0,
-                "sos": 59,
-                "path": "WLLWWL"
+                "sos": 43,
+                "path": "LLLWWW"
             }
         },
         {
@@ -3338,6 +3278,66 @@
                 "tertiaryPoints": 0,
                 "sos": 60,
                 "path": "WWWLWW"
+            }
+        },
+        {
+            "id": "b4bf364d-d3f8-49e5-b22c-18bbd7f1027a",
+            "createdAt": "2026-05-24T11:29:26.751Z",
+            "user": {
+                "id": "48655433-fa77-4b22-b13e-a33b593f1a57",
+                "avatar": null,
+                "displayName": "Altairio",
+                "firstName": "Micha\u0142",
+                "lastName": "Hapon",
+                "city": {
+                    "id": 235,
+                    "name": "Warszawa",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": true,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 334,
+                "name": "Halls of Thranduil",
+                "subfraction": null,
+                "code": "MESBG2_HoT",
+                "metadata": {
+                    "mesbgType": "GOOD"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "e4767cb5-35fb-410a-8b8d-a4d96cbf7239",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 59,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 5355,
+                "place": 3,
+                "poolPlace": null,
+                "singlePlace": 38,
+                "wins": 3,
+                "draws": 0,
+                "loss": 3,
+                "primaryPoints": 18,
+                "secondaryPoints": 27,
+                "tertiaryPoints": 0,
+                "sos": 59,
+                "path": "WLLWWL"
             }
         },
         {
@@ -4003,7 +4003,11 @@
                 "displayName": "FRrANEK",
                 "firstName": "Mateusz ",
                 "lastName": "Frankowski ",
-                "city": null,
+                "city": {
+                    "id": 236,
+                    "name": "Wroc\u0142aw",
+                    "country": "PL"
+                },
                 "country": "PL",
                 "discordUsername": null
             },
@@ -7333,5 +7337,6 @@
     ],
     "points": "777",
     "patch": "NIGHTLINGS",
-    "tournament_type": "MASTER"
+    "tournament_type": "MASTER",
+    "season": 2026
 }

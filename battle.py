@@ -70,10 +70,12 @@ class Battle:
     tournament_name: str | None = None
     tournament_type: TournamentType | None = None
     format: str = "INDIVIDUAL"
+    season: int = 2026
 
     def to_dict(self) -> dict:
         return {
             "format": self.format,
+            "season": self.season,
             "points": {
                 "value": self.points.value,
                 "doubled": self.points.doubled,
@@ -112,6 +114,7 @@ class Battle:
             tournament_name=data.get("tournament_name"),
             tournament_type=TournamentType[data["tournament_type"]] if data.get("tournament_type") else None,
             format=data.get("format", "INDIVIDUAL"),
+            season=data.get("season", 2026),
             player_1_id=data["player_1_id"],
             player_2_id=data["player_2_id"],
             player_1_name=data["player_1_name"],

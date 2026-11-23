@@ -1,10 +1,12 @@
 import dash
 from dash import dcc
 import dash_mantine_components as dmc
+from ranking_rules import rules_box
+from ranking_rules.main_2026 import RULES
 from store import load_main_ranking
 
 
-dash.register_page(__name__, path='/ranking_main')
+dash.register_page(__name__, path='/ranking_main_2026')
 
 data = load_main_ranking()
 
@@ -43,7 +45,7 @@ HIGHLIGHT_THRESHOLDS = {
     "local_4": 20,
     "local_5": 20,
 }
-HIGHLIGHT_FULL = {"backgroundColor": "#4adfce3d", "fontWeight": 700}
+HIGHLIGHT_FULL = {"backgroundColor": "#3ac87880", "fontWeight": 700}
 HIGHLIGHT_ZERO = {"backgroundColor": "#ea616c3c", "fontWeight": 700}
 
 
@@ -57,28 +59,33 @@ def cell_style(key, value, align):
     return style
 
 
-rows = [
-    dmc.TableTr(
-        [
-            dmc.TableTd(row[key], style=cell_style(key, row[key], align))
-            for key, _, align in COLUMNS
-        ]
-    )
-    for row in data
-]
-
-head = dmc.TableThead(
-    dmc.TableTr(
-        [
+def make_layout(ranking_data, year, rules, columns=COLUMNS, style_for_cell=cell_style):
+    head = dmc.TableThead(
+        dmc.TableTr([
             dmc.TableTh(label, style={"textAlign": align})
-            for _, label, align in COLUMNS
-        ]
+            for _, label, align in columns
+        ])
     )
-)
-body = dmc.TableTbody(rows)
+    rows = [
+        dmc.TableTr([
+            dmc.TableTd(row[key], style=style_for_cell(key, row[key], align))
+            for key, _, align in columns
+        ])
+        for row in ranking_data
+    ]
+    title = f"{year} Main Ranking"
+    return dmc.Box([
+        dmc.Text(title, className="ranking-title", style={"fontSize": "40px", "marginBottom": "20px"}),
+        rules_box(rules),
+        dcc.Link("Go to Champions Hub Ranking", href="https://championshub.app/mesbg/ranking/mesbg-pl", target="_blank", style={"color": "#00ffff", "text-decoration": "none", "font-size": "16px"}),
+        dmc.ScrollArea(
+            dmc.Table([head, dmc.TableTbody(rows)], highlightOnHover=True, withTableBorder=True, withColumnBorders=True, style={"marginTop": "20px", "width": "60%"}),
+            type="auto",
+            scrollbars="x",
+            offsetScrollbars=True,
+            className="table-scroll-area",
+        ),
+    ], style={"paddingLeft": "40px"})
 
-layout = dmc.Box([
-    dmc.Text("Polish MESBG League Main Ranking", style={"fontSize": "40px", "marginBottom": "20px"}),
-    dcc.Link("Go to Champions Hub Ranking", href="https://championshub.app/mesbg/ranking/mesbg-pl", target="_blank", style={"color": "#00ffff", "text-decoration": "none", "font-size": "16px"}),
-    dmc.Table([head, body], highlightOnHover=True, withTableBorder=True, withColumnBorders=True, style={"marginTop": "20px", "width": "60%"}),
-], style={"paddingLeft": "40px"})
+
+layout = make_layout(data, year=2026, rules=RULES)
