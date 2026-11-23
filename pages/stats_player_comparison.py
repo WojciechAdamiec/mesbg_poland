@@ -34,11 +34,17 @@ online_place_by_id = {r.get("player_id"): r.get("place") for r in load_online_ra
 # The master ranking has no player ids, so it is matched by display name.
 master_place_by_name = {(r.get("displayName") or "").strip(): r.get("place") for r in load_master_ranking()}
 
-# Doubles are excluded, consistently with player profiles.
-battles = [b for b in load_battles() if b.get("format") != "DOUBLES" and b.get("result") and len(b["result"]) == 2]
+# Doubles are excluded from displayed results, consistently with player profiles.
+all_battles = load_battles()
+battles = [b for b in all_battles if b.get("format") != "DOUBLES" and b.get("result") and len(b["result"]) == 2]
 trophies_by_player = seasonal_trophies(battles, {2026: main_ranking, 2027: load_main_ranking_2027()})
-army_expertise = ArmyExpertise(battles, main_ranking, load_armies())
+army_expertise = ArmyExpertise(all_battles, main_ranking, load_armies())
 tournament_results_by_player = load_tournament_results()
+head_to_head_by_pair = {}
+for battle in battles:
+    player_1_id, player_2_id = battle.get("player_1_id"), battle.get("player_2_id")
+    if player_1_id and player_2_id:
+        head_to_head_by_pair.setdefault(frozenset((player_1_id, player_2_id)), []).append(battle)
 
 
 master_record_by_player = {}
@@ -181,10 +187,7 @@ def _army_table(profile_a, profile_b, names):
     )
 
 def _history(id_a, id_b, name_a, name_b):
-    games = [
-        b for b in battles
-        if {b.get("player_1_id"), b.get("player_2_id")} == {id_a, id_b}
-    ]
+    games = head_to_head_by_pair.get(frozenset((id_a, id_b)), [])
     wins_a = wins_b = draws = 0
     rows = []
     for b in games:

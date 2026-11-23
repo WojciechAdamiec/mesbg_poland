@@ -1,9 +1,28 @@
 from functools import lru_cache
 
-from army_players import compute_best_players, ranked_players
+from army_players import compute_best_players, index_battles_by_army, ranked_players
+
+_trophy_cache_battles = None
+_trophy_cache_rankings = None
+_trophy_cache_result = None
 
 
 def seasonal_trophies(battles, rankings_by_season):
+    global _trophy_cache_battles, _trophy_cache_rankings, _trophy_cache_result
+    ranking_items = tuple(sorted(rankings_by_season.items()))
+    if (
+        battles is _trophy_cache_battles
+        and _trophy_cache_rankings is not None
+        and len(ranking_items) == len(_trophy_cache_rankings)
+        and all(
+            season == cached_season and ranking is cached_ranking
+            for (season, ranking), (cached_season, cached_ranking) in zip(
+                ranking_items, _trophy_cache_rankings
+            )
+        )
+    ):
+        return _trophy_cache_result
+
     places = {
         season: {player["player_id"]: player.get("place") for player in ranking if player.get("player_id")}
         for season, ranking in rankings_by_season.items()
@@ -30,13 +49,17 @@ def seasonal_trophies(battles, rankings_by_season):
             "times_defeated": 0,
         })
         entry["times_defeated"] += 1
-    return {
+    result = {
         player_id: {
             season: sorted(entries.values(), key=lambda entry: entry["main_ranking_place"])
             for season, entries in seasons.items()
         }
         for player_id, seasons in trophies.items()
     }
+    _trophy_cache_battles = battles
+    _trophy_cache_rankings = ranking_items
+    _trophy_cache_result = result
+    return result
 
 
 def unique_trophy_players(trophies_by_season, max_place=50):
@@ -52,10 +75,7 @@ class ArmyExpertise:
     def __init__(self, battles, ranking, armies):
         self.ranking = ranking
         self.army_by_id = {army["army_id"]: army for army in armies}
-        self.battles_by_army = {}
-        for battle in battles:
-            for army_id in {battle.get("army_1_id"), battle.get("army_2_id")} - {None}:
-                self.battles_by_army.setdefault(army_id, []).append(battle)
+        self.battles_by_army = index_battles_by_army(battles)
 
     @lru_cache(maxsize=None)
     def leaderboard(self, army_id):

@@ -1,5 +1,22 @@
 MINIMUM_GAMES = 16
 
+_indexed_battle_source = None
+_battles_by_army_cache = None
+
+
+def index_battles_by_army(battles):
+    global _indexed_battle_source, _battles_by_army_cache
+    if battles is _indexed_battle_source:
+        return _battles_by_army_cache
+
+    battles_by_army = {}
+    for battle in battles:
+        for army_id in {battle.get("army_1_id"), battle.get("army_2_id")} - {None}:
+            battles_by_army.setdefault(army_id, []).append(battle)
+    _indexed_battle_source = battles
+    _battles_by_army_cache = battles_by_army
+    return battles_by_army
+
 
 def compute_best_players(battles, selected_army_id, ranking):
     try:

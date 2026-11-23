@@ -385,6 +385,7 @@ PLAYER_RANKS = (
     ("Silver", 60, "#e2e8f0"),
     ("Gold", 70, "#eab308"),
     ("Emerald", 80, "#34d399"),
+    ("Diamond", 90, "#67e8f9"),
     ("Mithril", 100, "#e0f2fe"),
 )
 

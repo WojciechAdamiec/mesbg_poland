@@ -14,7 +14,7 @@ from download_data import (
     download_tournament_battles_data,
     extract_armies_data,
     get_polish_events,
-    get_main_ranking_2027_data,
+    build_2027_rankings,
     load_cached_tournament,
     parse_user_tournament_data,
     transform_master_ranking_data,
@@ -97,20 +97,69 @@ class TournamentCacheTests(unittest.TestCase):
         self.assertEqual((results["master_1"], results["master_2"], results["master_total"]), (50, 30, 80))
         self.assertEqual(results["local_total"], 15)
 
-    def test_2027_ranking_is_fetched_and_preserves_player_city(self):
-        response = Mock()
-        response.json.return_value = [{
-            "place": 3, "user": {"id": "p", "displayName": "Player",
-                                   "city": {"id": 7, "name": "Town", "country": "PL"}},
-        }]
-        with patch("download_data.requests.get", return_value=response) as get:
-            ranking = get_main_ranking_2027_data()
-        self.assertIn("season=33", get.call_args.args[0])
-        response.raise_for_status.assert_called_once()
-        self.assertEqual(ranking, [{
-            "player_id": "p", "displayName": "Player", "place": 3,
-            "city_id": 7, "city_name": "Town", "city_country": "PL",
-        }])
+    def test_2027_rankings_apply_new_rules_and_exclude_other_seasons(self):
+        events = []
+        submissions = {}
+
+        def add_event(event_id, date, tournament_type, people, teams=None):
+            events.append({
+                "id": event_id,
+                "date": datetime.date.fromisoformat(date),
+                "tournament_type": tournament_type,
+            })
+            submissions[event_id] = {"people": people, "teams": teams or []}
+
+        user = {"id": "p", "displayName": "Player",
+                "city": {"id": 7, "name": "Town", "country": "PL"}}
+        add_event("old", "2026-11-23", "MASTER", [
+            {"user": user, "finalResult": {"place": 1}},
+        ])
+        for index, (tournament_type, place) in enumerate([
+            ("MASTER", 1), ("MASTER", 2), ("MASTER", 3), ("MASTER", 4),
+            ("MASTER", 5), ("MASTER", 6), ("CHALLENGER", 1),
+        ]):
+            add_event(f"main-{index}", "2026-11-24", tournament_type, [
+                {"user": user, "finalResult": {"place": place}},
+            ])
+        for index, place in enumerate((1, 2, 3, 4, 5, 6, 7)):
+            add_event(f"local-{index}", "2027-01-01", "LOKAL", [
+                {"user": user, "finalResult": {"place": place}},
+            ])
+        add_event("dmp", "2027-01-01", "DMP", [
+            {"user": {"id": "dmp-only", "displayName": "DMP"}, "finalResult": {}},
+        ])
+        add_event("pairs", "2027-01-01", "MASTER", [
+            {"user": {"id": "pairs", "displayName": "Pairs"}, "teamId": "team",
+             "finalResult": {}},
+        ], teams=[{"id": "team", "finalResult": {"place": 2}}])
+        add_event("online", "2027-01-01", "ONLINE", [
+            {"user": user, "finalResult": {"place": 17}},
+        ])
+        add_event("online-team", "2027-01-01", "ONLINE", [
+            {"user": {"id": "online-team", "displayName": "Online Team"},
+             "teamId": "team", "finalResult": {}},
+        ], teams=[{"id": "team", "finalResult": {"place": 2}}])
+
+        rankings = build_2027_rankings(events, submissions)
+        main = {entry["player_id"]: entry for entry in rankings["main"]}
+        master = {entry["player_id"]: entry for entry in rankings["master"]}
+        online = {entry["player_id"]: entry for entry in rankings["online"]}
+
+        self.assertEqual(
+            [main["p"][f"master_challenger_{i}"] for i in range(1, 7)],
+            [60, 55, 50, 48, 46, 44],
+        )
+        self.assertEqual(main["p"]["master_challenger_total"], 303)
+        self.assertEqual([main["p"][f"local_{i}"] for i in range(1, 7)], [20, 18, 16, 15, 14, 13])
+        self.assertEqual(main["p"]["local_total"], 96)
+        self.assertEqual(main["p"]["score"], 399)
+        self.assertEqual((master["p"]["master_1"], master["p"]["master_2"],
+                          master["p"]["master_3"], master["p"]["score"]), (60, 55, 50, 165))
+        self.assertNotIn("dmp-only", master)
+        self.assertEqual(main["dmp-only"]["master_challenger_1"], 30)
+        self.assertEqual(main["pairs"]["master_challenger_1"], 50)
+        self.assertEqual(online["p"]["online_1"], 10)
+        self.assertEqual(online["online-team"]["online_1"], 31)
 
     def test_army_metadata_excludes_unranked_snapshots(self):
         root = Path(self.tmp.name)

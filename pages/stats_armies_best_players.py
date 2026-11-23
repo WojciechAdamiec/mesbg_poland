@@ -1,7 +1,7 @@
 import dash
 import dash_mantine_components as dmc
 from dash import Input, Output, callback
-from army_players import MINIMUM_GAMES, compute_best_players, ranked_players
+from army_players import MINIMUM_GAMES, compute_best_players, index_battles_by_army, ranked_players
 from store import load_armies, load_battles, load_main_ranking
 
 
@@ -10,6 +10,7 @@ dash.register_page(__name__, path="/stats/armies_best_players", name="Armies Bes
 battles_data = load_battles()
 main_ranking = load_main_ranking()
 armies_data = load_armies()
+battles_by_army = index_battles_by_army(battles_data)
 army_options = [
     {"label": army["name"], "value": str(army["army_id"])}
     for army in sorted(armies_data, key=lambda item: item["name"])
@@ -55,7 +56,11 @@ def make_table_rows(rows):
 
 
 initial_rows = make_table_rows(
-    compute_best_players(battles_data, default_army, main_ranking)
+    compute_best_players(
+        battles_by_army.get(int(default_army), []) if default_army is not None else [],
+        default_army,
+        main_ranking,
+    )
 )
 
 layout = dmc.Box(
@@ -160,6 +165,12 @@ layout = dmc.Box(
     Input("abp-selected-army", "value"),
 )
 def update_table(selected_army_id):
+    try:
+        selected_army_id_int = int(selected_army_id)
+    except (TypeError, ValueError):
+        selected_battles = []
+    else:
+        selected_battles = battles_by_army.get(selected_army_id_int, [])
     return make_table_rows(
-        compute_best_players(battles_data, selected_army_id, main_ranking)
+        compute_best_players(selected_battles, selected_army_id, main_ranking)
     )

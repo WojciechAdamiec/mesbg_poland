@@ -55,6 +55,8 @@ from tags import render_tagged_text
 
 ARTICLES_DIRECTORY = os.path.join("content", "articles")
 CATEGORY_LABELS = {"army-list": "Army list", "guide": "Guide"}
+_cached_battles = None
+_cached_army_records = None
 
 _DIRECTIVE_RE = re.compile(r"^\{\{\s*(\w+)\s*:\s*(.*?)\s*\}\}\s*$")
 _DETAILS_RE = re.compile(r"^:::details\s+(.*?)\s*$")
@@ -114,9 +116,15 @@ def load_articles():
     return dict(sorted(articles.items(), key=lambda item: item[1]["date"], reverse=True))
 
 
-def army_record(army_name):
-    games = wins = total_picks = 0
-    for battle in load_battles():
+def _army_records():
+    global _cached_battles, _cached_army_records
+    battles = load_battles()
+    if battles is _cached_battles:
+        return _cached_army_records
+
+    records = {}
+    total_picks = 0
+    for battle in battles:
         result = battle.get("result")
         if not isinstance(result, list) or len(result) != 2:
             continue
@@ -125,15 +133,23 @@ def army_record(army_name):
             if not picked_army:
                 continue
             total_picks += 1
-            if picked_army != army_name:
-                continue
-            games += 1
+            record = records.setdefault(picked_army, [0, 0])
+            record[0] += 1
             mine, theirs = result[side - 1], result[2 - side]
             if mine > theirs:
-                wins += 1
+                record[1] += 1
             elif mine == theirs:
-                wins += 0.5
-    return games, wins, total_picks
+                record[1] += 0.5
+    _cached_battles = battles
+    _cached_army_records = {
+        army_name: (games, wins, total_picks)
+        for army_name, (games, wins) in records.items()
+    }
+    return _cached_army_records
+
+
+def army_record(army_name):
+    return _army_records().get(army_name, (0, 0, 0))
 
 
 def _army_stats_card(value):

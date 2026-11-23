@@ -81,8 +81,15 @@ def _rank_distribution(player_profiles):
     return counts, unavailable
 
 
+profile_rank_distribution = _rank_distribution(profiles)
+
+
 def _rank_distribution_chart(player_profiles, selected_rank):
-    counts, _ = _rank_distribution(player_profiles)
+    counts, _ = (
+        profile_rank_distribution
+        if player_profiles is profiles
+        else _rank_distribution(player_profiles)
+    )
     total = sum(counts)
     if not total:
         return dmc.Stack([
@@ -300,10 +307,12 @@ ARMY_COLS = [("Army list", "army_name"), ("Games", "games"), ("Wins", "wins"),
 PLAYER_COLS = [("Player", "displayName")] + ARMY_COLS[1:]
 
 
-def build_top(player_id):
+def build_top(player_id, expertise=None):
     p = profile_by_id.get(player_id)
     if not p:
         return dmc.Text("Select a player to see their profile.", c="dimmed")
+    if expertise is None:
+        expertise = army_expertise.for_player(player_id, p["army_lists"])
     return dmc.Stack(
         [
             dmc.Title(p["displayName"], order=3),
@@ -319,8 +328,11 @@ def build_top(player_id):
                         _stat_card("Wins", p["wins"]),
                         _stat_card("Draws", p["draws"]),
                         _stat_card("Losses", p["losses"]),
-                        _stat_card("Player trophies", len(unique_trophy_players(trophies_by_player.get(player_id, {})))),
-                        _stat_card("Army specialties", len(army_expertise.for_player(player_id, p["army_lists"]))),
+                        _stat_card(
+                            "Player trophies",
+                            len(unique_trophy_players(trophies_by_player.get(player_id, {}))),
+                        ),
+                        _stat_card("Army specialties", len(expertise)),
                         _stat_card("Achievements unlocked", format_achievement_count(p.get("achievements_count"))),
                     ],
                     cols=6,
@@ -333,10 +345,12 @@ def build_top(player_id):
     )
 
 
-def build_profile_sections(player_id):
+def build_profile_sections(player_id, expertise=None):
     p = profile_by_id.get(player_id)
     if not p:
         return None, None, None, None, None, None
+    if expertise is None:
+        expertise = army_expertise.for_player(player_id, p["army_lists"])
     return (
         _table("Army lists used", _winrate_rows(p["army_lists"]), ARMY_COLS),
         _table("Army lists played against", _winrate_rows(p["opponent_army_lists"]), ARMY_COLS),
@@ -346,7 +360,7 @@ def build_profile_sections(player_id):
             _trophies(trophies_by_player.get(player_id, {}).get(season, []), season)
             for season in (2026, 2027)
         ], gap="lg"),
-        _expertise_section(army_expertise.for_player(player_id, p["army_lists"])),
+        _expertise_section(expertise),
     )
 
 
@@ -471,44 +485,38 @@ def _achievements_section(unlocked_achievements, sort_by="default", progress_by_
     achievements = list(enumerate(ACHIEVEMENTS, start=1))
     unlocked_names = set(unlocked_achievements or [])
 
-    def stage_for(achievement):
-        if unlocked_achievements is None:
-            return None
-        return achievement_stage(achievement, unlocked_names, progress_by_name)
-
-    def percentages_for(achievement):
-        if achievement_percentages is None:
-            return None
-        value = achievement_percentages.get(
-            achievement.name, [0] * achievement.stage_count if achievement.stage_count > 1 else 0
+    achievement_info = {}
+    for _, achievement in achievements:
+        stage = (
+            None
+            if unlocked_achievements is None
+            else achievement_stage(achievement, unlocked_names, progress_by_name)
         )
-        if value is None:
-            return None
-        return value if isinstance(value, list) else [value]
-
-    def displayed_percentage(achievement):
-        values = percentages_for(achievement)
-        if values is None:
-            return None
-        stage = stage_for(achievement)
+        if achievement_percentages is None:
+            values = None
+        else:
+            value = achievement_percentages.get(
+                achievement.name, [0] * achievement.stage_count if achievement.stage_count > 1 else 0
+            )
+            values = None if value is None else value if isinstance(value, list) else [value]
         index = 0 if stage is None or stage == achievement.stage_count else max(0, stage - 1)
-        return values[index]
+        displayed = values[index] if values is not None else None
+        achievement_info[achievement.name] = (stage, values, displayed)
 
     if sort_by == "rarity":
         achievements = sorted(
             achievements,
             key=lambda numbered: (
-                not bool(stage_for(numbered[1])),
-                -(displayed_percentage(numbered[1]) or 0),
+                not bool(achievement_info[numbered[1].name][0]),
+                -(achievement_info[numbered[1].name][2] or 0),
             ),
         )
     for number, achievement in achievements:
-        stage = stage_for(achievement)
+        stage, values, percentage_value = achievement_info[achievement.name]
         unlocked = bool(stage)
         status = ("unavailable" if stage is None else "locked" if stage == 0 else
                   "unlocked" if stage == achievement.stage_count else "partially unlocked")
         color = _stage_color(stage, achievement.stage_count)
-        percentage_value = displayed_percentage(achievement)
         percentage = f"{percentage_value:.1f}%" if percentage_value is not None else "-"
         percentage_label = (f"{percentage} of players unlocked this achievement"
                             if percentage_value is not None else "Unlock percentage unavailable")
@@ -524,7 +532,6 @@ def _achievements_section(unlocked_achievements, sort_by="default", progress_by_
                          / (progress["target"] - previous_target)))
             if progress else 0
         )
-        values = percentages_for(achievement)
         tooltip = [
             f"Stage {index}" + (
                 f" ({achievement.stage_labels[index - 1]})" if achievement.stage_labels else
@@ -810,7 +817,11 @@ def sync_player_url(search, player_id):
     Input("pp-selected-player", "value"),
 )
 def update_profile(player_id):
-    return (build_top(player_id), *build_profile_sections(player_id))
+    profile = profile_by_id.get(player_id)
+    if profile is None:
+        return (build_top(player_id), *build_profile_sections(player_id))
+    expertise = army_expertise.for_player(player_id, profile["army_lists"])
+    return (build_top(player_id, expertise), *build_profile_sections(player_id, expertise))
 
 
 @callback(

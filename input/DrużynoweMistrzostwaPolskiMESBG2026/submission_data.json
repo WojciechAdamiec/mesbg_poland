@@ -1549,6 +1549,66 @@
             }
         },
         {
+            "id": "0862315f-2e2a-4b1e-a1ca-9f22bb3f4960",
+            "createdAt": "2026-06-16T05:32:06.409Z",
+            "user": {
+                "id": "7fad5775-4390-4bca-bc5b-80a73e76ee1c",
+                "avatar": "1762451230155.jpeg",
+                "displayName": "Iron666",
+                "firstName": "Miko\u0142aj",
+                "lastName": "Adamiak",
+                "city": {
+                    "id": 231,
+                    "name": "Pozna\u0144",
+                    "country": "PL"
+                },
+                "country": "PL",
+                "discordUsername": null
+            },
+            "listApproved": false,
+            "listAdded": true,
+            "listHidden": false,
+            "lunchApproved": false,
+            "payApproved": true,
+            "status": "APPROVED",
+            "army": {
+                "id": 466,
+                "name": "Variags of Khand",
+                "subfraction": null,
+                "code": "MESBG2_VoK",
+                "metadata": {
+                    "mesbgType": "EVIL"
+                }
+            },
+            "secondaryArmy": null,
+            "listTitle": null,
+            "secondaryListTitle": null,
+            "teamId": "9a03d1cf-0d1d-4bbc-9278-e1689bedf899",
+            "pointsModification": null,
+            "pointsModificationDescription": null,
+            "metadata": null,
+            "secondaryMetadata": null,
+            "eventPoolId": null,
+            "primaryPointsSos": 11,
+            "primaryPointsPoolSos": 0,
+            "travelGroup": null,
+            "poolResult": null,
+            "finalResult": {
+                "stageId": 4763,
+                "place": 56,
+                "poolPlace": null,
+                "singlePlace": 78,
+                "wins": 1,
+                "draws": 4,
+                "loss": 0,
+                "primaryPoints": 2,
+                "secondaryPoints": 4,
+                "tertiaryPoints": 11,
+                "sos": 11,
+                "path": "DWDDD"
+            }
+        },
+        {
             "id": "d674b403-edec-43c6-8222-0b40e490dc87",
             "createdAt": "2026-06-16T05:32:06.409Z",
             "user": {
@@ -1726,66 +1786,6 @@
                 "tertiaryPoints": 35,
                 "sos": 2,
                 "path": "DDDDD"
-            }
-        },
-        {
-            "id": "0862315f-2e2a-4b1e-a1ca-9f22bb3f4960",
-            "createdAt": "2026-06-16T05:32:06.409Z",
-            "user": {
-                "id": "7fad5775-4390-4bca-bc5b-80a73e76ee1c",
-                "avatar": "1762451230155.jpeg",
-                "displayName": "Iron666",
-                "firstName": "Miko\u0142aj",
-                "lastName": "Adamiak",
-                "city": {
-                    "id": 231,
-                    "name": "Pozna\u0144",
-                    "country": "PL"
-                },
-                "country": "PL",
-                "discordUsername": null
-            },
-            "listApproved": false,
-            "listAdded": true,
-            "listHidden": false,
-            "lunchApproved": false,
-            "payApproved": true,
-            "status": "APPROVED",
-            "army": {
-                "id": 466,
-                "name": "Variags of Khand",
-                "subfraction": null,
-                "code": "MESBG2_VoK",
-                "metadata": {
-                    "mesbgType": "EVIL"
-                }
-            },
-            "secondaryArmy": null,
-            "listTitle": null,
-            "secondaryListTitle": null,
-            "teamId": "9a03d1cf-0d1d-4bbc-9278-e1689bedf899",
-            "pointsModification": null,
-            "pointsModificationDescription": null,
-            "metadata": null,
-            "secondaryMetadata": null,
-            "eventPoolId": null,
-            "primaryPointsSos": 11,
-            "primaryPointsPoolSos": 0,
-            "travelGroup": null,
-            "poolResult": null,
-            "finalResult": {
-                "stageId": 4763,
-                "place": 56,
-                "poolPlace": null,
-                "singlePlace": 78,
-                "wins": 1,
-                "draws": 4,
-                "loss": 0,
-                "primaryPoints": 2,
-                "secondaryPoints": 4,
-                "tertiaryPoints": 11,
-                "sos": 11,
-                "path": "DWDDD"
             }
         },
         {
@@ -2933,7 +2933,7 @@
             "createdAt": "2026-06-18T09:04:34.148Z",
             "user": {
                 "id": "e0392558-e263-4874-b380-e33152fcecbe",
-                "avatar": "27a95a7a-3009-4e09-aede-582d3dfb9f71.jpeg",
+                "avatar": "ae54e76a-bc4d-495e-ab7a-3a725e508b83.png",
                 "displayName": "B\u0105czas Bo\u017cy",
                 "firstName": "Piotr",
                 "lastName": "B\u0105czyk",

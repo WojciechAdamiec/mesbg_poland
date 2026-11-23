@@ -16,6 +16,14 @@ from battle_parser import (
     tournament_input_id,
 )
 from db import BattleDB
+from ranking_rules.scoring import (
+    CHALLENGER,
+    LOCAL,
+    MASTER_INDIVIDUAL,
+    MASTER_PAIRS_2027,
+    ONLINE_INDIVIDUAL_2027,
+    ONLINE_TEAM_2027,
+)
 
 
 START_DATE = datetime.datetime.strptime("05-12-2025", "%d-%m-%Y").date()
@@ -30,7 +38,9 @@ MAIN_RANKING_FILE = "main_ranking.json"
 MAIN_RANKING_2027_FILE = "main_ranking_2027.json"
 ONLINE_RANKING_FILE = "online_ranking.json"
 MASTER_RANKING_FILE = "master_ranking.json"
+MASTER_RANKING_2027_FILE = "master_ranking_2027.json"
 MASTER_TOURNAMENTS_FILE = "master_tournaments.json"
+ONLINE_RANKING_2027_FILE = "online_ranking_2027.json"
 BATTLES_FILE = "battles.json"
 ARMIES_FILE = "armies.json"
 PLAYER_PROFILES_FILE = "player_profiles.json"
@@ -173,22 +183,178 @@ def get_main_ranking_data():
     return res_json
 
 
-def get_main_ranking_2027_data():
-    print("Downloading 2027 main ranking data from Champions Hub API...")
-    url = "https://api.championshub.app/api/ranking/results/mesbg-pl?season=33&cityId=PL"
-    response = requests.get(url, headers=headers, cookies=cookies, timeout=15)
-    response.raise_for_status()
-    return [
-        {
-            "player_id": player["user"]["id"],
-            "displayName": player["user"].get("displayName"),
-            "place": player.get("place"),
-            "city_id": (player["user"].get("city") or {}).get("id"),
-            "city_name": (player["user"].get("city") or {}).get("name"),
-            "city_country": (player["user"].get("city") or {}).get("country"),
+def _place_value(raw_place):
+    if raw_place is None or isinstance(raw_place, bool):
+        return None
+    try:
+        place = int(raw_place)
+    except (TypeError, ValueError):
+        return None
+    return place if place > 0 else None
+
+
+def _points_for_place(scoring, place):
+    if place is None:
+        return None
+    points = scoring[1]
+    return points[min(place - 1, len(points) - 1)]
+
+
+def _rank_by_score(entries, tie_breaker=False):
+    entries.sort(key=lambda entry: (
+        -entry["score"],
+        -entry.get("tie_breaker", 0) if tie_breaker else 0,
+        (entry.get("displayName") or "").casefold(),
+        str(entry["player_id"]),
+    ))
+    previous_key = None
+    previous_place = None
+    for index, entry in enumerate(entries):
+        rank_key = (entry["score"], entry.get("tie_breaker", 0) if tie_breaker else None)
+        if rank_key != previous_key:
+            previous_place = index + 1
+            previous_key = rank_key
+        entry["place"] = previous_place
+    return entries
+
+
+def build_2027_rankings(polish_events, submissions_by_id):
+    """Build 2027 rankings from season-scoped tournament placements and published rules."""
+    players = {}
+
+    def event_date(event):
+        value = event["date"]
+        return datetime.date.fromisoformat(value) if isinstance(value, str) else value
+
+    def get_player(user):
+        user_id = user.get("id")
+        if not user_id:
+            return None
+        player = players.setdefault(user_id, {
+            "player_id": user_id,
+            "displayName": user.get("displayName"),
+            "city_id": None,
+            "city_name": None,
+            "city_country": None,
+            "discord_linked": False,
+            "main_results": [],
+            "master_results": [],
+            "local_results": [],
+            "online_results": [],
+        })
+        city = user.get("city") or {}
+        if city:
+            player.update({
+                "city_id": city.get("id"),
+                "city_name": city.get("name"),
+                "city_country": city.get("country"),
+            })
+        player["displayName"] = user.get("displayName") or player["displayName"]
+        player["discord_linked"] = player["discord_linked"] or bool(user.get("discordUsername"))
+        return player
+
+    for event in sorted(polish_events, key=event_date):
+        if event_date(event) < SEASON_2027_START:
+            continue
+
+        submission = submissions_by_id.get(event["id"])
+        if not submission:
+            continue
+        tournament_type = (event.get("tournament_type") or "").upper()
+        people = submission.get("people", [])
+        teams = submission.get("teams") or []
+        is_team_event = bool(teams) or any(person.get("teamId") for person in people)
+        team_places = {
+            team.get("id"): _place_value((team.get("finalResult") or {}).get("place"))
+            for team in teams
+            if team.get("id")
         }
-        for player in response.json()
-    ]
+
+        for person in people:
+            user = person.get("user") or {}
+            player = get_player(user)
+            if player is None:
+                continue
+
+            if tournament_type == "DMP":
+                player["main_results"].append(30)
+                continue
+
+            place = team_places.get(person.get("teamId")) or _place_value(
+                (person.get("finalResult") or {}).get("place")
+            )
+            if place is None:
+                continue
+
+            if tournament_type == "LOKAL":
+                points = _points_for_place(LOCAL, place)
+                player["local_results"].append(points)
+            elif tournament_type == "CHALLENGER":
+                points = _points_for_place(CHALLENGER, place)
+                player["main_results"].append(points)
+                player["master_results"].append(points)
+            elif tournament_type == "MASTER":
+                scoring = MASTER_PAIRS_2027 if is_team_event else MASTER_INDIVIDUAL
+                points = _points_for_place(scoring, place)
+                player["main_results"].append(points)
+                player["master_results"].append(points)
+            elif tournament_type == "ONLINE":
+                scoring = ONLINE_TEAM_2027 if is_team_event else ONLINE_INDIVIDUAL_2027
+                player["online_results"].append(_points_for_place(scoring, place))
+
+    main_ranking = []
+    master_ranking = []
+    online_ranking = []
+
+    for player in players.values():
+        main_results = sorted(player["main_results"], reverse=True)[:6]
+        local_results = sorted(player["local_results"], reverse=True)[:6]
+        main_results.extend([0] * (6 - len(main_results)))
+        local_results.extend([0] * (6 - len(local_results)))
+        if any(main_results) or any(local_results):
+            master_total = sum(main_results)
+            local_total = sum(local_results)
+            main_ranking.append({
+                **{key: player[key] for key in ("player_id", "displayName", "city_id", "city_name",
+                                                  "city_country", "discord_linked")},
+                "master_challenger_total": master_total,
+                **{f"master_challenger_{i}": score for i, score in enumerate(main_results, 1)},
+                "local_total": local_total,
+                **{f"local_{i}": score for i, score in enumerate(local_results, 1)},
+                "score": master_total + local_total,
+            })
+
+        master_results = sorted(player["master_results"], reverse=True)[:3]
+        master_results.extend([0] * (3 - len(master_results)))
+        if any(master_results):
+            master_ranking.append({
+                **{key: player[key] for key in ("player_id", "displayName", "city_id", "city_name",
+                                                  "city_country", "discord_linked")},
+                "score": sum(master_results),
+                "tie_breaker": 0,
+                "top_2": sum(master_results[:2]),
+                **{f"master_{i}": score for i, score in enumerate(master_results, 1)},
+            })
+
+        online_results = sorted(player["online_results"], reverse=True)[:5]
+        online_results.extend([0] * (5 - len(online_results)))
+        if any(online_results):
+            online_ranking.append({
+                **{key: player[key] for key in ("player_id", "displayName", "city_id", "city_name",
+                                                  "city_country", "discord_linked")},
+                "score": sum(online_results),
+                **{f"online_{i}": score for i, score in enumerate(online_results, 1)},
+            })
+
+    main_ranking = _rank_by_score(main_ranking)
+    main_scores = {player["player_id"]: player["score"] for player in main_ranking}
+    for player in master_ranking:
+        player["tie_breaker"] = main_scores.get(player["player_id"], 0)
+    return {
+        "main": main_ranking,
+        "master": _rank_by_score(master_ranking, tie_breaker=True),
+        "online": _rank_by_score(online_ranking),
+    }
 
 
 def get_online_ranking_data():
@@ -832,10 +998,6 @@ def download_data(force=False):
         main_ranking_json = get_main_ranking_data()
         save_data(main_ranking_json, MAIN_RANKING_FILE)
 
-        ranking_2027 = get_main_ranking_2027_data()
-        save_data(ranking_2027, MAIN_RANKING_2027_FILE)
-        rankings_by_season = {2026: main_ranking_json, 2027: ranking_2027}
-
         online_ranking_json = get_online_ranking_data()
         save_data(online_ranking_json, ONLINE_RANKING_FILE)
 
@@ -843,6 +1005,12 @@ def download_data(force=False):
         polish_events = get_polish_events(all_events_raw)
 
         submissions_by_id = download_tournament_battles_data(polish_events)
+        rankings_2027 = build_2027_rankings(polish_events, submissions_by_id)
+        save_data(rankings_2027["main"], MAIN_RANKING_2027_FILE)
+        save_data(rankings_2027["master"], MASTER_RANKING_2027_FILE)
+        save_data(rankings_2027["online"], ONLINE_RANKING_2027_FILE)
+        rankings_by_season = {2026: main_ranking_json, 2027: rankings_2027["main"]}
+
         master_tournaments_data = download_master_tournaments_data(polish_events, submissions_by_id)
         save_data(master_tournaments_data, MASTER_TOURNAMENTS_FILE)
 

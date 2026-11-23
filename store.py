@@ -1,13 +1,16 @@
 import json
 import os
 from dataclasses import dataclass, field
+from functools import lru_cache
 from pathlib import Path
 from download_data import (
     DATA_DIRECTORY,
     MAIN_RANKING_FILE,
     MAIN_RANKING_2027_FILE,
     ONLINE_RANKING_FILE,
+    ONLINE_RANKING_2027_FILE,
     MASTER_RANKING_FILE,
+    MASTER_RANKING_2027_FILE,
     MASTER_TOURNAMENTS_FILE,
     BATTLES_FILE,
     ARMIES_FILE,
@@ -24,79 +27,99 @@ from battle_parser import (
 )
 
 
+@lru_cache(maxsize=32)
+def _read_json(path, modified_ns, size):
+    stat = os.stat(path)
+    if stat.st_mtime_ns != modified_ns or stat.st_size != size:
+        return _load_json(path)
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _load_json(path):
+    stat = os.stat(path)
+    return _read_json(os.fspath(path), stat.st_mtime_ns, stat.st_size)
+
+
 def load_main_ranking():
     main_ranking_path = os.path.join(DATA_DIRECTORY, MAIN_RANKING_FILE)
     if not os.path.exists(main_ranking_path):
         return []
-    with open(main_ranking_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(main_ranking_path)
 
 
 def load_main_ranking_2027():
     path = os.path.join(DATA_DIRECTORY, MAIN_RANKING_2027_FILE)
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    if not os.path.exists(path):
+        return []
+    return _load_json(path)
 
 
 def load_online_ranking():
     online_ranking_path = os.path.join(DATA_DIRECTORY, ONLINE_RANKING_FILE)
     if not os.path.exists(online_ranking_path):
         return []
-    with open(online_ranking_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(online_ranking_path)
 
 
 def load_master_ranking():
     master_ranking_path = os.path.join(DATA_DIRECTORY, MASTER_RANKING_FILE)
     if not os.path.exists(master_ranking_path):
         return []
-    with open(master_ranking_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(master_ranking_path)
+
+
+def load_master_ranking_2027():
+    path = os.path.join(DATA_DIRECTORY, MASTER_RANKING_2027_FILE)
+    if not os.path.exists(path):
+        return []
+    return _load_json(path)
+
+
+def load_online_ranking_2027():
+    path = os.path.join(DATA_DIRECTORY, ONLINE_RANKING_2027_FILE)
+    if not os.path.exists(path):
+        return []
+    return _load_json(path)
 
 
 def load_master_tournaments():
     master_tournaments_path = os.path.join(DATA_DIRECTORY, MASTER_TOURNAMENTS_FILE)
     if not os.path.exists(master_tournaments_path):
         return []
-    with open(master_tournaments_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(master_tournaments_path)
 
 
 def load_battles():
     battles_path = os.path.join(DATA_DIRECTORY, BATTLES_FILE)
     if not os.path.exists(battles_path):
         return []
-    with open(battles_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(battles_path)
 
 
 def load_armies():
     armies_path = os.path.join(DATA_DIRECTORY, ARMIES_FILE)
     if not os.path.exists(armies_path):
         return []
-    with open(armies_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(armies_path)
 
 def load_player_profiles():
     path = os.path.join(DATA_DIRECTORY, PLAYER_PROFILES_FILE)
     if not os.path.exists(path):
         return []
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(path)
 
 
 def load_tournaments():
     """Load tournament towns and ranked participant IDs, or raise if not downloaded."""
     path = os.path.join(DATA_DIRECTORY, TOURNAMENTS_FILE)
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(path)
 
 
 def load_player_cities():
     """Load last known player towns keyed by player ID, or raise if not downloaded."""
     path = os.path.join(DATA_DIRECTORY, PLAYER_CITIES_FILE)
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    return _load_json(path)
 
 
 def load_nations_cup_2027_player_ids():

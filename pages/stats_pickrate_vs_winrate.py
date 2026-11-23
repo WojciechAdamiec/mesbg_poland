@@ -16,7 +16,6 @@ from pages.stats_filters import (
     MIN_POINTS,
     PATCHES,
     PATCH_MAP,
-    count_filtered_battles,
     create_filter_controls,
     data_size_label,
     battle_in_ranking,
@@ -36,7 +35,10 @@ armies_data = load_armies()
 DEFAULT_MIN_GAMES = 50
 
 
-def compute_chart_data(battles, armies, points_range, game_types, patches, factions, formats, min_games, ranking_enabled=False, ranking_top=50, seasons=None):
+def _compute_chart_data_and_count(
+    battles, armies, points_range, game_types, patches, factions, formats, min_games,
+    ranking_enabled=False, ranking_top=50, seasons=None,
+):
     allowed_types = {GAME_TYPE_MAP[gt] for gt in (game_types or []) if gt in GAME_TYPE_MAP}
     allowed_patches = {PATCH_MAP[p] for p in (patches or []) if p in PATCH_MAP}
     top_players = top_player_ids(ranking_enabled, ranking_top)
@@ -56,6 +58,7 @@ def compute_chart_data(battles, armies, points_range, game_types, patches, facti
     }
 
     total_picks = 0
+    filtered_battles = 0
 
     for b in battles:
         if not battle_in_seasons(b, seasons):
@@ -85,6 +88,7 @@ def compute_chart_data(battles, armies, points_range, game_types, patches, facti
         result = b.get("result")
         if not result or len(result) != 2:
             continue
+        filtered_battles += 1
         p1_score, p2_score = result
 
         a1_id = b.get("army_1_id")
@@ -145,10 +149,20 @@ def compute_chart_data(battles, armies, points_range, game_types, patches, facti
         "data": evil_data if "Evil" in (factions or []) else [],
     })
 
-    return series
+    return series, filtered_battles
 
 
-initial_chart_data = compute_chart_data(
+def compute_chart_data(
+    battles, armies, points_range, game_types, patches, factions, formats, min_games,
+    ranking_enabled=False, ranking_top=50, seasons=None,
+):
+    return _compute_chart_data_and_count(
+        battles, armies, points_range, game_types, patches, factions, formats, min_games,
+        ranking_enabled, ranking_top, seasons,
+    )[0]
+
+
+initial_chart_data, initial_data_size = _compute_chart_data_and_count(
     battles_data,
     armies_data,
     points_range=[MIN_POINTS, MAX_POINTS],
@@ -157,10 +171,6 @@ initial_chart_data = compute_chart_data(
     factions=FACTIONS,
     formats=DEFAULT_FORMATS,
     min_games=DEFAULT_MIN_GAMES,
-)
-
-initial_data_size = count_filtered_battles(
-    battles_data, [MIN_POINTS, MAX_POINTS], GAME_TYPES, PATCHES, DEFAULT_FORMATS
 )
 
 
@@ -256,7 +266,7 @@ layout = dmc.Box(
     Input(ids["seasons"], "value"),
 )
 def update_chart(points_range, game_types, patches, factions, formats, min_games, ranking_enabled, ranking_top, seasons):
-    series = compute_chart_data(
+    series, data_size = _compute_chart_data_and_count(
         battles_data,
         armies_data,
         points_range=points_range,
@@ -270,9 +280,6 @@ def update_chart(points_range, game_types, patches, factions, formats, min_games
         seasons=seasons,
     )
     x_props, y_props = compute_axes(series)
-    data_size = count_filtered_battles(
-        battles_data, points_range, game_types, patches, formats, ranking_enabled, ranking_top, seasons
-    )
     
     # Flatten all armies from series into a single list
     all_armies = []

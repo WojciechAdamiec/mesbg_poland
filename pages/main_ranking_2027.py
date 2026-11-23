@@ -2,9 +2,12 @@ import dash
 
 from pages.main_ranking_2026 import HIGHLIGHT_FULL, HIGHLIGHT_ZERO, make_layout
 from ranking_rules.main_2027 import RULES
+from store import load_main_ranking_2027
 
 
 dash.register_page(__name__, path="/ranking_main_2027")
+
+data = load_main_ranking_2027()
 
 MASTER_CHALLENGER_KEYS = [f"master_challenger_{i}" for i in range(1, 7)]
 LOCAL_KEYS = [f"local_{i}" for i in range(1, 7)]
@@ -39,24 +42,4 @@ def cell_style(key, value, align):
     return style
 
 
-SAMPLE_RESULTS = [
-    ("Sample: maximum", [60, 60, 60, 60, 60, 60], [20, 20, 20, 20, 20, 20]),
-    ("Sample: just below totals", [60, 60, 60, 60, 60, 59], [20, 20, 20, 20, 20, 19]),
-    ("Sample: thresholds", [59, 40, 39, 0, 0, 0], [20, 19, 0, 0, 0, 0]),
-    ("Sample: no scores", [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]),
-]
-sample_data = [
-    {
-        "place": place,
-        "score": sum(master) + sum(local),
-        "displayName": name,
-        "city_name": "Sample",
-        "master_challenger_total": sum(master),
-        **dict(zip(MASTER_CHALLENGER_KEYS, master)),
-        "local_total": sum(local),
-        **dict(zip(LOCAL_KEYS, local)),
-    }
-    for place, (name, master, local) in enumerate(SAMPLE_RESULTS, 1)
-]
-
-layout = make_layout(sample_data, year=2027, rules=RULES, columns=COLUMNS, style_for_cell=cell_style)
+layout = make_layout(data, year=2027, rules=RULES, columns=COLUMNS, style_for_cell=cell_style)

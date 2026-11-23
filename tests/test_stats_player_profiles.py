@@ -38,7 +38,8 @@ class PlayerProfileTests(unittest.TestCase):
     def test_player_rank_boundaries_and_mithril_requires_full_completion(self):
         self.assertEqual([(name, threshold) for name, threshold, _ in achievements.PLAYER_RANKS], [
             ("Leaf", 0), ("Wooden", 10), ("Stone", 20), ("Copper", 30), ("Bronze", 40),
-            ("Iron", 50), ("Silver", 60), ("Gold", 70), ("Emerald", 80), ("Mithril", 100),
+            ("Iron", 50), ("Silver", 60), ("Gold", 70), ("Emerald", 80), ("Diamond", 90),
+            ("Mithril", 100),
         ])
         definitions = tuple(
             achievements.Achievement(f"Achievement {index}", "", "achievement.png",
@@ -52,9 +53,10 @@ class PlayerProfileTests(unittest.TestCase):
                     self.assertEqual(profile_page._rank_progress(names[:threshold])[2], index)
                     if threshold:
                         self.assertEqual(profile_page._rank_progress(names[:threshold - 1])[2], index - 1)
-            self.assertEqual(profile_page._rank_progress(names[:95])[2], 8)
-            self.assertEqual(profile_page._rank_progress(names[:99])[2], 8)
-            self.assertEqual(profile_page._rank_progress(names + names[:1] + ["unknown"]), (100, 100, 9))
+            self.assertEqual(profile_page._rank_progress(names[:89])[2], 8)
+            self.assertEqual(profile_page._rank_progress(names[:90])[2], 9)
+            self.assertEqual(profile_page._rank_progress(names[:99])[2], 9)
+            self.assertEqual(profile_page._rank_progress(names + names[:1] + ["unknown"]), (100, 100, 10))
             self.assertIsNone(profile_page._rank_progress(None))
         total = achievements.total_achievement_stages(achievements.ACHIEVEMENTS)
         for index, (_, threshold, _) in enumerate(achievements.PLAYER_RANKS[1:], start=1):
@@ -82,7 +84,7 @@ class PlayerProfileTests(unittest.TestCase):
             self.assertEqual(rank_card[1].children, "Leaf (4/100 4.0%)")
             self.assertFalse(any(isinstance(child, profile_page.dmc.Progress) for child in section.children))
             track = section.children[1].children
-            self.assertEqual(len(track.children), 10)
+            self.assertEqual(len(track.children), 11)
             self.assertEqual(track.gap, 4)
             self.assertTrue(all(tooltip.children.style["minWidth"] == "80px" for tooltip in track.children))
             self.assertEqual([text.children for text in track.children[0].label.children],
@@ -144,7 +146,10 @@ class PlayerProfileTests(unittest.TestCase):
             {"player_1_id": "winner", "player_2_id": "unranked", "result": [1, 0]},
             {"player_1_id": "winner", "player_2_id": "lost", "result": [0, 1]},
         ])
-        players = seasonal_trophies(battles, {2026: ranking})["winner"][2026]
+        rankings = {2026: ranking}
+        trophy_results = seasonal_trophies(battles, rankings)
+        self.assertIs(seasonal_trophies(battles, {2026: ranking}), trophy_results)
+        players = trophy_results["winner"][2026]
         self.assertEqual([p["main_ranking_place"] for p in players], [1, 10, 11, 30, 31, 50])
 
         trophy_section = _trophies(players)
@@ -1388,7 +1393,9 @@ class PlayerProfileTests(unittest.TestCase):
                   patch.object(download_data, "load_metadata", return_value={"time": None}),
                   patch.object(download_data, "save_metadata"),
                   patch.object(download_data, "get_main_ranking_data", return_value=[]),
-                  patch.object(download_data, "get_main_ranking_2027_data", return_value=[]),
+                  patch.object(download_data, "build_2027_rankings", return_value={
+                      "main": [], "master": [], "online": [],
+                  }),
                   patch.object(download_data, "get_online_ranking_data", return_value=[]),
                   patch.object(download_data, "get_finished_events", return_value=[]),
                   patch.object(download_data, "get_polish_events", return_value=[event]),

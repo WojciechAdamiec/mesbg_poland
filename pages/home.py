@@ -47,6 +47,11 @@ FEATURES = [
 
 CHANGELOG = [
     (
+        "0.10",
+        "Optimization and Season 2027",
+        "Optimized various pages and views. Added support for Season 2027.",
+    ),
+    (
         "0.9",
         "Achievements",
         "Added achievements and ranks visible in player profiles and players comparison page.",

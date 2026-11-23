@@ -4,9 +4,12 @@ from pages.main_ranking_2026 import HIGHLIGHT_FULL, HIGHLIGHT_ZERO
 from pages.main_ranking_2027 import HIGHLIGHT_HALF
 from pages.master_ranking_2026 import COLUMNS as COLUMNS_2026, make_layout
 from ranking_rules.master_2027 import RULES
+from store import load_master_ranking_2027
 
 
 dash.register_page(__name__, path="/ranking_master_2027")
+
+data = load_master_ranking_2027()
 
 MASTER_KEYS = [f"master_{i}" for i in range(1, 4)]
 COLUMNS = [
@@ -27,22 +30,4 @@ def cell_style(key, value, align):
     return style
 
 
-SAMPLE_RESULTS = [
-    ("Sample: maximum", [60, 60, 60]),
-    ("Sample: just below maximum", [60, 60, 59]),
-    ("Sample: thresholds", [59, 40, 39]),
-    ("Sample: no scores", [0, 0, 0]),
-]
-sample_data = [
-    {
-        "place": place,
-        "score": sum(scores),
-        "tie_breaker": 0,
-        "displayName": name,
-        "city_name": "Sample",
-        **dict(zip(MASTER_KEYS, scores)),
-    }
-    for place, (name, scores) in enumerate(SAMPLE_RESULTS, 1)
-]
-
-layout = make_layout(sample_data, year=2027, rules=RULES, columns=COLUMNS, style_for_cell=cell_style)
+layout = make_layout(data, year=2027, rules=RULES, columns=COLUMNS, style_for_cell=cell_style)

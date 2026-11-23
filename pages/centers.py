@@ -4,6 +4,7 @@ import dash_mantine_components as dmc
 import plotly.express as px
 import pandas as pd
 import math
+from functools import lru_cache
 from dash_iconify import DashIconify
 from dash import Input, Output, State, dcc, no_update, Patch
 
@@ -89,22 +90,6 @@ with open('data/centers.json', 'r', encoding='utf-8') as f:
 with open('data/centers_details.json', 'r', encoding='utf-8') as f:
     centers_details = json.load(f)
 
-
-def _collect_all_image_paths(details_dict):
-    """Gathers every center/club image path so they can be preloaded on page start."""
-    paths = set()
-    for details in details_dict.values():
-        image_src = details.get("image")
-        if image_src:
-            paths.add(image_src)
-        for club in details.get("clubs", []):
-            club_img = club.get("image")
-            if club_img:
-                paths.add(club_img)
-    return sorted(paths)
-
-
-ALL_IMAGE_PATHS = _collect_all_image_paths(centers_details)
 
 centers = pd.DataFrame(
     [
@@ -246,6 +231,7 @@ def create_welcome_card():
     )
 
 
+@lru_cache(maxsize=None)
 def create_center_card(town_name):
     if not town_name:
         return create_welcome_card()
@@ -617,9 +603,8 @@ def create_center_card(town_name):
     )
 
 
-# Precompute every city's card and marker style once at startup, so clicks are pure dict lookups.
+# Precompute marker styles while building each selected center card on demand.
 ALL_CENTER_NAMES = set(centers_data) | set(centers_details) | set(centers["name"])
-ALL_CENTER_CARDS = {name: create_center_card(name) for name in ALL_CENTER_NAMES}
 ALL_MARKER_STYLES = {name: get_marker_style(name) for name in ALL_CENTER_NAMES}
 ALL_MARKER_STYLES[None] = get_marker_style(None)
 INITIAL_MAP_FIGURE = create_map_figure(None)
@@ -629,18 +614,6 @@ WELCOME_CARD = create_welcome_card()
 layout = dmc.Box([
     dcc.Location(id="centers-redirect", refresh=True),
     dcc.Store(id="selected-center-store", data=None),
-    # Preload all center/club images off-screen so clicking a marker never waits on an image fetch.
-    dmc.Box(
-        children=[dmc.Image(src=path, w=1, h=1) for path in ALL_IMAGE_PATHS],
-        style={
-            "position": "absolute",
-            "width": "1px",
-            "height": "1px",
-            "overflow": "hidden",
-            "opacity": 0,
-            "pointerEvents": "none",
-        },
-    ),
     dmc.Text("MESBG Centers Map", style={"fontSize": "40px", "marginBottom": "20px"}),
     dmc.Grid(
         children=[
@@ -698,5 +671,5 @@ def update_center(click_data, current_selection):
     figure_patch["data"][1]["marker"]["line"]["color"] = style["line_colors"]
     figure_patch["data"][1]["marker"]["line"]["width"] = style["line_widths"]
 
-    card = ALL_CENTER_CARDS.get(selected, WELCOME_CARD)
+    card = create_center_card(selected) if selected else WELCOME_CARD
     return figure_patch, card, selected

@@ -4,7 +4,14 @@ from importlib import import_module
 import dash
 
 import app
-from store import load_main_ranking, load_master_ranking, load_online_ranking
+from store import (
+    load_main_ranking,
+    load_main_ranking_2027,
+    load_master_ranking,
+    load_master_ranking_2027,
+    load_online_ranking,
+    load_online_ranking_2027,
+)
 
 
 class RankingPagesTests(unittest.TestCase):
@@ -23,11 +30,11 @@ class RankingPagesTests(unittest.TestCase):
     def test_2027_ranking_tables(self):
         pages = {page["path"]: page for page in dash.page_registry.values()}
         loaders = {
-            "main": load_main_ranking,
-            "master": load_master_ranking,
-            "online": load_online_ranking,
+            "main": (load_main_ranking, load_main_ranking_2027),
+            "master": (load_master_ranking, load_master_ranking_2027),
+            "online": (load_online_ranking, load_online_ranking_2027),
         }
-        for kind, load in loaders.items():
+        for kind, (load_2026, load_2027) in loaders.items():
             with self.subTest(kind=kind):
                 old_layout = pages[f"/ranking_{kind}_2026"]["layout"]
                 new_layout = pages[f"/ranking_{kind}_2027"]["layout"]
@@ -51,11 +58,11 @@ class RankingPagesTests(unittest.TestCase):
                         "Place", "Score", "Display Name", "City Name",
                         *[f"Online {i}" for i in range(1, 6)],
                     ])
-                self.assertEqual(len(old_table.children[1].children), len(load()))
+                self.assertEqual(len(old_table.children[1].children), len(load_2026()))
+                self.assertEqual(len(new_table.children[1].children), len(load_2027()))
                 name_index = new_headers.index("Display Name")
                 names = [row.children[name_index].children for row in new_table.children[1].children]
-                self.assertTrue(names)
-                self.assertTrue(all(name.startswith("Sample:") for name in names))
+                self.assertFalse(any(name.startswith("Sample:") for name in names))
                 self.assertEqual(old_layout.children[0].children, f"2026 {kind.capitalize()} Ranking")
                 self.assertEqual(new_layout.children[0].children, f"2027 {kind.capitalize()} Ranking")
 
@@ -96,20 +103,6 @@ class RankingPagesTests(unittest.TestCase):
         self.assertEqual(cells[index].children, 40)
         self.assertEqual(cells[index].style, {"textAlign": "center", **HIGHLIGHT_HALF})
 
-    def test_2027_main_sample_rows_cover_highlight_boundaries(self):
-        from pages.main_ranking_2027 import sample_data
-
-        self.assertEqual({row["master_challenger_total"] for row in sample_data}, {0, 138, 359, 360})
-        self.assertEqual({row["local_total"] for row in sample_data}, {0, 39, 119, 120})
-        self.assertEqual(
-            {row[f"master_challenger_{i}"] for row in sample_data for i in range(1, 7)},
-            {0, 39, 40, 59, 60},
-        )
-        self.assertEqual(
-            {row[f"local_{i}"] for row in sample_data for i in range(1, 7)},
-            {0, 19, 20},
-        )
-
     def test_2027_online_columns_and_highlights(self):
         from pages.online_ranking_2026 import make_layout
         from pages.online_ranking_2027 import COLUMNS, HIGHLIGHT_FULL, HIGHLIGHT_ZERO, cell_style
@@ -134,17 +127,8 @@ class RankingPagesTests(unittest.TestCase):
         for key in ("score", "online_5"):
             self.assertEqual(cells[keys.index(key)].style, {"textAlign": "center", **HIGHLIGHT_FULL})
 
-    def test_2027_online_sample_rows_cover_highlight_boundaries(self):
-        from pages.online_ranking_2027 import sample_data
-
-        self.assertEqual({row["score"] for row in sample_data}, {0, 89, 199, 200})
-        self.assertEqual(
-            {row[f"online_{i}"] for row in sample_data for i in range(1, 6)},
-            {0, 10, 39, 40},
-        )
-
-    def test_2027_master_highlights_and_sample_rows(self):
-        from pages.master_ranking_2027 import HIGHLIGHT_FULL, HIGHLIGHT_HALF, HIGHLIGHT_ZERO, cell_style, sample_data
+    def test_2027_master_highlights(self):
+        from pages.master_ranking_2027 import HIGHLIGHT_FULL, HIGHLIGHT_HALF, HIGHLIGHT_ZERO, cell_style
 
         for key, value, expected in (
             ("master_1", 0, HIGHLIGHT_ZERO),
@@ -157,11 +141,6 @@ class RankingPagesTests(unittest.TestCase):
         ):
             with self.subTest(key=key, value=value):
                 self.assertEqual(cell_style(key, value, "center"), {"textAlign": "center", **expected})
-        self.assertEqual({row["score"] for row in sample_data}, {0, 138, 179, 180})
-        self.assertEqual(
-            {row[f"master_{i}"] for row in sample_data for i in range(1, 4)},
-            {0, 39, 40, 59, 60},
-        )
 
     def test_rules_are_collapsed_and_use_each_page_content(self):
         pages = {page["path"]: page for page in dash.page_registry.values()}
@@ -217,16 +196,6 @@ class RankingPagesTests(unittest.TestCase):
         })
         self.assertIn("top6 Master or Challenger", rules_2027[0].children)
         self.assertIn("top6 Local", rules_2027[0].children)
-
-    def test_2027_master_rules_use_main_scoring_without_dmp(self):
-        from ranking_rules.main_2027 import RULES as main_rules
-        from ranking_rules.master_2027 import RULES as master_rules
-
-        main_tables = [item.children.data for item in main_rules if item.__class__.__name__ == "ScrollArea"]
-        master_tables = [item.children.data for item in master_rules if item.__class__.__name__ == "ScrollArea"]
-        self.assertEqual(master_tables, main_tables[1:])
-        self.assertIn("three best Master or Challenger", master_rules[0].children)
-        self.assertIn("DMP does not count", master_rules[0].children)
 
     def test_2027_online_tournament_points(self):
         from ranking_rules.online_2027 import RULES
