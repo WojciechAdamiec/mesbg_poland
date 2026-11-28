@@ -199,11 +199,11 @@ class PlayerProfileTests(unittest.TestCase):
 
     def test_multiseason_achievements_use_unique_trophies_and_any_frontman_season(self):
         rankings = {
-            2026: [{"player_id": "winner", "place": 5, "city_id": 1},
-                   {"player_id": "rival", "place": 1, "city_id": 1},
+            2026: [{"player_id": "winner", "place": 5, "city_name": "Poznań"},
+                   {"player_id": "rival", "place": 1, "city_name": "Poznań"},
                    *[{"player_id": f"top-{i}", "place": i} for i in range(1, 11)]],
-            2027: [{"player_id": "winner", "place": 1, "city_id": 1},
-                   {"player_id": "rival", "place": 5, "city_id": 1},
+            2027: [{"player_id": "winner", "place": 1, "city_name": "Poznań"},
+                   {"player_id": "rival", "place": 5, "city_name": "Poznań"},
                    *[{"player_id": f"top-{i}", "place": i} for i in range(1, 11)]],
         }
         battles = [
@@ -218,6 +218,42 @@ class PlayerProfileTests(unittest.TestCase):
         self.assertEqual(result["achievement_progress"]["Headhunter"]["current"], 10)
         self.assertEqual(result["achievement_progress"]["Beat the Unbeatable"]["current"], 10)
         self.assertIn("Center's Frontman", result["achievements"])
+
+    def test_center_frontman_uses_mapped_cities_across_seasons_and_preserves_ties(self):
+        rankings = {
+            2026: [
+                {"player_id": "first", "place": 5, "city_name": "Kraków"},
+                {"player_id": "tied", "place": 5, "city_name": "Wieliczka"},
+                {"player_id": "second", "place": 10, "city_name": "Wieliczka"},
+                {"player_id": "unknown", "place": 1, "city_name": "Unknown"},
+                {"player_id": "no_city", "place": 2, "city_name": "Kraków"},
+            ],
+            2027: [
+                {"player_id": "second", "place": 1, "city_name": "Wieliczka"},
+                {"player_id": "first", "place": 2, "city_name": "Kraków"},
+            ],
+        }
+        cities = {"no_city": None}
+        profiles = [
+            {"player_id": player, "draws": 0, "opponents": [], "army_lists": []}
+            for player in ("first", "tied", "second", "unknown", "no_city")
+        ]
+        result = achievements.calculate_achievements(
+            profiles, {}, [], rankings_by_season=rankings, player_cities=cities, nations_cup_player_ids=set(),
+        )
+        self.assertEqual(
+            {profile["player_id"] for profile in result if "Center's Frontman" in profile["achievements"]},
+            {"first", "tied", "second"},
+        )
+        _, mapping = achievements.load_center_mapping()
+        self.assertEqual(achievements._center_frontmen({2026: rankings[2026]}, cities, mapping),
+                         {"first", "tied"})
+        modified_mapping = {**mapping, "wieliczka": "Other"}
+        self.assertEqual(achievements._center_frontmen({2026: rankings[2026]}, cities, modified_mapping),
+                         {"first", "tied"})
+        modified_mapping = {**mapping, "wieliczka": None}
+        self.assertEqual(achievements._center_frontmen({2026: rankings[2026]}, cities, modified_mapping),
+                         {"first"})
 
     def test_expertise_uses_shared_competition_ranking_by_player_id(self):
         battles = []
@@ -544,6 +580,32 @@ class PlayerProfileTests(unittest.TestCase):
         self.assertEqual(card.children.children[0].style["backgroundColor"], "#facc15")
         self.assertIn("custom.png", card.children.children[0].style["maskImage"])
 
+    @patch("dash.get_asset_url", side_effect=lambda path: "/assets/" + path)
+    def test_requested_achievement_icons_render(self, _asset_url):
+        icons = {
+            "Ultimate Champion": "champion.png",
+            "Consolation Prize": "prize.png",
+            "Jack of All Trades": "jack.png",
+            "Shapeshifter": "shapeshifter.png",
+            "Headhunter": "sniper.png",
+            "Discorded": "discord.png",
+            "Rat Catcher": "rat.png",
+            "The Gingerbread Must Flow": "cookie.png",
+            "War Veteran": "war_veteran.png",
+            "Hold my Beer": "beer.png",
+            "Staff Meeting": "broom.png",
+        }
+        selected = tuple(a for a in achievements.ACHIEVEMENTS if a.name in icons)
+        self.assertEqual({a.name for a in selected}, set(icons))
+        with patch.object(profile_page, "ACHIEVEMENTS", selected):
+            cards = _achievements_section([]).children[-1].children
+        icon_dir = Path(__file__).resolve().parents[1] / "assets" / "icons"
+        for achievement, card in zip(selected, cards):
+            with self.subTest(achievement=achievement.name):
+                icon = icons[achievement.name]
+                self.assertTrue((icon_dir / icon).is_file())
+                self.assertIn(f"/assets/icons/{icon}", card.children.children[0].style["maskImage"])
+
     def test_orku_slayer_requires_being_or_defeating_orku(self):
         qualifies = achievements._is_orku_slayer
         self.assertTrue(qualifies({"displayName": "OrkuOrku", "opponents": []}))
@@ -816,11 +878,40 @@ class PlayerProfileTests(unittest.TestCase):
             "Stage 1 (Top 50): 50.0%", "Stage 2 (Top 30): 30.0%", "Stage 3 (Top 10): 10.0%",
         ])
 
+    def test_nations_cup_teams_are_ordered_by_master_ranking(self):
+        path = Path(__file__).resolve().parents[1] / "data" / "hall_of_fame_nations_cup_2027.json"
+        teams = json.loads(path.read_text(encoding="utf-8"))["teams"]
+        self.assertEqual(
+            [[player["player_id"] for player in team["players"]] for team in teams],
+            [
+                [
+                    "93cda88b-c976-4e61-8f65-9a5a5f1ecf7b",
+                    "6a2a00f2-2511-49bb-abf4-034ba4382126",
+                    "9e5a191c-e93a-436d-b7b0-95d223dd6e2e",
+                    "d96af431-77bb-4909-bb15-61df62e81b15",
+                    "76870d30-055b-4a89-a141-78ef032269f2",
+                    "c451779b-6172-4e1a-acbd-1b387949849d",
+                ],
+                [
+                    "5f6a7ffa-1a94-4176-a2f0-42f18d04a39e",
+                    "beec30f8-4a47-431b-b7ed-e7f37e95bbbc",
+                    "e0392558-e263-4874-b380-e33152fcecbe",
+                    "97c5e5bc-7502-4f16-9c1b-53ead4fab5b2",
+                    "9d5bc521-d1ac-416e-952c-926b6aef9e60",
+                    "224b8d3d-7e1f-4095-853a-088883879195",
+                ],
+            ],
+        )
+        self.assertEqual(
+            [[player["placement"] for player in team["players"]] for team in teams],
+            [[1, 2, 4, 5, 6, 15], [3, 7, 8, 9, 10, 12]],
+        )
+
     def test_poland_strong_uses_nations_cup_player_ids(self):
         from store import load_nations_cup_2027_player_ids
 
         members = load_nations_cup_2027_player_ids()
-        self.assertEqual(len(members), 5)
+        self.assertEqual(len(members), 12)
         self.assertIn("93cda88b-c976-4e61-8f65-9a5a5f1ecf7b", members)
         profiles = [
             {"player_id": player_id, "draws": 0, "army_lists": [], "opponents": []}

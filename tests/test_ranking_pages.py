@@ -61,10 +61,43 @@ class RankingPagesTests(unittest.TestCase):
                 self.assertEqual(len(old_table.children[1].children), len(load_2026()))
                 self.assertEqual(len(new_table.children[1].children), len(load_2027()))
                 name_index = new_headers.index("Display Name")
-                names = [row.children[name_index].children for row in new_table.children[1].children]
+                names = [
+                    getattr(row.children[name_index].children, "children", row.children[name_index].children)
+                    for row in new_table.children[1].children
+                ]
                 self.assertFalse(any(name.startswith("Sample:") for name in names))
                 self.assertEqual(old_layout.children[0].children, f"2026 {kind.capitalize()} Ranking")
                 self.assertEqual(new_layout.children[0].children, f"2027 {kind.capitalize()} Ranking")
+
+    def test_six_ranking_layouts_link_available_player_profiles(self):
+        from dash import dcc
+        from store import load_player_profiles
+
+        profile = next(p for p in load_player_profiles() if p.get("player_id") and p.get("displayName"))
+        for kind in ("main", "master", "online"):
+            builder = import_module(f"pages.{kind}_ranking_2026").make_layout
+            for year in (2026, 2027):
+                page = import_module(f"pages.{kind}_ranking_{year}")
+                row = {key: 0 for key, _, _ in page.COLUMNS}
+                row.update(player_id=profile["player_id"], displayName=profile["displayName"], city_name="City")
+                layout = builder([row], year=year, rules=[], columns=page.COLUMNS, style_for_cell=page.cell_style)
+                cells = layout.children[3].children.children[1].children[0].children
+                name = cells[[key for key, _, _ in page.COLUMNS].index("displayName")].children
+                with self.subTest(kind=kind, year=year):
+                    self.assertIsInstance(name, dcc.Link)
+                    self.assertEqual(name.href, f"/stats/player_profiles?player={profile['player_id']}")
+
+    def test_master_legacy_name_resolution_avoids_ambiguous_matches(self):
+        from unittest.mock import patch
+        from ranking_player_links import player_name_cell
+
+        with (patch("ranking_player_links.profile_ids", {"a", "b"}),
+              patch("ranking_player_links.ids_by_name", {"Same": {"a", "b"}}),
+              patch("ranking_player_links.ids_by_name_city", {("Same", "Town"): {"a"}})):
+            self.assertEqual(player_name_cell({"displayName": "Same", "city_name": "Town"}).href,
+                             "/stats/player_profiles?player=a")
+            self.assertEqual(player_name_cell({"displayName": "Same", "city_name": None}), "Same")
+            self.assertEqual(player_name_cell({"displayName": "Same", "player_id": "missing"}), "Same")
 
     def test_2027_main_highlights(self):
         from pages.main_ranking_2027 import COLUMNS, HIGHLIGHT_FULL, HIGHLIGHT_HALF, HIGHLIGHT_ZERO, cell_style

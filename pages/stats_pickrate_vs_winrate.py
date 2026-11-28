@@ -4,6 +4,7 @@ import dash
 import dash_mantine_components as dmc
 from dash import callback, Input, Output, State
 from dash import dcc
+from army_stats_table import army_stats_table
 from store import load_armies, load_battles
 from pages.stats_filters import (
     FACTIONS,
@@ -281,63 +282,5 @@ def update_chart(points_range, game_types, patches, factions, formats, min_games
     )
     x_props, y_props = compute_axes(series)
     
-    # Flatten all armies from series into a single list
-    all_armies = []
-    for s in series:
-        all_armies.extend(s["data"])
-    
-    # Sort by winrate by default for initial display
-    all_armies.sort(key=lambda x: x.get("winrate", 0), reverse=True)
-    
-    # Create table rows
-    rows = []
-    for idx, army in enumerate(all_armies, 1):
-        faction = army.get("faction", "")
-        if faction == "Good":
-            row_color = "rgba(47, 158, 68, 0.1)"
-            text_color = "#2f9e44"
-        else:
-            row_color = "rgba(224, 49, 49, 0.1)"
-            text_color = "#e03131"
-        
-        rows.append(
-            dmc.TableTr(
-                [
-                    dmc.TableTd(str(idx), style={"textAlign": "center"}),
-                    dmc.TableTd(army["army"]),
-                    dmc.TableTd(f"{army['winrate']:.1f}%", style={"textAlign": "center"}),
-                    dmc.TableTd(f"{army['pickrate']:.2f}%", style={"textAlign": "center"}),
-                    dmc.TableTd(str(army["games"]), style={"textAlign": "center"}),
-                ],
-                style={
-                    "backgroundColor": row_color,
-                    "borderLeft": f"4px solid {text_color}",
-                },
-            )
-        )
-    
-    table = dmc.ScrollArea(
-        dmc.Table(
-            [
-                dmc.TableThead(
-                    dmc.TableTr([
-                        dmc.TableTh("#", style={"textAlign": "center"}),
-                        dmc.TableTh("Army list"),
-                        dmc.TableTh("Winrate", style={"textAlign": "center"}),
-                        dmc.TableTh("Pickrate", style={"textAlign": "center"}),
-                        dmc.TableTh("Games", style={"textAlign": "center"}),
-                    ])
-                ),
-                dmc.TableTbody(rows),
-            ],
-            striped=True,
-            highlightOnHover=True,
-            className="pp-sortable",
-            style={"backgroundColor": "#1a1b2e", "color": "white"},
-        ),
-        type="auto",
-        offsetScrollbars=True,
-        style={"marginLeft": "30px"},
-    )
-    
-    return series, x_props, y_props, data_size_label(data_size), table
+    all_armies = [army for group in series for army in group["data"]]
+    return series, x_props, y_props, data_size_label(data_size), army_stats_table(all_armies)

@@ -195,6 +195,7 @@ class TournamentCacheTests(unittest.TestCase):
         ranking = transform_master_ranking_data(raw, masters, [])
         self.assertEqual([(entry["displayName"], entry["score"], entry["place"]) for entry in ranking],
                          [("B", 6, 1), ("A", 18, 2)])
+        self.assertEqual([entry["player_id"] for entry in ranking], ["b", "a"])
 
     def test_master_ranking_only_counts_2026_season_results(self):
         raw = [

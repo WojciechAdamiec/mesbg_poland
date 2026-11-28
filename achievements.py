@@ -8,6 +8,7 @@ from dataclasses import dataclass
 
 from battle import TournamentType
 from battle_parser import INDIVIDUAL, TEAM
+from center_mapping import center_for_ranked_player, load_center_mapping
 from download_data import DATA_DIRECTORY, PLAYER_PROFILES_FILE, save_data
 from player_profile_stats import ArmyExpertise, seasonal_trophies, unique_trophy_players
 from store import (
@@ -59,9 +60,9 @@ class Achievement:
         return self.stage_texts[min(stage or 0, len(self.stage_texts) - 1)]
 
 
-def _threshold_achievement(name, text, target, progress):
+def _threshold_achievement(name, text, target, progress, icon="achievement.png"):
     return Achievement(
-        name, text, "achievement.png",
+        name, text, icon,
         lambda player, results: progress(player) >= target,
         progress, target,
     )
@@ -69,21 +70,22 @@ def _threshold_achievement(name, text, target, progress):
 
 def _staged_achievement(
     name, text, stages, progress, *, stage_texts=(), progress_unit="", stage_labels=(), show_progress=True,
+    icon="achievement.png",
 ):
     if not stages:
         raise ValueError(f"Achievement {name} requires at least one stage")
     return Achievement(
-        name, text, "achievement.png",
+        name, text, icon,
         lambda player, results: progress({**player, "_tournament_results": results}) >= stages[0],
         progress, stages[-1], tuple(stages), tuple(stage_texts), progress_unit, tuple(stage_labels), show_progress,
     )
 
 
-def _milestone_achievement(name, stages, description, progress, *, progress_unit=""):
+def _milestone_achievement(name, stages, description, progress, *, progress_unit="", icon="achievement.png"):
     stage_texts = tuple(description(target) for target in stages)
     return _staged_achievement(
         name, stage_texts[0], stages, progress,
-        stage_texts=stage_texts, progress_unit=progress_unit,
+        stage_texts=stage_texts, progress_unit=progress_unit, icon=icon,
     )
 
 
@@ -108,10 +110,11 @@ def unlocked_stage_count(definitions, unlocked, progress_by_name):
     return None if any(stage is None for stage in stages) else sum(stages)
 
 
-def _city_achievement(name, text, *cities):
+def _city_achievement(name, text, *cities, icon="achievement.png"):
     return _threshold_achievement(
         name, text, 5,
         lambda player: _defeated_players_in_cities(player, player["_player_cities"], cities),
+        icon,
     )
 
 
@@ -154,6 +157,11 @@ def _army_tag_achievement(tag, wins_with):
             for army in player.get(army_field, [])
             if army.get("army_id") in army_ids
         ),
+        icon={
+            "Beard Trimmer": "trimmer.png",
+            "Hold my Beer": "beer.png",
+            "Staff Meeting": "broom.png",
+        }.get(name, "achievement.png"),
     )
 
 
@@ -209,30 +217,24 @@ def _defeated_players_in_places(player, player_cities, place_ids):
     return len(defeated)
 
 
-def _same_city(first, second):
-    first_id, second_id = first.get("city_id"), second.get("city_id")
-    if first_id is not None and second_id is not None:
-        return first_id == second_id
-    return (
-        _normalize_city_name(first.get("city_name")) != ""
-        and _normalize_city_name(first.get("city_name")) == _normalize_city_name(second.get("city_name"))
-        and _normalize_city_name(first.get("city_country")) == _normalize_city_name(second.get("city_country"))
-    )
-
-
-def _is_best_player_in_city(player_id, main_ranking):
-    ranking_by_id = {player.get("player_id"): player for player in main_ranking if player.get("player_id")}
-    player = ranking_by_id.get(player_id)
-    if not player or player.get("place") is None or (
-        player.get("city_id") is None and not player.get("city_name")
-    ):
-        return False
-    same_city_places = [
-        rival["place"]
-        for rival in main_ranking
-        if rival.get("place") is not None and _same_city(player, rival)
-    ]
-    return bool(same_city_places) and player["place"] == min(same_city_places)
+def _center_frontmen(rankings_by_season, player_cities, city_to_center):
+    frontmen = set()
+    for ranking in rankings_by_season.values():
+        best_by_center = {}
+        for player in ranking:
+            player_id, place = player.get("player_id"), player.get("place")
+            center = center_for_ranked_player(player, player_cities, city_to_center)
+            if not player_id or type(place) is not int or place < 1 or center is None:
+                continue
+            best_place, players = best_by_center.get(center, (place, set()))
+            if place < best_place:
+                best_place, players = place, set()
+            if place == best_place:
+                players.add(player_id)
+            best_by_center[center] = best_place, players
+        for _, players in best_by_center.values():
+            frontmen.update(players)
+    return frontmen
 
 
 def _different_armies_played(player):
@@ -250,15 +252,16 @@ BASE_ACHIEVEMENTS = (
             name, (1, 3, 5),
             lambda target, label=label: f"Win {target} {label} tournament{'s' if target != 1 else ''}.",
             lambda player, kind=kind: player["_tournament_results"].win_counts.get(kind, 0),
+            icon=icon,
         )
-        for name, label, kind in (
-            ("King of the Neighbourhood", "Local", TournamentType.LOCAL),
-            ("Challenge Accepted", "Challenger", TournamentType.CHALLENGER),
-            ("The Big Fish", "Master", TournamentType.MASTER),
-            ("Virtually Unstoppable", "Online", TournamentType.ONLINE),
+        for name, label, kind, icon in (
+            ("King of the Neighbourhood", "Local", TournamentType.LOCAL, "local.png"),
+            ("Challenge Accepted", "Challenger", TournamentType.CHALLENGER, "challenge.png"),
+            ("The Big Fish", "Master", TournamentType.MASTER, "fish.png"),
+            ("Virtually Unstoppable", "Online", TournamentType.ONLINE, "online.png"),
         )
     ),
-    Achievement("Ultimate Champion", "Win a Local, a Challenger, a Master and an Online tournament.", "achievement.png",
+    Achievement("Ultimate Champion", "Win a Local, a Challenger, a Master and an Online tournament.", "champion.png",
                 lambda player, results: {
                     TournamentType.LOCAL, TournamentType.CHALLENGER, TournamentType.MASTER, TournamentType.ONLINE
                 }.issubset({win.tournament_type for win in results.wins})),
@@ -267,48 +270,51 @@ BASE_ACHIEVEMENTS = (
             name, (1, 3, 5),
             lambda target, label=label: f"Win {target} {label} tournament{'s' if target != 1 else ''}.",
             lambda player, kind=kind: player["_tournament_results"].win_format_counts.get(kind, 0),
+            icon=icon,
         )
-        for name, label, kind in (
-            ("One-Man Army", "individual", INDIVIDUAL),
-            ("Power of Friendship", "pair or team", TEAM),
+        for name, label, kind, icon in (
+            ("One-Man Army", "individual", INDIVIDUAL, "achievement.png"),
+            ("Power of Friendship", "pair or team", TEAM, "friendship.png"),
         )
     ),
-    Achievement("Eggplant Among Veggies", "Win a tournament with no good players.", "achievement.png",
+    Achievement("Eggplant Among Veggies", "Win a tournament with no good players.", "eggplant.png",
                 lambda player, results: results.veggie_alpha),
     _milestone_achievement(
         "Consolation Prize", (1, 3, 5),
         lambda target: f"Lose all games in {target} tournament{'s' if target != 1 else ''}.",
         lambda player: player["_tournament_results"].lost_all_count,
+        icon="prize.png",
     ),
     _staged_achievement(
         "War Veteran", "Play 30 games.", (30, 50, 80, 120, 200),
         lambda player: player.get("games_played", 0),
         stage_texts=("Play 30 games.", "Play 50 games.", "Play 80 games.",
                      "Play 120 games.", "Play 200 games."),
+        icon="war_veteran.png",
     ),
     _milestone_achievement("Ah, Yes. The Negotiator", (5, 10, 15),
                            lambda target: f"Draw at least {target} games.",
                            lambda player: player["draws"]),
     _threshold_achievement("Jack of All Trades", "Earn at least 10 army specialties.", 10,
-                           lambda player: player.get("_army_specialty_count", 0)),
+                           lambda player: player.get("_army_specialty_count", 0), icon="jack.png"),
     _threshold_achievement("Master Tactician", "Be the best player of an army list.", 1,
                            lambda player: player.get("_number_one_specialty_count", 0)),
     _milestone_achievement("Shapeshifter", (10, 20, 30),
                            lambda target: f"Play battles with at least {target} different armies.",
-                           lambda player: player.get("_different_armies_played", 0)),
+                           lambda player: player.get("_different_armies_played", 0), icon="shapeshifter.png"),
     _threshold_achievement("Headhunter", "Collect at least 10 top player trophies.", 10,
-                           lambda player: player.get("_player_trophy_count", 0)),
+                           lambda player: player.get("_player_trophy_count", 0), icon="sniper.png"),
     _threshold_achievement("Beat the Unbeatable", "Defeat at least 3 players ranked in the top 10.", 3,
                            lambda player: player.get("_top_ten_trophy_count", 0)),
     Achievement("Orku Slayer", "Defeat OrkuOrku or be OrkuOrku.", "achievement.png",
                 lambda player, results: _is_orku_slayer(player)),
-    Achievement("Discorded", "Link a Discord account to your ChampionsHub account.", "achievement.png",
+    Achievement("Discorded", "Link a Discord account to your ChampionsHub account.", "discord.png",
                 lambda player, results: player.get("discord_linked", False)),
     _milestone_achievement("Strider", (5, 10, 15),
                            lambda target: f"Play tournaments in at least {target} different locations.",
                            lambda player: player["locations_count"]),
-    Achievement("Center's Frontman", "Be the best player in your city at the end of a season.", "achievement.png",
-                lambda player, results: player.get("_is_best_player_in_city", False)),
+    Achievement("Center's Frontman", "Be the best player in your center at the end of a season.", "achievement.png",
+                lambda player, results: player.get("_is_best_player_in_center", False)),
     _player_tag_achievement(
         "Vox populi, vox Dei",
         "Be or beat one of the [[tag:players:representatives]].",
@@ -319,8 +325,10 @@ BASE_ACHIEVEMENTS = (
         "Be or beat one of the [[tag:players:coordinators]].",
         "coordinators",
     ),
-    _city_achievement("Potato Peeler", "Defeat at least 5 different players from Poznań.", "Poznań"),
-    _city_achievement("Rat Catcher", "Defeat at least 5 different players from Wrocław.", "Wrocław"),
+    _city_achievement("Potato Peeler", "Defeat at least 5 different players from Poznań.", "Poznań",
+                      icon="potato.png"),
+    _city_achievement("Rat Catcher", "Defeat at least 5 different players from Wrocław.", "Wrocław",
+                      icon="rat.png"),
     _place_tag_achievement(
         "Age of Coal is Over",
         "Defeat at least 5 different players from [[tag:places:silesia]].",
@@ -342,7 +350,7 @@ BASE_ACHIEVEMENTS = (
     _city_achievement(
         "The Gingerbread Must Flow",
         "Defeat at least 5 different players from either Bydgoszcz or Toruń.",
-        "Bydgoszcz", "Toruń",
+        "Bydgoszcz", "Toruń", icon="cookie.png",
     ),
     _city_achievement("Adults Only", "Defeat at least 5 different players from Bielsko-Biała.", "Bielsko-Biała"),
     _city_achievement("Mayonnaise Enjoyer", "Defeat at least 5 different players from Kielce.", "Kielce"),
@@ -358,9 +366,10 @@ BASE_ACHIEVEMENTS = (
         ),
         stage_labels=("Top 50", "Top 30", "Top 10"),
         show_progress=False,
+        icon="graduation.png",
     ),
     Achievement(
-        "Poland Strong", "Be a member of an official Polish team at an international event.", "achievement.png",
+        "Poland Strong", "Be a member of an official Polish team at an international event.", "poland.png",
         lambda player, results: player["player_id"] in player["_nations_cup_player_ids"],
     ),
 )
@@ -371,6 +380,7 @@ COMPLETION_ACHIEVEMENTS = (
         lambda target: f"Unlock at least {target}% of non-completion achievements.",
         lambda player: player["_base_achievement_count"] * 100 // player["_base_achievement_total"],
         progress_unit="%",
+        icon="treasure.png",
     ),
 )
 ACHIEVEMENTS = BASE_ACHIEVEMENTS + COMPLETION_ACHIEVEMENTS
@@ -433,6 +443,8 @@ def calculate_achievements(
     player_cities = player_cities or {}
     if rankings_by_season is None:
         rankings_by_season = {2026: main_ranking}
+    _, city_to_center = load_center_mapping()
+    center_frontmen = _center_frontmen(rankings_by_season, player_cities, city_to_center)
     if nations_cup_player_ids is None:
         nations_cup_player_ids = load_nations_cup_2027_player_ids()
     best_ranking_places = {}
@@ -465,10 +477,7 @@ def calculate_achievements(
             "_different_armies_played": _different_armies_played(profile),
             "_base_achievement_total": total_achievement_stages(BASE_ACHIEVEMENTS),
             "_player_cities": player_cities,
-            "_is_best_player_in_city": any(
-                _is_best_player_in_city(profile["player_id"], ranking)
-                for ranking in rankings_by_season.values()
-            ),
+            "_is_best_player_in_center": profile["player_id"] in center_frontmen,
         }
         unlocked = []
         progress = {}

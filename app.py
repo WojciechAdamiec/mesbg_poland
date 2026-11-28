@@ -124,6 +124,16 @@ nav = dmc.Box([
                 href="/stats/player_comparison",
                 active="exact-with-search",
             ),
+            dmc.NavLink(
+                label="Center Profiles",
+                href="/stats/center_profiles",
+                active="exact-with-search",
+            ),
+            dmc.NavLink(
+                label="Centers Comparison",
+                href="/stats/centers_comparison",
+                active="exact-with-search",
+            ),
         ],
     ),
     dmc.NavLink(

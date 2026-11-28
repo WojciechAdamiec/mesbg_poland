@@ -115,6 +115,7 @@ def transform_master_ranking_data(raw_data, master_tournaments_data, main_rankin
             "place": None,
             "score": score,
             "tie_breaker": tie_breaker,
+            "player_id": user_id,
             "displayName": (user.get("user") or {}).get("displayName"),
             "city_name": ((user.get("user") or {}).get("city") or {}).get("name"),
             "top_2": sum(results[:2]),

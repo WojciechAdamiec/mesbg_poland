@@ -3,6 +3,7 @@ from dash import dcc
 import dash_mantine_components as dmc
 from ranking_rules import rules_box
 from ranking_rules.master_2026 import RULES
+from ranking_player_links import player_name_cell
 from store import load_master_ranking
 
 
@@ -50,7 +51,8 @@ def make_layout(ranking_data, year, rules, columns=COLUMNS, style_for_cell=cell_
     )
     rows = [
         dmc.TableTr([
-            dmc.TableTd(row[key], style=style_for_cell(key, row[key], align))
+            dmc.TableTd(player_name_cell(row) if key == "displayName" else row[key],
+                        style=style_for_cell(key, row[key], align))
             for key, _, align in columns
         ])
         for row in ranking_data

@@ -18,26 +18,11 @@
           "photo": "/assets/player_photos/goblin.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
-            {
-              "name": "Lothlorien",
-              "games": "42"
-            },
-            {
-              "name": "Defenders of Helm's Deep",
-              "games": "10"
-            },
-            {
-              "name": "Assault on Lothlórien",
-              "games": "6"
-            },
-            {
-              "name": "Moria",
-              "games": "4"
-            },
-            {
-              "name": "Paths of the Drúadan",
-              "games": "4"
-            }
+            {"name": "Lothlorien", "games": "42"},
+            {"name": "Defenders of Helm's Deep", "games": "10"},
+            {"name": "Assault on Lothlórien", "games": "6"},
+            {"name": "Moria", "games": "4"},
+            {"name": "Paths of the Drúadan", "games": "4"}
           ]
         },
         {
@@ -54,62 +39,11 @@
           "photo": "/assets/player_photos/spytek.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
-            {
-              "name": "Army of the White Hand",
-              "games": "12"
-            },
-            {
-              "name": "Army of Edoras",
-              "games": "7"
-            },
-            {
-              "name": "Riders of Eomer",
-              "games": "6"
-            },
-            {
-              "name": "Ugluk's Scouts",
-              "games": "6"
-            },
-            {
-              "name": "Fords of Isen",
-              "games": "5"
-            }
-          ]
-        },
-        {
-          "placement": 3,
-          "player_id": "5f6a7ffa-1a94-4176-a2f0-42f18d04a39e",
-          "first_name": "Kamil",
-          "nickname": "Elrond",
-          "surname": "Tomyślak",
-          "age": "???",
-          "center": "Poznań",
-          "club": "Drużyna Boża",
-          "placements": 8,
-          "winratio": "75%",
-          "photo": "/assets/player_photos/elrond.jpg",
-          "quote": "Player quote goes here.",
-          "top_armylists": [
-            {
-              "name": "Harad",
-              "games": "15"
-            },
-            {
-              "name": "Halls of Thranduil",
-              "games": "9"
-            },
-            {
-              "name": "Assault on Lothlórien",
-              "games": "7"
-            },
-            {
-              "name": "Minas Morgul",
-              "games": "6"
-            },
-            {
-              "name": "Host of the Witch-King",
-              "games": "6"
-            }
+            {"name": "Army of the White Hand", "games": "12"},
+            {"name": "Army of Edoras", "games": "7"},
+            {"name": "Riders of Eomer", "games": "6"},
+            {"name": "Ugluk's Scouts", "games": "6"},
+            {"name": "Fords of Isen", "games": "5"}
           ]
         },
         {
@@ -126,26 +60,11 @@
           "photo": "/assets/player_photos/ezekiel.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
-            {
-              "name": "Depths of Moria",
-              "games": "20"
-            },
-            {
-              "name": "The Battle of Five Armies",
-              "games": "9"
-            },
-            {
-              "name": "Assault on Lothlórien",
-              "games": "6"
-            },
-            {
-              "name": "Lothlorien",
-              "games": "6"
-            },
-            {
-              "name": "Men of the West",
-              "games": "5"
-            }
+            {"name": "Depths of Moria", "games": "20"},
+            {"name": "The Battle of Five Armies", "games": "9"},
+            {"name": "Assault on Lothlórien", "games": "6"},
+            {"name": "Lothlorien", "games": "6"},
+            {"name": "Men of the West", "games": "5"}
           ]
         },
         {
@@ -162,62 +81,53 @@
           "photo": "/assets/player_photos/marian.jpg",
           "quote": "Plan był doskonały... szkoda tylko, że przeciwnik miał lepszy.",
           "top_armylists": [
-            {
-              "name": "Assault on Lothlórien",
-              "games": "24"
-            },
-            {
-              "name": "The Battle of Five Armies",
-              "games": "17"
-            },
-            {
-              "name": "Lothlorien",
-              "games": "9"
-            },
-            {
-              "name": "Army of the Great Eye",
-              "games": "4"
-            },
-            {
-              "name": "Army of the White Hand",
-              "games": "3"
-            }
+            {"name": "Assault on Lothlórien", "games": "24"},
+            {"name": "The Battle of Five Armies", "games": "17"},
+            {"name": "Lothlorien", "games": "9"},
+            {"name": "Army of the Great Eye", "games": "4"},
+            {"name": "Army of the White Hand", "games": "3"}
           ]
         },
         {
           "placement": 6,
-          "player_id": null,
-          "first_name": "Name",
-          "nickname": "Nick",
-          "surname": "Surname A6",
+          "player_id": "76870d30-055b-4a89-a141-78ef032269f2",
+          "first_name": "Bogusz",
+          "nickname": "Czaki",
+          "surname": "Podgórski",
+          "age": "31",
+          "center": "Katowice",
+          "club": "Legion Śląska",
+          "placements": 10,
+          "winratio": "77.42%",
+          "photo": "/assets/player_photos/czaki.jpg",
+          "quote": "Player quote goes here.",
+          "top_armylists": [
+            {"name": "Battle of Greenfields", "games": "22"},
+            {"name": "Assault on Lothlórien", "games": "19"},
+            {"name": "The Serpent Horde", "games": "7"},
+            {"name": "Kingdom of Khazad-dûm", "games": "7"},
+            {"name": "Azog's Hunters", "games": "4"}
+          ]
+        },
+        {
+          "placement": 15,
+          "player_id": "c451779b-6172-4e1a-acbd-1b387949849d",
+          "first_name": "Adam",
+          "nickname": "Adaś",
+          "surname": "Howaniec",
           "age": "???",
-          "center": "???",
-          "club": "???",
-          "placements": 0,
-          "winratio": "0%",
+          "center": "Wrocław",
+          "club": "Gdzie był Wrocław",
+          "placements": 16,
+          "winratio": "75%",
           "photo": null,
           "quote": "Player quote goes here.",
           "top_armylists": [
-            {
-              "name": "Army 1",
-              "games": "0"
-            },
-            {
-              "name": "Army 2",
-              "games": "0"
-            },
-            {
-              "name": "Army 3",
-              "games": "0"
-            },
-            {
-              "name": "Army 4",
-              "games": "0"
-            },
-            {
-              "name": "Army 5",
-              "games": "0"
-            }
+            {"name": "Army of the White Hand", "games": "20"},
+            {"name": "Rivendell", "games": "8"},
+            {"name": "Realms of Men", "games": "6"},
+            {"name": "Defenders of the Pelennor", "games": "3"},
+            {"name": "Buhrdur's Horde", "games": "3"}
           ]
         }
       ]
@@ -226,219 +136,129 @@
       "name": "Team Poland B",
       "players": [
         {
-          "placement": 1,
-          "player_id": null,
-          "first_name": "Name",
-          "nickname": "Nick",
-          "surname": "Surname B1",
-          "age": "???",
-          "center": "???",
-          "club": "???",
-          "placements": 0,
-          "winratio": "0%",
-          "photo": null,
-          "quote": "Player quote goes here.",
-          "top_armylists": [
-            {
-              "name": "Army 1",
-              "games": "0"
-            },
-            {
-              "name": "Army 2",
-              "games": "0"
-            },
-            {
-              "name": "Army 3",
-              "games": "0"
-            },
-            {
-              "name": "Army 4",
-              "games": "0"
-            },
-            {
-              "name": "Army 5",
-              "games": "0"
-            }
-          ]
-        },
-        {
-          "placement": 2,
-          "player_id": null,
-          "first_name": "Name",
-          "nickname": "Nick",
-          "surname": "Surname B2",
-          "age": "???",
-          "center": "???",
-          "club": "???",
-          "placements": 0,
-          "winratio": "0%",
-          "photo": null,
-          "quote": "Player quote goes here.",
-          "top_armylists": [
-            {
-              "name": "Army 1",
-              "games": "0"
-            },
-            {
-              "name": "Army 2",
-              "games": "0"
-            },
-            {
-              "name": "Army 3",
-              "games": "0"
-            },
-            {
-              "name": "Army 4",
-              "games": "0"
-            },
-            {
-              "name": "Army 5",
-              "games": "0"
-            }
-          ]
-        },
-        {
           "placement": 3,
-          "player_id": null,
-          "first_name": "Name",
-          "nickname": "Nick",
-          "surname": "Surname B3",
+          "player_id": "5f6a7ffa-1a94-4176-a2f0-42f18d04a39e",
+          "first_name": "Kamil",
+          "nickname": "Elrond",
+          "surname": "Tomyślak",
           "age": "???",
-          "center": "???",
-          "club": "???",
-          "placements": 0,
-          "winratio": "0%",
-          "photo": null,
+          "center": "Poznań",
+          "club": "Drużyna Boża",
+          "placements": 8,
+          "winratio": "75%",
+          "photo": "/assets/player_photos/elrond.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
-            {
-              "name": "Army 1",
-              "games": "0"
-            },
-            {
-              "name": "Army 2",
-              "games": "0"
-            },
-            {
-              "name": "Army 3",
-              "games": "0"
-            },
-            {
-              "name": "Army 4",
-              "games": "0"
-            },
-            {
-              "name": "Army 5",
-              "games": "0"
-            }
+            {"name": "Harad", "games": "15"},
+            {"name": "Halls of Thranduil", "games": "9"},
+            {"name": "Assault on Lothlórien", "games": "7"},
+            {"name": "Minas Morgul", "games": "6"},
+            {"name": "Host of the Witch-King", "games": "6"}
           ]
         },
         {
-          "placement": 4,
-          "player_id": null,
-          "first_name": "Name",
-          "nickname": "Nick",
-          "surname": "Surname B4",
+          "placement": 7,
+          "player_id": "beec30f8-4a47-431b-b7ed-e7f37e95bbbc",
+          "first_name": "Maciej",
+          "nickname": "Macu",
+          "surname": "Wardejn",
           "age": "???",
-          "center": "???",
-          "club": "???",
-          "placements": 0,
-          "winratio": "0%",
-          "photo": null,
+          "center": "Poznań",
+          "club": "Drużyna Boża",
+          "placements": 10,
+          "winratio": "63.07%",
+          "photo": "/assets/player_photos/macu.jpg",
           "quote": "Player quote goes here.",
           "top_armylists": [
-            {
-              "name": "Army 1",
-              "games": "0"
-            },
-            {
-              "name": "Army 2",
-              "games": "0"
-            },
-            {
-              "name": "Army 3",
-              "games": "0"
-            },
-            {
-              "name": "Army 4",
-              "games": "0"
-            },
-            {
-              "name": "Army 5",
-              "games": "0"
-            }
+            {"name": "The Battle of Five Armies", "games": "22"},
+            {"name": "Halls of Thranduil", "games": "12"},
+            {"name": "The Beornings", "games": "6"},
+            {"name": "Army of the White Hand", "games": "6"},
+            {"name": "Defenders of the Pelennor", "games": "6"}
           ]
         },
         {
-          "placement": 5,
-          "player_id": null,
-          "first_name": "Name",
-          "nickname": "Nick",
-          "surname": "Surname B5",
+          "placement": 8,
+          "player_id": "e0392558-e263-4874-b380-e33152fcecbe",
+          "first_name": "Piotr",
+          "nickname": "Bączas",
+          "surname": "Bączyk",
           "age": "???",
-          "center": "???",
-          "club": "???",
-          "placements": 0,
-          "winratio": "0%",
+          "center": "Poznań",
+          "club": "Drużyna Boża",
+          "placements": 11,
+          "winratio": "72.32%",
           "photo": null,
           "quote": "Player quote goes here.",
           "top_armylists": [
-            {
-              "name": "Army 1",
-              "games": "0"
-            },
-            {
-              "name": "Army 2",
-              "games": "0"
-            },
-            {
-              "name": "Army 3",
-              "games": "0"
-            },
-            {
-              "name": "Army 4",
-              "games": "0"
-            },
-            {
-              "name": "Army 5",
-              "games": "0"
-            }
+            {"name": "Assault on Lothlórien", "games": "12"},
+            {"name": "Depths of Moria", "games": "7"},
+            {"name": "Halls of Thranduil", "games": "6"},
+            {"name": "The Battle of Five Armies", "games": "6"},
+            {"name": "Moria", "games": "5"}
           ]
         },
         {
-          "placement": 6,
-          "player_id": null,
-          "first_name": "Name",
-          "nickname": "Nick",
-          "surname": "Surname B6",
+          "placement": 9,
+          "player_id": "97c5e5bc-7502-4f16-9c1b-53ead4fab5b2",
+          "first_name": "Bartek",
+          "nickname": "Żadney",
+          "surname": "Bednarek",
           "age": "???",
-          "center": "???",
-          "club": "???",
-          "placements": 0,
-          "winratio": "0%",
+          "center": "Poznań",
+          "club": "Drużyna Boża",
+          "placements": 11,
+          "winratio": "64.71%",
           "photo": null,
           "quote": "Player quote goes here.",
           "top_armylists": [
-            {
-              "name": "Army 1",
-              "games": "0"
-            },
-            {
-              "name": "Army 2",
-              "games": "0"
-            },
-            {
-              "name": "Army 3",
-              "games": "0"
-            },
-            {
-              "name": "Army 4",
-              "games": "0"
-            },
-            {
-              "name": "Army 5",
-              "games": "0"
-            }
+            {"name": "Muster of Isengard", "games": "10"},
+            {"name": "Army of the White Hand", "games": "9"},
+            {"name": "Army of the Great Eye", "games": "9"},
+            {"name": "The Battle of Five Armies", "games": "8"},
+            {"name": "Kingdom of Khazad-dûm", "games": "7"}
+          ]
+        },
+        {
+          "placement": 10,
+          "player_id": "9d5bc521-d1ac-416e-952c-926b6aef9e60",
+          "first_name": "Konstanty",
+          "nickname": "Kostek",
+          "surname": "Grodecki",
+          "age": "17",
+          "center": "Sosnowiec",
+          "club": "Non-Aligned",
+          "placements": 12,
+          "winratio": "73.53%",
+          "photo": "/assets/player_photos/kostek.png",
+          "quote": "Player quote goes here.",
+          "top_armylists": [
+            {"name": "Assault on Lothlórien", "games": "28"},
+            {"name": "The Battle of Five Armies", "games": "7"},
+            {"name": "Garrison of Ithilien", "games": "5"},
+            {"name": "Riders of Eomer", "games": "5"},
+            {"name": "Muster of Isengard", "games": "4"}
+          ]
+        },
+        {
+          "placement": 12,
+          "player_id": "224b8d3d-7e1f-4095-853a-088883879195",
+          "first_name": "Jacek",
+          "nickname": "Żaba",
+          "surname": "Disterheft",
+          "age": "???",
+          "center": "Poznań",
+          "club": "Drużyna Boża",
+          "placements": 14,
+          "winratio": "62.86%",
+          "photo": null,
+          "quote": "Player quote goes here.",
+          "top_armylists": [
+            {"name": "Harad", "games": "12"},
+            {"name": "Minas Morgul", "games": "11"},
+            {"name": "The Black Gate", "games": "7"},
+            {"name": "Arnor", "games": "6"},
+            {"name": "Riders of Theoden", "games": "3"}
           ]
         }
       ]
